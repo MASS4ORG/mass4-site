@@ -1,7 +1,7 @@
 ---
-Title: "CLASS ClipOperation"
+Title: "ClipOperation"
 Type: api
-Created: "2025-06-18 16:32:58"
+Created: "2025-07-05 15:10:56"
 Params:
   namespace: "Guinevere"
   type: "class"
@@ -20,7 +20,7 @@ Represents an operation that applies or restores clipping to the provided canvas
 public void Execute(Gui gui, LayoutNode node, SKCanvas canvas)
 ```
 
-Executes the clip operation on the provided canvas, applying clipping to the specified node's bounds or restoring the canvas state if required.
+Executes the clip operation on the provided canvas, applying clipping to the specified node's bounds or restoring the canvas state if required. For scrollable containers, clips to the viewport bounds.
 
 **Parameters:**
 

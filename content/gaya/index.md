@@ -101,7 +101,7 @@ Gaya provides first-class support for modern development languages:
 ## Community
 
 - 💬 [Discord Server](https://discord.gg/gaya)
-- 🐛 [Issue Tracker](https://github.com/mass4/gaya/issues)
+- 🐛 [Issue Tracker](https://github.com/mass4org/gaya/issues)
 - 📖 [Community Forum](https://forum.mass4.dev/gaya)
 - 📚 [Plugin Registry](https://plugins.gaya.dev)
 

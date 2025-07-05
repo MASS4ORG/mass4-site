@@ -1,7 +1,7 @@
 ---
-Title: "CLASS Time"
+Title: "Time"
 Type: api
-Created: "2025-06-18 16:32:58"
+Created: "2025-07-05 15:10:56"
 Params:
   namespace: "Guinevere"
   type: "class"
@@ -16,7 +16,7 @@ Provides time measurement and frame rate calculation utilities for game loops.
 
 ### **DeltaTime**
 
-(*float*) { get; set }: Gets the time in seconds that elapsed since the last frame update. This value is affected by `TimeScale`.
+(*float*) { get; set }: Gets the time in milliseconds that elapsed since the last frame update. This value is affected by `TimeScale`.
 
 ### **UnscaledElapsed**
 

@@ -1,7 +1,7 @@
 ---
-Title: "CLASS LayoutNodeScope"
+Title: "LayoutNodeScope"
 Type: api
-Created: "2025-06-18 16:32:58"
+Created: "2025-07-05 15:10:56"
 Params:
   namespace: "Guinevere"
   type: "class"
@@ -45,6 +45,18 @@ Represents a scope management class for layout nodes, which facilitates entering
 ### **IsClipped**
 
 (*bool?*) { get; set }: Gets or sets whether this node should be clipped to its parent container bounds. This cascades to child nodes unless explicitly overridden.
+
+### **CumulativeScrollOffset**
+
+(*Vector2?*) { get; set }: Gets or sets the cumulative scroll offset applied to this node and its children. This represents the total scroll offset from all scrollable parent containers.
+
+### **IsScrollContainer**
+
+(*bool?*) { get; set }: Gets or sets whether this node is a scrollable container. If true, this node can contribute its own scroll offset to child nodes.
+
+### **LocalScrollOffset**
+
+(*Vector2?*) { get; set }: Gets or sets the local scroll offset for this node (if it's a scroll container). This is the scroll offset that this specific node contributes.
 
 
 ## Public Methods

@@ -1,7 +1,7 @@
 ---
-Title: "ENUM Pass"
+Title: "Pass"
 Type: api
-Created: "2025-06-18 16:32:58"
+Created: "2025-07-05 15:10:56"
 Params:
   namespace: "Guinevere"
   type: "enum"
@@ -10,7 +10,7 @@ Params:
 - **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
 - **Source File:** Pass.cs
 
-Represents the stages of a rendering process in the GUI framework. The rendering process consists of two distinct phases that are executed sequentially.
+Represents the stages of a rendering process in the GUI framework. The rendering process consists of multiple distinct phases that are executed sequentially.
 
 ## Enum Values
 

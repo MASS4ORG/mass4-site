@@ -6,4 +6,5 @@
 
 # output
 public/
+publish/
 .gitlab-ci-local

@@ -1,7 +1,7 @@
 ---
-Title: "RECORD Rect"
+Title: "Rect"
 Type: api
-Created: "2025-06-18 16:32:58"
+Created: "2025-07-05 15:10:56"
 Params:
   namespace: "Guinevere"
   type: "record"
@@ -36,7 +36,11 @@ Represents a rectangle defined by its position (X, Y) and size (W, H). Provides 
 
 ### **Zero**
 
-(*Rect*): Represents a rectangle with zero position and size. A predefined rectangle instance with X, Y, W, and H set to 0.
+(*Rect*): Represents a rectangle with zero-position and size. A predefined rectangle instance with X, Y, W, and H set to 0.
+
+### **One**
+
+(*Rect*): Gets a rectangle instance where all the position and size values (X, Y, W, H) are initialized to 1.
 
 ### **Height**
 

@@ -33,11 +33,11 @@ params:
         protected override void OnRender()
         {
             Gui.Text("Welcome to Guinevere!");
-            
+
             Gui.InputText("Your Name", ref name);
             Gui.Slider("Value", ref slider, 0f, 1f);
             Gui.Checkbox("Enable Feature", ref checkbox);
-            
+
             if (Gui.Button("Say Hello"))
             {
                 Console.WriteLine($"Hello, {name}!");
@@ -66,7 +66,7 @@ Choose your preferred installation method:
 Install-Package Guinevere
 ```
 
-#### .NET CLI  
+#### .NET CLI
 ```
 dotnet add package Guinevere
 ```
@@ -109,18 +109,18 @@ class HelloGuinevere : GuiApplication
     {
         Gui.Text("My First Guinevere App");
         Gui.Separator();
-        
+
         Gui.InputText("Message", ref message);
         Gui.Slider("Opacity", ref opacity, 0f, 1f);
         Gui.Checkbox("Show Message", ref showMessage);
-        
+
         if (showMessage)
         {
             Gui.PushStyle(GuiStyle.Alpha, opacity);
             Gui.Text(message);
             Gui.PopStyle();
         }
-        
+
         if (Gui.Button("Click Me!"))
         {
             Console.WriteLine($"Button clicked! Message: {message}");
@@ -147,7 +147,7 @@ class HelloGuinevere : GuiApplication
 
 - 📚 [Documentation](/guinevere/docs)
 - 💬 [Community Forum](https://forum.mass4.dev)
-- 🐛 [Issue Tracker](https://github.com/mass4/guinevere/issues)
+- 🐛 [Issue Tracker](https://github.com/mass4org/guinevere/issues)
 - 📧 [Support Email](mailto:support@mass4.dev)
 
 Start building beautiful, fast, and responsive user interfaces today with Guinevere!

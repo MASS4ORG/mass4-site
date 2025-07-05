@@ -14,7 +14,7 @@ params:
       link: "/guinevere/docs"
     - text: "View on GitHub"
       class: "btn-lg btn-outline-light"
-      link: "https://github.com/mass4/guinevere"
+      link: "https://github.com/mass4org/guinevere"
   code_example: |
     using Guinevere;
 
@@ -26,7 +26,7 @@ params:
             {
                 Console.WriteLine("Button clicked!");
             }
-            
+
             Gui.Text("Welcome to Guinevere");
             Gui.Slider("Volume", ref volume, 0, 100);
         }

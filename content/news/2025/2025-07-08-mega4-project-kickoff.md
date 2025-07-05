@@ -1,7 +1,6 @@
 ---
 title: "MEGA4 Project Kickoff: Four Tools to Rule Them All"
 Date: 2025-07-07
-tags: ["mega4", "announcement", "guinevere", "gaya", "turian", "mystery"]
 summary: "Today marks the beginning of something extraordinary. MASS4 proudly announces MEGA4 - an ambitious initiative to create four revolutionary development tools that will reshape how software is built."
 ---
 
@@ -129,7 +128,7 @@ We believe great tools are built with their communities, not in isolation:
 
 ### Get Involved
 
-- **Guinevere**: [Download Alpha](https://github.com/mass4/guinevere/releases)
+- **Guinevere**: [Download Alpha](https://mass4org.com/mass4/guinevere/releases)
 - **Gaya**: [Request Beta Access](/gaya/beta)
 - **Turian**: [Join the Waiting List](/turian/notify)
 - **Mystery**: [Decode the Hints](/mystery/hints)

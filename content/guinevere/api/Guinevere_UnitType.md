@@ -1,7 +1,7 @@
 ---
-Title: "ENUM UnitType"
+Title: "UnitType"
 Type: api
-Created: "2025-06-18 16:32:58"
+Created: "2025-07-05 15:10:56"
 Params:
   namespace: "Guinevere"
   type: "enum"

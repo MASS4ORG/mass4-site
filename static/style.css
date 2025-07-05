@@ -1,0 +1,23 @@
+* {
+}
+
+hmtl {
+    font-family: "Inter", Arial, sans-serif;
+    line-height: 1.5em;
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+}
+
+.col {
+    border-radius: 20px;
+    border: 1px solid #fff1;
+    padding: 40px;
+    padding-bottom: 20px;
+}
+
+.row {
+    gap: 15px;
+}
+
+.container {
+    gap: 15px;
+}

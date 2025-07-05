@@ -1,7 +1,7 @@
 ---
-Title: "CLASS DrawList"
+Title: "DrawList"
 Type: api
-Created: "2025-06-18 16:32:58"
+Created: "2025-07-05 15:10:56"
 Params:
   namespace: "Guinevere"
   type: "class"
@@ -69,23 +69,28 @@ Adds any draw list entry to the beginning of the draw list.
 ### AddClip
 
 ```csharp
-public void AddClip()
+public void AddClip(Shape shape, Vector2 positon)
 ```
 
 Adds a clip operation to the draw list using the specified shape.
 
+**Parameters:**
 
-### RestoreClip
+- `shape` (*Shape*)
+- `positon` (*Vector2*)
+
+
+### AddClip
 
 ```csharp
-public void RestoreClip(Vector2 position)
+public void AddClip(Rect rect)
 ```
 
-Restores the previous clipping area by adding a reset operation to the draw list. This operation ensures that the clipping state is reverted after applying a clip shape.
+Adds a clip operation to the draw list using the specified shape.
 
 **Parameters:**
 
-- `position` (*Vector2*)
+- `rect` (*Rect*)
 
 
 ### Render

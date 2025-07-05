@@ -1,7 +1,7 @@
 ---
-Title: "CLASS ShapePos"
+Title: "ShapePos"
 Type: api
-Created: "2025-06-18 16:32:58"
+Created: "2025-07-05 15:10:56"
 Params:
   namespace: "Guinevere"
   type: "class"
@@ -11,6 +11,13 @@ Params:
 - **Source File:** ShapePos.cs
 
 Represents a shape with positional and potentially rounded rectangle configurations. This class extends the functionality of the `Shape` class.
+
+## Properties
+
+### **Position**
+
+(*Vector2*) { get }: Gets the position of the shape as a `Vector2` value.
+
 
 ## Public Methods
 

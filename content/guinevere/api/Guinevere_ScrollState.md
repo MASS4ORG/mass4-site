@@ -1,16 +1,21 @@
 ---
-Title: "CLASS ScrollState"
+Title: "ScrollState"
 Type: api
-Created: "2025-06-18 16:32:58"
+Created: "2025-07-05 15:10:56"
 Params:
   namespace: "Guinevere"
   type: "class"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** Gui.Scroll.cs
+- **Source File:** ScrollState.cs
 
 Represents the state of a scrollable container, including scroll position, content dimensions, and scrollbar state.
+
+## Fields
+
+### **ScrollbarMinThumbSize** (*float*) = `20f`: Minimum size for scrollbar thumbs in pixels.
+### **ScrollbarPadding** (*float*) = `2f`: Padding around scrollbar tracks in pixels.
 
 ## Properties
 
@@ -24,7 +29,7 @@ Represents the state of a scrollable container, including scroll position, conte
 
 ### **ViewportSize**
 
-(*Vector2*) { get; set } = `Vector2.Zero`: Gets or sets the visible viewport size.
+(*Vector2*) { get; set } = `Vector2.Zero`: Gets or sets the size of the viewport (the visible area).
 
 ### **IsScrollingX**
 
@@ -41,6 +46,14 @@ Represents the state of a scrollable container, including scroll position, conte
 ### **IsDraggingScrollbarY**
 
 (*bool*) { get; set }: Gets or sets whether the vertical scrollbar is being dragged.
+
+### **IsVerticalScrollbarHovered**
+
+(*bool*) { get; set }: Gets or sets whether the vertical scrollbar is currently hovered.
+
+### **IsHorizontalScrollbarHovered**
+
+(*bool*) { get; set }: Gets or sets whether the horizontal scrollbar is currently hovered.
 
 ### **ScrollbarThickness**
 
@@ -84,5 +97,95 @@ public void ClampScrollPosition()
 ```
 
 Clamps the scroll position to valid values.
+
+
+### CalculateVerticalScrollbar
+
+```csharp
+public (Rect track, Rect thumb) CalculateVerticalScrollbar(Rect containerRect)
+```
+
+Calculates the vertical scrollbar dimensions and thumb position.
+
+**Parameters:**
+
+- `containerRect` (*Rect*)
+
+**Returns:** `(Rect track, Rect thumb)`
+
+
+### CalculateHorizontalScrollbar
+
+```csharp
+public (Rect track, Rect thumb) CalculateHorizontalScrollbar(Rect containerRect)
+```
+
+Calculates the horizontal scrollbar dimensions and thumb position.
+
+**Parameters:**
+
+- `containerRect` (*Rect*)
+
+**Returns:** `(Rect track, Rect thumb)`
+
+
+### IsPointOverVerticalThumb
+
+```csharp
+public bool IsPointOverVerticalThumb(Vector2 point, Rect containerRect)
+```
+
+Checks if a point is over the vertical scrollbar thumb.
+
+**Parameters:**
+
+- `point` (*Vector2*)
+- `containerRect` (*Rect*)
+
+**Returns:** `bool`
+
+
+### IsPointOverHorizontalThumb
+
+```csharp
+public bool IsPointOverHorizontalThumb(Vector2 point, Rect containerRect)
+```
+
+Checks if a point is over the horizontal scrollbar thumb.
+
+**Parameters:**
+
+- `point` (*Vector2*)
+- `containerRect` (*Rect*)
+
+**Returns:** `bool`
+
+
+### HandleVerticalScrollbarDrag
+
+```csharp
+public void HandleVerticalScrollbarDrag(Vector2 mousePos, Rect containerRect)
+```
+
+Handles vertical scrollbar drag operations.
+
+**Parameters:**
+
+- `mousePos` (*Vector2*)
+- `containerRect` (*Rect*)
+
+
+### HandleHorizontalScrollbarDrag
+
+```csharp
+public void HandleHorizontalScrollbarDrag(Vector2 mousePos, Rect containerRect)
+```
+
+Handles horizontal scrollbar drag operations.
+
+**Parameters:**
+
+- `mousePos` (*Vector2*)
+- `containerRect` (*Rect*)
 
 

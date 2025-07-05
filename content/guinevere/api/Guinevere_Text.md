@@ -1,7 +1,7 @@
 ---
-Title: "CLASS Text"
+Title: "Text"
 Type: api
-Created: "2025-06-18 16:32:58"
+Created: "2025-07-05 15:10:56"
 Params:
   namespace: "Guinevere"
   type: "class"
@@ -39,7 +39,7 @@ Represents a drawable text element that can be rendered onto a canvas. Instances
 public void Render(Gui gui, LayoutNode node, SKCanvas canvas)
 ```
 
-Renders the specified text onto the provided canvas using the given parameters.
+Renders the specified text onto the provided canvas using the given parameters. Scroll offsets are now handled during layout calculation.
 
 **Parameters:**
 

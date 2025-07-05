@@ -1,13 +1,13 @@
 ---
 Title: "NAMESPACE Guinevere"
 Type: api
-Created: "2025-06-18 16:32:58"
+Created: "2025-07-05 15:10:56"
 Params:
   namespace: "Guinevere"
   type: "namespace"
 ---
 
-This namespace contains 88 type(s).
+This namespace contains 84 type(s).
 
 ## Types
 
@@ -43,15 +43,15 @@ This namespace contains 88 type(s).
 - 🅲 Pu [FlyoutState](./class-flyoutstate)
 - 🅲 Pu [Font](./class-font)
 - 🄴  [FontStyle](./enum-fontstyle)
+- 🅲  [Gui](./class-gui)
+- 🅲  [Gui](./class-gui)
+- 🅲  [Gui](./class-gui)
+- 🅲  [Gui](./class-gui)
 - 🅲 Pu [Gui](./class-gui)
 - 🅲 Pu [Gui](./class-gui)
-- 🅲  [Gui](./class-gui)
-- 🅲  [Gui](./class-gui)
-- 🅲 Pu [Gui](./class-gui)
 - 🅲 Pu [Gui](./class-gui)
 - 🅲  [Gui](./class-gui)
-- 🅲  [Gui](./class-gui)
-- 🅲  [Gui](./class-gui)
+- 🅲 Pu [Gui](./class-gui)
 - 🆂 Pu [HoldArgs](./struct-holdargs)
 - 🅲 Pu [HorizontalLayoutContext](./class-horizontallayoutcontext)
 - 🄸  [ICanvasRenderer](./interface-icanvasrenderer)
@@ -67,28 +67,24 @@ This namespace contains 88 type(s).
 - 🄴  [KeyboardKey](./enum-keyboardkey)
 - 🅲  [LayoutNode](./class-layoutnode)
 - 🅲  [LayoutNode](./class-layoutnode)
-- 🅲 Pu [LayoutNode](./class-layoutnode)
 - 🅲  [LayoutNode](./class-layoutnode)
 - 🅲 Pu [LayoutNode](./class-layoutnode)
+- 🅲 Pu [LayoutNode](./class-layoutnode)
+- 🅲  [LayoutNodeDrawingExtensions](./class-layoutnodedrawingextensions)
 - 🅲 Pu [LayoutNodeScope](./class-layoutnodescope)
-- 🆁  [LayoutNodeScopeValue](./record-layoutnodescopevalue)
-- 🆁  [LayoutNodeScopeValueFont](./record-layoutnodescopevaluefont)
-- 🆁  [LayoutNodeScopeValueFontColor](./record-layoutnodescopevaluefontcolor)
-- 🆁  [LayoutNodeScopeValueFontSize](./record-layoutnodescopevaluefontsize)
-- 🆁  [LayoutNodeScopeValueIconFont](./record-layoutnodescopevalueiconfont)
-- 🆁  [LayoutNodeScopeValueZIndex](./record-layoutnodescopevaluezindex)
 - 🆂 Pu [LayoutStyle](./struct-layoutstyle)
-- 🄴  [LayoutType](./enum-layouttype)
+- 🅲 Pu [LineDrawable](./class-linedrawable)
 - 🅲  [MenuBarBuilder](./class-menubarbuilder)
 - 🄴  [MouseButton](./enum-mousebutton)
 - 🄴  [Pass](./enum-pass)
 - 🅲 Pu [PopupState](./class-popupstate)
 - 🆁 Pu [Rect](./record-rect)
+- 🅲  [ScrollClipOperation](./class-scrollclipoperation)
 - 🅲 Pu [ScrollState](./class-scrollstate)
 - 🅲  [Shape](./class-shape)
 - 🅲 Pu [Shape](./class-shape)
 - 🅲 Pu [Shape](./class-shape)
-- 🅲  [ShapePos](./class-shapepos)
+- 🅲 Pu [ShapePos](./class-shapepos)
 - 🄴  [SpacingTypes](./enum-spacingtypes)
 - 🅲  [TabBuilder](./class-tabbuilder)
 - 🅲 Pu [TabInfo](./class-tabinfo)

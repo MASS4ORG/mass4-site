@@ -6,29 +6,32 @@ Theme: mass4
 GoogleAnalytics:
 
 Params:
-  Logo: https://sucos.brunomassa.com/favicon-32x32.png
+  Logo: /favicon-32x32.png
   Author:
     Name: "Bruno Massa"
   MainMenu:
-    - url: /product/mega4
+    - url: /mega4
       label: MEGA4
-    - url: /product/guinevere
+    - url: /guinevere
       label: Guinevere
-    - url: /product/gaya
+    - url: /gaya
       label: Gaya
-    - url: /product/turian
+    - url: /turian
       label: Turian
-    - url: /product/mystery
+    - url: /mystery
       label: Mystery
     - url: /news
       label: News
 
   SocialNetworks:
     - id: ko-fi
-      url: https://ko-fi.com/brmassa
+      url: https://ko-fi.com/mass4
+      icon_class: bi-cup-hot-fill text-danger
+    - id: ko-fi
+      url: https://patreon.com/mass4
       icon_class: bi-heart-fill text-danger
     - id: github
-      url: https://github.com/mass4
+      url: https://github.com/mass4org
       icon_class: bi-git
     - id: mastodon
       url: https://fosstodon.org/@mass4

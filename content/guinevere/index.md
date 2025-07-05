@@ -2,39 +2,41 @@
 Title: Guinevere
 ---
 
+![](/guinevere-badge.png)
+
 ## Introduction
 
-A cross-platform, language-agnostic UI library with a razor sharp focus on performance, simplicity and expressive power
+A cross-platform, language-agnostic UI framework with an uncompromising focus on performance, simplicity and expressive capabilities
 
-### There's a problem in the software industry
+### There's a challenge in the software development world
 
-Most modern applications - composed of barely more than a few images, buttons and lines of text - sit uneasily upon towering tech-stacks comprising millions of lines of code. The industry is plagued by overcomplicated, slow and buggy software that is painful both to use and develop.
+Contemporary applications - containing little more than a handful of images, buttons and text elements - rest precariously on massive technology stacks consisting of millions of lines of code. The development landscape suffers from overcomplicated, sluggish and error-prone software that creates frustration for both users and developers.
 
-PanGui is our attempt to help solve the problem, by massively reducing the complexity of the tech stack required to produce good, modern applications.
+Guinevere represents our solution to address this challenge, by dramatically simplifying the complexity of the technology stack needed to build excellent, modern applications.
 
-PanGui has no dependencies at all, is as small as we could make it, and is extremely portable. It is very easy and simple to use, and is capable of creating sophisticated user interfaces with complex layouts, shapes, effects and animations, all while running at thousands of frames per second and having a small memory footprint.
+Guinevere operates with zero dependencies, maintains minimal size, and offers exceptional portability. It provides an intuitive and straightforward development experience, while enabling the creation of sophisticated user interfaces featuring complex layouts, shapes, effects and animations, all operating at thousands of frames per second with minimal memory consumption.
 
-### PanGui in a nutshell
+### Design Pillars
 
 <div class="container">
 <div class="row">
 
 :::col
-#### Fully self-contained
+#### Leverage existing technologies
 
-PanGui has zero dependencies. It does not require a particular runtime, environment or third party library. Memory management, layouting, font processing, input handling and so on is all handled by PanGui.
+Shapes and Font processing is done by Skia, while input handling rendering is done by the integration (OpenGL/Vulkan thru Raylib, OpenTK or SilkNET).
 :::
 
 :::col
-#### Easy and fun to use
+#### Intuitive and enjoyable to use
 
-PanGui lets you solve actual problems with every line of code. There's no need to memorize a massive framework or wrangle tedious and restrictive boilerplate; basic programming skills is all you need.
+Guinevere enables you to address real challenges with every line of code. There's no requirement to master extensive frameworks or wrestle with tedious and restrictive boilerplate; Basic C# knowledge is all that's needed.
 :::
 
 :::col
-#### Immediate and retained-mode
+#### Immediate and retained modes
 
-PanGui is immediate-mode first, with an optional retained-mode layer on top that ultimately reduces to immediate-mode calls, bringing you the best of both worlds.
+Guinevere prioritizes immediate-mode functionality, complemented by an optional retained-mode layer that ultimately resolves to immediate-mode calls, delivering the advantages of both approaches.
 :::
 
 </div>
@@ -42,74 +44,74 @@ PanGui is immediate-mode first, with an optional retained-mode layer on top that
 
 
 :::col
-#### Data-oriented
+#### Evolving
 
-PanGui doesn't have a single abstract class, virtual method or component factory. There's no trick, really. It's just data, and the code that operates on that data.
+Guinevere is designed to evolve with your needs. Whether you're building a simple application or a complex system, Guinevere provides the flexibility and power you need to create the best possible user experience.
 :::
 
 :::col
-#### Simple
+#### Straightforward
 
-PanGui is non-pessimized. Everything is as simple and straight-forward as possible; we have been merciless when deleting code and complexity that is not absolutely necessary.
+Guinevere is optimized for clarity. Everything is designed to be as simple and direct as possible; we have been ruthless in eliminating code and complexity that isn't absolutely essential.
 :::
 
 :::col
-#### Fast
+#### High-performance
 
-When you stop tangling up a modern processor with spaghetti, it can really go! PanGui processes and renders most interfaces in fractions of a millisecond.
+When you eliminate the complexity that tangles modern processors, they can truly perform! Guinevere processes and renders most interfaces in fractions of a millisecond.
 :::
 
 </div>
 <div class="row">
 
 :::col
-#### Layout-capable
+#### Layout-enabled
 
-PanGui boasts an extremely capable and expressive layouting system, providing all the features you'd expect of a top-of-the-line modern UI solution, and then some.
+Guinevere features an exceptionally powerful and expressive layout system, delivering all the capabilities you'd expect from a premium modern UI solution, and more.
 :::
 
 :::col
-#### Stable in a single frame
+#### Single-frame stability
 
-Doing things the easy way is also doing things the right way. Idiomatic PanGui user code does not jitter and take multiple frames to "settle down"; it provides a correct and stable result in the first frame.
+Taking the straightforward approach is also the correct approach. Idiomatic Guinevere code doesn't flicker or require multiple frames to stabilize; it delivers accurate and stable results in the first frame.
 :::
 
 :::col
-#### Testable
+#### Test-friendly
 
-The input-output relationship of PanGui is extremely clear and simple, and every system is exposed and fully controllable by code, making it straight-forward to simulate any setup for testing.
+The input-output relationship in Guinevere is exceptionally clear and simple, with every system exposed and fully controllable through code, making it straightforward to simulate any scenario for testing purposes.
 :::
 
 </div>
 <div class="row">
 
 :::col
-#### Code-centric
+#### Developer-focused
 
-The programmer is a first-class citizen of PanGui; every feature is fully usable and controllable by code. No secondary resources, stylesheets or markup documents are necessary.
+Programmers are first-class citizens in Guinevere; every feature is fully accessible and controllable through code. No auxiliary resources, stylesheets or markup documents are required.
 :::
 
 :::col
-#### Cross Platform
+#### Platform-agnostic
 
-Since PanGui's only job is to turn input into a list of basic rendering commands, it is easily integrated into any potential environment and rendering pipeline.
+Since Guinevere's sole responsibility is converting input into a series of basic rendering commands, it integrates seamlessly into any environment and rendering pipeline.
 :::
 
 </div>
 </div>
 
-## Demos
+## Demonstrations
 
 >
-> We're about to show you PanGui - in its current state!
+> We're about to showcase Guinevere - in its current state!
 >
-> PanGui is still under active development and this website currently shows only a subset of features. Many core features like the retained-mode layer and input controls are still in their early stages and are not presented here. It should go without saying that everything here is subject to change.
+> Guinevere is actively under development and this website currently displays only a subset of capabilities. Many core features like the retained-mode layer and input controls are still in early development stages and aren't presented here. It should be understood that everything shown here is subject to change.
 >
-> All these examples are written in C#, and are created using our Win32 platform integration. As such, they are using an API that is idiomatic to C# and made to feel nice to use in specifically C#.
+> All these examples are implemented in C#, using our Win32 platform integration. They utilize an API that's idiomatic to C# and designed to feel natural in the C# environment.
 >
-> Keep in mind that PanGui is designed to be language-agnostic and will be transpiled to many languages, with C++ being the next target language. Where necessary, the user-facing API will always change to feel natural to use in the target language.
+> Remember that Guinevere is designed to be language-agnostic and will be transpiled to multiple languages, with C++ being the next target language. Where needed, the user-facing API will always adapt to feel natural in the target language.
 >
-> Also note that the UI code itself does not care about the Win32 platform layer and will be identical when targeting other C# platforms.
+> Also note that the UI code itself is independent of the Win32 platform layer and will be identical when targeting other C# platforms.
 
 <div class="container">
 <div class="row">
@@ -117,16 +119,16 @@ Since PanGui's only job is to turn input into a list of basic rendering commands
 :::col
 ## Hello, world
 
-Where else to start, but with "hello world"?
+Where better to begin than with "hello world"?
 
-These examples show just how little is needed to get a basic PanGui application up and running, and then to draw something simple on the screen. They contain the entire user application codebase; no more code is necessary to create a Win32 window and draw a UI until the window is closed.
+These examples demonstrate how minimal the requirements are to get a basic Guinevere application running, and then to render something simple on screen. They contain the complete user application codebase; no additional code is necessary to create a Win32 window and draw a UI until the window closes.
 
-As you can see, it is extremely simple to draw primitives such as rects, triangles and text. PanGui has many layers of API granularity, with no tools - however sharp! - hidden away from the user. From simple shapes to complicated layouts, PanGui lets you work at exactly the level of complexity you want.
+As you can observe, it's remarkably simple to draw primitives such as rectangles, triangles and text. Guinevere provides multiple layers of API granularity, with no tools - however advanced! - hidden from the user. From basic shapes to complex layouts, Guinevere allows you to work at precisely the level of complexity you need.
 :::
 
 :::col
 ```cs
-using PanGui;
+using Guinevere.Vulkan.SilkNET;
 public class Program
 {
     public static void Main()
@@ -151,7 +153,7 @@ public class Program
 ## Hello, Triangle
 
 ```cs
-using PanGui;
+using Guinevere.OpenGL.Raylib;
 public class Program
 {
     public static void Main()
@@ -185,21 +187,19 @@ public class Program
 </div>
 </div>
 
-## AirBnB slider demo
+## AirBnB slider demonstration
 
-Next up, let's look at how straight-forward it is to create even very complicated UI widgets. This is a recreation of AirBnb's circular month slider as of February 2024, which you can (or could) find here (click on 'When', then select 'Months'). If it's not there any more when you're reading this, well, it looked like the demo here.
+Next, let's examine how straightforward it is to create even highly complex UI widgets. This is a recreation of AirBnb's circular month slider as of February 2024, which you can (or could) find here (click on 'When', then select 'Months'). If it's no longer available when you're reading this, it resembled the demonstration shown here.
 
-We'll be honest, we had a pretty hard time sorting out the precise mechanics of how AirBnb built that slider using HTML, CSS and JavaScript, as it is extremely complicated. We gave up after finding many dozens (if not hundreds) of layered and interweaving HTML elements and SVG paths seemingly managed by enormous amounts of JavaScript.
+To be frank, we had considerable difficulty understanding the exact mechanics of how AirBnb constructed that slider using HTML, CSS and JavaScript, as it proved extremely complex. We abandoned our analysis after discovering numerous dozens (if not hundreds) of layered and interconnected HTML elements and SVG paths apparently managed by substantial amounts of JavaScript.
 
-In the previous demo there are plenty of small implementation details that show how many things that are complicated in HTML and CSS are very simple in PanGui. But this example, we think, really brings it home. Making this in HTML and CSS would be a nightmare - and clearly was a nightmare for some poor developers working for AirBnb.
+While the previous demonstration contains numerous small implementation details that illustrate how many things that are complex in HTML and CSS are straightforward in Guinevere, this example really drives the point home. Creating this in HTML and CSS would be extremely challenging - and clearly was extremely challenging for some developers working at AirBnb.
 
-The fact that they managed to create this at all is extremely impressive! But despite their best efforts, it still has several bugs. For example, lots of jittering artifacts and the fact that it completely breaks when a scroll view appears in its containing box.
+The fact that they succeeded in creating this at all is remarkably impressive! However, despite their excellent efforts, it still contains several bugs. For instance, numerous jittering artifacts and the fact that it completely fails when a scroll view appears in its containing box.
 
-We're perfectly aware that this is an unfair comparison. HTML was not designed to be good at this sort of thing. It, like most other UI systems, is a very structured and abstracted way of creating a UI, forcing the developer to be far away from what is drawn on the screen. However, that is the point - HTML and CSS are just not good enough, and have force
-<div class="container">
-<div class="row">d millions of UI designers and developers into the box of only doing the limited sorts of things that are easily achievable in their working environment.
+We're fully aware that this is an unfair comparison. HTML wasn't designed to excel at this type of functionality. It, like most other UI systems, is a highly structured and abstracted approach to creating interfaces, forcing developers to work far removed from what actually appears on screen. However, that's precisely the point - HTML and CSS simply aren't adequate, and have forced millions of UI designers and developers into the constraint of only accomplishing the limited types of things that are easily achievable in their working environment.
 
-Note that the PanGui code for this will probably change a little bit once the input controls feature is introduced, as you would likely want to be able to interact with the widget using more than just a pointer device (for example, with keyboard navigation, etc).
+Note that the Guinevere code for this will likely change slightly once the input controls feature is introduced, as you would probably want to be able to interact with the widget using more than just a pointer device (for example, with keyboard navigation, etc).
 
 ```cs
 void DrawAirBnBMonthSlider(ref int month)
@@ -252,51 +252,51 @@ void DrawAirBnBMonthSlider(ref int month)
 }
 ```
 
-## Features
+## Capabilities
 
-### Layouting
+### Layout System
 
-We think we've managed to create one of the most powerful, flexible and expressive layout systems around,
-and certainly by far the most capable IMGUI layouting system we've ever heard of.
+We believe we've created one of the most powerful, flexible and expressive layout systems available,
+and certainly the most capable IMGUI layout system we've encountered.
 
 <div class="container">
 <div class="row">
 
 :::col
-#### Use layouting only where and how you want
+#### Apply layout functionality selectively
 
-PanGui's layouting system is a tool for you to use as and where you please, not a box you are forced to fit into. Layouting is not coupled to any other features. In the end, all the layouting system really does is give you rects to use for other things. As such, it is trivial to mix and match layouting with "manual" calculations, using layouting only for the parts of the interface where it actually helps you. Or if you want, you can even forgo it entirely, without losing access to any of PanGui's other features.
+Guinevere's layout system serves as a tool for you to utilize wherever and however you choose, not a constraint you're forced to work within. Layout functionality is decoupled from all other features. Ultimately, the layout system simply provides you with rectangles to use for other purposes. This makes it trivial to combine layout with "manual" calculations, using layout only for interface portions where it actually benefits you. Or if you prefer, you can bypass it entirely, without losing access to any of Guinevere's other capabilities.
 :::
 
 :::col
-#### Thousands of nodes in fractions of a millisecond
+#### Thousands of nodes processed in milliseconds
 
-PanGui's layouting is blazingly fast, resolving thousands of layout nodes in fractions of a millisecond. And we haven't even really optimized it yet! We've merely non-pessimized it.
+Guinevere's layout system is extraordinarily fast, resolving thousands of layout nodes in fractions of a millisecond. And we haven't even focused on optimization yet! We've simply avoided pessimization.
 
-We've tried to run comparisons against for example Yoga, a popular C++ layouting library used by, for example, React Native and the Unity game engine. In very simple cases, PanGui typically outperformed Yoga by a factor of 10-30, and in more complicated situations, PanGui outperformed it by a factor of 100-5000. And note that this is the C# version of PanGui compared to a C++ library.
+We've attempted to run comparisons against Yoga, for example, a popular C++ layout library used by React Native and the Unity game engine. In basic scenarios, Guinevere typically outperformed Yoga by a factor of 10-30, and in more complex situations, Guinevere outperformed it by a factor of 100-5000. Note that this is the C# version of Guinevere compared to a C++ library.
 
-We realize these are loose numbers and not remotely a stringent benchmark, but they give some sense of the final expected performance. Once PanGui nears completion, we will provide more concrete performance comparisons with popular alternatives.
+We understand these are approximate numbers and not a rigorous benchmark, but they provide some indication of the expected final performance. Once Guinevere approaches completion, we will provide more concrete performance comparisons with popular alternatives.
 :::
 
 </div>
 <div class="row">
 
-#### Retained-like mutability
+#### Retained-style mutability
 
-Work with the immediate-mode layouting data with retained-like patterns
+Work with immediate-mode layout data using retained-style patterns
 
-One convenient advantage of many retained mode systems is that you have a hierarchical data model of the UI that can be manipulated. One part of the code can affect parts of the interface created by another part of the code, adding to it, styling it, removing it, and so on.
+One useful advantage of many retained mode systems is having a hierarchical data model of the UI that can be manipulated. One section of code can affect interface parts created by another section, adding to it, styling it, removing it, and so on.
 
-PanGui's layouting boasts a similar feature, despite being purely immediate mode. Within a given frame, layout nodes can be referenced and passed around, and are fully mutable. They can be modified, moved, added or removed at will, enabling the sorts of modular usage patterns that you'd typically only find in retained mode systems.
+Guinevere's layout system features a similar capability, despite being purely immediate mode. Within any given frame, layout nodes can be referenced and passed around, and are fully mutable. They can be modified, moved, added or removed at will, enabling the types of modular usage patterns typically found only in retained mode systems.
 
 </div>
 <div class="row">
 
 :::col
 
-#### Powerful size primitives
+#### Robust size primitives
 
-PanGui provides a simple set of size primitives that can be specified for width and height and - this is key - can also be used as min and max constraints. This makes it easy to specify layouts that are very challenging in, for example, HTML and CSS.
+Guinevere provides a simple set of size primitives that can be specified for width and height and - crucially - can also be used as minimum and maximum constraints. This makes it easy to specify layouts that are very challenging in, for example, HTML and CSS.
 
 ```cs
 Size.FitContent(percentageOfContent) // 1 by default
@@ -310,9 +310,9 @@ Size.Pixels(pixels)
 
 :::col
 
-#### Position and size anything relative to anything else
+#### Position and size elements relative to any other element
 
-In PanGui, you're not limited to a fixed set of options like relative, absolute or fixed. You can position anything relative to anything else...
+In Guinevere, you're not restricted to a fixed set of options like relative, absolute or fixed. You can position any element relative to any other element...
 
 ```cs
 gui.Node()
@@ -330,9 +330,9 @@ gui.Node().SetNewParent(otherNode);
 <div class="row">
 
 :::col
-#### Advanced layout blending
+#### Sophisticated layout blending
 
-Layout nodes can exist in a blended state between many different possible configurations. This makes transitions between different computed or derived values very easy to create, and is very handy for animations. Certain concepts, such as animating from fit content to a constrained expand, are extremely difficult or even impossible to express in, for example, HTML and CSS.
+Layout nodes can exist in a blended state between multiple different possible configurations. This makes transitions between different computed or derived values very straightforward to create, and is extremely useful for animations. Certain concepts, such as animating from fit content to a constrained expand, are extremely difficult or even impossible to express in, for example, HTML and CSS.
 
 ```cs
 gui.Node().Width(
@@ -344,7 +344,7 @@ gui.Node().Width(
 :::col
 #### Alignment
 
-In PanGui, alignment is not based on left, center, right, etc., but rather is just a float where 0 is "left", 1 is "right" and 0.5 is "center". You can even align < 0 and > 1.
+In Guinevere, alignment is not based on left, center, right, etc., but rather is simply a float where 0 is "left", 1 is "right" and 0.5 is "center". You can even align < 0 and > 1.
 float align = cos(time) * 0.5f + 0.5f;
 gui.Node().AlignContent(x: align, y: align);
 :::
@@ -353,9 +353,9 @@ gui.Node().AlignContent(x: align, y: align);
 <div class="row">
 
 :::col
-#### It's "just data"
+#### It's "pure data"
 
-The LayoutNode struct simply contains a pointer to the layout data, which you can access and modify at will, but we've made the most common layouting data easily accessible.
+The LayoutNode struct simply contains a pointer to the layout data, which you can access and modify at will, but we've made the most common layout data easily accessible.
 ```cs
 LayoutNode node = gui.Node();
 DrawRect(node.Rect, col);        // With padding
@@ -389,9 +389,9 @@ node.Properties.PropertyFlags |= PropertyFlags.MaxWidth;
 :::
 
 :::col
-#### Flexible
+#### Adaptable
 
-Pick the method of using nodes that best fits your needs. You can assign nodes to variables, use the fluent API, or use the using statement.
+Choose the method of using nodes that best suits your requirements. You can assign nodes to variables, use the fluent API, or use the using statement.
 var node = gui.Node();
 node.Position(100, 100);
 node.Size(200, 200);
@@ -419,9 +419,9 @@ scope.Exit();
 <div class="row">
 
 :::col
-#### Useful shortcuts for working with other PanGui systems
+#### Convenient shortcuts for working with other Guinevere systems
 
-The layout system itself is very isolated from the rest of the codebase, but because of how frequently it is used, we've made some shortcuts to make it easier to work with other PanGui systems through the layouting nodes. Note that none of the following features are part of the layouting system itself, but are rather just convenient shortcuts.
+The layout system itself is very isolated from the rest of the codebase, but because of how frequently it's used, we've created some shortcuts to make it easier to work with other Guinevere systems through the layout nodes. Note that none of the following features are part of the layout system itself, but are rather just convenient shortcuts.
 Entering nodes helps you manage state
 
 ```cs
@@ -453,9 +453,9 @@ if (gui.GetInteractable(node.Rect).OnHover())
 <div class="row">
 
 :::col
-#### And so much more
+#### And much more
 
-Covering all the features of PanGui's layouting system would take a lot of space, but here are a few we look forward to showing you in the future:
+Covering all the features of Guinevere's layout system would require significant space, but here are a few we look forward to demonstrating in the future:
 
 - Tables
 - Wrapping of flowing elements
@@ -471,14 +471,14 @@ Covering all the features of PanGui's layouting system would take a lot of space
 
 ## Shapes
 
-User interfaces are made out of various shapes, so easily being able to define, draw and use complex shapes is important.
+User interfaces are composed of various shapes, so having the ability to easily define, draw and use complex shapes is crucial.
 
 <div class="container">
 <div class="row">
 
 ### Signed distance field based shapes
 
-PanGui has a capable Shapes API based on composing signed distance fields. It is very fast, it has a tiny memory footprint per shape, and, like vectors, it is analytical, meaning it scales perfectly to any resolution.
+Guinevere features a capable Shapes API based on composing signed distance fields. It delivers excellent performance, has a minimal memory footprint per shape, and, like vectors, it is analytical, meaning it scales perfectly to any resolution.
 
 </div>
 <div class="row">
@@ -486,7 +486,7 @@ PanGui has a capable Shapes API based on composing signed distance fields. It is
 :::col
 #### Define a shape
 
-Note that a shape is not tied to a specific position - it's just a shape. It can be drawn in any position, used and reused as many times as you like.
+Note that a shape is not bound to a specific position - it's just a shape. It can be drawn in any position, used and reused as many times as you need.
 ```cs
 Vector2 position = gui.ScreenRect.Center;
 SdShape shape = SdShape.Circle(300);
@@ -496,7 +496,7 @@ SdShape shape = SdShape.Circle(300);
 :::col
 ### Shapes can also be used as input elements
 
-Interactable elements are most often defined by a simple rectangle, but you can also define them as a shape, and then use the shape as the interactable area.
+Interactable elements are most commonly defined by a simple rectangle, but you can also define them as a shape, and then use the shape as the interactable area.
 ```cs
 var interactable = gui.GetInteractable(position, shape);
 bool isHovering = interactable.OnHover();
@@ -510,7 +510,7 @@ bool isDragging = interactable.OnHold(out HoldArgs args);
 :::col
 #### Use shapes as clipping masks
 
-This will affect everything, including text. This is, for example, how you would make sure content in a rounded rectangle doesn't visually overflow:
+This will affect everything, including text. This is, for example, how you would ensure content in a rounded rectangle doesn't visually overflow:
 ```cs
 gui.SetClipShape(position, shape);
 ``
@@ -519,7 +519,7 @@ gui.SetClipShape(position, shape);
 :::col
 #### Shapes can also be used as input elements
 
-Interactable elements are most often defined by a simple rectangle, but you can also define them as a shape, and then use the shape as the interactable area.
+Interactable elements are most commonly defined by a simple rectangle, but you can also define them as a shape, and then use the shape as the interactable area.
 
 ```cs
 var interactable = gui.GetInteractable(position, shape);
@@ -532,11 +532,11 @@ bool isDragging = interactable.OnHold(out HoldArgs args);
 <div class="row">
 
 :::col
-#### Drawn with as many effects as you like
+#### Drawn with unlimited effects
 
-Shapes can be drawn with various effects, such as gradients, textures and shadows. All effects are easily animatable, and gradients look good and don't have the banding artifacts that are common in other systems.
+Shapes can be drawn with various effects, such as gradients, textures and shadows. All effects are easily animatable, and gradients look excellent without the banding artifacts that are common in other systems.
 
-Also note that all the effects will actually be drawn on top of each other in the given order, all in a single draw call. In fact, all shapes in a given z-index are included in the same single draw call that draws the rest of the geometry.
+Also note that all the effects will actually be drawn on top of each other in the specified order, all in a single draw call. In fact, all shapes in a given z-index are included in the same single draw call that draws the rest of the geometry.
 ```cs
 gui.DrawShape(position, shape)
     .SolidColor(Color.HSVLerp(a, b, tHover))
@@ -549,15 +549,15 @@ gui.DrawShape(position, shape)
 ```
 :::
 
-#### Pros and Cons, SVG and future plans
+#### Advantages and limitations, SVG and future plans
 
-Signed distance shapes have a lot of upsides, but there are also some downsides to this approach:
+Signed distance shapes have many benefits, but there are also some limitations to this approach:
 
-First, GPU rendering performance scales poorly with complexity. It is as fast as rendering a texture for relatively simple shapes, but combining many shapes together can quickly become a performance problem when you're also stacking multiple effects on it, as some effects such as shadows (which include an offset) will re-compute the SDF shape once per shadow, per fragment, effectively multiplying the render cost of the shape.
+First, GPU rendering performance scales poorly with complexity. It performs as well as rendering a texture for relatively simple shapes, but combining many shapes together can quickly become a performance issue when you're also stacking multiple effects on it, as some effects such as shadows (which include an offset) will re-compute the SDF shape once per shadow, per fragment, effectively multiplying the render cost of the shape.
 
 It also scales poorly with very thin shapes whose bounding boxes cover a large area, since SDF drawing is bounding box based. Such shapes that cover a very small proportion of their total bounding box will have a lot of potentially expensive overdraw, as the cost of evaluating every pixel in the bounding box is the same whether it is in the shape or not. This is why we also intend to introduce a vector-based graphics API for loading and generating such shapes easily. This API would of course include .svg support.
 
-Another con is that using the signed distance field as a way of rendering shadows often leads to undesirable sharp edges in the shadows for certain shapes or combinations of shapes, due to the way the math works out. It is possible to improve the shadows, but only by sampling the SDF function to a cost-prohibitive degree. This is something we may be able to improve in the future, though; we have some ideas...
+Another limitation is that using the signed distance field as a way of rendering shadows often leads to undesirable sharp edges in the shadows for certain shapes or combinations of shapes, due to the way the math works out. It is possible to improve the shadows, but only by sampling the SDF function to a cost-prohibitive degree. This is something we may be able to improve in the future, though; we have some ideas...
 
 </div>
 <div class="row">
@@ -565,14 +565,14 @@ Another con is that using the signed distance field as a way of rendering shadow
 
 ## Graphics
 
-In the end, all PanGui really does is produce a list of graphics commands. So, of course, it should be good at it. PanGui's drawing is very fast and efficient, without sacrificing ease of use, expressive power or user control.
+Ultimately, all Guinevere really does is produce a list of graphics commands. So, naturally, it should excel at this. Guinevere's drawing is extremely fast and efficient, without sacrificing ease of use, expressive power or user control.
 
 <div class="container">
 <div class="row">
 
 #### Graphics Drawing and Manipulation
 
-Often, in UI libraries, it is very hard and tedious to just draw a simple rectangle to the screen. We've done our best to make sure PanGui never gets in your way when you just want to put pixels on the screen:
+Often, in UI libraries, it is very difficult and tedious to simply draw a basic rectangle to the screen. We've done our best to ensure Guinevere never gets in your way when you just want to put pixels on the screen:
 
 ```cs
 // Specify how graphics should be drawn.
@@ -595,15 +595,15 @@ gui.DrawList.Indices;
 gui.DrawList.Vertices;
 ```
 
-#### Inegrating it into your own pipeline
+#### Integrating it into your own pipeline
 
-PanGui's only job is to turn input into a set of optimized GPU buffers and simple rendering commands, to be injected anywhere in any arbitrary rendering pipeline. As such, PanGui integrates easily into any potential environment.
+Guinevere's sole responsibility is converting input into a set of optimized GPU buffers and simple rendering commands, to be injected anywhere in any arbitrary rendering pipeline. As such, Guinevere integrates seamlessly into any potential environment.
 
-The graphics commands themselves are very simple and efficient, the vertex structure is straight-forward, and all you really need to implement the rendering spec is one shader file which, as of the time of writing, is less than 1000 lines of code, making PanGui very easy to introduce into any potential rendering pipeline.
+The graphics commands themselves are very simple and efficient, the vertex structure is straightforward, and all you really need to implement the rendering specification is one shader file which, as of the time of writing, is less than 1000 lines of code, making Guinevere very easy to introduce into any potential rendering pipeline.
 
 ```cs
 using System;
-using PanGui;
+using Guinevere.OpenGL.SilkNET;
 Gui gui = new Gui();
 Rect rect = new Rect(0, 0, 500, 500);
 Action guiFunction = (gui) =>
@@ -622,14 +622,14 @@ foreach (Command command in commands)
 
 ## Input
 
-PanGui's input handling is written to make it easy to handle input exactly in the way most useful to solve a given problem, providing the user with an array of options at different levels of abstraction: raw input handling, interactables, and controls.
+Guinevere's input handling is designed to make it easy to handle input exactly in the way most useful to solve a given problem, providing users with an array of options at different levels of abstraction: raw input handling, interactables, and controls.
 
 <div class="container">
 <div class="row">
 
 #### Raw input handling
 
-Raw input handling is just that: it's asking direct questions about the current input state: where are the cursors, which keys are currently down, what is the axis value of a joystick, and so on.
+Raw input handling is exactly that: it's asking direct questions about the current input state: where are the cursors, which keys are currently down, what is the axis value of a joystick, and so on.
 
 ```cs
 // Do something if the user presses space
@@ -657,19 +657,19 @@ if (e.OnClick())
 
 #### Controls
 
-Controls are fully fledged "input elements": they can have focus, support very stateful interactions (such as being a text field with one or more inner cursors and selections), they can provide contextual/spatial navigation with keyboard or joysticks, and so on. Controls are an in progress feature, so we will not go into them in detail yet.
+Controls are fully developed "input elements": they can have focus, support very stateful interactions (such as being a text field with one or more inner cursors and selections), they can provide contextual/spatial navigation with keyboard or joysticks, and so on. Controls are a work-in-progress feature, so we will not go into them in detail yet.
 
-#### Straight-forward event propagation
+#### Clear event propagation
 
-Since PanGui fully supports z-indices, all input elements (whether interactables or controls) have a clear order of priority. Additionally, event propagation can be controlled very precisely: each input element can decide which events to "eat" or pass on, and elements can even decide whether to respect propagation or not in order to receive events regardless of their propagation state.
+Since Guinevere fully supports z-indices, all input elements (whether interactables or controls) have a clear order of priority. Additionally, event propagation can be controlled very precisely: each input element can decide which events to "consume" or pass on, and elements can even decide whether to respect propagation or not in order to receive events regardless of their propagation state.
 
 #### Controllable, testable and low-latency input
 
-PanGui does not read input by itself, but is fed input events from the platform integration. This approach also makes it extremely easy to simulate input for testing or other purposes. Great effort has been invested in ensuring that input latency (the time between a user pressing a key and pixels changing on the screen) is as close to instant as possible on all platforms.
+Guinevere does not read input by itself, but is fed input events from the platform integration. This approach also makes it extremely easy to simulate input for testing or other purposes. Great effort has been invested in ensuring that input latency (the time between a user pressing a key and pixels changing on the screen) is as close to instant as possible on all platforms.
 
-## Straight-forward state management
+## Straightforward state management
 
-The IMGUI pattern overall greatly reduces the amount of UI-related state you need to manage, as the UI code is typically directly tied to the data it represents. PanGui even further simplifies managing the little amount of state that is left - things like the current color, transform matrix, blend mode, text font, etc.
+The IMGUI pattern overall greatly reduces the amount of UI-related state you need to manage, as the UI code is typically directly tied to the data it represents. Guinevere further simplifies managing the small amount of state that remains - things like the current color, transform matrix, blend mode, text font, etc.
 
 #### State snapshots
 
@@ -685,7 +685,7 @@ gui.SetFontSize(40);
 gui.State.SetState(state); // Restore state snapshot
 ```
 
-#### Working with layout node
+#### Working with layout nodes
 
 Taking a snapshot is very cheap and fast: so cheap and fast that when you enter a layout node, it always takes a state snapshot, such that it can restore the prior state when it later exits.
 
@@ -702,11 +702,11 @@ using (gui.Node().Enter())
 // This works at any level of scope nesting.
 ```
 
-#### "Jump" to anywhere in the layout from anywhere else
+#### "Navigate" to anywhere in the layout from anywhere else
 
 When a layout node is exited, it takes a second state snapshot, such that when you re-enter a layout node, the state will be reset to what it was when you left it.
 
-One of the super awesome features this gives us, as a sort of side-effect, is the ability to go back and revisit, modify and add to previously created UI elements. One such example is the popup in the audio app demo: the popup layout node is created, then passed back out of the method to be filled out by the code that called the GetPopup function.
+One of the remarkable features this gives us, as a sort of side-effect, is the ability to go back and revisit, modify and add to previously created UI elements. One such example is the popup in the audio app demo: the popup layout node is created, then passed back out of the method to be filled out by the code that called the GetPopup function.
 
 There is no need to resort to solutions such as splitting functions up into tedious begin and end calls with complicated ways of passing state between them, and no need to clutter your code with push and pop calls. (Though, of course, if you want to, you still can.)
 
@@ -756,7 +756,7 @@ using (popup.Enter())
 
 And much more
 
-PanGui has a lot of features that we haven't talked about yet, many of which are still in development.
+Guinevere has many features that we haven't discussed yet, many of which are still in development.
 
 #### Controls
 
@@ -772,7 +772,7 @@ It should be trivial to apply render effects such as blurring everything behind 
 
 #### Vector Graphics API
 
-SDF shapes are amazing for many things, but for some shapes, generating meshes from vector definitions is a more appropriate solution. PanGui will include a comprehensive vector graphics API for loading and generating vector shapes, including support for loading .svg files and the like.
+SDF shapes are amazing for many things, but for some shapes, generating meshes from vector definitions is a more appropriate solution. Guinevere will include a comprehensive vector graphics API for loading and generating vector shapes, including support for loading .svg files and the like.
 
 #### Animations
 
@@ -780,4 +780,4 @@ A simple and powerful animation system for animating any arbitrary value over ti
 
 #### Platform layers
 
-As development progresses towards beta and release, we will continually be adding more platform layers to PanGui, and further build out our tooling for this process.
+As development progresses towards beta and release, we will continually be adding more platform layers to Guinevere, and further build out our tooling for this process.
