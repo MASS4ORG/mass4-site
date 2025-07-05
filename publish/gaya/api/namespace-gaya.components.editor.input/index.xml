@@ -1,8 +1,0 @@
-<p>This namespace contains 4 type(s).</p>
-<h2 id="types">Types</h2>
-<ul>
-<li>🄴  <a href="./enum-cursordirection">CursorDirection</a></li>
-<li>🅲 Pu <a href="./class-editorinputaction">EditorInputAction</a></li>
-<li>🅲  <a href="./class-editorinputhandler">EditorInputHandler</a></li>
-<li>🄴  <a href="./enum-editorinputtype">EditorInputType</a></li>
-</ul>

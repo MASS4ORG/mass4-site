@@ -1,8 +1,0 @@
-<ul>
-<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere.nuke">Guinevere.Nuke</a></li>
-<li><strong>Source File:</strong> Build.Version.cs</li>
-</ul>
-<p>This is the main build file for the project. This partial is responsible for the versioning using GitVersion.</p>
-<h2 id="properties">Properties</h2>
-<h3 id="createcommit"><strong>CreateCommit</strong></h3>
-<p>(<em>Target</em>)</p>

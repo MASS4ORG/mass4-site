@@ -1,8 +1,0 @@
-<ul>
-<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-sample_42_responsivelayoutdemo">Sample_42_ResponsiveLayoutDemo</a></li>
-<li><strong>Source File:</strong> ResponsiveLayoutDemo.cs</li>
-</ul>
-<h2 id="public-methods">Public Methods</h2>
-<h3 id="main">Main</h3>
-<pre><code class="language-csharp">public static void Main()
-</code></pre>

@@ -1,7 +1,0 @@
-<ul>
-<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.components.core">Gaya.Components.Core</a></li>
-<li><strong>Source File:</strong> PanelButtonBar.cs</li>
-</ul>
-<h2 id="properties">Properties</h2>
-<h3 id="panelid"><strong>PanelId</strong></h3>
-<p>(<em>string</em>) { get; set } = <code>&quot;&quot;</code></p>

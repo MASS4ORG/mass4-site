@@ -1,8 +1,0 @@
-<ul>
-<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere.vulkan.silknet">Guinevere.Vulkan.SilkNET</a></li>
-<li><strong>Source File:</strong> CanvasRenderer.cs</li>
-</ul>
-<h2 id="fields">Fields</h2>
-<h3 id="capabilities-surfacecapabilitieskhr"><strong>Capabilities</strong> (<em>SurfaceCapabilitiesKHR</em>)</h3>
-<h3 id="formats-surfaceformatkhr"><strong>Formats</strong> (<em>SurfaceFormatKHR[]</em>)</h3>
-<h3 id="presentmodes-presentmodekhr"><strong>PresentModes</strong> (<em>PresentModeKHR[]</em>)</h3>

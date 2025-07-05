@@ -1,7 +1,0 @@
-<ul>
-<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere.nuke">Guinevere.Nuke</a></li>
-<li><strong>Source File:</strong> Configuration.cs</li>
-</ul>
-<h2 id="fields">Fields</h2>
-<h3 id="debug-configuration-new" Value="nameof(Debug)"><strong>Debug</strong> (<em>Configuration</em>) = `new()</h3>
-<h3 id="release-configuration-new" Value="nameof(Release)"><strong>Release</strong> (<em>Configuration</em>) = `new()</h3>

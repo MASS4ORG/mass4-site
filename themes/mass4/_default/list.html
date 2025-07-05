@@ -1,12 +1,14 @@
-<h1 class="fw-bolder text-capitalize">
-<a class="text-decoration-none link-light" href="{{ page.Permalink }}">{{ page.Title }}</a>
-</h1>
-list
+<article class="bg-dark p-3">
+    <h1 class="fw-bolder text-capitalize">
+    {{- page.Title }}
+    </h1>
 
-{{ page.ContentPreRendered }}
+    <ul class="nav">
+        {% for tag in page.TagsReference %}
+        <li class="nav-item"><a class="nav-link" href="{{ tag.Permalink }}">#{{ tag.Title }}</a></li>
+        {% endfor %}
+    </ul>
 
-<!-- TODO: implemente paginate (if possible without altering SuCoS/Liquid templates) -->
-{% assign sortedPages = page.RegularPages | sort: 'Date' | reverse %}
-{% for pageList in sortedPages %}
-    {{ pageList.Content }}
-{% endfor %}
+    {{ page.ContentPreRendered }}
+
+</article>

@@ -1,8 +1,0 @@
-<p>This namespace contains 4 type(s).</p>
-<h2 id="types">Types</h2>
-<ul>
-<li>🅲  <a href="./class-canvasrenderer">CanvasRenderer</a></li>
-<li>🅲 Pu <a href="./class-guiwindow">GuiWindow</a></li>
-<li>🆂 Pu <a href="./struct-queuefamilyindices">QueueFamilyIndices</a></li>
-<li>🆂  <a href="./struct-swapchainsupportdetails">SwapchainSupportDetails</a></li>
-</ul>

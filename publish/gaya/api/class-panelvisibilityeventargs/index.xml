@@ -1,8 +1,0 @@
-<ul>
-<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.panels">Gaya.Panels</a></li>
-<li><strong>Source File:</strong> PanelVisibilityEventArgs.cs</li>
-</ul>
-<p>Event arguments for panel visibility events</p>
-<h2 id="properties">Properties</h2>
-<h3 id="isvisible"><strong>IsVisible</strong></h3>
-<p get="">(<em>bool</em>) : Gets a value indicating whether the panel is visible</p>

@@ -1,9 +1,0 @@
-<ul>
-<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
-<li><strong>Source File:</strong> Flyout.cs</li>
-</ul>
-<h2 id="properties">Properties</h2>
-<h3 id="hoveredindex"><strong>HoveredIndex</strong></h3>
-<p>(<em>int</em>) { get; set } = <code>-1</code></p>
-<h3 id="submenus"><strong>Submenus</strong></h3>
-<p>(<em>Dictionary&lt;int, FlyoutState&gt;</em>) { get; set } = <code>new()</code></p>
