@@ -1,0 +1,24 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere.components.texteditor">Guinevere.Components.TextEditor</a></li>
+<li><strong>Source File:</strong> GuiTextEditor.cs</li>
+</ul>
+<p>Configuration for the text editor</p>
+<h2 id="properties">Properties</h2>
+<h3 id="showlinenumbers"><strong>ShowLineNumbers</strong></h3>
+<p>(<em>bool</em>) { get; set } = <code>true</code></p>
+<h3 id="linenumberwidth"><strong>LineNumberWidth</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>50f</code></p>
+<h3 id="lineheight"><strong>LineHeight</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>18f</code></p>
+<h3 id="characterwidth"><strong>CharacterWidth</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>8f</code></p>
+<h3 id="tabsize"><strong>TabSize</strong></h3>
+<p>(<em>int</em>) { get; set } = <code>4</code></p>
+<h3 id="syntaxhighlighting"><strong>SyntaxHighlighting</strong></h3>
+<p>(<em>bool</em>) { get; set } = <code>true</code></p>
+<h3 id="wordwrap"><strong>WordWrap</strong></h3>
+<p>(<em>bool</em>) { get; set } = <code>false</code></p>
+<h3 id="showwhitespace"><strong>ShowWhitespace</strong></h3>
+<p>(<em>bool</em>) { get; set } = <code>false</code></p>
+<h3 id="maxundosteps"><strong>MaxUndoSteps</strong></h3>
+<p>(<em>int</em>) { get; set } = <code>100</code></p>

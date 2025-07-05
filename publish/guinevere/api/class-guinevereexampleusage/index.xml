@@ -1,0 +1,9 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere.examples">Guinevere.Examples</a></li>
+<li><strong>Source File:</strong> Integration.cs</li>
+</ul>
+<p>Example of how to use the integrated Guinevere system in a main application</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="runexample">RunExample</h3>
+<pre><code class="language-csharp">public static void RunExample()
+</code></pre>

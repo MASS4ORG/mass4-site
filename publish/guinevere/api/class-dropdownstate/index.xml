@@ -1,0 +1,11 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> Dropdown.cs</li>
+</ul>
+<h2 id="properties">Properties</h2>
+<h3 id="isopen"><strong>IsOpen</strong></h3>
+<p>(<em>bool</em>) { get; set }</p>
+<h3 id="selectedindex"><strong>SelectedIndex</strong></h3>
+<p>(<em>int</em>) { get; set } = <code>-1</code></p>
+<h3 id="hoveredindex"><strong>HoveredIndex</strong></h3>
+<p>(<em>int</em>) { get; set } = <code>-1</code></p>

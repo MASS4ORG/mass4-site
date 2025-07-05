@@ -1,0 +1,326 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> Easing.cs</li>
+</ul>
+<p>Provides a collection of static methods to compute easing functions commonly used in animation and interpolation. Easing functions modify the progression of a value over time to achieve various motion effects such as acceleration, deceleration, and elastic behaviors.</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="linear">Linear</h3>
+<pre><code class="language-csharp">public static float Linear(float t)
+</code></pre>
+<p>Linear interpolation with no easing.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>): Normalized time (0 to 1)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<ul>
+<li>Linear interpolated value</li>
+</ul>
+<h3 id="easein">EaseIn</h3>
+<pre><code class="language-csharp">public static float EaseIn(float t)
+</code></pre>
+<p>Quadratic ease-in: Accelerates from zero velocity.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="easeout">EaseOut</h3>
+<pre><code class="language-csharp">public static float EaseOut(float t)
+</code></pre>
+<p>Quadratic ease-out: Decelerates to zero velocity.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="easeinout">EaseInOut</h3>
+<pre><code class="language-csharp">public static float EaseInOut(float t)
+</code></pre>
+<p>Quadratic ease-in-out: Accelerates until halfway, then decelerates.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="cubicin">CubicIn</h3>
+<pre><code class="language-csharp">public static float CubicIn(float t)
+</code></pre>
+<p>Cubic ease-in: More pronounced acceleration from zero velocity.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="cubicout">CubicOut</h3>
+<pre><code class="language-csharp">public static float CubicOut(float t)
+</code></pre>
+<p>Cubic ease-out: More pronounced deceleration to zero velocity.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="cubicinout">CubicInOut</h3>
+<pre><code class="language-csharp">public static float CubicInOut(float t)
+</code></pre>
+<p>Cubic ease-in-out: Stronger acceleration until halfway, then stronger deceleration.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="quartin">QuartIn</h3>
+<pre><code class="language-csharp">public static float QuartIn(float t)
+</code></pre>
+<p>Quartic ease-in: Very pronounced acceleration from zero velocity.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="quartout">QuartOut</h3>
+<pre><code class="language-csharp">public static float QuartOut(float t)
+</code></pre>
+<p>Quartic ease-out: Very pronounced deceleration to zero velocity.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="quartinout">QuartInOut</h3>
+<pre><code class="language-csharp">public static float QuartInOut(float t)
+</code></pre>
+<p>Quartic ease-in-out: Dramatic acceleration until halfway, then dramatic deceleration.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="quintin">QuintIn</h3>
+<pre><code class="language-csharp">public static float QuintIn(float t)
+</code></pre>
+<p>Quintic ease-in: Extremely pronounced acceleration from zero velocity.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="quintout">QuintOut</h3>
+<pre><code class="language-csharp">public static float QuintOut(float t)
+</code></pre>
+<p>Quintic ease-out: Extremely pronounced deceleration to zero velocity.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="quintinout">QuintInOut</h3>
+<pre><code class="language-csharp">public static float QuintInOut(float t)
+</code></pre>
+<p>Quintic ease-in-out: Extreme acceleration until halfway, then extreme deceleration.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="sinein">SineIn</h3>
+<pre><code class="language-csharp">public static float SineIn(float t)
+</code></pre>
+<p>Sinusoidal ease-in: Gradual acceleration using a sine curve.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="sineout">SineOut</h3>
+<pre><code class="language-csharp">public static float SineOut(float t)
+</code></pre>
+<p>Sinusoidal ease-out: Gradual deceleration using a sine curve.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="sineinout">SineInOut</h3>
+<pre><code class="language-csharp">public static float SineInOut(float t)
+</code></pre>
+<p>Sinusoidal ease-in-out: Gentle acceleration and deceleration based on a sine curve.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="expoin">ExpoIn</h3>
+<pre><code class="language-csharp">public static float ExpoIn(float t)
+</code></pre>
+<p>Exponential ease-in: Acceleration with an exponential growth curve.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="expoout">ExpoOut</h3>
+<pre><code class="language-csharp">public static float ExpoOut(float t)
+</code></pre>
+<p>Exponential ease-out: Deceleration with an exponential decay curve.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="expoinout">ExpoInOut</h3>
+<pre><code class="language-csharp">public static float ExpoInOut(float t)
+</code></pre>
+<p>Exponential ease-in-out: Exponential acceleration until halfway, then exponential deceleration.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="circin">CircIn</h3>
+<pre><code class="language-csharp">public static float CircIn(float t)
+</code></pre>
+<p>Circular ease-in: Acceleration following a quarter-circle curve.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="circout">CircOut</h3>
+<pre><code class="language-csharp">public static float CircOut(float t)
+</code></pre>
+<p>Circular ease-out: Deceleration following a quarter-circle curve.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="circinout">CircInOut</h3>
+<pre><code class="language-csharp">public static float CircInOut(float t)
+</code></pre>
+<p>Circular ease-in-out: Acceleration and deceleration following a semicircle curve.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="backin">BackIn</h3>
+<pre><code class="language-csharp">public static float BackIn(float t)
+</code></pre>
+<p>Back ease-in: Slight overshoot backward before accelerating forward.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="backout">BackOut</h3>
+<pre><code class="language-csharp">public static float BackOut(float t)
+</code></pre>
+<p>Back ease-out: Acceleration followed by a slight overshoot beyond the final position.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="backinout">BackInOut</h3>
+<pre><code class="language-csharp">public static float BackInOut(float t)
+</code></pre>
+<p>Back ease-in-out: Slight overshoot in both directions.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="elasticin">ElasticIn</h3>
+<pre><code class="language-csharp">public static float ElasticIn(float t)
+</code></pre>
+<p>Elastic ease-in: Begins slowly and then accelerates with a spring-like effect.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="elasticout">ElasticOut</h3>
+<pre><code class="language-csharp">public static float ElasticOut(float t)
+</code></pre>
+<p>Elastic ease-out: Overshoots the destination and then oscillates to the final position.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="elasticinout">ElasticInOut</h3>
+<pre><code class="language-csharp">public static float ElasticInOut(float t)
+</code></pre>
+<p>Elastic ease-in-out: Oscillating effect at both the beginning and the end.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="bounceout">BounceOut</h3>
+<pre><code class="language-csharp">public static float BounceOut(float t)
+</code></pre>
+<p>Bounce ease-out: Bounces multiple times near the destination before settling.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="bouncein">BounceIn</h3>
+<pre><code class="language-csharp">public static float BounceIn(float t)
+</code></pre>
+<p>Bounce ease-in: Bounces multiple times at the start before accelerating.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="bounceinout">BounceInOut</h3>
+<pre><code class="language-csharp">public static float BounceInOut(float t)
+</code></pre>
+<p>Bounce ease-in-out: Bounces at both the beginning and end of the animation.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="step">Step</h3>
+<pre><code class="language-csharp">public static float Step(float t)
+</code></pre>
+<p>Steps instantly from 0 to 1 at the midpoint. Useful for binary state transitions.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="smoothstep">SmoothStep</h3>
+<pre><code class="language-csharp">public static float SmoothStep(float t)
+</code></pre>
+<p>Smoothstep: Smooth Hermite interpolation. Provides a smoother transition than EaseInOut with minimal computation.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="smootherstep">SmootherStep</h3>
+<pre><code class="language-csharp">public static float SmootherStep(float t)
+</code></pre>
+<p>SmootherStep: Even smoother Hermite interpolation. Higher degree polynomial for more continuous derivatives.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="spring">Spring</h3>
+<pre><code class="language-csharp">public static float Spring(float t, float dampingRatio = 0.5f, float angularFrequency = 20.0f)
+</code></pre>
+<p>Spring function with configurable elasticity. Returns values that can exceed the 0-1 range during oscillation.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>t</code> (<em>float</em>): Normalized time (0 to 1)</li>
+<li><code>dampingRatio</code> (<em>float</em>): Controls oscillation damping (0.1 = lots of oscillation, 1.0 = no oscillation) (Default: <code>0.5f</code>)</li>
+<li><code>angularFrequency</code> (<em>float</em>): Controls speed of oscillation (default = 20) (Default: <code>20.0f</code>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>

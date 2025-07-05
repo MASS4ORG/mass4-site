@@ -1,0 +1,9 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere.nuke">Guinevere.Nuke</a></li>
+<li><strong>Source File:</strong> ConfigurationPreset.cs</li>
+</ul>
+<h2 id="properties">Properties</h2>
+<h3 id="debug"><strong>Debug</strong></h3>
+<p>(<em>ConfigurationPreset</em>) { get; set } = <code>new() { Value = nameof(Debug) }</code></p>
+<h3 id="release"><strong>Release</strong></h3>
+<p>(<em>ConfigurationPreset</em>) { get; set } = <code>new() { Value = nameof(Release) }</code></p>

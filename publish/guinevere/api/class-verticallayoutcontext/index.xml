@@ -1,0 +1,13 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> LayoutNode.Calculation.cs</li>
+</ul>
+<h2 id="properties">Properties</h2>
+<h3 id="availableheight"><strong>AvailableHeight</strong></h3>
+<p>(<em>float</em>) { get; set }</p>
+<h3 id="totalgap"><strong>TotalGap</strong></h3>
+<p>(<em>float</em>) { get; set }</p>
+<h3 id="expandingchildren"><strong>ExpandingChildren</strong></h3>
+<p>(<em>List<LayoutNode></em>) { get; set } = <code>new()</code></p>
+<h3 id="totalexpandpercentage"><strong>TotalExpandPercentage</strong></h3>
+<p>(<em>float</em>) { get; set }</p>

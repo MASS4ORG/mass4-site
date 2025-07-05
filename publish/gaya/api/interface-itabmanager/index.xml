@@ -1,0 +1,91 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.managers">Gaya.Managers</a></li>
+<li><strong>Source File:</strong> ITabManager.cs</li>
+</ul>
+<p>Interface for managing editor tabs</p>
+<h2 id="properties">Properties</h2>
+<h3 id="opentabs"><strong>OpenTabs</strong></h3>
+<p get="">(<em>IReadOnlyList<TabInfo></em>) : Gets the list of currently open tabs</p>
+<h3 id="activetab"><strong>ActiveTab</strong></h3>
+<p>(<em>int</em>) { get; set }: Gets or sets the index of the active tab</p>
+<h3 id="currenttab"><strong>CurrentTab</strong></h3>
+<p get="">(<em>TabInfo?</em>) : Gets the currently active tab, or null if no tabs are open</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="openfile">OpenFile</h3>
+<pre><code class="language-csharp"> void OpenFile(string filePath)
+</code></pre>
+<p>Opens a file in a new tab</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>filePath</code> (<em>string</em>): The path to the file to open</li>
+</ul>
+<h3 id="createnewfile">CreateNewFile</h3>
+<pre><code class="language-csharp"> void CreateNewFile()
+</code></pre>
+<p>Creates a new empty file tab</p>
+<h3 id="tryclosetab">TryCloseTab</h3>
+<pre><code class="language-csharp"> bool TryCloseTab(int index)
+</code></pre>
+<p>Attempts to close the tab at the specified index with proper handling of unsaved changes</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>index</code> (<em>int</em>): The index of the tab to close</li>
+</ul>
+<p><strong>Returns:</strong> <code>bool</code></p>
+<ul>
+<li>True if the tab was closed, false if the operation was cancelled</li>
+</ul>
+<h3 id="savecurrenttab">SaveCurrentTab</h3>
+<pre><code class="language-csharp"> void SaveCurrentTab()
+</code></pre>
+<p>Saves the currently active tab</p>
+<h3 id="savetab">SaveTab</h3>
+<pre><code class="language-csharp"> void SaveTab(int index)
+</code></pre>
+<p>Saves the tab at the specified index</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>index</code> (<em>int</em>): The index of the tab to save</li>
+</ul>
+<h3 id="savetabas">SaveTabAs</h3>
+<pre><code class="language-csharp"> void SaveTabAs(int index, string filePath)
+</code></pre>
+<p>Saves the tab at the specified index with a new file path</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>index</code> (<em>int</em>): The index of the tab to save</li>
+<li><code>filePath</code> (<em>string</em>): The new file path to save to</li>
+</ul>
+<h3 id="saveallmodifiedtabs">SaveAllModifiedTabs</h3>
+<pre><code class="language-csharp"> bool SaveAllModifiedTabs()
+</code></pre>
+<p>Prompts to save all modified tabs</p>
+<p><strong>Returns:</strong> <code>bool</code></p>
+<ul>
+<li>True if all tabs were saved or user chose to discard, false if cancelled</li>
+</ul>
+<h3 id="hasunsavedchanges">HasUnsavedChanges</h3>
+<pre><code class="language-csharp"> bool HasUnsavedChanges()
+</code></pre>
+<p>Determines whether any open tabs have unsaved changes</p>
+<p><strong>Returns:</strong> <code>bool</code></p>
+<ul>
+<li>True if any tabs have unsaved changes, false otherwise</li>
+</ul>
+<h3 id="updatetabcontent">UpdateTabContent</h3>
+<pre><code class="language-csharp"> void UpdateTabContent(int index, string content)
+</code></pre>
+<p>Updates the content of the tab at the specified index</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>index</code> (<em>int</em>): The index of the tab to update</li>
+<li><code>content</code> (<em>string</em>): The new content for the tab</li>
+</ul>
+<h3 id="hasactivetabs">HasActiveTabs</h3>
+<pre><code class="language-csharp"> bool HasActiveTabs()
+</code></pre>
+<p>Determines whether there are any active tabs</p>
+<p><strong>Returns:</strong> <code>bool</code></p>
+<ul>
+<li>True if there are active tabs, false otherwise</li>
+</ul>

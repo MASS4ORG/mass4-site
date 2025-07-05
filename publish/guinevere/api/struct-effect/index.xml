@@ -1,0 +1,11 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-sample_73_pangui_musicapp">Sample_73_PanGui_MusicApp</a></li>
+<li><strong>Source File:</strong> Effect.cs</li>
+</ul>
+<h2 id="fields">Fields</h2>
+<h3 id="ison-bool"><strong>IsOn</strong> (<em>bool</em>)</h3>
+<h3 id="name-string"><strong>Name</strong> (<em>string</em>)</h3>
+<h3 id="type-string"><strong>Type</strong> (<em>string</em>)</h3>
+<h3 id="knobvalues-float"><strong>KnobValues</strong> (<em>float[]</em>)</h3>
+<h3 id="dry-float"><strong>Dry</strong> (<em>float</em>)</h3>
+<h3 id="wet-float"><strong>Wet</strong> (<em>float</em>)</h3>

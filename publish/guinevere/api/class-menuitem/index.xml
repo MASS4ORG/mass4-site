@@ -1,0 +1,24 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere.components.menu">Guinevere.Components.Menu</a></li>
+<li><strong>Source File:</strong> HierarchicalMenu.cs</li>
+</ul>
+<p>Represents a menu item in the hierarchical menu system</p>
+<h2 id="properties">Properties</h2>
+<h3 id="id"><strong>Id</strong></h3>
+<p>(<em>string</em>) { get; set } = <code>string.Empty</code></p>
+<h3 id="text"><strong>Text</strong></h3>
+<p>(<em>string</em>) { get; set } = <code>string.Empty</code></p>
+<h3 id="icon"><strong>Icon</strong></h3>
+<p>(<em>string</em>) { get; set } = <code>string.Empty</code></p>
+<h3 id="action"><strong>Action</strong></h3>
+<p>(<em>string?</em>) { get; set }</p>
+<h3 id="children"><strong>Children</strong></h3>
+<p>(<em>List<MenuItem></em>) { get; set } = <code>new()</code></p>
+<h3 id="isenabled"><strong>IsEnabled</strong></h3>
+<p>(<em>bool</em>) { get; set } = <code>true</code></p>
+<h3 id="isseparator"><strong>IsSeparator</strong></h3>
+<p>(<em>bool</em>) { get; set } = <code>false</code></p>
+<h3 id="shortcut"><strong>Shortcut</strong></h3>
+<p>(<em>string?</em>) { get; set }</p>
+<h3 id="haschildren"><strong>HasChildren</strong></h3>
+<p>(<em>bool</em>)</p>

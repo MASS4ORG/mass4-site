@@ -1,0 +1,26 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya">Gaya</a></li>
+<li><strong>Source File:</strong> MainWindow.cs</li>
+</ul>
+<p>Main window that uses the panel system for dynamic layout management</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="setfolder">SetFolder</h3>
+<pre><code class="language-csharp">public void SetFolder(string folderPath)
+</code></pre>
+<p>Sets the current folder and updates the file explorer</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>folderPath</code> (<em>string</em>): The path to the folder to set as current</li>
+</ul>
+<h3 id="openfile">OpenFile</h3>
+<pre><code class="language-csharp">public void OpenFile(string filePath)
+</code></pre>
+<p>Opens a file in the editor</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>filePath</code> (<em>string</em>): The path to the file to open</li>
+</ul>
+<h3 id="rungui">RunGui</h3>
+<pre><code class="language-csharp">public void RunGui()
+</code></pre>
+<p>Runs the main GUI rendering loop</p>

@@ -1,0 +1,210 @@
+<div class="gaya-hero">
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<div class="gaya-logo"><p>G</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h1 id="gaya">Gaya</h1>
+<p>The ultimate text editor for developers. Clean, fast, and endlessly customizable with precision-crafted features.</p>
+<div class="d-flex"><p><a href="/gaya/download" class="btn btn-lg gaya-btn" :="">Download Now</a>
+<a href="https://github.com/mass4/gaya" class="btn btn-lg btn-outline-light" :="">View on GitHub</a></p>
+</div>
+<div>
+<div class="col-lg-6">
+<div class="gaya-editor-preview">
+<div class="editor-header">
+<div class="editor-tabs">
+<div class="tab"><p>Main.cs</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab"><p>Config.json</p>
+</div>
+<div class="tab"><p>README.md</p>
+</div>
+<div></div>
+<div class="editor-content">
+<div class="line-numbers"><p>1
+2
+3
+4
+5
+6
+7
+8</p>
+</div>
+</div>
+<div class="code-content">
+<pre><code class="language-csharp">using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine(&quot;Hello, Gaya!&quot;);
+    }
+}
+
+</code></pre>
+</div>
+<div></div>
+<div></div>
+<div></div>
+<div class="gaya-section">
+<div class="container">
+<div class="row">
+<div class="col-12"><p>Precision in Every Detail</p>
+<p>Crafted for developers who demand perfection</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="feature-grid">
+<div class="gaya-card">
+<div class="text-center"><p><i class="bi bi-lightning" style="font-size: 3rem; color: #333;"></i></p>
+</div>
+</div>
+</div>
+</div>
+<p>Lightning Fast</p>
+<p>Native performance with instant startup. Handle massive files without breaking a sweat.</p>
+<div>
+<div class="gaya-card">
+<div class="text-center"><p><i class="bi bi-palette" style="font-size: 3rem; color: #333;"></i></p>
+</div>
+</div>
+</div>
+<p>Infinitely Customizable</p>
+<p>Every aspect can be tailored to your workflow. From keybindings to color schemes.</p>
+<div>
+<div class="gaya-card">
+<div class="text-center"><p><i class="bi bi-cpu" style="font-size: 3rem; color: #333;"></i></p>
+</div>
+</div>
+</div>
+<p>Intelligent Features</p>
+<p>Smart autocomplete, refactoring tools, and AI-powered code suggestions.</p>
+<div>
+<div class="gaya-card">
+<div class="text-center"><p><i class="bi bi-plugin" style="font-size: 3rem; color: #333;"></i></p>
+</div>
+</div>
+</div>
+<p>Extensible Platform</p>
+<p>Rich plugin ecosystem including Turian game engine integration.</p>
+<div></div>
+<div></div>
+<div class="gaya-section">
+<div class="container">
+<div class="row">
+<div class="col-12"><p>Built for Professionals</p>
+<p>Every feature designed with purpose</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="row">
+<div class="col-md-6"><p>Multi-Language Support</p>
+<pre><code>C#, C++, Python, JavaScript, TypeScript
+
+Syntax highlighting for 200+ languages
+
+Language servers for intelligent features
+
+Custom language definitions
+:::
+</code></pre>
+<div class="col-md-6"><p>Advanced Editing</p>
+<pre><code>Multiple cursors and selections
+
+Powerful find and replace with regex
+
+Code folding and minimap
+
+Vim and Emacs keybinding modes
+:::
+</code></pre>
+<div class="col-md-6"><p>Project Management</p>
+<pre><code>Integrated file explorer
+
+Git integration with visual diff
+
+Project-wide search and replace
+
+Task runner and build system
+:::
+</code></pre>
+<div class="col-md-6"><p>Developer Tools</p>
+<pre><code>Integrated terminal and debugger
+
+Code analysis and linting
+
+Snippet management
+
+Live preview for web development
+:::
+:::
+:::
+:::
+</code></pre>
+<div class="gaya-section">
+<div class="container">
+<div class="row">
+<div class="col-12"><p>Get Gaya</p>
+<p>Available for all major platforms</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="row">
+<div class="col-lg-8">
+<div class="gaya-card">
+<div class="row">
+<div class="col-md-4"><p><i class="bi bi-windows" style="font-size: 3rem; color: #333;"></i>
+Windows</p>
+<p class="btn gaya-btn" :="">Download</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4"><p><i class="bi bi-apple" style="font-size: 3rem; color: #333;"></i>
+macOS</p>
+<p class="btn gaya-btn" :="">Download</p>
+</div>
+<div class="col-md-4"><p><i class="bi bi-ubuntu" style="font-size: 3rem; color: #333;"></i>
+Linux</p>
+<p class="btn gaya-btn" :="">Download</p>
+</div>
+<div>
+<div class="text-center"><p>Version 1.0.0 • Released Today • Free and Open Source</p>
+</div>
+</div>
+<div></div>
+<div></div>
+<div>
+<div class="container">
+<div class="row">
+<div class="col-12"><p>{{ content }}</p>
+</div>
+</div>
+</div>
+</div>
+<div></div>

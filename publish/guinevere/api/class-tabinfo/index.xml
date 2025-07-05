@@ -1,0 +1,17 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> TabInfo.cs</li>
+</ul>
+<h2 id="properties">Properties</h2>
+<h3 id="title"><strong>Title</strong></h3>
+<p>(<em>string</em>) { get; set } = <code>&quot;&quot;</code></p>
+<h3 id="enabled"><strong>Enabled</strong></h3>
+<p>(<em>bool</em>) { get; set } = <code>true</code></p>
+<h3 id="closable"><strong>Closable</strong></h3>
+<p>(<em>bool</em>) { get; set }</p>
+<h3 id="content"><strong>Content</strong></h3>
+<p>(<em>Action?</em>) { get; set }</p>
+<h3 id="backgroundcolor"><strong>BackgroundColor</strong></h3>
+<p>(<em>Color?</em>) { get; set }</p>
+<h3 id="textcolor"><strong>TextColor</strong></h3>
+<p>(<em>Color?</em>) { get; set }</p>

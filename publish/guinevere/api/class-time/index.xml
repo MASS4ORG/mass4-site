@@ -1,0 +1,25 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> Time.cs</li>
+</ul>
+<p>Provides time measurement and frame rate calculation utilities for game loops.</p>
+<h2 id="properties">Properties</h2>
+<h3 id="deltatime"><strong>DeltaTime</strong></h3>
+<p>(<em>float</em>) { get; set }: Gets the time in seconds that elapsed since the last frame update. This value is affected by <code>TimeScale</code>.</p>
+<h3 id="unscaledelapsed"><strong>UnscaledElapsed</strong></h3>
+<p>(<em>float</em>) { get; set }: Gets the total time in seconds elapsed since the application's start. This is the real (unscaled) time and unaffected by <code>TimeScale</code>.</p>
+<h3 id="elapsed"><strong>Elapsed</strong></h3>
+<p>(<em>float</em>) { get; set }: Gets the total scaled time in seconds since the Time instance was created. This value is affected by <code>TimeScale</code>.</p>
+<h3 id="timescale"><strong>TimeScale</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>1f</code>: Gets or sets the scale at which time progresses. 1.0 is normal speed, 0.5 is half speed, 2.0 is double speed.</p>
+<h3 id="frames"><strong>Frames</strong></h3>
+<p>(<em>ulong</em>) { get; set }: Gets the total number of frames that have been processed since creation.</p>
+<h3 id="fps"><strong>Fps</strong></h3>
+<p>(<em>float</em>): Gets the instantaneous frames per second (FPS) based on the last frame's delta time. Returns 0 if delta time is 0 (to avoid division by zero).</p>
+<h3 id="smoothfps"><strong>SmoothFps</strong></h3>
+<p>(<em>float</em>) { get; set }: Gets the smoothed frames per second (FPS) value, updated every second. This provides a more stable FPS reading than the instantaneous <code>Fps</code> value.</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="update">Update</h3>
+<pre><code class="language-csharp">public void Update()
+</code></pre>
+<p>Updates the time measurements. Called once per frame.</p>

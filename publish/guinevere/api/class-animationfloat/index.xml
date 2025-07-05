@@ -1,0 +1,37 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> AnimationFloat.cs</li>
+</ul>
+<p>Represents an animated floating-point value that can smoothly transition between states using easing functions over time.</p>
+<h2 id="properties">Properties</h2>
+<h3 id="targetvalue"><strong>TargetValue</strong></h3>
+<p>(<em>float</em>): Gets the target value that the animation is moving towards.</p>
+<h3 id="isanimating"><strong>IsAnimating</strong></h3>
+<p>(<em>bool</em>): Gets a value indicating whether the animation is currently running.</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="getvalue">GetValue</h3>
+<pre><code class="language-csharp">public float GetValue()
+</code></pre>
+<p>Gets the current animated value, automatically updating based on elapsed time.</p>
+<p><strong>Returns:</strong> <code>float</code></p>
+<ul>
+<li>The current interpolated value based on the animation progress.</li>
+</ul>
+<h3 id="animateto">AnimateTo</h3>
+<pre><code class="language-csharp">public void AnimateTo(float targetValue, float duration, Func&lt;float, float&gt; easingFunction)
+</code></pre>
+<p>Starts an animation to the specified target value.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>targetValue</code> (<em>float</em>): The target value to animate to.</li>
+<li><code>duration</code> (<em>float</em>): The duration of the animation in seconds.</li>
+<li><code>easingFunction</code> (<em>Func&lt;float, float&gt;</em>): The easing function to use for the animation.</li>
+</ul>
+<h3 id="setvalue">SetValue</h3>
+<pre><code class="language-csharp">public void SetValue(float value)
+</code></pre>
+<p>Immediately sets the value without animation.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>value</code> (<em>float</em>): The value to set.</li>
+</ul>

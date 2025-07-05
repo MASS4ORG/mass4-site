@@ -1,0 +1,22 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> Corner.cs</li>
+</ul>
+<p>Represents the corners of a shape as a set of flags, allowing multiple corners to be specified.</p>
+<h3 id="remarks">Remarks</h3>
+<p>This enum is typically used to define which corners of a shape are affected by transformations such as rounding or other modifications. The individual flag values can be combined using bitwise operations to specify multiple corners.</p>
+<h2 id="enum-values">Enum Values</h2>
+<ul>
+<li><strong>None</strong> = <code>0</code></li>
+<li><strong>TopLeft</strong> = <code>1 &lt;&lt; 0</code></li>
+<li><strong>TopRight</strong> = <code>1 &lt;&lt; 1</code></li>
+<li><strong>BottomLeft</strong> = <code>1 &lt;&lt; 2</code></li>
+<li><strong>BottomRight</strong> = <code>1 &lt;&lt; 3</code></li>
+<li><strong>Top</strong> = <code>TopLeft | TopRight</code></li>
+<li><strong>Bottom</strong> = <code>BottomLeft | BottomRight</code></li>
+<li><strong>Left</strong> = <code>TopLeft | BottomLeft</code></li>
+<li><strong>Right</strong> = <code>BottomRight | TopRight</code></li>
+<li><strong>BottomRightAndTopLeft</strong> = <code>BottomRight | TopLeft</code></li>
+<li><strong>BottomLeftAndTopRight</strong> = <code>BottomLeft | TopRight</code></li>
+<li><strong>All</strong> = <code>TopLeft | TopRight | BottomLeft | BottomRight</code></li>
+</ul>

@@ -1,0 +1,20 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.models">Gaya.Models</a></li>
+<li><strong>Source File:</strong> PanelLayout.cs</li>
+</ul>
+<p>Represents the layout configuration for application panels</p>
+<h2 id="properties">Properties</h2>
+<h3 id="panelbuttonswidth"><strong>PanelButtonsWidth</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>25f</code>: Gets or sets the width of panel buttons</p>
+<h3 id="leftpanelwidth"><strong>LeftPanelWidth</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>250f</code>: Gets or sets the width of the left panel</p>
+<h3 id="rightpanelwidth"><strong>RightPanelWidth</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>300f</code>: Gets or sets the width of the right panel</p>
+<h3 id="bottompanelheight"><strong>BottomPanelHeight</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>200f</code>: Gets or sets the height of the bottom panel</p>
+<h3 id="showfileexplorer"><strong>ShowFileExplorer</strong></h3>
+<p>(<em>bool</em>) { get; set } = <code>true</code>: Gets or sets a value indicating whether the file explorer is visible</p>
+<h3 id="showgitpanel"><strong>ShowGitPanel</strong></h3>
+<p>(<em>bool</em>) { get; set } = <code>true</code>: Gets or sets a value indicating whether the Git panel is visible</p>
+<h3 id="showconsole"><strong>ShowConsole</strong></h3>
+<p>(<em>bool</em>) { get; set } = <code>true</code>: Gets or sets a value indicating whether the console is visible</p>

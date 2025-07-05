@@ -1,0 +1,31 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> ShapePos.cs</li>
+</ul>
+<p>Represents a shape with positional and potentially rounded rectangle configurations. This class extends the functionality of the <code>Shape</code> class.</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="rectangle">Rectangle</h3>
+<pre><code class="language-csharp">public static ShapePos Rectangle(Rect rect)
+</code></pre>
+<p>Creates a rectangle shape based on the specified rectangular dimensions.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>rect</code> (<em>Rect</em>): The dimensions of the rectangle defined by the <code>Rect</code> object.</li>
+</ul>
+<p><strong>Returns:</strong> <code>ShapePos</code></p>
+<ul>
+<li>A new instance of <code>ShapePos</code> representing the rectangular shape.</li>
+</ul>
+<h3 id="rectanglerounded">RectangleRounded</h3>
+<pre><code class="language-csharp">public static ShapePos RectangleRounded(LayoutNode node, float radius)
+</code></pre>
+<p>Creates a rounded rectangle shape with the specified additional height and corner radius.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>node</code> (<em>LayoutNode</em>): The additional height for the shape. Can be a float, int, or other valid type convertible to height.</li>
+<li><code>radius</code> (<em>float</em>): The corner radius to apply to the rectangle.</li>
+</ul>
+<p><strong>Returns:</strong> <code>ShapePos</code></p>
+<ul>
+<li>A new instance of <code>ShapePos</code> representing the rounded rectangle shape.</li>
+</ul>

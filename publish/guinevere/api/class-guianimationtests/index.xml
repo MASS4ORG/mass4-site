@@ -1,0 +1,44 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere.tests.animation">Guinevere.Tests.Animation</a></li>
+<li><strong>Source File:</strong> GuiAnimationTests.cs</li>
+</ul>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="getanimationfloat_returnsnewinstance">GetAnimationFloat_ReturnsNewInstance</h3>
+<pre><code class="language-csharp">public void GetAnimationFloat_ReturnsNewInstance()
+</code></pre>
+<h3 id="getanimationfloat_defaultvalue_returnszero">GetAnimationFloat_DefaultValue_ReturnsZero</h3>
+<pre><code class="language-csharp">public void GetAnimationFloat_DefaultValue_ReturnsZero()
+</code></pre>
+<h3 id="animatebool01_samelocation_returnssameanimation">AnimateBool01_SameLocation_ReturnsSameAnimation</h3>
+<pre><code class="language-csharp">public void AnimateBool01_SameLocation_ReturnsSameAnimation()
+</code></pre>
+<h3 id="animatebool01_initialstate_returnstargetvalue">AnimateBool01_InitialState_ReturnsTargetValue</h3>
+<pre><code class="language-csharp">public void AnimateBool01_InitialState_ReturnsTargetValue()
+</code></pre>
+<h3 id="animatebool01_statechange_triggersanimation">AnimateBool01_StateChange_TriggersAnimation</h3>
+<pre><code class="language-csharp">public void AnimateBool01_StateChange_TriggersAnimation()
+</code></pre>
+<h3 id="activeanimationcount_reflectsnumberofmanagedanimations">ActiveAnimationCount_ReflectsNumberOfManagedAnimations</h3>
+<pre><code class="language-csharp">public void ActiveAnimationCount_ReflectsNumberOfManagedAnimations()
+</code></pre>
+<h3 id="runninganimationcount_reflectsactivelyanimatingcount">RunningAnimationCount_ReflectsActivelyAnimatingCount</h3>
+<pre><code class="language-csharp">public void RunningAnimationCount_ReflectsActivelyAnimatingCount()
+</code></pre>
+<h3 id="clearanimations_removesallanimations">ClearAnimations_RemovesAllAnimations</h3>
+<pre><code class="language-csharp">public void ClearAnimations_RemovesAllAnimations()
+</code></pre>
+<h3 id="animatebool01_differenteasingfunctions_workcorrectly">AnimateBool01_DifferentEasingFunctions_WorkCorrectly</h3>
+<pre><code class="language-csharp">public void AnimateBool01_DifferentEasingFunctions_WorkCorrectly()
+</code></pre>
+<h3 id="animatebool01_zeroduration_noanimation">AnimateBool01_ZeroDuration_NoAnimation</h3>
+<pre><code class="language-csharp">public void AnimateBool01_ZeroDuration_NoAnimation()
+</code></pre>
+<h3 id="animatebool01_callsfromdifferentlocations_createseparateanimations">AnimateBool01_CallsFromDifferentLocations_CreateSeparateAnimations</h3>
+<pre><code class="language-csharp">public void AnimateBool01_CallsFromDifferentLocations_CreateSeparateAnimations()
+</code></pre>
+<h3 id="animationsystem_integrationwithtimeupdates_workscorrectly">AnimationSystem_IntegrationWithTimeUpdates_WorksCorrectly</h3>
+<pre><code class="language-csharp">public void AnimationSystem_IntegrationWithTimeUpdates_WorksCorrectly()
+</code></pre>
+<h3 id="animationsystem_noanimationmanager_returnszerocounts">AnimationSystem_NoAnimationManager_ReturnsZeroCounts</h3>
+<pre><code class="language-csharp">public void AnimationSystem_NoAnimationManager_ReturnsZeroCounts()
+</code></pre>

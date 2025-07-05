@@ -1,0 +1,13 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> UnitType.cs</li>
+</ul>
+<p>Represents a type or mode of a unit, used to define how a particular value should be interpreted or scaled. UnitType allows for different measurement systems and interpretations, such as absolute pixel values, relative ratios, or percentages.</p>
+<h2 id="enum-values">Enum Values</h2>
+<ul>
+<li><strong>Auto</strong></li>
+<li><strong>Expand</strong></li>
+<li><strong>Ratio</strong></li>
+<li><strong>Percentage</strong></li>
+<li><strong>Pixels</strong></li>
+</ul>

@@ -1,0 +1,15 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> SpacingTypes.cs</li>
+</ul>
+<p>Specifies the different types of spacing that can be applied.</p>
+<h2 id="enum-values">Enum Values</h2>
+<ul>
+<li><strong>None</strong></li>
+<li><strong>SpaceBetween</strong></li>
+<li><strong>SpaceAround</strong></li>
+<li><strong>SpaceEvenly</strong></li>
+<li><strong>Start</strong></li>
+<li><strong>Center</strong></li>
+<li><strong>End</strong></li>
+</ul>

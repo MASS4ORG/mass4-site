@@ -1,0 +1,24 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.components.menu">Gaya.Components.Menu</a></li>
+<li><strong>Source File:</strong> MenuConfig.cs</li>
+</ul>
+<p>Configuration for the hierarchical menu</p>
+<h2 id="properties">Properties</h2>
+<h3 id="menuwidth"><strong>MenuWidth</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>200f</code>: Gets or sets the width of the menu in pixels</p>
+<h3 id="itemheight"><strong>ItemHeight</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>24f</code>: Gets or sets the height of each menu item in pixels</p>
+<h3 id="separatorheight"><strong>SeparatorHeight</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>1f</code>: Gets or sets the height of separator lines in pixels</p>
+<h3 id="submenuoffset"><strong>SubmenuOffset</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>5f</code>: Gets or sets the offset for submenu positioning in pixels</p>
+<h3 id="iconsize"><strong>IconSize</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>16f</code>: Gets or sets the size of menu icons in pixels</p>
+<h3 id="padding"><strong>Padding</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>8f</code>: Gets or sets the internal padding of menu items in pixels</p>
+<h3 id="showicons"><strong>ShowIcons</strong></h3>
+<p>(<em>bool</em>) { get; set } = <code>true</code>: Gets or sets a value indicating whether icons should be displayed in the menu</p>
+<h3 id="showshortcuts"><strong>ShowShortcuts</strong></h3>
+<p>(<em>bool</em>) { get; set } = <code>true</code>: Gets or sets a value indicating whether keyboard shortcuts should be displayed in the menu</p>
+<h3 id="maxvisibleitems"><strong>MaxVisibleItems</strong></h3>
+<p>(<em>int</em>) { get; set } = <code>10</code>: Gets or sets the maximum number of items visible in the menu before scrolling</p>

@@ -1,0 +1,107 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.models">Gaya.Models</a></li>
+<li><strong>Source File:</strong> AppTheme.cs</li>
+</ul>
+<p>Represents the application theme with colors for different UI elements</p>
+<h2 id="fields">Fields</h2>
+<h3 id="dark-apptheme-new-apptheme"><strong>Dark</strong> (<em>AppTheme</em>) = `new AppTheme</h3>
+<pre><code>{
+    BackgroundColor = Color.FromArgb(30, 30, 30),
+    TopBarColor = Color.FromArgb(37, 37, 38),
+    PanelColor = Color.FromArgb(37, 37, 38),
+    EditorColor = Color.FromArgb(30, 30, 30),
+    TextColor = Color.FromArgb(204, 204, 204),
+    AccentColor = Color.FromArgb(0, 122, 204),
+    HoverColor = Color.FromArgb(50, 255, 255, 255),
+    BorderColor = Color.FromArgb(60, 60, 60),
+    HeaderColor = Color.FromArgb(45, 45, 45),
+    SecondaryTextColor = Color.FromArgb(150, 150, 150),
+    ErrorColor = Color.FromArgb(220, 50, 47),
+    WarningColor = Color.FromArgb(255, 193, 7),
+    SuccessColor = Color.FromArgb(40, 167, 69),
+    InfoColor = Color.FromArgb(23, 162, 184),
+    InputBackgroundColor = Color.FromArgb(40, 40, 40),
+    ButtonColor = Color.FromArgb(50, 50, 50),
+    ButtonHoverColor = Color.FromArgb(70, 70, 70),
+    TabBarColor = Color.FromArgb(37, 37, 38),
+    ActiveTabColor = Color.FromArgb(30, 30, 30),
+    InactiveTabColor = Color.FromArgb(45, 45, 45),
+    ActiveTabTextColor = Color.FromArgb(204, 204, 204),
+    InactiveTabTextColor = Color.FromArgb(150, 150, 150),
+    TabHoverColor = Color.FromArgb(55, 55, 55),
+    CloseButtonColor = Color.FromArgb(0, 0, 0, 0),
+    CloseButtonHoverColor = Color.FromArgb(220, 50, 47),
+    EditorBackgroundColor = Color.FromArgb(30, 30, 30),
+    SideBarColor = Color.FromArgb(37, 37, 38),
+    ActiveColor = Color.FromArgb(0, 122, 204),
+    ActiveTextColor = Color.FromArgb(255, 255, 255),
+    TooltipBackgroundColor = Color.FromArgb(45, 45, 48),
+    TooltipBorderColor = Color.FromArgb(60, 60, 60),
+    TooltipTextColor = Color.FromArgb(204, 204, 204)
+}`: Gets the default dark theme
+</code></pre>
+<h2 id="properties">Properties</h2>
+<h3 id="backgroundcolor"><strong>BackgroundColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the main background color</p>
+<h3 id="topbarcolor"><strong>TopBarColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the top bar color</p>
+<h3 id="panelcolor"><strong>PanelColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the panel background color</p>
+<h3 id="editorcolor"><strong>EditorColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the editor background color</p>
+<h3 id="textcolor"><strong>TextColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the primary text color</p>
+<h3 id="accentcolor"><strong>AccentColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the accent color for highlights and selections</p>
+<h3 id="hovercolor"><strong>HoverColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the hover effect color</p>
+<h3 id="bordercolor"><strong>BorderColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the border color</p>
+<h3 id="headercolor"><strong>HeaderColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the header background color</p>
+<h3 id="secondarytextcolor"><strong>SecondaryTextColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the secondary text color</p>
+<h3 id="errorcolor"><strong>ErrorColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the error indicator color</p>
+<h3 id="warningcolor"><strong>WarningColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the warning indicator color</p>
+<h3 id="successcolor"><strong>SuccessColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the success indicator color</p>
+<h3 id="infocolor"><strong>InfoColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the information indicator color</p>
+<h3 id="inputbackgroundcolor"><strong>InputBackgroundColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the input field background color</p>
+<h3 id="buttoncolor"><strong>ButtonColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the button background color</p>
+<h3 id="buttonhovercolor"><strong>ButtonHoverColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the button hover color</p>
+<h3 id="tabbarcolor"><strong>TabBarColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the tab bar background color</p>
+<h3 id="activetabcolor"><strong>ActiveTabColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the active tab background color</p>
+<h3 id="inactivetabcolor"><strong>InactiveTabColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the inactive tab background color</p>
+<h3 id="activetabtextcolor"><strong>ActiveTabTextColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the active tab text color</p>
+<h3 id="inactivetabtextcolor"><strong>InactiveTabTextColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the inactive tab text color</p>
+<h3 id="tabhovercolor"><strong>TabHoverColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the tab hover color</p>
+<h3 id="closebuttoncolor"><strong>CloseButtonColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the close button color</p>
+<h3 id="closebuttonhovercolor"><strong>CloseButtonHoverColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the close button hover color</p>
+<h3 id="editorbackgroundcolor"><strong>EditorBackgroundColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the editor background color</p>
+<h3 id="sidebarcolor"><strong>SideBarColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the side bar background color</p>
+<h3 id="activecolor"><strong>ActiveColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the active element color</p>
+<h3 id="activetextcolor"><strong>ActiveTextColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the active element text color</p>
+<h3 id="tooltipbackgroundcolor"><strong>TooltipBackgroundColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the tooltip background color</p>
+<h3 id="tooltipbordercolor"><strong>TooltipBorderColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the tooltip border color</p>
+<h3 id="tooltiptextcolor"><strong>TooltipTextColor</strong></h3>
+<p>(<em>Color</em>) { get; set }: Gets or sets the tooltip text color</p>

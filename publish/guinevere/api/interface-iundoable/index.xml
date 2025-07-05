@@ -1,0 +1,19 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere.core">Guinevere.Core</a></li>
+<li><strong>Source File:</strong> IGuiComponent.cs</li>
+</ul>
+<p>Interface for components that support undo/redo operations</p>
+<h2 id="properties">Properties</h2>
+<h3 id="canundo"><strong>CanUndo</strong></h3>
+<p get="">(<em>bool</em>) : Whether undo operation is available</p>
+<h3 id="canredo"><strong>CanRedo</strong></h3>
+<p get="">(<em>bool</em>) : Whether redo operation is available</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="undo">Undo</h3>
+<pre><code class="language-csharp"> void Undo()
+</code></pre>
+<p>Performs undo operation</p>
+<h3 id="redo">Redo</h3>
+<pre><code class="language-csharp"> void Redo()
+</code></pre>
+<p>Performs redo operation</p>

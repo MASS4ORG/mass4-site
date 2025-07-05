@@ -1,0 +1,9 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> LayoutNode.Calculation.cs</li>
+</ul>
+<h2 id="properties">Properties</h2>
+<h3 id="width"><strong>Width</strong></h3>
+<p>(<em>float</em>) { get; set }</p>
+<h3 id="height"><strong>Height</strong></h3>
+<p>(<em>float</em>) { get; set }</p>

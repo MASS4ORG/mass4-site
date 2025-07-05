@@ -1,0 +1,16 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.components.editor.input">Gaya.Components.Editor.Input</a></li>
+<li><strong>Source File:</strong> CursorDirection.cs</li>
+</ul>
+<p>Direction for cursor movement</p>
+<h2 id="enum-values">Enum Values</h2>
+<ul>
+<li><strong>Left</strong>: Move cursor left by one character</li>
+<li><strong>Right</strong>: Move cursor right by one character</li>
+<li><strong>Up</strong>: Move cursor up by one line</li>
+<li><strong>Down</strong>: Move cursor down by one line</li>
+<li><strong>LineStart</strong>: Move cursor to the beginning of the current line</li>
+<li><strong>LineEnd</strong>: Move cursor to the end of the current line</li>
+<li><strong>PageUp</strong>: Move cursor up by one page</li>
+<li><strong>PageDown</strong>: Move cursor down by one page</li>
+</ul>

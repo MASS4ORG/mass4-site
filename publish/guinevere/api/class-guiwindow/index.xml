@@ -1,0 +1,145 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere.opengl.opentk">Guinevere.OpenGL.OpenTK</a></li>
+<li><strong>Source File:</strong> GuiWindow.cs</li>
+</ul>
+<p>Represents a GUI window implementation using OpenTK for OpenGL rendering. Provides input handling, window management, and rendering capabilities for the Guinevere GUI framework.</p>
+<h2 id="properties">Properties</h2>
+<h3 id="mousedelta"><strong>MouseDelta</strong></h3>
+<p>(<em>Vector2</em>): Gets the mouse movement delta from the previous frame.</p>
+<h3 id="mouseposition"><strong>MousePosition</strong></h3>
+<p>(<em>Vector2</em>): Gets the current mouse position.</p>
+<h3 id="mousewheeldelta"><strong>MouseWheelDelta</strong></h3>
+<p>(<em>float</em>): Gets the mouse wheel scroll delta.</p>
+<h3 id="prevmouseposition"><strong>PrevMousePosition</strong></h3>
+<p>(<em>Vector2</em>): Gets the previous mouse position.</p>
+<h3 id="isanykeydown"><strong>IsAnyKeyDown</strong></h3>
+<p>(<em>bool</em>): Gets a value indicating whether any key is currently pressed.</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="rungui">RunGui</h3>
+<pre><code class="language-csharp">public void RunGui(Action draw)
+</code></pre>
+<p>Runs the GUI application with the specified draw callback.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>draw</code> (<em>Action</em>): The callback method that defines the GUI layout and rendering.</li>
+</ul>
+<h3 id="dispose">Dispose</h3>
+<pre><code class="language-csharp">public new void Dispose()
+</code></pre>
+<p>Releases all resources used by the GuiWindow.</p>
+<h3 id="getstringresource">GetStringResource</h3>
+<pre><code class="language-csharp">public static string GetStringResource(string resource)
+</code></pre>
+<p>Gets a string resource from the assembly's embedded resources.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>resource</code> (<em>string</em>): The name of the resource to retrieve.</li>
+</ul>
+<p><strong>Returns:</strong> <code>string</code></p>
+<ul>
+<li>The content of the resource as a string.</li>
+</ul>
+<h3 id="iskeypressed">IsKeyPressed</h3>
+<pre><code class="language-csharp">public bool IsKeyPressed(KeyboardKey keyboardKey)
+</code></pre>
+<p>Determines whether the specified key was just pressed this frame.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>keyboardKey</code> (<em>KeyboardKey</em>): The key to check.</li>
+</ul>
+<p><strong>Returns:</strong> <code>bool</code></p>
+<ul>
+<li>True if the key was just pressed; otherwise, false.</li>
+</ul>
+<h3 id="iskeydown">IsKeyDown</h3>
+<pre><code class="language-csharp">public bool IsKeyDown(KeyboardKey keyboardKey)
+</code></pre>
+<p>Determines whether the specified key is currently held down.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>keyboardKey</code> (<em>KeyboardKey</em>): The key to check.</li>
+</ul>
+<p><strong>Returns:</strong> <code>bool</code></p>
+<ul>
+<li>True if the key is held down; otherwise, false.</li>
+</ul>
+<h3 id="iskeyup">IsKeyUp</h3>
+<pre><code class="language-csharp">public bool IsKeyUp(KeyboardKey keyboardKey)
+</code></pre>
+<p>Determines whether the specified key is currently up (not pressed).</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>keyboardKey</code> (<em>KeyboardKey</em>): The key to check.</li>
+</ul>
+<p><strong>Returns:</strong> <code>bool</code></p>
+<ul>
+<li>True if the key is up; otherwise, false.</li>
+</ul>
+<h3 id="ismousebuttonpressed">IsMouseButtonPressed</h3>
+<pre><code class="language-csharp">public bool IsMouseButtonPressed(MouseButton button)
+</code></pre>
+<p>Determines whether the specified mouse button was just pressed this frame.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>button</code> (<em>MouseButton</em>): The mouse button to check.</li>
+</ul>
+<p><strong>Returns:</strong> <code>bool</code></p>
+<ul>
+<li>True if the button was just pressed; otherwise, false.</li>
+</ul>
+<h3 id="ismousebuttondown">IsMouseButtonDown</h3>
+<pre><code class="language-csharp">public bool IsMouseButtonDown(MouseButton button)
+</code></pre>
+<p>Determines whether the specified mouse button is currently held down.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>button</code> (<em>MouseButton</em>): The mouse button to check.</li>
+</ul>
+<p><strong>Returns:</strong> <code>bool</code></p>
+<ul>
+<li>True if the button is held down; otherwise, false.</li>
+</ul>
+<h3 id="ismousebuttonup">IsMouseButtonUp</h3>
+<pre><code class="language-csharp">public bool IsMouseButtonUp(MouseButton button)
+</code></pre>
+<p>Determines whether the specified mouse button is currently up (not pressed).</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>button</code> (<em>MouseButton</em>): The mouse button to check.</li>
+</ul>
+<p><strong>Returns:</strong> <code>bool</code></p>
+<ul>
+<li>True if the button is up; otherwise, false.</li>
+</ul>
+<h3 id="gettypedcharacters">GetTypedCharacters</h3>
+<pre><code class="language-csharp">public string GetTypedCharacters()
+</code></pre>
+<p>Gets all characters typed since the last call to this method.</p>
+<p><strong>Returns:</strong> <code>string</code></p>
+<ul>
+<li>A string containing all typed characters.</li>
+</ul>
+<h3 id="getclipboardtext">GetClipboardText</h3>
+<pre><code class="language-csharp">public unsafe string GetClipboardText()
+</code></pre>
+<p>Gets the current clipboard text content.</p>
+<p><strong>Returns:</strong> <code>string</code></p>
+<ul>
+<li>The clipboard text content, or an empty string if retrieval fails.</li>
+</ul>
+<h3 id="setclipboardtext">SetClipboardText</h3>
+<pre><code class="language-csharp">public unsafe void SetClipboardText(string text)
+</code></pre>
+<p>Sets the clipboard text content.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>text</code> (<em>string</em>): The text to set in the clipboard.</li>
+</ul>
+<h3 id="drawwindowtitlebar">DrawWindowTitlebar</h3>
+<pre><code class="language-csharp">public void DrawWindowTitlebar(bool show)
+</code></pre>
+<p>Shows or hides the window title bar.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>show</code> (<em>bool</em>): True to show the title bar; false to hide it.</li>
+</ul>

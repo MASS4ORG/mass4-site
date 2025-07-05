@@ -1,0 +1,8 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.panels">Gaya.Panels</a></li>
+<li><strong>Source File:</strong> PanelEventArgs.cs</li>
+</ul>
+<p>Event arguments for panel events</p>
+<h2 id="properties">Properties</h2>
+<h3 id="panel"><strong>Panel</strong></h3>
+<p get="">(<em>IPanel</em>) : Gets the panel associated with this event</p>

@@ -1,0 +1,28 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> ContextMenuBuilder.cs</li>
+</ul>
+<p>Helper class for building context menus</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="item">Item</h3>
+<pre><code class="language-csharp">public ContextMenuBuilder Item(string text, Action action, bool enabled = true)
+</code></pre>
+<p>Adds an item to the context menu with the specified text, action, and enabled state.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>text</code> (<em>string</em>): The displayed text of the menu item.</li>
+<li><code>action</code> (<em>Action</em>): The action to be executed when the menu item is clicked.</li>
+<li><code>enabled</code> (<em>bool</em>): Specifies whether the menu item is enabled. Defaults to <code>true</code>. (Default: <code>true</code>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>ContextMenuBuilder</code></p>
+<ul>
+<li>The current <code>ContextMenuBuilder</code> instance with the added item.</li>
+</ul>
+<h3 id="separator">Separator</h3>
+<pre><code class="language-csharp">public ContextMenuBuilder Separator()
+</code></pre>
+<p>Adds a separator to the context menu.</p>
+<p><strong>Returns:</strong> <code>ContextMenuBuilder</code></p>
+<ul>
+<li>The current <code>ContextMenuBuilder</code> instance with the added separator.</li>
+</ul>

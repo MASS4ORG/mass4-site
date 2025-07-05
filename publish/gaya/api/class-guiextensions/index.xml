@@ -1,0 +1,64 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.extensions">Gaya.Extensions</a></li>
+<li><strong>Source File:</strong> GuiExtensions.cs</li>
+</ul>
+<p>Extension methods for GUI components</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="drawtabbar">DrawTabBar</h3>
+<pre><code class="language-csharp">public static void DrawTabBar(ITabManager tabManager, Gui gui, AppTheme theme)
+</code></pre>
+<p>Draws a tab bar for the specified tab manager</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>tabManager</code> (<em>ITabManager</em>): The tab manager to draw tabs for</li>
+<li><code>gui</code> (<em>Gui</em>): The GUI context to draw with</li>
+<li><code>theme</code> (<em>AppTheme</em>): The theme to use for drawing</li>
+</ul>
+<h3 id="drawfileexplorer">DrawFileExplorer</h3>
+<pre><code class="language-csharp">public static void DrawFileExplorer(IFileExplorerManager fileExplorer, Gui gui, AppTheme theme, float width)
+</code></pre>
+<p>Draws a file explorer for the specified file explorer manager</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>fileExplorer</code> (<em>IFileExplorerManager</em>): The file explorer manager to draw for</li>
+<li><code>gui</code> (<em>Gui</em>): The GUI context to draw with</li>
+<li><code>theme</code> (<em>AppTheme</em>): The theme to use for drawing</li>
+<li><code>width</code> (<em>float</em>): The available width for drawing</li>
+</ul>
+<h3 id="drawactivetabcontent">DrawActiveTabContent</h3>
+<pre><code class="language-csharp">public static void DrawActiveTabContent(ITabManager tabManager, Gui gui, AppTheme theme)
+</code></pre>
+<p>Draws the active tab content for the specified tab manager</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>tabManager</code> (<em>ITabManager</em>): The tab manager to draw content for</li>
+<li><code>gui</code> (<em>Gui</em>): The GUI context to draw with</li>
+<li><code>theme</code> (<em>AppTheme</em>): The theme to use for drawing</li>
+</ul>
+<h3 id="settabmanager">SetTabManager</h3>
+<pre><code class="language-csharp">public static void SetTabManager(IFileExplorerManager fileExplorer, ITabManager tabManager)
+</code></pre>
+<p>Sets the tab manager for the file explorer manager</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>fileExplorer</code> (<em>IFileExplorerManager</em>): The file explorer manager to configure</li>
+<li><code>tabManager</code> (<em>ITabManager</em>): The tab manager to set</li>
+</ul>
+<h3 id="wirefileexplorertotabmanager">WireFileExplorerToTabManager</h3>
+<pre><code class="language-csharp">public static void WireFileExplorerToTabManager(IFileExplorerManager fileExplorer, ITabManager tabManager)
+</code></pre>
+<p>Wires the file explorer manager to the tab manager to enable file opening</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>fileExplorer</code> (<em>IFileExplorerManager</em>): The file explorer manager to wire</li>
+<li><code>tabManager</code> (<em>ITabManager</em>): The tab manager to wire to</li>
+</ul>
+<h3 id="onfileselected">OnFileSelected</h3>
+<pre><code class="language-csharp">public static void OnFileSelected(IFileExplorerManager fileExplorer, string filePath)
+</code></pre>
+<p>Handles file selection events for the file explorer manager</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>fileExplorer</code> (<em>IFileExplorerManager</em>): The file explorer manager handling the selection</li>
+<li><code>filePath</code> (<em>string</em>): The path of the selected file</li>
+</ul>

@@ -1,0 +1,10 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere.vulkan.silknet">Guinevere.Vulkan.SilkNET</a></li>
+<li><strong>Source File:</strong> CanvasRenderer.cs</li>
+</ul>
+<h2 id="fields">Fields</h2>
+<h3 id="graphicsfamily-uint"><strong>GraphicsFamily</strong> (<em>uint?</em>)</h3>
+<h3 id="presentfamily-uint"><strong>PresentFamily</strong> (<em>uint?</em>)</h3>
+<h2 id="properties">Properties</h2>
+<h3 id="iscomplete"><strong>IsComplete</strong></h3>
+<p>(<em>bool</em>)</p>

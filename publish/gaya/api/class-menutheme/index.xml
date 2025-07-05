@@ -1,0 +1,30 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.components.menu">Gaya.Components.Menu</a></li>
+<li><strong>Source File:</strong> MenuTheme.cs</li>
+</ul>
+<p>Theme configuration for the hierarchical menu</p>
+<h2 id="properties">Properties</h2>
+<h3 id="backgroundcolor"><strong>BackgroundColor</strong></h3>
+<p>(<em>Color</em>) { get; set } = <code>Color.FromArgb(255, 45, 45, 48)</code>: Gets or sets the background color of the menu</p>
+<h3 id="bordercolor"><strong>BorderColor</strong></h3>
+<p>(<em>Color</em>) { get; set } = <code>Color.FromArgb(255, 63, 63, 70)</code>: Gets or sets the border color of the menu</p>
+<h3 id="textcolor"><strong>TextColor</strong></h3>
+<p>(<em>Color</em>) { get; set } = <code>Color.FromArgb(255, 241, 241, 241)</code>: Gets or sets the text color for menu items</p>
+<h3 id="disabledtextcolor"><strong>DisabledTextColor</strong></h3>
+<p>(<em>Color</em>) { get; set } = <code>Color.FromArgb(255, 128, 128, 128)</code>: Gets or sets the text color for disabled menu items</p>
+<h3 id="hovercolor"><strong>HoverColor</strong></h3>
+<p>(<em>Color</em>) { get; set } = <code>Color.FromArgb(255, 62, 62, 64)</code>: Gets or sets the background color when hovering over menu items</p>
+<h3 id="activecolor"><strong>ActiveColor</strong></h3>
+<p>(<em>Color</em>) { get; set } = <code>Color.FromArgb(255, 0, 122, 204)</code>: Gets or sets the background color for active/selected menu items</p>
+<h3 id="separatorcolor"><strong>SeparatorColor</strong></h3>
+<p>(<em>Color</em>) { get; set } = <code>Color.FromArgb(255, 63, 63, 70)</code>: Gets or sets the color of separator lines in the menu</p>
+<h3 id="iconcolor"><strong>IconColor</strong></h3>
+<p>(<em>Color</em>) { get; set } = <code>Color.FromArgb(255, 241, 241, 241)</code>: Gets or sets the color of menu item icons</p>
+<h3 id="shortcutcolor"><strong>ShortcutColor</strong></h3>
+<p>(<em>Color</em>) { get; set } = <code>Color.FromArgb(255, 128, 128, 128)</code>: Gets or sets the color of keyboard shortcut text</p>
+<h3 id="borderwidth"><strong>BorderWidth</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>1f</code>: Gets or sets the width of the menu border in pixels</p>
+<h3 id="shadowoffset"><strong>ShadowOffset</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>2f</code>: Gets or sets the offset of the menu shadow in pixels</p>
+<h3 id="shadowcolor"><strong>ShadowColor</strong></h3>
+<p>(<em>Color</em>) { get; set } = <code>Color.FromArgb(100, 0, 0, 0)</code>: Gets or sets the color of the menu shadow</p>

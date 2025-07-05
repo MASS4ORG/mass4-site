@@ -1,0 +1,17 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere.components.texteditor">Guinevere.Components.TextEditor</a></li>
+<li><strong>Source File:</strong> GuiTextEditor.cs</li>
+</ul>
+<p>Represents a text selection in the editor</p>
+<h2 id="properties">Properties</h2>
+<h3 id="start"><strong>Start</strong></h3>
+<p>(<em>CursorPosition</em>) { get; set }</p>
+<h3 id="end"><strong>End</strong></h3>
+<p>(<em>CursorPosition</em>) { get; set }</p>
+<h3 id="isempty"><strong>IsEmpty</strong></h3>
+<p>(<em>bool</em>)</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="getnormalized">GetNormalized</h3>
+<pre><code class="language-csharp">public (CursorPosition start, CursorPosition end) GetNormalized()
+</code></pre>
+<p><strong>Returns:</strong> <code>(CursorPosition start, CursorPosition end)</code></p>

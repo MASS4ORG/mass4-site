@@ -1,0 +1,14 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> DrawableEntry.cs</li>
+</ul>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="execute">Execute</h3>
+<pre><code class="language-csharp">public void Execute(Gui gui, LayoutNode node, SKCanvas canvas)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>gui</code> (<em>Gui</em>)</li>
+<li><code>node</code> (<em>LayoutNode</em>)</li>
+<li><code>canvas</code> (<em>SKCanvas</em>)</li>
+</ul>

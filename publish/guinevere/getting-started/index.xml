@@ -1,0 +1,84 @@
+<h2 id="getting-started-with-guinevere">Getting Started with Guinevere</h2>
+<p>Ready to experience the power of immediate mode GUI development? Get up and running with Guinevere in minutes.</p>
+<h3 id="installation">Installation</h3>
+<p>Choose your preferred installation method:</p>
+<h4 id="nuget-package-manager">NuGet Package Manager</h4>
+<pre><code>Install-Package Guinevere
+</code></pre>
+<h4 id="net-cli">.NET CLI</h4>
+<pre><code>dotnet add package Guinevere
+</code></pre>
+<h4 id="packagereference">PackageReference</h4>
+<pre><code class="language-xml">&lt;PackageReference Include=&quot;Guinevere&quot; Version=&quot;1.0.0&quot; /&gt;
+</code></pre>
+<h3 id="system-requirements">System Requirements</h3>
+<ul>
+<li>.NET 6.0 or later</li>
+<li>Windows 10+, macOS 10.15+, or Linux (Ubuntu 18.04+)</li>
+<li>OpenGL 3.3 or DirectX 11 support</li>
+</ul>
+<h3 id="your-first-application">Your First Application</h3>
+<p>Create a new console application and add this code:</p>
+<pre><code class="language-csharp">using Guinevere;
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        var app = new HelloGuinevere();
+        app.Run();
+    }
+}
+
+class HelloGuinevere : GuiApplication
+{
+    private string message = &quot;Hello, World!&quot;;
+    private float opacity = 1.0f;
+    private bool showMessage = true;
+
+    protected override void OnRender()
+    {
+        Gui.Text(&quot;My First Guinevere App&quot;);
+        Gui.Separator();
+        
+        Gui.InputText(&quot;Message&quot;, ref message);
+        Gui.Slider(&quot;Opacity&quot;, ref opacity, 0f, 1f);
+        Gui.Checkbox(&quot;Show Message&quot;, ref showMessage);
+        
+        if (showMessage)
+        {
+            Gui.PushStyle(GuiStyle.Alpha, opacity);
+            Gui.Text(message);
+            Gui.PopStyle();
+        }
+        
+        if (Gui.Button(&quot;Click Me!&quot;))
+        {
+            Console.WriteLine($&quot;Button clicked! Message: {message}&quot;);
+        }
+    }
+}
+</code></pre>
+<h3 id="next-steps">Next Steps</h3>
+<ol>
+<li><strong>Explore the API</strong>: Check out our comprehensive <a href="/guinevere/api">API documentation</a></li>
+<li><strong>Try Examples</strong>: Download and run our <a href="/guinevere/examples">example projects</a></li>
+<li><strong>Join the Community</strong>: Connect with other developers on our <a href="https://discord.gg/guinevere">Discord server</a></li>
+<li><strong>Read the Guide</strong>: Follow our step-by-step <a href="/guinevere/tutorials">tutorial series</a></li>
+</ol>
+<h3 id="learning-resources">Learning Resources</h3>
+<ul>
+<li><strong>Quick Reference</strong>: Essential functions and patterns</li>
+<li><strong>Best Practices</strong>: Performance tips and coding conventions</li>
+<li><strong>Advanced Topics</strong>: Custom controls, themes, and plugins</li>
+<li><strong>Troubleshooting</strong>: Common issues and solutions</li>
+</ul>
+<h3 id="need-help">Need Help?</h3>
+<ul>
+<li>📚 <a href="/guinevere/docs">Documentation</a></li>
+<li>💬 <a href="https://forum.mass4.dev">Community Forum</a></li>
+<li>🐛 <a href="https://github.com/mass4/guinevere/issues">Issue Tracker</a></li>
+<li>📧 <a href="mailto:support@mass4.dev">Support Email</a></li>
+</ul>
+<p>Start building beautiful, fast, and responsive user interfaces today with Guinevere!</p>

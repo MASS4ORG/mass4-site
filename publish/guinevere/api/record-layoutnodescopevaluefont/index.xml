@@ -1,0 +1,17 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> LayoutNodeScopeValueFont.cs</li>
+</ul>
+<p>Represents a specialized scope value class to manage font configuration in a layout node context. Provides methods to retrieve and update the current font used in text or UI rendering.</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="get">Get</h3>
+<pre><code class="language-csharp">public override SKFont Get()
+</code></pre>
+<p><strong>Returns:</strong> <code>SKFont</code></p>
+<h3 id="set">Set</h3>
+<pre><code class="language-csharp">public override void Set(SKFont value)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>value</code> (<em>SKFont</em>)</li>
+</ul>

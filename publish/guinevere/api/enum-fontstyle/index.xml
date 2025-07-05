@@ -1,0 +1,12 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> FontStyle.cs</li>
+</ul>
+<p>Specifies the style of a font.</p>
+<h2 id="enum-values">Enum Values</h2>
+<ul>
+<li><strong>Normal</strong>: Normal font style.</li>
+<li><strong>Bold</strong>: Bold font style.</li>
+<li><strong>Italic</strong>: Italic font style.</li>
+<li><strong>BoldItalic</strong>: Bold and italic font style.</li>
+</ul>

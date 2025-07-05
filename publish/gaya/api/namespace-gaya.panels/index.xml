@@ -1,0 +1,18 @@
+<p>This namespace contains 14 type(s).</p>
+<h2 id="types">Types</h2>
+<ul>
+<li>🅲 Pu <a href="./class-consolepanel">ConsolePanel</a></li>
+<li>🅲 Pu <a href="./class-editorpanel">EditorPanel</a></li>
+<li>🅲 Pu <a href="./class-fileexplorerpanel">FileExplorerPanel</a></li>
+<li>🅲 Pu <a href="./class-gitpanel">GitPanel</a></li>
+<li>🄸  <a href="./interface-ipanel">IPanel</a></li>
+<li>🄸  <a href="./interface-ipanelmanager">IPanelManager</a></li>
+<li>🅲 Pu <a href="./class-panelattribute">PanelAttribute</a></li>
+<li>🅲 PuAb <a href="./class-panelbase">PanelBase</a></li>
+<li>🅲 Pu <a href="./class-paneleventargs">PanelEventArgs</a></li>
+<li>🅲 Pu <a href="./class-panelmanager">PanelManager</a></li>
+<li>🄴  <a href="./enum-panelposition">PanelPosition</a></li>
+<li>🅲 Pu <a href="./class-panelpositioneventargs">PanelPositionEventArgs</a></li>
+<li>🅲 Pu <a href="./class-panelsizeeventargs">PanelSizeEventArgs</a></li>
+<li>🅲 Pu <a href="./class-panelvisibilityeventargs">PanelVisibilityEventArgs</a></li>
+</ul>

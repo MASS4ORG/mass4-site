@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    
+    
+    
+    
+    <title>API - MASS4</title>
+<meta name="description" content="Eclectic, remote and provoking software">
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://mass4.org/guinevere/api/index.html">
+<link rel="alternate" type="application/rss+xml" href="/blog/index.xml" title="SuCoS Blog">
+
+<!-- Style and JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="msapplication-TileColor" content="#0d59ad">
+<meta name="theme-color" content="#ffffff">
+<link rel="manifest" href="/site.webmanifest" type="application/manifest+json">
+
+    <!-- Social link preview -->
+
+
+
+
+
+
+    
+
+    
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="API">
+<meta name="twitter:description" content="Eclectic, remote and provoking software">
+<meta name="twitter:image" content="https://sucos.brunomassa.com/favicon-32x32.png">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style-guinevere.css">
+    <script async src="/prism.js"></script>
+    <link rel="stylesheet" href="/prism.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-dark-subtle sticky-top text-center mb-5">
+        <nav class="container navbar navbar-expand-lg" style="overflow: visible;">
+            <a href="/" class="w-25 logo">
+                <img src="/guinevere-badge.svg" height="80px" width="80px" alt="guinevere badge"
+                    class="position-absolute top-0 start-0" style="" />
+            </a>
+            <span></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar"
+                aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navbar-expand-lg" id="topNavbar">
+                <ul class="container navbar-nav bd-navbar-nav">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/mega4">MEGA4</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/guinevere">Guinevere</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/gaya">Gaya</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/turian">Turian</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/mystery">Mystery</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/news">News</a>
+                    </li>
+                    
+                </ul>
+
+                <button type="button" class="btn btn-light"
+                    onclick='window.open("https://github.com/mass4/theme_prepend/-/releases", "_blank");'>Download</button>
+
+                <!-- Social Networks-->
+                <ul class="navbar-nav bd-navbar-nav">
+                    <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                        <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                        <hr class="d-lg-none my-2 text-white-50">
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a rel="me" class="nav-link" href="https://ko-fi.com/brmassa" id="link-ko-fi">
+                            <i class=" bi bi-heart-fill text-danger"></i>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a rel="me" class="nav-link" href="https://github.com/mass4" id="link-github">
+                            <i class=" bi bi-git"></i>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a rel="me" class="nav-link" href="https://fosstodon.org/@mass4" id="link-mastodon">
+                            <i class=" bi bi-mastodon"></i>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a rel="me" class="nav-link" href="https://matrix.to/#/#Mass4:matrix.org" id="link-matrix">
+                            <i class=" bi bi-hash"></i>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a rel="me" class="nav-link" href="https://discord.com/channels/1112051704733647058/1112051705316638835" id="link-discord">
+                            <i class=" bi bi-discord"></i>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Regular Content -->
+    <div class="container my-5">
+        <div class="col-12">
+            <p>This documentation contains 181 type(s) across 37 namespace(s).</p>
+<h2 id="namespaces">Namespaces</h2>
+<ul>
+<li><a href="/guinevere/api/namespace-guinevere">Guinevere</a> (88 types)</li>
+<li><a href="/guinevere/api/namespace-guinevere.components.menu">Guinevere.Components.Menu</a> (6 types)</li>
+<li><a href="/guinevere/api/namespace-guinevere.components.texteditor">Guinevere.Components.TextEditor</a> (7 types)</li>
+<li><a href="/guinevere/api/namespace-guinevere.core">Guinevere.Core</a> (9 types)</li>
+<li><a href="/guinevere/api/namespace-guinevere.examples">Guinevere.Examples</a> (2 types)</li>
+<li><a href="/guinevere/api/namespace-guinevere.nuke">Guinevere.Nuke</a> (12 types)</li>
+<li><a href="/guinevere/api/namespace-guinevere.opengl.opentk">Guinevere.OpenGL.OpenTK</a> (2 types)</li>
+<li><a href="/guinevere/api/namespace-guinevere.opengl.raylib">Guinevere.OpenGL.Raylib</a> (2 types)</li>
+<li><a href="/guinevere/api/namespace-guinevere.opengl.silknet">Guinevere.OpenGL.SilkNET</a> (2 types)</li>
+<li><a href="/guinevere/api/namespace-guinevere.tests">Guinevere.Tests</a> (5 types)</li>
+<li><a href="/guinevere/api/namespace-guinevere.tests.animation">Guinevere.Tests.Animation</a> (3 types)</li>
+<li><a href="/guinevere/api/namespace-guinevere.tests.controls">Guinevere.Tests.Controls</a> (1 type)</li>
+<li><a href="/guinevere/api/namespace-guinevere.tests.mocks">Guinevere.Tests.Mocks</a> (2 types)</li>
+<li><a href="/guinevere/api/namespace-guinevere.vulkan.silknet">Guinevere.Vulkan.SilkNET</a> (4 types)</li>
+<li><a href="/guinevere/api/namespace-sample_01">Sample_01</a> (1 type)</li>
+<li><a href="/guinevere/api/namespace-sample_01_opengl_opentk">Sample_01_OpenGL_OpenTK</a> (1 type)</li>
+<li><a href="/guinevere/api/namespace-sample_01_opengl_raylib">Sample_01_OpenGL_Raylib</a> (1 type)</li>
+<li><a href="/guinevere/api/namespace-sample_01_opengl_silknet">Sample_01_OpenGL_SilkNet</a> (1 type)</li>
+<li><a href="/guinevere/api/namespace-sample_01_vulkan_silknet">Sample_01_Vulkan_SilkNet</a> (1 type)</li>
+<li><a href="/guinevere/api/namespace-sample_02_simplelayout">Sample_02_SimpleLayout</a> (1 type)</li>
+<li><a href="/guinevere/api/namespace-sample_03_childrenlayout">Sample_03_ChildrenLayout</a> (1 type)</li>
+<li><a href="/guinevere/api/namespace-sample_04_texts">Sample_04_Texts</a> (2 types)</li>
+<li><a href="/guinevere/api/namespace-sample_05_singlenodeexpandmargin">Sample_05_SingleNodeExpandMargin</a> (1 type)</li>
+<li><a href="/guinevere/api/namespace-sample_06_animation">Sample_06_Animation</a> (2 types)</li>
+<li><a href="/guinevere/api/namespace-sample_41_advancedlayoutdemo">Sample_41_AdvancedLayoutDemo</a> (1 type)</li>
+<li><a href="/guinevere/api/namespace-sample_42_responsivelayoutdemo">Sample_42_ResponsiveLayoutDemo</a> (1 type)</li>
+<li><a href="/guinevere/api/namespace-sample_43_animatedlayoutdemo">Sample_43_AnimatedLayoutDemo</a> (1 type)</li>
+<li><a href="/guinevere/api/namespace-sample_50_controls">Sample_50_Controls</a> (1 type)</li>
+<li><a href="/guinevere/api/namespace-sample_51_buttons">Sample_51_Buttons</a> (1 type)</li>
+<li><a href="/guinevere/api/namespace-sample_52_textinput_multiplatform">Sample_52_TextInput_MultiPlatform</a> (1 type)</li>
+<li><a href="/guinevere/api/namespace-sample_53_menus">Sample_53_Menus</a> (1 type)</li>
+<li><a href="/guinevere/api/namespace-sample_70_pangui_helloworld">Sample_70_PanGui_HelloWorld</a> (1 type)</li>
+<li><a href="/guinevere/api/namespace-sample_71_pangui_hellotriangle">Sample_71_PanGui_HelloTriangle</a> (1 type)</li>
+<li><a href="/guinevere/api/namespace-sample_72_pangui_airbnbslider">Sample_72_PanGui_AirbnbSlider</a> (1 type)</li>
+<li><a href="/guinevere/api/namespace-sample_73_pangui_musicapp">Sample_73_PanGui_MusicApp</a> (10 types)</li>
+<li><a href="/guinevere/api/namespace-sample_74_pangui_heart">Sample_74_PanGui_Heart</a> (1 type)</li>
+<li><a href="/guinevere/api/namespace-sample_75_paperui_dashboard">Sample_75_PaperUI_Dashboard</a> (3 types)</li>
+</ul>
+
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    
+    <footer class="text-center py-3 bg-dark-subtle">
+
+        <p><span>The MASS4 logos are copyright ®  2023-2025 Bruno Massa</span></p>
+
+        <p>
+            <span class="">Made with <a href="https://SuCoS.brunomassa.com"><img src="/SuCoS-logo.svg" height="16px" width="100px" alt="SuCoS badge" /></a>.</span>
+            <em></em>
+            Updated in 2025-07-05 10:49 / <i>v6.1.2.0</i>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', '');
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

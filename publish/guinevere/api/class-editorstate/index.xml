@@ -1,0 +1,10 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere.components.texteditor">Guinevere.Components.TextEditor</a></li>
+<li><strong>Source File:</strong> GuiTextEditor.cs</li>
+</ul>
+<p>Represents the state of the editor for undo/redo operations</p>
+<h2 id="properties">Properties</h2>
+<h3 id="lines"><strong>Lines</strong></h3>
+<p get="">(<em>List<string></em>) </p>
+<h3 id="cursorposition"><strong>CursorPosition</strong></h3>
+<p get="">(<em>CursorPosition</em>) </p>

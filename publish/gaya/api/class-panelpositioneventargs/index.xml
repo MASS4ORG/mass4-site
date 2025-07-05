@@ -1,0 +1,10 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.panels">Gaya.Panels</a></li>
+<li><strong>Source File:</strong> PanelPositionEventArgs.cs</li>
+</ul>
+<p>Event arguments for panel position events</p>
+<h2 id="properties">Properties</h2>
+<h3 id="oldposition"><strong>OldPosition</strong></h3>
+<p get="">(<em>PanelPosition</em>) : Gets the old position of the panel</p>
+<h3 id="newposition"><strong>NewPosition</strong></h3>
+<p get="">(<em>PanelPosition</em>) : Gets the new position of the panel</p>

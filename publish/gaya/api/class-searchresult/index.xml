@@ -1,0 +1,25 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.components.editor.features">Gaya.Components.Editor.Features</a></li>
+<li><strong>Source File:</strong> SearchResult.cs</li>
+</ul>
+<p>Represents a search result</p>
+<h2 id="properties">Properties</h2>
+<h3 id="line"><strong>Line</strong></h3>
+<p>(<em>int</em>) { get; set }: Gets or sets the line number where the search result was found (0-based)</p>
+<h3 id="column"><strong>Column</strong></h3>
+<p>(<em>int</em>) { get; set }: Gets or sets the column number where the search result was found (0-based)</p>
+<h3 id="length"><strong>Length</strong></h3>
+<p>(<em>int</em>) { get; set }: Gets or sets the length of the search result text</p>
+<h3 id="text"><strong>Text</strong></h3>
+<p>(<em>string</em>) { get; set } = <code>&quot;&quot;</code>: Gets or sets the text that was found</p>
+<h3 id="linetext"><strong>LineText</strong></h3>
+<p>(<em>string</em>) { get; set } = <code>&quot;&quot;</code>: Gets or sets the full line text containing the search result</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="tostring">ToString</h3>
+<pre><code class="language-csharp">public override string ToString()
+</code></pre>
+<p>Returns a string representation of the search result</p>
+<p><strong>Returns:</strong> <code>string</code></p>
+<ul>
+<li>A string in the format &quot;Line X, Column Y: Text&quot;</li>
+</ul>

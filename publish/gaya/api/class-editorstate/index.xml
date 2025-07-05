@@ -1,0 +1,33 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.components.editor.core">Gaya.Components.Editor.Core</a></li>
+<li><strong>Source File:</strong> EditorState.cs</li>
+</ul>
+<p>Represents the state of a text editor at a specific point in time Used for undo/redo functionality</p>
+<h2 id="properties">Properties</h2>
+<h3 id="content"><strong>Content</strong></h3>
+<p>(<em>string</em>) { get; set } = <code>&quot;&quot;</code>: Gets or sets the text content of the editor</p>
+<h3 id="cursorline"><strong>CursorLine</strong></h3>
+<p>(<em>int</em>) { get; set }: Gets or sets the current cursor line (0-based)</p>
+<h3 id="cursorcolumn"><strong>CursorColumn</strong></h3>
+<p>(<em>int</em>) { get; set }: Gets or sets the current cursor column (0-based)</p>
+<h3 id="hasselection"><strong>HasSelection</strong></h3>
+<p>(<em>bool</em>) { get; set }: Gets or sets a value indicating whether there is an active text selection</p>
+<h3 id="selectionstartline"><strong>SelectionStartLine</strong></h3>
+<p>(<em>int</em>) { get; set }: Gets or sets the starting line of the text selection (0-based)</p>
+<h3 id="selectionstartcolumn"><strong>SelectionStartColumn</strong></h3>
+<p>(<em>int</em>) { get; set }: Gets or sets the starting column of the text selection (0-based)</p>
+<h3 id="selectionendline"><strong>SelectionEndLine</strong></h3>
+<p>(<em>int</em>) { get; set }: Gets or sets the ending line of the text selection (0-based)</p>
+<h3 id="selectionendcolumn"><strong>SelectionEndColumn</strong></h3>
+<p>(<em>int</em>) { get; set }: Gets or sets the ending column of the text selection (0-based)</p>
+<h3 id="scrolly"><strong>ScrollY</strong></h3>
+<p>(<em>int</em>) { get; set }: Gets or sets the vertical scroll position in pixels</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="clone">Clone</h3>
+<pre><code class="language-csharp">public EditorState Clone()
+</code></pre>
+<p>Creates a deep copy of the current EditorState</p>
+<p><strong>Returns:</strong> <code>EditorState</code></p>
+<ul>
+<li>A new EditorState with the same values as the current instance</li>
+</ul>

@@ -1,0 +1,38 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere.tests.mocks">Guinevere.Tests.Mocks</a></li>
+<li><strong>Source File:</strong> MockCanvasRenderer.cs</li>
+</ul>
+<h2 id="properties">Properties</h2>
+<h3 id="width"><strong>Width</strong></h3>
+<p>(<em>int</em>) { get; set }</p>
+<h3 id="height"><strong>Height</strong></h3>
+<p>(<em>int</em>) { get; set }</p>
+<h3 id="canvas"><strong>Canvas</strong></h3>
+<p>(<em>SKCanvas</em>)</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="initialize">Initialize</h3>
+<pre><code class="language-csharp">public void Initialize(int width, int height)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>width</code> (<em>int</em>)</li>
+<li><code>height</code> (<em>int</em>)</li>
+</ul>
+<h3 id="resize">Resize</h3>
+<pre><code class="language-csharp">public void Resize(int width, int height)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>width</code> (<em>int</em>)</li>
+<li><code>height</code> (<em>int</em>)</li>
+</ul>
+<h3 id="render">Render</h3>
+<pre><code class="language-csharp">public void Render(Action&lt;SKCanvas&gt; draw)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>draw</code> (<em>Action<SKCanvas></em>)</li>
+</ul>
+<h3 id="dispose">Dispose</h3>
+<pre><code class="language-csharp">public void Dispose()
+</code></pre>

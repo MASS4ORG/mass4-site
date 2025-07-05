@@ -1,0 +1,26 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.components.dialogs">Gaya.Components.Dialogs</a></li>
+<li><strong>Source File:</strong> AboutDialog.cs</li>
+</ul>
+<p>About dialog component that displays application information</p>
+<h2 id="properties">Properties</h2>
+<h3 id="isvisible"><strong>IsVisible</strong></h3>
+<p>(<em>bool</em>) { get; set }: Gets or sets a value indicating whether the about dialog is visible</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="show">Show</h3>
+<pre><code class="language-csharp">public void Show()
+</code></pre>
+<p>Shows the about dialog</p>
+<h3 id="hide">Hide</h3>
+<pre><code class="language-csharp">public void Hide()
+</code></pre>
+<p>Hides the about dialog</p>
+<h3 id="draw">Draw</h3>
+<pre><code class="language-csharp">public void Draw(Gui gui, AppTheme theme)
+</code></pre>
+<p>Draws the about dialog using the specified GUI context and theme</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>gui</code> (<em>Gui</em>): The GUI context to draw with</li>
+<li><code>theme</code> (<em>AppTheme</em>): The theme to use for drawing</li>
+</ul>

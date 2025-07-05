@@ -1,0 +1,17 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> LayoutNodeScopeValueFontColor.cs</li>
+</ul>
+<p>Represents a scoped value for managing font color in a layout node context. This class allows retrieving and setting a color value specific to a layout node.</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="get">Get</h3>
+<pre><code class="language-csharp">public override Color Get()
+</code></pre>
+<p><strong>Returns:</strong> <code>Color</code></p>
+<h3 id="set">Set</h3>
+<pre><code class="language-csharp">public override void Set(Color value)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>value</code> (<em>Color</em>)</li>
+</ul>

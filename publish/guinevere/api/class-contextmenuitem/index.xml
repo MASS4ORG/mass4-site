@@ -1,0 +1,14 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> ContextMenuItem.cs</li>
+</ul>
+<p>Represents a context menu item</p>
+<h2 id="properties">Properties</h2>
+<h3 id="text"><strong>Text</strong></h3>
+<p>(<em>string</em>) { get; set } = <code>&quot;&quot;</code>: Gets or sets the display text of the <code>ContextMenuItem</code>. This text is presented to the user as the label for the menu item.</p>
+<h3 id="action"><strong>Action</strong></h3>
+<p>(<em>Action?</em>) { get; set }: Gets or sets the action to be executed when this <code>ContextMenuItem</code> is clicked. This property defines the behavior or response triggered by interacting with the item.</p>
+<h3 id="enabled"><strong>Enabled</strong></h3>
+<p>(<em>bool</em>) { get; set } = <code>true</code>: Gets or sets a value indicating whether this <code>ContextMenuItem</code> is enabled. An enabled item can be interacted with, while a disabled item is typically visually distinct and non-interactive.</p>
+<h3 id="isseparator"><strong>IsSeparator</strong></h3>
+<p>(<em>bool</em>) { get; set }: Gets or sets a value indicating whether this <code>ContextMenuItem</code> represents a separator. A separator is a visual divider within a context menu typically used to group items.</p>

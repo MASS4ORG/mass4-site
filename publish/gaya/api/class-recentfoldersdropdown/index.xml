@@ -1,0 +1,39 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.components.core">Gaya.Components.Core</a></li>
+<li><strong>Source File:</strong> RecentFoldersDropdown.cs</li>
+</ul>
+<p>Dropdown component for displaying and selecting recent folders</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="setcurrentfolder">SetCurrentFolder</h3>
+<pre><code class="language-csharp">public void SetCurrentFolder(string folderPath)
+</code></pre>
+<p>Sets the current folder for the dropdown, updating its displayed name based on the folder path.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>folderPath</code> (<em>string</em>): The full path of the folder to set as the current folder. If the path is invalid or empty, a default folder name will be displayed.</li>
+</ul>
+<h3 id="draw">Draw</h3>
+<pre><code class="language-csharp">public override void Draw(Gui gui, float width, float height)
+</code></pre>
+<p>Draws the dropdown component using the default dark theme</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>gui</code> (<em>Gui</em>): The GUI context to draw with</li>
+<li><code>width</code> (<em>float</em>): The available width for drawing</li>
+<li><code>height</code> (<em>float</em>): The available height for drawing</li>
+</ul>
+<h3 id="draw-1">Draw</h3>
+<pre><code class="language-csharp">public void Draw(Gui gui, AppTheme theme, float availableWidth, float height = 30f)
+</code></pre>
+<p>Draws the dropdown component with the specified theme</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>gui</code> (<em>Gui</em>): The GUI context to draw with</li>
+<li><code>theme</code> (<em>AppTheme</em>): The theme to use for drawing</li>
+<li><code>availableWidth</code> (<em>float</em>): The available width for drawing</li>
+<li><code>height</code> (<em>float</em>): The height for drawing (default 30f) (Default: <code>30f</code>)</li>
+</ul>
+<h3 id="handleoutsideclick">HandleOutsideClick</h3>
+<pre><code class="language-csharp">public void HandleOutsideClick()
+</code></pre>
+<p>Handles clicks outside the dropdown to close it</p>

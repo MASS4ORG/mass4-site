@@ -1,0 +1,25 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> Text.cs</li>
+</ul>
+<p>Represents a drawable text element that can be rendered onto a canvas. Instances of this class encapsulate text rendering properties such as the text content, position, font, and paint settings.</p>
+<h2 id="properties">Properties</h2>
+<h3 id="label"><strong>Label</strong></h3>
+<p get="">(<em>string?</em>)  = <code>label</code>: Gets the label text to be rendered. This property contains the string value that represents the textual content associated with this drawing instance.</p>
+<h3 id="font"><strong>Font</strong></h3>
+<p get="">(<em>SKFont?</em>)  = <code>font</code>: Gets the <code>SKFont</code> defining the font style and typeface used to render the text. This property specifies the visual appearance of the text, including weight, size, and family.</p>
+<h3 id="position"><strong>Position</strong></h3>
+<p get="">(<em>Vector2</em>)  = <code>position ?? Vector2.Zero</code>: Gets the <code>Vector2</code> representing the position of the text. This property defines the coordinates within the canvas where the text will be drawn.</p>
+<h3 id="paint"><strong>Paint</strong></h3>
+<p>(<em>SKPaint?</em>) { get; set } = <code>paint</code>: Gets or sets the <code>SKPaint</code> object used to define the paint style for rendering the text. This includes settings such as color, stroke, and fill for text drawing operations.</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="render">Render</h3>
+<pre><code class="language-csharp">public void Render(Gui gui, LayoutNode node, SKCanvas canvas)
+</code></pre>
+<p>Renders the specified text onto the provided canvas using the given parameters.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>gui</code> (<em>Gui</em>): The GUI context used for rendering the text.</li>
+<li><code>node</code> (<em>LayoutNode</em>): The layout node that the text is associated with.</li>
+<li><code>canvas</code> (<em>SKCanvas</em>): The canvas onto which the text will be drawn.</li>
+</ul>

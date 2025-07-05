@@ -1,0 +1,17 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.components.core">Gaya.Components.Core</a></li>
+<li><strong>Source File:</strong> IConfigurable.cs</li>
+</ul>
+<p>Configuration interface for GUI components</p>
+<h2 id="properties">Properties</h2>
+<h3 id="configuration"><strong>Configuration</strong></h3>
+<p get="">(<em>T</em>) : Gets the current configuration</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="updateconfiguration">UpdateConfiguration</h3>
+<pre><code class="language-csharp"> void UpdateConfiguration(T config)
+</code></pre>
+<p>Updates the configuration</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>config</code> (<em>T</em>): New configuration</li>
+</ul>

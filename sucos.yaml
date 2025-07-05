@@ -1,0 +1,41 @@
+Title: MASS4
+BaseURL: https://mass4.org
+Description: Eclectic, remote and provoking software
+
+Theme: mass4
+GoogleAnalytics:
+
+Params:
+  Logo: https://sucos.brunomassa.com/favicon-32x32.png
+  Author:
+    Name: "Bruno Massa"
+  MainMenu:
+    - url: /product/mega4
+      label: MEGA4
+    - url: /product/guinevere
+      label: Guinevere
+    - url: /product/gaya
+      label: Gaya
+    - url: /product/turian
+      label: Turian
+    - url: /product/mystery
+      label: Mystery
+    - url: /news
+      label: News
+
+  SocialNetworks:
+    - id: ko-fi
+      url: https://ko-fi.com/brmassa
+      icon_class: bi-heart-fill text-danger
+    - id: github
+      url: https://github.com/mass4
+      icon_class: bi-git
+    - id: mastodon
+      url: https://fosstodon.org/@mass4
+      icon_class: bi-mastodon
+    - id: matrix
+      url: https://matrix.to/#/#Mass4:matrix.org
+      icon_class: bi-hash
+    - id: discord
+      url: https://discord.com/channels/1112051704733647058/1112051705316638835
+      icon_class: bi-discord

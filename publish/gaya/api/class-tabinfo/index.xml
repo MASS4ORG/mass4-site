@@ -1,0 +1,18 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.models">Gaya.Models</a></li>
+<li><strong>Source File:</strong> TabInfo.cs</li>
+</ul>
+<p>Represents information about an editor tab</p>
+<h2 id="properties">Properties</h2>
+<h3 id="name"><strong>Name</strong></h3>
+<p>(<em>string</em>) { get; set } = <code>&quot;&quot;</code>: Gets or sets the display name of the tab</p>
+<h3 id="ismodified"><strong>IsModified</strong></h3>
+<p>(<em>bool</em>) { get; set }: Gets or sets a value indicating whether the tab has unsaved changes</p>
+<h3 id="filepath"><strong>FilePath</strong></h3>
+<p>(<em>string</em>) { get; set } = <code>&quot;&quot;</code>: Gets or sets the file path associated with the tab (empty for new files)</p>
+<h3 id="content"><strong>Content</strong></h3>
+<p>(<em>string</em>) { get; set } = <code>&quot;&quot;</code>: Gets or sets the content of the tab</p>
+<h3 id="lastmodified"><strong>LastModified</strong></h3>
+<p>(<em>DateTime</em>) { get; set } = <code>DateTime.Now</code>: Gets or sets the last modified date and time</p>
+<h3 id="istemporary"><strong>IsTemporary</strong></h3>
+<p>(<em>bool</em>) { get; set }: Gets or sets a value indicating whether this is a temporary/untitled file</p>

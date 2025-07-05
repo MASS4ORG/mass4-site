@@ -1,0 +1,17 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere.core">Guinevere.Core</a></li>
+<li><strong>Source File:</strong> IGuiComponent.cs</li>
+</ul>
+<p>Interface for components that can receive focus</p>
+<h2 id="properties">Properties</h2>
+<h3 id="hasfocus"><strong>HasFocus</strong></h3>
+<p get="">(<em>bool</em>) : Whether this component currently has focus</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="setfocus">SetFocus</h3>
+<pre><code class="language-csharp"> void SetFocus(bool hasFocus)
+</code></pre>
+<p>Sets the focus state</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>hasFocus</code> (<em>bool</em>): True to give focus, false to remove it</li>
+</ul>

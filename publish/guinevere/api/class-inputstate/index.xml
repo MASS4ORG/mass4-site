@@ -1,0 +1,10 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> TextInput.cs</li>
+</ul>
+<h2 id="fields">Fields</h2>
+<h3 id="text-string"><strong>Text</strong> (<em>string</em>) = <code>&quot;&quot;</code></h3>
+<h3 id="cursorposition-int"><strong>CursorPosition</strong> (<em>int</em>)</h3>
+<h3 id="isfocused-bool"><strong>IsFocused</strong> (<em>bool</em>)</h3>
+<h3 id="blinktimer-float"><strong>BlinkTimer</strong> (<em>float</em>)</h3>
+<h3 id="showcursor-bool-true"><strong>ShowCursor</strong> (<em>bool</em>) = <code>true</code></h3>

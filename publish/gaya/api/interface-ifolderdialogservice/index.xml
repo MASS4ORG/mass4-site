@@ -1,0 +1,45 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.services">Gaya.Services</a></li>
+<li><strong>Source File:</strong> IFolderDialogService.cs</li>
+</ul>
+<p>Interface for folder and file dialog services</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="selectfolderasync">SelectFolderAsync</h3>
+<pre><code class="language-csharp"> Task&lt;string?&gt; SelectFolderAsync(string? initialDirectory = null)
+</code></pre>
+<p>Shows a folder selection dialog</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>initialDirectory</code> (<em>string?</em>): The initial directory to show, or null for default (Default: <code>null</code>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>Task&lt;string?&gt;</code></p>
+<ul>
+<li>The selected folder path, or null if canceled</li>
+</ul>
+<h3 id="openfileasync">OpenFileAsync</h3>
+<pre><code class="language-csharp"> Task&lt;string?&gt; OpenFileAsync(string? initialDirectory = null, string? filter = null)
+</code></pre>
+<p>Shows a file open dialog</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>initialDirectory</code> (<em>string?</em>): The initial directory to show, or null for default (Default: <code>null</code>)</li>
+<li><code>filter</code> (<em>string?</em>): The file filter to apply, or null for all files (Default: <code>null</code>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>Task&lt;string?&gt;</code></p>
+<ul>
+<li>The selected file path, or null if canceled</li>
+</ul>
+<h3 id="savefileasync">SaveFileAsync</h3>
+<pre><code class="language-csharp"> Task&lt;string?&gt; SaveFileAsync(string? initialDirectory = null, string? defaultFileName = null, string? filter = null)
+</code></pre>
+<p>Shows a file save dialog</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>initialDirectory</code> (<em>string?</em>): The initial directory to show, or null for default (Default: <code>null</code>)</li>
+<li><code>defaultFileName</code> (<em>string?</em>): The default file name, or null for none (Default: <code>null</code>)</li>
+<li><code>filter</code> (<em>string?</em>): The file filter to apply, or null for all files (Default: <code>null</code>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>Task&lt;string?&gt;</code></p>
+<ul>
+<li>The selected file path, or null if canceled</li>
+</ul>

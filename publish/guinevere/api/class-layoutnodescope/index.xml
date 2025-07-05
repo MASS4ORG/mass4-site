@@ -1,0 +1,53 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> LayoutNodeScope.cs</li>
+</ul>
+<p>Represents a scope management class for layout nodes, which facilitates entering, exiting, and managing specific properties of a layout node in a 2D or UI rendering context.</p>
+<h2 id="properties">Properties</h2>
+<h3 id="node"><strong>Node</strong></h3>
+<p get="">(<em>LayoutNode</em>)  = <code>node</code>: Provides access to the current layout node within a specific scope. The property represents the layout node that is managed during the lifetime of the associated <code>LayoutNodeScope</code> instance.</p>
+<h3 id="textcolor"><strong>TextColor</strong></h3>
+<p>(<em>Color?</em>) { get; set }: Gets or sets the text color for the current layout node within the scope. The value is used for rendering text and can be inherited from parent scopes if not explicitly set.</p>
+<h3 id="textsize"><strong>TextSize</strong></h3>
+<p>(<em>float?</em>) { get; set }: Gets or sets the size of the text for rendering within the current layout node. This property applies to the node and its children, inheriting the value from parent nodes if it is not explicitly specified in the current scope.</p>
+<h3 id="textfont"><strong>TextFont</strong></h3>
+<p>(<em>Font?</em>) { get; set }: Gets or sets the font used for rendering text within the current layout node. This property affects the node and its children, inheriting the value from parent nodes if it is not explicitly defined in the current scope.</p>
+<h3 id="iconfont"><strong>IconFont</strong></h3>
+<p>(<em>Font?</em>) { get; set }: Gets or sets the font used for rendering icons in the current layout node. This property applies to the node and its children, and the value is inherited from parent nodes if not explicitly set.</p>
+<h3 id="zindex"><strong>ZIndex</strong></h3>
+<p>(<em>int?</em>) { get; set }: Gets or sets the Z-index of the layout node, which determines its rendering order in relation to sibling nodes. Nodes with higher Z-index values will be rendered in front of nodes with lower Z-index values.</p>
+<h3 id="scrollcontainerid"><strong>ScrollContainerId</strong></h3>
+<p>(<em>string?</em>) { get; set }: Gets or sets the node ID of the scrollable container that affects this node. This is used to cascade scroll transforms to child nodes.</p>
+<h3 id="isclipped"><strong>IsClipped</strong></h3>
+<p>(<em>bool?</em>) { get; set }: Gets or sets whether this node should be clipped to its parent container bounds. This cascades to child nodes unless explicitly overridden.</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="dispose">Dispose</h3>
+<pre><code class="language-csharp">public void Dispose()
+</code></pre>
+<p>Releases all resources used by the <code>LayoutNodeScope</code> instance and exits the current layout node context.</p>
+<p><strong>Remarks:</strong>
+This method ensures that any resources associated with the current layout node scope are properly released, and that the <code>ILayoutNodeEnterExit</code> manager, if provided, is notified to exit the node context.</p>
+<h3 id="enter">Enter</h3>
+<pre><code class="language-csharp">public LayoutNodeScope Enter()
+</code></pre>
+<p>Enters the current layout node context, typically used to prepare and set up the environment for drawing operations or related activities.</p>
+<p><strong>Returns:</strong> <code>LayoutNodeScope</code></p>
+<ul>
+<li>Returns the current <code>LayoutNodeScope</code> after entering the layout node context.</li>
+</ul>
+<h3 id="exit">Exit</h3>
+<pre><code class="language-csharp">public void Exit()
+</code></pre>
+<p>Exits the current layout node context, performing necessary cleanup operations.</p>
+<h3 id="setzindex">SetZIndex</h3>
+<pre><code class="language-csharp">public LayoutNodeScope SetZIndex(int index)
+</code></pre>
+<p>Sets the Z-index value for the layout node, determining its stacking order.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>index</code> (<em>int</em>): The Z-index value to assign to the layout node.</li>
+</ul>
+<p><strong>Returns:</strong> <code>LayoutNodeScope</code></p>
+<ul>
+<li>Returns the current <code>LayoutNodeScope</code> instance for method chaining.</li>
+</ul>

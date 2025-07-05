@@ -1,0 +1,24 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere.components.menu">Guinevere.Components.Menu</a></li>
+<li><strong>Source File:</strong> HierarchicalMenu.cs</li>
+</ul>
+<p>Configuration for the hierarchical menu</p>
+<h2 id="properties">Properties</h2>
+<h3 id="menuwidth"><strong>MenuWidth</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>250f</code></p>
+<h3 id="itemheight"><strong>ItemHeight</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>28f</code></p>
+<h3 id="separatorheight"><strong>SeparatorHeight</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>8f</code></p>
+<h3 id="submenuoffset"><strong>SubmenuOffset</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>5f</code></p>
+<h3 id="iconsize"><strong>IconSize</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>16f</code></p>
+<h3 id="padding"><strong>Padding</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>8f</code></p>
+<h3 id="showicons"><strong>ShowIcons</strong></h3>
+<p>(<em>bool</em>) { get; set } = <code>true</code></p>
+<h3 id="showshortcuts"><strong>ShowShortcuts</strong></h3>
+<p>(<em>bool</em>) { get; set } = <code>true</code></p>
+<h3 id="maxvisibleitems"><strong>MaxVisibleItems</strong></h3>
+<p>(<em>int</em>) { get; set } = <code>20</code></p>

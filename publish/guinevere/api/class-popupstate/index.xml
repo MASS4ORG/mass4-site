@@ -1,0 +1,13 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> Popup.cs</li>
+</ul>
+<h2 id="properties">Properties</h2>
+<h3 id="isopen"><strong>IsOpen</strong></h3>
+<p>(<em>bool</em>) { get; set }</p>
+<h3 id="position"><strong>Position</strong></h3>
+<p>(<em>Vector2</em>) { get; set }</p>
+<h3 id="closeonclickoutside"><strong>CloseOnClickOutside</strong></h3>
+<p>(<em>bool</em>) { get; set } = <code>true</code></p>
+<h3 id="closeonescape"><strong>CloseOnEscape</strong></h3>
+<p>(<em>bool</em>) { get; set } = <code>true</code></p>

@@ -1,0 +1,12 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> HoldArgs.cs</li>
+</ul>
+<p>Represents the necessary input information for handling a hold interaction. This structure contains data about the initial and current positions of the pointer during a hold gesture, including the difference between these positions.</p>
+<h2 id="properties">Properties</h2>
+<h3 id="startposition"><strong>StartPosition</strong></h3>
+<p get="">(<em>Vector2</em>) : Gets the initial position of the object or pointer at the start of an interaction. Represents the location where the interaction originated, before any movement.</p>
+<h3 id="currentposition"><strong>CurrentPosition</strong></h3>
+<p get="">(<em>Vector2</em>) : Gets the current position of the object or pointer during an interaction. Represents the updated location relative to the starting position.</p>
+<h3 id="deltaposition"><strong>DeltaPosition</strong></h3>
+<p>(<em>Vector2</em>): Gets the difference between the current position and the starting position. Represents the positional offset of an object or input from its initial point.</p>

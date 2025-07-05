@@ -1,0 +1,98 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.components.editor.features">Gaya.Components.Editor.Features</a></li>
+<li><strong>Source File:</strong> SearchManager.cs</li>
+</ul>
+<p>Manages search and replace functionality for the text editor</p>
+<h2 id="properties">Properties</h2>
+<h3 id="searchresults"><strong>SearchResults</strong></h3>
+<p>(<em>IReadOnlyList<SearchResult></em>): Gets the current search results</p>
+<h3 id="currentresultindex"><strong>CurrentResultIndex</strong></h3>
+<p>(<em>int</em>): Gets the current result index</p>
+<h3 id="hasresults"><strong>HasResults</strong></h3>
+<p>(<em>bool</em>): Gets whether there are any search results</p>
+<h3 id="resultcount"><strong>ResultCount</strong></h3>
+<p>(<em>int</em>): Gets the total number of results</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="search">Search</h3>
+<pre><code class="language-csharp">public void Search(string content, string searchText, bool caseSensitive = false, bool wholeWord = false)
+</code></pre>
+<p>Searches for text in the content</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>content</code> (<em>string</em>)</li>
+<li><code>searchText</code> (<em>string</em>)</li>
+<li><code>caseSensitive</code> (<em>bool</em>) (Default: <code>false</code>)</li>
+<li><code>wholeWord</code> (<em>bool</em>) (Default: <code>false</code>)</li>
+</ul>
+<h3 id="findnext">FindNext</h3>
+<pre><code class="language-csharp">public SearchResult? FindNext()
+</code></pre>
+<p>Finds the next occurrence</p>
+<p><strong>Returns:</strong> <code>SearchResult?</code></p>
+<h3 id="findprevious">FindPrevious</h3>
+<pre><code class="language-csharp">public SearchResult? FindPrevious()
+</code></pre>
+<p>Finds the previous occurrence</p>
+<p><strong>Returns:</strong> <code>SearchResult?</code></p>
+<h3 id="findfromposition">FindFromPosition</h3>
+<pre><code class="language-csharp">public SearchResult? FindFromPosition(int line, int column)
+</code></pre>
+<p>Finds the first occurrence at or after the specified position</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>line</code> (<em>int</em>)</li>
+<li><code>column</code> (<em>int</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>SearchResult?</code></p>
+<h3 id="getcurrentresult">GetCurrentResult</h3>
+<pre><code class="language-csharp">public SearchResult? GetCurrentResult()
+</code></pre>
+<p>Gets the current search result</p>
+<p><strong>Returns:</strong> <code>SearchResult?</code></p>
+<h3 id="replacecurrentresult">ReplaceCurrentResult</h3>
+<pre><code class="language-csharp">public string ReplaceCurrentResult(string content, string replaceText)
+</code></pre>
+<p>Replaces the current result with the specified text</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>content</code> (<em>string</em>)</li>
+<li><code>replaceText</code> (<em>string</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>string</code></p>
+<h3 id="replaceall">ReplaceAll</h3>
+<pre><code class="language-csharp">public string ReplaceAll(string content, string replaceText)
+</code></pre>
+<p>Replaces all occurrences with the specified text</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>content</code> (<em>string</em>)</li>
+<li><code>replaceText</code> (<em>string</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>string</code></p>
+<h3 id="clearresults">ClearResults</h3>
+<pre><code class="language-csharp">public void ClearResults()
+</code></pre>
+<p>Clears all search results</p>
+<h3 id="refreshsearch">RefreshSearch</h3>
+<pre><code class="language-csharp">public void RefreshSearch(string content)
+</code></pre>
+<p>Updates the search with the same parameters (useful after content changes)</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>content</code> (<em>string</em>)</li>
+</ul>
+<h3 id="getstatistics">GetStatistics</h3>
+<pre><code class="language-csharp">public SearchStatistics GetStatistics()
+</code></pre>
+<p>Gets search statistics</p>
+<p><strong>Returns:</strong> <code>SearchStatistics</code></p>
+<h3 id="getcurrentresultselection">GetCurrentResultSelection</h3>
+<pre><code class="language-csharp">public TextSelection? GetCurrentResultSelection()
+</code></pre>
+<p>Highlights the current search result</p>
+<p><strong>Returns:</strong> <code>TextSelection?</code></p>
+<h3 id="getallresultselections">GetAllResultSelections</h3>
+<pre><code class="language-csharp">public List&lt;TextSelection&gt; GetAllResultSelections()
+</code></pre>
+<p>Gets all search result selections</p>
+<p><strong>Returns:</strong> <code>List&lt;TextSelection&gt;</code></p>

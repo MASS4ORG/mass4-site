@@ -1,0 +1,22 @@
+
+    <footer class="text-center py-3 bg-dark-subtle">
+
+        <p><span>The MASS4 logos are copyright ® {{ site.Copyright }} 2023-{{ "now" | date: "%Y" }} <a href="https://brunomassa.com">Bruno Massa</a></span></p>
+
+        <p>
+            <span class="">Made with <a href="https://SuCoS.brunomassa.com"><img src="/SuCoS-logo.svg" height="16px" width="100px" alt="SuCoS badge" /></a><i>v{{ sucos.Version }}</i>.</span>
+            <em>{{ site.Params.Footer }}</em>
+            Updated in {{ "now" | date: "%Y-%m-%d %H:%M" }}
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Params.GoogleAnalytics }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', '{{ site.Params.GoogleAnalytics }}');
+    </script>

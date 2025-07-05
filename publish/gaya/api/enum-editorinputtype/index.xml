@@ -1,0 +1,28 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.components.editor.input">Gaya.Components.Editor.Input</a></li>
+<li><strong>Source File:</strong> EditorInputType.cs</li>
+</ul>
+<p>Types of input actions the editor can handle</p>
+<h2 id="enum-values">Enum Values</h2>
+<ul>
+<li><strong>None</strong>: No action to perform</li>
+<li><strong>MoveCursor</strong>: Move the cursor in a specified direction</li>
+<li><strong>InsertCharacter</strong>: Insert a character at the current cursor position</li>
+<li><strong>InsertNewLine</strong>: Insert a new line at the current cursor position</li>
+<li><strong>InsertTab</strong>: Insert a tab character at the current cursor position</li>
+<li><strong>DeleteBackward</strong>: Delete the character before the cursor (backspace)</li>
+<li><strong>DeleteForward</strong>: Delete the character after the cursor (delete)</li>
+<li><strong>SetCursorPosition</strong>: Set the cursor to a specific position</li>
+<li><strong>ExtendSelection</strong>: Extend the current selection</li>
+<li><strong>ClearSelection</strong>: Clear the current selection</li>
+<li><strong>SelectAll</strong>: Select all text in the editor</li>
+<li><strong>Copy</strong>: Copy the selected text to clipboard</li>
+<li><strong>Cut</strong>: Cut the selected text to clipboard</li>
+<li><strong>Paste</strong>: Paste text from clipboard at cursor position</li>
+<li><strong>Undo</strong>: Undo the last operation</li>
+<li><strong>Redo</strong>: Redo the last undone operation</li>
+<li><strong>Find</strong>: Open the find dialog</li>
+<li><strong>GoToLine</strong>: Go to a specific line number</li>
+<li><strong>Save</strong>: Save the current document</li>
+<li><strong>Scroll</strong>: Scroll the editor view</li>
+</ul>

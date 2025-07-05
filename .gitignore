@@ -1,0 +1,9 @@
+# Alternative IDEs
+.zed/*
+.vscode/*
+.vscode
+.zed
+
+# output
+public/
+.gitlab-ci-local

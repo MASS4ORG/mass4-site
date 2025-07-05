@@ -1,0 +1,20 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.components.editor.input">Gaya.Components.Editor.Input</a></li>
+<li><strong>Source File:</strong> EditorInputAction.cs</li>
+</ul>
+<p>Represents an input action to be performed by the editor</p>
+<h2 id="properties">Properties</h2>
+<h3 id="type"><strong>Type</strong></h3>
+<p>(<em>EditorInputType</em>) { get; set } = <code>EditorInputType.None</code>: Gets or sets the type of input action to perform</p>
+<h3 id="direction"><strong>Direction</strong></h3>
+<p>(<em>CursorDirection</em>) { get; set }: Gets or sets the direction for cursor movement actions</p>
+<h3 id="extendselection"><strong>ExtendSelection</strong></h3>
+<p>(<em>bool</em>) { get; set }: Gets or sets a value indicating whether the selection should be extended during cursor movement</p>
+<h3 id="character"><strong>Character</strong></h3>
+<p>(<em>char</em>) { get; set }: Gets or sets the character to insert for character input actions</p>
+<h3 id="line"><strong>Line</strong></h3>
+<p>(<em>int</em>) { get; set }: Gets or sets the target line for cursor positioning actions</p>
+<h3 id="column"><strong>Column</strong></h3>
+<p>(<em>int</em>) { get; set }: Gets or sets the target column for cursor positioning actions</p>
+<h3 id="scrolldelta"><strong>ScrollDelta</strong></h3>
+<p>(<em>int</em>) { get; set }: Gets or sets the scroll delta for scroll actions</p>

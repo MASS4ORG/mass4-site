@@ -1,0 +1,67 @@
+---
+Title: "CLASS AnimationFloat"
+Type: api
+Created: "2025-06-18 16:32:58"
+Params:
+  namespace: "Guinevere"
+  type: "class"
+---
+
+- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
+- **Source File:** AnimationFloat.cs
+
+Represents an animated floating-point value that can smoothly transition between states using easing functions over time.
+
+## Properties
+
+### **TargetValue**
+
+(*float*): Gets the target value that the animation is moving towards.
+
+### **IsAnimating**
+
+(*bool*): Gets a value indicating whether the animation is currently running.
+
+
+## Public Methods
+
+### GetValue
+
+```csharp
+public float GetValue()
+```
+
+Gets the current animated value, automatically updating based on elapsed time.
+
+**Returns:** `float`
+
+- The current interpolated value based on the animation progress.
+
+### AnimateTo
+
+```csharp
+public void AnimateTo(float targetValue, float duration, Func<float, float> easingFunction)
+```
+
+Starts an animation to the specified target value.
+
+**Parameters:**
+
+- `targetValue` (*float*): The target value to animate to.
+- `duration` (*float*): The duration of the animation in seconds.
+- `easingFunction` (*Func<float, float>*): The easing function to use for the animation.
+
+
+### SetValue
+
+```csharp
+public void SetValue(float value)
+```
+
+Immediately sets the value without animation.
+
+**Parameters:**
+
+- `value` (*float*): The value to set.
+
+

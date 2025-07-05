@@ -1,0 +1,174 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere.tests">Guinevere.Tests</a></li>
+<li><strong>Source File:</strong> LayoutNodePropertiesTests.cs</li>
+</ul>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="marginproperties_withuniformmargin_returncorrectvalues">MarginProperties_WithUniformMargin_ReturnCorrectValues</h3>
+<pre><code class="language-csharp">public void MarginProperties_WithUniformMargin_ReturnCorrectValues(float margin)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>margin</code> (<em>float</em>)</li>
+</ul>
+<h3 id="marginproperties_withhorizontalvertical_returncorrectvalues">MarginProperties_WithHorizontalVertical_ReturnCorrectValues</h3>
+<pre><code class="language-csharp">public void MarginProperties_WithHorizontalVertical_ReturnCorrectValues(float horizontal, float vertical)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>horizontal</code> (<em>float</em>)</li>
+<li><code>vertical</code> (<em>float</em>)</li>
+</ul>
+<h3 id="marginproperties_withindividualvalues_returncorrectvalues">MarginProperties_WithIndividualValues_ReturnCorrectValues</h3>
+<pre><code class="language-csharp">public void MarginProperties_WithIndividualValues_ReturnCorrectValues(float top, float right, float bottom, float left)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>top</code> (<em>float</em>)</li>
+<li><code>right</code> (<em>float</em>)</li>
+<li><code>bottom</code> (<em>float</em>)</li>
+<li><code>left</code> (<em>float</em>)</li>
+</ul>
+<h3 id="marginproperties_defaultvalues_returnzero">MarginProperties_DefaultValues_ReturnZero</h3>
+<pre><code class="language-csharp">public void MarginProperties_DefaultValues_ReturnZero()
+</code></pre>
+<h3 id="paddingproperties_withuniformpadding_returncorrectvalues">PaddingProperties_WithUniformPadding_ReturnCorrectValues</h3>
+<pre><code class="language-csharp">public void PaddingProperties_WithUniformPadding_ReturnCorrectValues(float padding)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>padding</code> (<em>float</em>)</li>
+</ul>
+<h3 id="paddingproperties_withhorizontalvertical_returncorrectvalues">PaddingProperties_WithHorizontalVertical_ReturnCorrectValues</h3>
+<pre><code class="language-csharp">public void PaddingProperties_WithHorizontalVertical_ReturnCorrectValues(float horizontal, float vertical)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>horizontal</code> (<em>float</em>)</li>
+<li><code>vertical</code> (<em>float</em>)</li>
+</ul>
+<h3 id="paddingproperties_withindividualvalues_returncorrectvalues">PaddingProperties_WithIndividualValues_ReturnCorrectValues</h3>
+<pre><code class="language-csharp">public void PaddingProperties_WithIndividualValues_ReturnCorrectValues(float top, float right, float bottom, float left)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>top</code> (<em>float</em>)</li>
+<li><code>right</code> (<em>float</em>)</li>
+<li><code>bottom</code> (<em>float</em>)</li>
+<li><code>left</code> (<em>float</em>)</li>
+</ul>
+<h3 id="paddingproperties_defaultvalues_returnzero">PaddingProperties_DefaultValues_ReturnZero</h3>
+<pre><code class="language-csharp">public void PaddingProperties_DefaultValues_ReturnZero()
+</code></pre>
+<h3 id="innerrect_withuniformpadding_calculatescorrectly">InnerRect_WithUniformPadding_CalculatesCorrectly</h3>
+<pre><code class="language-csharp">public void InnerRect_WithUniformPadding_CalculatesCorrectly(float x, float y, float w, float h, float padding)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>x</code> (<em>float</em>)</li>
+<li><code>y</code> (<em>float</em>)</li>
+<li><code>w</code> (<em>float</em>)</li>
+<li><code>h</code> (<em>float</em>)</li>
+<li><code>padding</code> (<em>float</em>)</li>
+</ul>
+<h3 id="innerrect_withasymmetricpadding_calculatescorrectly">InnerRect_WithAsymmetricPadding_CalculatesCorrectly</h3>
+<pre><code class="language-csharp">public void InnerRect_WithAsymmetricPadding_CalculatesCorrectly(float x, float y, float w, float h, float paddingTop, float paddingRight, float paddingBottom, float paddingLeft)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>x</code> (<em>float</em>)</li>
+<li><code>y</code> (<em>float</em>)</li>
+<li><code>w</code> (<em>float</em>)</li>
+<li><code>h</code> (<em>float</em>)</li>
+<li><code>paddingTop</code> (<em>float</em>)</li>
+<li><code>paddingRight</code> (<em>float</em>)</li>
+<li><code>paddingBottom</code> (<em>float</em>)</li>
+<li><code>paddingLeft</code> (<em>float</em>)</li>
+</ul>
+<h3 id="innerrect_withzeropadding_equalsoriginalrect">InnerRect_WithZeroPadding_EqualsOriginalRect</h3>
+<pre><code class="language-csharp">public void InnerRect_WithZeroPadding_EqualsOriginalRect()
+</code></pre>
+<h3 id="outerrect_withuniformmargin_calculatescorrectly">OuterRect_WithUniformMargin_CalculatesCorrectly</h3>
+<pre><code class="language-csharp">public void OuterRect_WithUniformMargin_CalculatesCorrectly(float x, float y, float w, float h, float margin)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>x</code> (<em>float</em>)</li>
+<li><code>y</code> (<em>float</em>)</li>
+<li><code>w</code> (<em>float</em>)</li>
+<li><code>h</code> (<em>float</em>)</li>
+<li><code>margin</code> (<em>float</em>)</li>
+</ul>
+<h3 id="outerrect_withasymmetricmargin_calculatescorrectly">OuterRect_WithAsymmetricMargin_CalculatesCorrectly</h3>
+<pre><code class="language-csharp">public void OuterRect_WithAsymmetricMargin_CalculatesCorrectly(float x, float y, float w, float h, float marginTop, float marginRight, float marginBottom, float marginLeft)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>x</code> (<em>float</em>)</li>
+<li><code>y</code> (<em>float</em>)</li>
+<li><code>w</code> (<em>float</em>)</li>
+<li><code>h</code> (<em>float</em>)</li>
+<li><code>marginTop</code> (<em>float</em>)</li>
+<li><code>marginRight</code> (<em>float</em>)</li>
+<li><code>marginBottom</code> (<em>float</em>)</li>
+<li><code>marginLeft</code> (<em>float</em>)</li>
+</ul>
+<h3 id="outerrect_withzeromargin_equalsoriginalrect">OuterRect_WithZeroMargin_EqualsOriginalRect</h3>
+<pre><code class="language-csharp">public void OuterRect_WithZeroMargin_EqualsOriginalRect()
+</code></pre>
+<h3 id="rect_returnscorrectrect">Rect_ReturnsCorrectRect</h3>
+<pre><code class="language-csharp">public void Rect_ReturnsCorrectRect(float x, float y, float w, float h)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>x</code> (<em>float</em>)</li>
+<li><code>y</code> (<em>float</em>)</li>
+<li><code>w</code> (<em>float</em>)</li>
+<li><code>h</code> (<em>float</em>)</li>
+</ul>
+<h3 id="center_calculatescorrectly">Center_CalculatesCorrectly</h3>
+<pre><code class="language-csharp">public void Center_CalculatesCorrectly(float x, float y, float w, float h)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>x</code> (<em>float</em>)</li>
+<li><code>y</code> (<em>float</em>)</li>
+<li><code>w</code> (<em>float</em>)</li>
+<li><code>h</code> (<em>float</em>)</li>
+</ul>
+<h3 id="children_returnsreadonlylist">Children_ReturnsReadOnlyList</h3>
+<pre><code class="language-csharp">public void Children_ReturnsReadOnlyList()
+</code></pre>
+<h3 id="parent_returnscorrectparent">Parent_ReturnsCorrectParent</h3>
+<pre><code class="language-csharp">public void Parent_ReturnsCorrectParent()
+</code></pre>
+<h3 id="setzindex_setsandreturnscorrectvalue">SetZIndex_SetsAndReturnsCorrectValue</h3>
+<pre><code class="language-csharp">public void SetZIndex_SetsAndReturnsCorrectValue(int zIndex)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>zIndex</code> (<em>int</em>)</li>
+</ul>
+<h3 id="zindex_defaultvalue_iszero">ZIndex_DefaultValue_IsZero</h3>
+<pre><code class="language-csharp">public void ZIndex_DefaultValue_IsZero()
+</code></pre>
+<h3 id="zindex_inheritsfromparent">ZIndex_InheritsFromParent</h3>
+<pre><code class="language-csharp">public void ZIndex_InheritsFromParent()
+</code></pre>
+<h3 id="zindex_childoverridesparent">ZIndex_ChildOverridesParent</h3>
+<pre><code class="language-csharp">public void ZIndex_ChildOverridesParent()
+</code></pre>
+<h3 id="zindex_hierarchyintegrationtest">ZIndex_HierarchyIntegrationTest</h3>
+<pre><code class="language-csharp">public void ZIndex_HierarchyIntegrationTest()
+</code></pre>
+<h3 id="drawlist_isinitialized">DrawList_IsInitialized</h3>
+<pre><code class="language-csharp">public void DrawList_IsInitialized()
+</code></pre>
+<h3 id="drawlist_canbesetandretrieved">DrawList_CanBeSetAndRetrieved</h3>
+<pre><code class="language-csharp">public void DrawList_CanBeSetAndRetrieved()
+</code></pre>
+<h3 id="marginandpadding_donotaffecteachother">MarginAndPadding_DoNotAffectEachOther</h3>
+<pre><code class="language-csharp">public void MarginAndPadding_DoNotAffectEachOther()
+</code></pre>
+<h3 id="negativemarginandpadding_producevalidrects">NegativeMarginAndPadding_ProduceValidRects</h3>
+<pre><code class="language-csharp">public void NegativeMarginAndPadding_ProduceValidRects()
+</code></pre>

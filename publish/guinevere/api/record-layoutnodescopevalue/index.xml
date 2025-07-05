@@ -1,0 +1,22 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> LayoutNodeScopeValue.cs</li>
+</ul>
+<p>Represents an abstract base class for managing scope-specific values in a layout node context. Provides methods for retrieving and setting values of a specific type.</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="get">Get</h3>
+<pre><code class="language-csharp">public abstract T Get()
+</code></pre>
+<p>Retrieves the value associated with the current layout node scope for the specified type.</p>
+<p><strong>Returns:</strong> <code>T</code></p>
+<ul>
+<li>The value associated with the specified type within the layout node scope, or a default value if no value is set.</li>
+</ul>
+<h3 id="set">Set</h3>
+<pre><code class="language-csharp">public abstract void Set(T value)
+</code></pre>
+<p>Sets the value associated with the current layout node scope for the specified type.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>value</code> (<em>T</em>): The value to set within the layout node scope.</li>
+</ul>

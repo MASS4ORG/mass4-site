@@ -1,0 +1,11 @@
+<p>This namespace contains 7 type(s).</p>
+<h2 id="types">Types</h2>
+<ul>
+<li>🆂 Pu <a href="./struct-cursorposition">CursorPosition</a></li>
+<li>🅲 Pu <a href="./class-editorstate">EditorState</a></li>
+<li>🅲 Pu <a href="./class-guitexteditor">GuiTextEditor</a></li>
+<li>🅲 Pu <a href="./class-texteditorconfig">TextEditorConfig</a></li>
+<li>🅲 Pu <a href="./class-texteditortheme">TextEditorTheme</a></li>
+<li>🆂 Pu <a href="./struct-textselection">TextSelection</a></li>
+<li>🄴  <a href="./enum-tokentype">TokenType</a></li>
+</ul>

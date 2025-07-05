@@ -1,0 +1,176 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.components.editor.core">Gaya.Components.Editor.Core</a></li>
+<li><strong>Source File:</strong> TextOperations.cs</li>
+</ul>
+<p>Handles text operations and manipulations for the editor</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="insertcharacter">InsertCharacter</h3>
+<pre><code class="language-csharp">public string InsertCharacter(string content, int line, int column, char character)
+</code></pre>
+<p>Inserts a character at the specified position</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>content</code> (<em>string</em>)</li>
+<li><code>line</code> (<em>int</em>)</li>
+<li><code>column</code> (<em>int</em>)</li>
+<li><code>character</code> (<em>char</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>string</code></p>
+<h3 id="inserttext">InsertText</h3>
+<pre><code class="language-csharp">public string InsertText(string content, int line, int column, string text)
+</code></pre>
+<p>Inserts text at the specified position</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>content</code> (<em>string</em>)</li>
+<li><code>line</code> (<em>int</em>)</li>
+<li><code>column</code> (<em>int</em>)</li>
+<li><code>text</code> (<em>string</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>string</code></p>
+<h3 id="insertnewline">InsertNewLine</h3>
+<pre><code class="language-csharp">public string InsertNewLine(string content, int line, int column)
+</code></pre>
+<p>Inserts a new line at the specified position</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>content</code> (<em>string</em>)</li>
+<li><code>line</code> (<em>int</em>)</li>
+<li><code>column</code> (<em>int</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>string</code></p>
+<h3 id="inserttab">InsertTab</h3>
+<pre><code class="language-csharp">public string InsertTab(string content, int line, int column)
+</code></pre>
+<p>Inserts a tab at the specified position</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>content</code> (<em>string</em>)</li>
+<li><code>line</code> (<em>int</em>)</li>
+<li><code>column</code> (<em>int</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>string</code></p>
+<h3 id="deletebackward">DeleteBackward</h3>
+<pre><code class="language-csharp">public (string content, int newLine, int newColumn) DeleteBackward(string content, int line, int column)
+</code></pre>
+<p>Deletes a character before the cursor position</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>content</code> (<em>string</em>)</li>
+<li><code>line</code> (<em>int</em>)</li>
+<li><code>column</code> (<em>int</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>(string content, int newLine, int newColumn)</code></p>
+<h3 id="deleteforward">DeleteForward</h3>
+<pre><code class="language-csharp">public string DeleteForward(string content, int line, int column)
+</code></pre>
+<p>Deletes a character after the cursor position</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>content</code> (<em>string</em>)</li>
+<li><code>line</code> (<em>int</em>)</li>
+<li><code>column</code> (<em>int</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>string</code></p>
+<h3 id="deleteselection">DeleteSelection</h3>
+<pre><code class="language-csharp">public string DeleteSelection(string content, TextSelection selection)
+</code></pre>
+<p>Deletes the selected text</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>content</code> (<em>string</em>)</li>
+<li><code>selection</code> (<em>TextSelection</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>string</code></p>
+<h3 id="getselectedtext">GetSelectedText</h3>
+<pre><code class="language-csharp">public string GetSelectedText(string content, TextSelection selection)
+</code></pre>
+<p>Gets the selected text</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>content</code> (<em>string</em>)</li>
+<li><code>selection</code> (<em>TextSelection</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>string</code></p>
+<h3 id="findtext">FindText</h3>
+<pre><code class="language-csharp">public (int line, int column)? FindText(string content, string searchText, int startLine = 0, int startColumn = 0, bool caseSensitive = false, bool wholeWord = false)
+</code></pre>
+<p>Finds text in the content</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>content</code> (<em>string</em>)</li>
+<li><code>searchText</code> (<em>string</em>)</li>
+<li><code>startLine</code> (<em>int</em>) (Default: <code>0</code>)</li>
+<li><code>startColumn</code> (<em>int</em>) (Default: <code>0</code>)</li>
+<li><code>caseSensitive</code> (<em>bool</em>) (Default: <code>false</code>)</li>
+<li><code>wholeWord</code> (<em>bool</em>) (Default: <code>false</code>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>(int line, int column)?</code></p>
+<h3 id="replacetext">ReplaceText</h3>
+<pre><code class="language-csharp">public string ReplaceText(string content, string searchText, string replaceText, bool caseSensitive = false, bool wholeWord = false)
+</code></pre>
+<p>Replaces text in the content</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>content</code> (<em>string</em>)</li>
+<li><code>searchText</code> (<em>string</em>)</li>
+<li><code>replaceText</code> (<em>string</em>)</li>
+<li><code>caseSensitive</code> (<em>bool</em>) (Default: <code>false</code>)</li>
+<li><code>wholeWord</code> (<em>bool</em>) (Default: <code>false</code>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>string</code></p>
+<h3 id="replacealltext">ReplaceAllText</h3>
+<pre><code class="language-csharp">public string ReplaceAllText(string content, string searchText, string replaceText, bool caseSensitive = false, bool wholeWord = false)
+</code></pre>
+<p>Replaces all occurrences of text in the content</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>content</code> (<em>string</em>)</li>
+<li><code>searchText</code> (<em>string</em>)</li>
+<li><code>replaceText</code> (<em>string</em>)</li>
+<li><code>caseSensitive</code> (<em>bool</em>) (Default: <code>false</code>)</li>
+<li><code>wholeWord</code> (<em>bool</em>) (Default: <code>false</code>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>string</code></p>
+<h3 id="getwordat">GetWordAt</h3>
+<pre><code class="language-csharp">public (int startColumn, int endColumn, string word) GetWordAt(string content, int line, int column)
+</code></pre>
+<p>Gets the word at the specified position</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>content</code> (<em>string</em>)</li>
+<li><code>line</code> (<em>int</em>)</li>
+<li><code>column</code> (<em>int</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>(int startColumn, int endColumn, string word)</code></p>
+<h3 id="indentlines">IndentLines</h3>
+<pre><code class="language-csharp">public string IndentLines(string content, int startLine, int endLine)
+</code></pre>
+<p>Indents the selected lines</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>content</code> (<em>string</em>)</li>
+<li><code>startLine</code> (<em>int</em>)</li>
+<li><code>endLine</code> (<em>int</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>string</code></p>
+<h3 id="unindentlines">UnindentLines</h3>
+<pre><code class="language-csharp">public string UnindentLines(string content, int startLine, int endLine)
+</code></pre>
+<p>Unindents the selected lines</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>content</code> (<em>string</em>)</li>
+<li><code>startLine</code> (<em>int</em>)</li>
+<li><code>endLine</code> (<em>int</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>string</code></p>
+<h3 id="formatcontent">FormatContent</h3>
+<pre><code class="language-csharp">public string FormatContent(string content)
+</code></pre>
+<p>Formats the content (basic auto-formatting)</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>content</code> (<em>string</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>string</code></p>

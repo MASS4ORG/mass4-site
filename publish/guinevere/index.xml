@@ -1,0 +1,103 @@
+<h1 id="guinevere">Guinevere</h1>
+<p><strong>A blazing fast Immediate Mode GUI library for C#</strong></p>
+<p>Guinevere brings the power and simplicity of immediate mode GUI programming to the .NET ecosystem. Inspired by industry leaders like Dear ImGui and designed with C# developers in mind, Guinevere delivers uncompromising performance without sacrificing ease of use.</p>
+<h2 id="why-immediate-mode">Why Immediate Mode?</h2>
+<p>Traditional retained mode GUI frameworks require you to create, manage, and destroy UI elements. This leads to complex state management, memory overhead, and performance bottlenecks. Immediate mode flips this paradigm:</p>
+<ul>
+<li><strong>No state management</strong>: UI is rebuilt every frame based on your application's current state</li>
+<li><strong>Minimal memory overhead</strong>: No persistent UI objects cluttering memory</li>
+<li><strong>Direct control</strong>: Your code directly drives the UI, making debugging and customization straightforward</li>
+<li><strong>High performance</strong>: Optimized rendering path with minimal CPU overhead</li>
+</ul>
+<h2 id="core-features">Core Features</h2>
+<div class="col span-4 box"><h3 id="blazing-performance">🚀 Blazing Performance</h3>
+<ul>
+<li>Zero-allocation rendering where possible</li>
+<li>Optimized draw call batching</li>
+<li>60+ FPS even with complex interfaces</li>
+<li>GPU-accelerated rendering pipeline</li>
+</ul>
+</div>
+<div class="col span-4 box"><h3 id="simple-api">🎯 Simple API</h3>
+<ul>
+<li>Clean, intuitive immediate mode paradigm</li>
+<li>No complex inheritance hierarchies</li>
+<li>Minimal boilerplate code</li>
+<li>Hot reload support for rapid development</li>
+</ul>
+</div>
+<div class="col span-4 box"><h3 id="expressive-power">🎨 Expressive Power</h3>
+<ul>
+<li>Rich set of built-in controls</li>
+<li>Flexible layout system</li>
+<li>Comprehensive theming and styling</li>
+<li>Custom drawing primitives</li>
+</ul>
+</div>
+<div class="col span-4 box"><h3 id="cross-platform">🌍 Cross-Platform</h3>
+<ul>
+<li>Windows, macOS, and Linux support</li>
+<li>Native performance on all platforms</li>
+<li>Consistent look and behavior</li>
+<li>OpenGL and DirectX rendering backends</li>
+</ul>
+</div>
+<h2 id="quick-start">Quick Start</h2>
+<p>Get up and running in minutes:</p>
+<pre><code class="language-csharp">using Guinevere;
+
+abstract class HelloWorld
+{
+    private string name = &quot;World&quot;;
+    private float value = 0.5f;
+    private bool enabled = true;
+
+    public void Main()
+    {
+        var gui = new Gui();
+        var win = new Window(gui, &quot;Hello, Guinevere!&quot;);
+
+        win.RunGui(() {
+            Gui.DrawText(&quot;Hello, Guinevere!&quot;);
+
+            Gui.InputText(&quot;Name&quot;, ref name);
+            Gui.Slider(&quot;Value&quot;, ref value, 0f, 1f);
+            Gui.Checkbox(&quot;Enabled&quot;, ref enabled);
+
+            if (Gui.Button($&quot;Greet {name}&quot;) &amp;&amp; enabled)
+            {
+                Console.WriteLine($&quot;Hello, {name}! Value: {value:F2}&quot;);
+            }
+        });
+    }
+}
+</code></pre>
+<h2 id="documentation">Documentation</h2>
+<ul>
+<li><strong><a href="/guinevere/api">API Reference</a></strong> - Complete API documentation</li>
+<li><strong><a href="/guinevere/docs/getting-started">Getting Started Guide</a></strong> - Step-by-step tutorial</li>
+<li><strong><a href="/guinevere/examples">Examples</a></strong> - Sample applications and demos</li>
+<li><strong><a href="/guinevere/docs/best-practices">Best Practices</a></strong> - Performance tips and patterns</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<h3 id="net-cli">.NET CLI</h3>
+<pre><code>dotnet add package Guinevere
+</code></pre>
+<h2 id="system-requirements">System Requirements</h2>
+<ul>
+<li>.NET 6.0 or later</li>
+<li>Windows 10+, macOS 10.15+, or Linux (Ubuntu 18.04+)</li>
+<li>OpenGL 3.3+ or DirectX 11+ support</li>
+<li>512MB available RAM</li>
+</ul>
+<h2 id="license">License</h2>
+<p>Guinevere is released under the MIT License. See <a href="https://github.com/mass4/guinevere/blob/main/LICENSE">LICENSE</a> for details.</p>
+<h2 id="community">Community</h2>
+<ul>
+<li>💬 <a href="https://discord.gg/guinevere">Discord Server</a></li>
+<li>🐛 <a href="https://github.com/mass4/guinevere/issues">Issue Tracker</a></li>
+<li>📧 <a href="mailto:support@mass4.dev">Support Email</a></li>
+<li>📖 <a href="https://forum.mass4.dev">Community Forum</a></li>
+</ul>
+<hr />
+<p><em>Guinevere is part of the <a href="/mega4">MEGA4 Initiative</a> by <a href="/mass4">MASS4</a> - four revolutionary tools for modern development.</em></p>

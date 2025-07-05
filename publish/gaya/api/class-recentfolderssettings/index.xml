@@ -1,0 +1,10 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.services">Gaya.Services</a></li>
+<li><strong>Source File:</strong> RecentFoldersSettings.cs</li>
+</ul>
+<p>Settings for managing recent folders configuration</p>
+<h2 id="properties">Properties</h2>
+<h3 id="recentfolders"><strong>RecentFolders</strong></h3>
+<p>(<em>List<string></em>) { get; set } = <code>[]</code>: Gets or sets the list of recently accessed folder paths</p>
+<h3 id="maxrecentfolders"><strong>MaxRecentFolders</strong></h3>
+<p>(<em>int</em>) { get; set } = <code>10</code>: Gets or sets the maximum number of recent folders to keep</p>

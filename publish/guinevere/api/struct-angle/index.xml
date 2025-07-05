@@ -1,0 +1,57 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> Angle.cs</li>
+</ul>
+<p>Represents an angle defined in terms of radians, and provides methods for converting and performing operations with angles.</p>
+<h2 id="properties">Properties</h2>
+<h3 id="radian"><strong>Radian</strong></h3>
+<p get="">(<em>float</em>) : Represents the angle in radians.</p>
+<h3 id="degree"><strong>Degree</strong></h3>
+<p>(<em>float</em>): Represents the angle in degrees, derived from the angle's radian value.</p>
+<h3 id="fullcircle"><strong>FullCircle</strong></h3>
+<p>(<em>Angle</em>): Represents a full rotation angle, equivalent to 360 degrees or 2π radians.</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="turns">Turns</h3>
+<pre><code class="language-csharp">public static Angle Turns(float turns)
+</code></pre>
+<p>Creates a new <code>Angle</code> instance representing the specified number of turns.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>turns</code> (<em>float</em>): The angle value in turns, where 1 turn is equivalent to 360 degrees or 2π radians.</li>
+</ul>
+<p><strong>Returns:</strong> <code>Angle</code></p>
+<ul>
+<li>A new <code>Angle</code> corresponding to the specified number of turns.</li>
+</ul>
+<h3 id="degrees">Degrees</h3>
+<pre><code class="language-csharp">public static Angle Degrees(float degrees)
+</code></pre>
+<p>Creates a new <code>Angle</code> instance from the given degree value.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>degrees</code> (<em>float</em>): The angle value in degrees.</li>
+</ul>
+<p><strong>Returns:</strong> <code>Angle</code></p>
+<ul>
+<li>A new <code>Angle</code> representing the specified degree value.</li>
+</ul>
+<h3 id="radians">Radians</h3>
+<pre><code class="language-csharp">public static Angle Radians(float radians)
+</code></pre>
+<p>Creates a new <code>Angle</code> instance from the given radian value.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>radians</code> (<em>float</em>): The angle value in radians.</li>
+</ul>
+<p><strong>Returns:</strong> <code>Angle</code></p>
+<ul>
+<li>A new <code>Angle</code> representing the specified radian value.</li>
+</ul>
+<h3 id="getdirectionvector">GetDirectionVector</h3>
+<pre><code class="language-csharp">public Vector2 GetDirectionVector()
+</code></pre>
+<p>Calculates the direction vector corresponding to the angle represented by this <code>Angle</code> instance.</p>
+<p><strong>Returns:</strong> <code>Vector2</code></p>
+<ul>
+<li>A <code>Vector2</code> representing the direction of the angle, where the X and Y components correspond to the cosine and sine of the angle in radians, respectively.</li>
+</ul>

@@ -1,0 +1,13 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-sample_73_pangui_musicapp">Sample_73_PanGui_MusicApp</a></li>
+<li><strong>Source File:</strong> ImFont.cs</li>
+</ul>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="loadfont">LoadFont</h3>
+<pre><code class="language-csharp">public static ImFont LoadFont(string arial)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>arial</code> (<em>string</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>ImFont</code></p>

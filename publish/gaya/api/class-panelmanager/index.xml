@@ -1,0 +1,161 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.panels">Gaya.Panels</a></li>
+<li><strong>Source File:</strong> PanelManager.cs</li>
+</ul>
+<p>Manages all panels in the application, including discovery, registration, and lifecycle management</p>
+<h2 id="properties">Properties</h2>
+<h3 id="panels"><strong>Panels</strong></h3>
+<p>(<em>IReadOnlyList<IPanel></em>): Gets all registered panels ordered by their Order property</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="getpanelsbyposition">GetPanelsByPosition</h3>
+<pre><code class="language-csharp">public IEnumerable&lt;IPanel&gt; GetPanelsByPosition(PanelPosition position)
+</code></pre>
+<p>Gets all panels at the specified position</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>position</code> (<em>PanelPosition</em>): The position to get panels for</li>
+</ul>
+<p><strong>Returns:</strong> <code>IEnumerable&lt;IPanel&gt;</code></p>
+<ul>
+<li>An enumerable of panels at the specified position</li>
+</ul>
+<h3 id="getpanel">GetPanel</h3>
+<pre><code class="language-csharp">public IPanel? GetPanel(string id)
+</code></pre>
+<p>Gets a panel by its ID</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>id</code> (<em>string</em>): The ID of the panel to get</li>
+</ul>
+<p><strong>Returns:</strong> <code>IPanel?</code></p>
+<ul>
+<li>The panel with the specified ID, or null if not found</li>
+</ul>
+<h3 id="registerpanel">RegisterPanel</h3>
+<pre><code class="language-csharp">public void RegisterPanel(IPanel panel)
+</code></pre>
+<p>Registers a panel with the manager</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>panel</code> (<em>IPanel</em>): The panel to register</li>
+</ul>
+<h3 id="unregisterpanel">UnregisterPanel</h3>
+<pre><code class="language-csharp">public bool UnregisterPanel(string id)
+</code></pre>
+<p>Unregisters a panel from the manager</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>id</code> (<em>string</em>): The ID of the panel to unregister</li>
+</ul>
+<p><strong>Returns:</strong> <code>bool</code></p>
+<ul>
+<li>True if the panel was unregistered successfully, false otherwise</li>
+</ul>
+<h3 id="showpanel">ShowPanel</h3>
+<pre><code class="language-csharp">public bool ShowPanel(string id)
+</code></pre>
+<p>Shows a panel by making it visible</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>id</code> (<em>string</em>): The ID of the panel to show</li>
+</ul>
+<p><strong>Returns:</strong> <code>bool</code></p>
+<ul>
+<li>True if the panel was shown successfully, false otherwise</li>
+</ul>
+<h3 id="hidepanel">HidePanel</h3>
+<pre><code class="language-csharp">public bool HidePanel(string id)
+</code></pre>
+<p>Hides a panel by making it invisible</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>id</code> (<em>string</em>): The ID of the panel to hide</li>
+</ul>
+<p><strong>Returns:</strong> <code>bool</code></p>
+<ul>
+<li>True if the panel was hidden successfully, false otherwise</li>
+</ul>
+<h3 id="togglepanel">TogglePanel</h3>
+<pre><code class="language-csharp">public bool TogglePanel(string id)
+</code></pre>
+<p>Toggles the visibility of a panel</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>id</code> (<em>string</em>): The ID of the panel to toggle</li>
+</ul>
+<p><strong>Returns:</strong> <code>bool</code></p>
+<ul>
+<li>True if the panel state was toggled successfully, false otherwise</li>
+</ul>
+<h3 id="closepanel">ClosePanel</h3>
+<pre><code class="language-csharp">public bool ClosePanel(string id)
+</code></pre>
+<p>Closes a panel if it allows being closed</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>id</code> (<em>string</em>): The ID of the panel to close</li>
+</ul>
+<p><strong>Returns:</strong> <code>bool</code></p>
+<ul>
+<li>True if the panel was closed successfully, false otherwise</li>
+</ul>
+<h3 id="movepanel">MovePanel</h3>
+<pre><code class="language-csharp">public bool MovePanel(string id, PanelPosition newPosition)
+</code></pre>
+<p>Moves a panel to a new position if it allows being moved</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>id</code> (<em>string</em>): The ID of the panel to move</li>
+<li><code>newPosition</code> (<em>PanelPosition</em>): The new position for the panel</li>
+</ul>
+<p><strong>Returns:</strong> <code>bool</code></p>
+<ul>
+<li>True if the panel was moved successfully, false otherwise</li>
+</ul>
+<h3 id="resizepanel">ResizePanel</h3>
+<pre><code class="language-csharp">public bool ResizePanel(string id, float newSize)
+</code></pre>
+<p>Resizes a panel to a new size</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>id</code> (<em>string</em>): The ID of the panel to resize</li>
+<li><code>newSize</code> (<em>float</em>): The new size for the panel</li>
+</ul>
+<p><strong>Returns:</strong> <code>bool</code></p>
+<ul>
+<li>True if the panel was resized successfully, false otherwise</li>
+</ul>
+<h3 id="discoverpanels">DiscoverPanels</h3>
+<pre><code class="language-csharp">public void DiscoverPanels(Assembly[]? assemblies = null)
+</code></pre>
+<p>Discovers and registers panels from the specified assemblies using reflection</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>assemblies</code> (<em>Assembly[]?</em>): The assemblies to scan for panels, or null to use the executing assembly (Default: <code>null</code>)</li>
+</ul>
+<h3 id="initializepanels">InitializePanels</h3>
+<pre><code class="language-csharp">public void InitializePanels()
+</code></pre>
+<p>Initializes all registered panels</p>
+<h3 id="drawpanels">DrawPanels</h3>
+<pre><code class="language-csharp">public void DrawPanels(Gui gui, AppTheme theme, PanelPosition position)
+</code></pre>
+<p>Draws all visible panels at the specified position</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>gui</code> (<em>Gui</em>): The GUI instance for rendering</li>
+<li><code>theme</code> (<em>AppTheme</em>): The application theme</li>
+<li><code>position</code> (<em>PanelPosition</em>): The position to draw panels for</li>
+</ul>
+<h3 id="gettotalsizeforposition">GetTotalSizeForPosition</h3>
+<pre><code class="language-csharp">public float GetTotalSizeForPosition(PanelPosition position)
+</code></pre>
+<p>Gets the total size of all visible panels at the specified position</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>position</code> (<em>PanelPosition</em>): The position to calculate total size for</li>
+</ul>
+<p><strong>Returns:</strong> <code>float</code></p>
+<ul>
+<li>The total size of all visible panels at the position</li>
+</ul>

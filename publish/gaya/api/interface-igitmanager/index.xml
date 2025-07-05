@@ -1,0 +1,77 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.managers">Gaya.Managers</a></li>
+<li><strong>Source File:</strong> IGitManager.cs</li>
+</ul>
+<p>Interface for managing Git repository operations</p>
+<h2 id="properties">Properties</h2>
+<h3 id="currentbranch"><strong>CurrentBranch</strong></h3>
+<p get="">(<em>string</em>) : Gets the current Git branch name</p>
+<h3 id="currentrepository"><strong>CurrentRepository</strong></h3>
+<p get="">(<em>string</em>) : Gets the current Git repository path</p>
+<h3 id="changes"><strong>Changes</strong></h3>
+<p get="">(<em>IReadOnlyList<GitChangeInfo></em>) : Gets the list of unstaged changes in the repository</p>
+<h3 id="stagedchanges"><strong>StagedChanges</strong></h3>
+<p get="">(<em>IReadOnlyList<GitChangeInfo></em>) : Gets the list of staged changes in the repository</p>
+<h3 id="isgitrepository"><strong>IsGitRepository</strong></h3>
+<p get="">(<em>bool</em>) : Gets a value indicating whether the current directory is a Git repository</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="setrepository">SetRepository</h3>
+<pre><code class="language-csharp"> void SetRepository(string repositoryPath)
+</code></pre>
+<p>Sets the Git repository to the specified path</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>repositoryPath</code> (<em>string</em>): The path to the Git repository</li>
+</ul>
+<h3 id="refreshstatusasync">RefreshStatusAsync</h3>
+<pre><code class="language-csharp"> Task RefreshStatusAsync()
+</code></pre>
+<p>Refreshes the Git status asynchronously</p>
+<p><strong>Returns:</strong> <code>Task</code></p>
+<ul>
+<li>A task representing the asynchronous operation</li>
+</ul>
+<h3 id="stagefileasync">StageFileAsync</h3>
+<pre><code class="language-csharp"> Task&lt;bool&gt; StageFileAsync(string filePath)
+</code></pre>
+<p>Stages a file for commit asynchronously</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>filePath</code> (<em>string</em>): The path to the file to stage</li>
+</ul>
+<p><strong>Returns:</strong> <code>Task&lt;bool&gt;</code></p>
+<ul>
+<li>A task representing the asynchronous operation with a boolean result indicating success</li>
+</ul>
+<h3 id="unstagefileasync">UnstageFileAsync</h3>
+<pre><code class="language-csharp"> Task&lt;bool&gt; UnstageFileAsync(string filePath)
+</code></pre>
+<p>Unstages a file asynchronously</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>filePath</code> (<em>string</em>): The path to the file to unstage</li>
+</ul>
+<p><strong>Returns:</strong> <code>Task&lt;bool&gt;</code></p>
+<ul>
+<li>A task representing the asynchronous operation with a boolean result indicating success</li>
+</ul>
+<h3 id="commitasync">CommitAsync</h3>
+<pre><code class="language-csharp"> Task&lt;bool&gt; CommitAsync(string message)
+</code></pre>
+<p>Commits staged changes with the specified message asynchronously</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>message</code> (<em>string</em>): The commit message</li>
+</ul>
+<p><strong>Returns:</strong> <code>Task&lt;bool&gt;</code></p>
+<ul>
+<li>A task representing the asynchronous operation with a boolean result indicating success</li>
+</ul>
+<h3 id="getbranchasync">GetBranchAsync</h3>
+<pre><code class="language-csharp"> Task&lt;string&gt; GetBranchAsync()
+</code></pre>
+<p>Gets the current branch name asynchronously</p>
+<p><strong>Returns:</strong> <code>Task&lt;string&gt;</code></p>
+<ul>
+<li>A task representing the asynchronous operation with the current branch name</li>
+</ul>

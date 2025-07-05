@@ -1,0 +1,10 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.panels">Gaya.Panels</a></li>
+<li><strong>Source File:</strong> PanelSizeEventArgs.cs</li>
+</ul>
+<p>Event arguments for panel size events</p>
+<h2 id="properties">Properties</h2>
+<h3 id="oldsize"><strong>OldSize</strong></h3>
+<p get="">(<em>float</em>) : Gets the old size of the panel</p>
+<h3 id="newsize"><strong>NewSize</strong></h3>
+<p get="">(<em>float</em>) : Gets the new size of the panel</p>

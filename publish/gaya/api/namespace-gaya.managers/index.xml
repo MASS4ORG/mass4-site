@@ -1,0 +1,10 @@
+<p>This namespace contains 6 type(s).</p>
+<h2 id="types">Types</h2>
+<ul>
+<li>🅲 Pu <a href="./class-fileexplorermanager">FileExplorerManager</a></li>
+<li>🅲 Pu <a href="./class-gitmanager">GitManager</a></li>
+<li>🄸  <a href="./interface-ifileexplorermanager">IFileExplorerManager</a></li>
+<li>🄸  <a href="./interface-igitmanager">IGitManager</a></li>
+<li>🄸  <a href="./interface-itabmanager">ITabManager</a></li>
+<li>🅲 Pu <a href="./class-tabmanager">TabManager</a></li>
+</ul>

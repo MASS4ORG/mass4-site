@@ -1,0 +1,78 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.panels">Gaya.Panels</a></li>
+<li><strong>Source File:</strong> IPanel.cs</li>
+</ul>
+<p>Interface that all panels must implement to be part of the panel system</p>
+<h2 id="properties">Properties</h2>
+<h3 id="id"><strong>Id</strong></h3>
+<p get="">(<em>string</em>) : The unique identifier for this panel</p>
+<h3 id="displayname"><strong>DisplayName</strong></h3>
+<p get="">(<em>string</em>) : The display name shown in the UI</p>
+<h3 id="icon"><strong>Icon</strong></h3>
+<p get="">(<em>string</em>) : The icon identifier for this panel</p>
+<h3 id="isvisible"><strong>IsVisible</strong></h3>
+<p>(<em>bool</em>) { get; set }: Whether this panel is currently visible</p>
+<h3 id="size"><strong>Size</strong></h3>
+<p>(<em>float</em>) { get; set }: The current size of the panel (width for side panels, height for top/bottom panels)</p>
+<h3 id="minsize"><strong>MinSize</strong></h3>
+<p get="">(<em>float</em>) : The minimum size this panel can be resized to</p>
+<h3 id="position"><strong>Position</strong></h3>
+<p>(<em>PanelPosition</em>) { get; set }: The current position of this panel</p>
+<h3 id="canclose"><strong>CanClose</strong></h3>
+<p get="">(<em>bool</em>) : Whether this panel can be closed by the user</p>
+<h3 id="canmove"><strong>CanMove</strong></h3>
+<p get="">(<em>bool</em>) : Whether this panel supports being moved to different positions</p>
+<h3 id="order"><strong>Order</strong></h3>
+<p get="">(<em>int</em>) : The order priority for this panel (lower numbers appear first)</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="initialize">Initialize</h3>
+<pre><code class="language-csharp"> void Initialize()
+</code></pre>
+<p>Initialize the panel with any required dependencies</p>
+<h3 id="draw">Draw</h3>
+<pre><code class="language-csharp"> void Draw(Gui gui, AppTheme theme)
+</code></pre>
+<p>Draw the panel content using the provided GUI context</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>gui</code> (<em>Gui</em>): The GUI context to draw with</li>
+<li><code>theme</code> (<em>AppTheme</em>): The current theme</li>
+</ul>
+<h3 id="onclosing">OnClosing</h3>
+<pre><code class="language-csharp"> bool OnClosing()
+</code></pre>
+<p>Called when the panel is about to be closed</p>
+<p><strong>Returns:</strong> <code>bool</code></p>
+<ul>
+<li>True if the panel can be closed, false to cancel</li>
+</ul>
+<h3 id="onclosed">OnClosed</h3>
+<pre><code class="language-csharp"> void OnClosed()
+</code></pre>
+<p>Called when the panel is closed</p>
+<h3 id="onshown">OnShown</h3>
+<pre><code class="language-csharp"> void OnShown()
+</code></pre>
+<p>Called when the panel is shown</p>
+<h3 id="onhidden">OnHidden</h3>
+<pre><code class="language-csharp"> void OnHidden()
+</code></pre>
+<p>Called when the panel is hidden</p>
+<h3 id="onpositionchanged">OnPositionChanged</h3>
+<pre><code class="language-csharp"> void OnPositionChanged(PanelPosition oldPosition, PanelPosition newPosition)
+</code></pre>
+<p>Called when the panel is moved to a new position</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>oldPosition</code> (<em>PanelPosition</em>): The previous position</li>
+<li><code>newPosition</code> (<em>PanelPosition</em>): The new position</li>
+</ul>
+<h3 id="onsizechanged">OnSizeChanged</h3>
+<pre><code class="language-csharp"> void OnSizeChanged(float oldSize, float newSize)
+</code></pre>
+<p>Called when the panel is resized</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>oldSize</code> (<em>float</em>): The previous size</li>
+<li><code>newSize</code> (<em>float</em>): The new size</li>
+</ul>

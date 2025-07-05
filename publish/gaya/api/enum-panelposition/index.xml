@@ -1,0 +1,13 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.panels">Gaya.Panels</a></li>
+<li><strong>Source File:</strong> PanelPosition.cs</li>
+</ul>
+<p>Enum defining where panels can be positioned</p>
+<h2 id="enum-values">Enum Values</h2>
+<ul>
+<li><strong>Left</strong>: Panel is positioned on the left side</li>
+<li><strong>Right</strong>: Panel is positioned on the right side</li>
+<li><strong>Top</strong>: Panel is positioned at the top</li>
+<li><strong>Bottom</strong>: Panel is positioned at the bottom</li>
+<li><strong>Center</strong>: Panel is positioned in the center (for tabs in the main editor area)</li>
+</ul>

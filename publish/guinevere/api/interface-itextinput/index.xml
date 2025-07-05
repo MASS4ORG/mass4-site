@@ -1,0 +1,31 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere.core">Guinevere.Core</a></li>
+<li><strong>Source File:</strong> IGuiComponent.cs</li>
+</ul>
+<p>Interface for components that can handle text input</p>
+<h2 id="properties">Properties</h2>
+<h3 id="content"><strong>Content</strong></h3>
+<p>(<em>string</em>) { get; set }: The current text content</p>
+<h3 id="isreadonly"><strong>IsReadOnly</strong></h3>
+<p>(<em>bool</em>) { get; set }: Whether the content is read-only</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="inserttext">InsertText</h3>
+<pre><code class="language-csharp"> void InsertText(string text)
+</code></pre>
+<p>Inserts text at the current position</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>text</code> (<em>string</em>): Text to insert</li>
+</ul>
+<h3 id="selectall">SelectAll</h3>
+<pre><code class="language-csharp"> void SelectAll()
+</code></pre>
+<p>Selects all text</p>
+<h3 id="getselectedtext">GetSelectedText</h3>
+<pre><code class="language-csharp"> string GetSelectedText()
+</code></pre>
+<p>Gets the currently selected text</p>
+<p><strong>Returns:</strong> <code>string</code></p>
+<ul>
+<li>Selected text or empty string if no selection</li>
+</ul>

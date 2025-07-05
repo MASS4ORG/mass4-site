@@ -1,0 +1,8 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-sample_43_animatedlayoutdemo">Sample_43_AnimatedLayoutDemo</a></li>
+<li><strong>Source File:</strong> AnimatedLayoutDemo.cs</li>
+</ul>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="main">Main</h3>
+<pre><code class="language-csharp">public static void Main()
+</code></pre>

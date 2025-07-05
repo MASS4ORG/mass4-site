@@ -1,0 +1,28 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.components.editor.core">Gaya.Components.Editor.Core</a></li>
+<li><strong>Source File:</strong> EditorConfig.cs</li>
+</ul>
+<p>Configuration and styling options for the text editor</p>
+<h2 id="properties">Properties</h2>
+<h3 id="lineheight"><strong>LineHeight</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>16.0f</code>: Gets or sets the height of each line in pixels</p>
+<h3 id="linenumberwidth"><strong>LineNumberWidth</strong></h3>
+<p>(<em>float</em>) { get; set } = <code>50.0f</code>: Gets or sets the width of the line number area in pixels</p>
+<h3 id="showlinenumbers"><strong>ShowLineNumbers</strong></h3>
+<p>(<em>bool</em>) { get; set } = <code>true</code>: Gets or sets a value indicating whether line numbers should be displayed</p>
+<h3 id="isreadonly"><strong>IsReadOnly</strong></h3>
+<p>(<em>bool</em>) { get; set } = <code>false</code>: Gets or sets a value indicating whether the editor is read-only</p>
+<h3 id="tabsize"><strong>TabSize</strong></h3>
+<p>(<em>int</em>) { get; set } = <code>4</code>: Gets or sets the number of spaces to display for a tab character</p>
+<h3 id="wordwrap"><strong>WordWrap</strong></h3>
+<p>(<em>bool</em>) { get; set } = <code>false</code>: Gets or sets a value indicating whether word wrapping is enabled</p>
+<h3 id="syntaxhighlighting"><strong>SyntaxHighlighting</strong></h3>
+<p>(<em>bool</em>) { get; set } = <code>false</code>: Gets or sets a value indicating whether syntax highlighting is enabled</p>
+<h3 id="maxundosteps"><strong>MaxUndoSteps</strong></h3>
+<p>(<em>int</em>) { get; set } = <code>100</code>: Gets or sets the maximum number of undo steps to maintain</p>
+<h3 id="cursorblinkinterval"><strong>CursorBlinkInterval</strong></h3>
+<p>(<em>double</em>) { get; set } = <code>500</code>: Gets or sets the cursor blink interval in milliseconds</p>
+<h3 id="keyrepeatdelay"><strong>KeyRepeatDelay</strong></h3>
+<p>(<em>double</em>) { get; set } = <code>500</code>: Gets or sets the delay before key repeat starts in milliseconds</p>
+<h3 id="keyrepeatinterval"><strong>KeyRepeatInterval</strong></h3>
+<p>(<em>double</em>) { get; set } = <code>50</code>: Gets or sets the interval between key repeats in milliseconds</p>

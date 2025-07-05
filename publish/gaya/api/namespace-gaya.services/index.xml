@@ -1,0 +1,14 @@
+<p>This namespace contains 10 type(s).</p>
+<h2 id="types">Types</h2>
+<ul>
+<li>🆁  <a href="./record-erroroccurredmessage">ErrorOccurredMessage</a></li>
+<li>🅲  <a href="./class-folderdialogservice">FolderDialogService</a></li>
+<li>🄸  <a href="./interface-ifolderdialogservice">IFolderDialogService</a></li>
+<li>🄸  <a href="./interface-imessageservice">IMessageService</a></li>
+<li>🄸  <a href="./interface-irecentfilesservice">IRecentFilesService</a></li>
+<li>🆁  <a href="./record-infomessage">InfoMessage</a></li>
+<li>🅲  <a href="./class-recentfilesservice">RecentFilesService</a></li>
+<li>🅲 Pu <a href="./class-recentfolderssettings">RecentFoldersSettings</a></li>
+<li>🅲  <a href="./class-simplemessageservice">SimpleMessageService</a></li>
+<li>🆁  <a href="./record-warningoccurredmessage">WarningOccurredMessage</a></li>
+</ul>

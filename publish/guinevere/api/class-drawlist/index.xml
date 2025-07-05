@@ -1,0 +1,60 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> DrawList.cs</li>
+</ul>
+<p>Represents a list of drawable entries or operations which can be added, modified, or rendered to a canvas.</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="add">Add</h3>
+<pre><code class="language-csharp">public void Add(IDrawable shape)
+</code></pre>
+<p>Adds a drawable shape to the draw list.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>shape</code> (<em>IDrawable</em>): The drawable object to add.</li>
+</ul>
+<h3 id="prepend">Prepend</h3>
+<pre><code class="language-csharp">public void Prepend(IDrawable shape)
+</code></pre>
+<p>Adds a drawable shape to the beginning of the draw list.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>shape</code> (<em>IDrawable</em>): The drawable object to prepend to the draw list.</li>
+</ul>
+<h3 id="add-1">Add</h3>
+<pre><code class="language-csharp">public void Add(IDrawListEntry entry)
+</code></pre>
+<p>Adds any draw list entry to the draw list.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>entry</code> (<em>IDrawListEntry</em>): The draw list entry to add.</li>
+</ul>
+<h3 id="prepend-1">Prepend</h3>
+<pre><code class="language-csharp">public void Prepend(IDrawListEntry entry)
+</code></pre>
+<p>Adds any draw list entry to the beginning of the draw list.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>entry</code> (<em>IDrawListEntry</em>): The draw list entry to prepend to the draw list.</li>
+</ul>
+<h3 id="addclip">AddClip</h3>
+<pre><code class="language-csharp">public void AddClip()
+</code></pre>
+<p>Adds a clip operation to the draw list using the specified shape.</p>
+<h3 id="restoreclip">RestoreClip</h3>
+<pre><code class="language-csharp">public void RestoreClip(Vector2 position)
+</code></pre>
+<p>Restores the previous clipping area by adding a reset operation to the draw list. This operation ensures that the clipping state is reverted after applying a clip shape.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>position</code> (<em>Vector2</em>)</li>
+</ul>
+<h3 id="render">Render</h3>
+<pre><code class="language-csharp">public void Render(Gui gui, LayoutNode node, SKCanvas canvas)
+</code></pre>
+<p>Renders all drawable entries in the list onto the specified canvas.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>gui</code> (<em>Gui</em>): The GUI context used for rendering operations.</li>
+<li><code>node</code> (<em>LayoutNode</em>): The layout node containing structural and styling information.</li>
+<li><code>canvas</code> (<em>SKCanvas</em>): The canvas to render the drawable entries onto.</li>
+</ul>

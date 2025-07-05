@@ -1,0 +1,26 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> ILayoutNodeEnterExit.cs</li>
+</ul>
+<p>Provides methods to manage the entry and exit of layout node contexts within a UI rendering or layout system.</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="enter">Enter</h3>
+<pre><code class="language-csharp"> LayoutNodeScope Enter(LayoutNode node)
+</code></pre>
+<p>Enters the specified layout node's scope and begins managing its state or properties.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>node</code> (<em>LayoutNode</em>): The layout node to enter and manage within a new scope.</li>
+</ul>
+<p><strong>Returns:</strong> <code>LayoutNodeScope</code></p>
+<ul>
+<li>A <code>LayoutNodeScope</code> representing the entered scope of the given layout node.</li>
+</ul>
+<h3 id="exit">Exit</h3>
+<pre><code class="language-csharp"> LayoutNode Exit()
+</code></pre>
+<p>Exits the current layout node's scope and returns the parent layout node, if any.</p>
+<p><strong>Returns:</strong> <code>LayoutNode</code></p>
+<ul>
+<li>The parent layout node after exiting the current scope.</li>
+</ul>

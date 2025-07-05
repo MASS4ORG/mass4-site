@@ -1,0 +1,112 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere.tests">Guinevere.Tests</a></li>
+<li><strong>Source File:</strong> LayoutNodeCalculationTests.cs</li>
+</ul>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="rootnode_calculatelayout_usesscreenrect">RootNode_CalculateLayout_UsesScreenRect</h3>
+<pre><code class="language-csharp">public void RootNode_CalculateLayout_UsesScreenRect(float screenWidth, float screenHeight)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>screenWidth</code> (<em>float</em>)</li>
+<li><code>screenHeight</code> (<em>float</em>)</li>
+</ul>
+<h3 id="singlechildnode_withexplicitsize_calculatescorrectly">SingleChildNode_WithExplicitSize_CalculatesCorrectly</h3>
+<pre><code class="language-csharp">public void SingleChildNode_WithExplicitSize_CalculatesCorrectly(float width, float height)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>width</code> (<em>float</em>)</li>
+<li><code>height</code> (<em>float</em>)</li>
+</ul>
+<h3 id="singlechildnode_withexpansion_fillsparent">SingleChildNode_WithExpansion_FillsParent</h3>
+<pre><code class="language-csharp">public void SingleChildNode_WithExpansion_FillsParent()
+</code></pre>
+<h3 id="singlechildnode_withpartialexpansion_calculatescorrectly">SingleChildNode_WithPartialExpansion_CalculatesCorrectly</h3>
+<pre><code class="language-csharp">public void SingleChildNode_WithPartialExpansion_CalculatesCorrectly(float widthPercent, float heightPercent)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>widthPercent</code> (<em>float</em>)</li>
+<li><code>heightPercent</code> (<em>float</em>)</li>
+</ul>
+<h3 id="singlechildnode_withuniformmargin_calculatescorrectlayout">SingleChildNode_WithUniformMargin_CalculatesCorrectLayout</h3>
+<pre><code class="language-csharp">public void SingleChildNode_WithUniformMargin_CalculatesCorrectLayout(float margin)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>margin</code> (<em>float</em>)</li>
+</ul>
+<h3 id="singlechildnode_withasymmetricmargin_calculatescorrectlayout">SingleChildNode_WithAsymmetricMargin_CalculatesCorrectLayout</h3>
+<pre><code class="language-csharp">public void SingleChildNode_WithAsymmetricMargin_CalculatesCorrectLayout(float top, float right, float bottom, float left)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>top</code> (<em>float</em>)</li>
+<li><code>right</code> (<em>float</em>)</li>
+<li><code>bottom</code> (<em>float</em>)</li>
+<li><code>left</code> (<em>float</em>)</li>
+</ul>
+<h3 id="parentwithpadding_affectschildlayout">ParentWithPadding_AffectsChildLayout</h3>
+<pre><code class="language-csharp">public void ParentWithPadding_AffectsChildLayout(float padding)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>padding</code> (<em>float</em>)</li>
+</ul>
+<h3 id="verticallayout_withtwoequalchildren_dividesspaceevenly">VerticalLayout_WithTwoEqualChildren_DividesSpaceEvenly</h3>
+<pre><code class="language-csharp">public void VerticalLayout_WithTwoEqualChildren_DividesSpaceEvenly()
+</code></pre>
+<h3 id="verticallayout_withfixedandexpandingchild_calculatescorrectly">VerticalLayout_WithFixedAndExpandingChild_CalculatesCorrectly</h3>
+<pre><code class="language-csharp">public void VerticalLayout_WithFixedAndExpandingChild_CalculatesCorrectly()
+</code></pre>
+<h3 id="verticallayout_withgap_addsspacebetweenchildren">VerticalLayout_WithGap_AddsSpaceBetweenChildren</h3>
+<pre><code class="language-csharp">public void VerticalLayout_WithGap_AddsSpaceBetweenChildren(float gap)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>gap</code> (<em>float</em>)</li>
+</ul>
+<h3 id="verticallayout_withchildmargins_calculatescorrectly">VerticalLayout_WithChildMargins_CalculatesCorrectly</h3>
+<pre><code class="language-csharp">public void VerticalLayout_WithChildMargins_CalculatesCorrectly()
+</code></pre>
+<h3 id="verticallayout_withthreechildren_differentexpansionratios">VerticalLayout_WithThreeChildren_DifferentExpansionRatios</h3>
+<pre><code class="language-csharp">public void VerticalLayout_WithThreeChildren_DifferentExpansionRatios()
+</code></pre>
+<h3 id="horizontallayout_withtwoequalchildren_dividesspaceevenly">HorizontalLayout_WithTwoEqualChildren_DividesSpaceEvenly</h3>
+<pre><code class="language-csharp">public void HorizontalLayout_WithTwoEqualChildren_DividesSpaceEvenly()
+</code></pre>
+<h3 id="horizontallayout_withfixedandexpandingchild_calculatescorrectly">HorizontalLayout_WithFixedAndExpandingChild_CalculatesCorrectly</h3>
+<pre><code class="language-csharp">public void HorizontalLayout_WithFixedAndExpandingChild_CalculatesCorrectly()
+</code></pre>
+<h3 id="horizontallayout_withgap_addsspacebetweenchildren">HorizontalLayout_WithGap_AddsSpaceBetweenChildren</h3>
+<pre><code class="language-csharp">public void HorizontalLayout_WithGap_AddsSpaceBetweenChildren(float gap)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>gap</code> (<em>float</em>)</li>
+</ul>
+<h3 id="horizontallayout_withchildmargins_calculatescorrectly">HorizontalLayout_WithChildMargins_CalculatesCorrectly</h3>
+<pre><code class="language-csharp">public void HorizontalLayout_WithChildMargins_CalculatesCorrectly()
+</code></pre>
+<h3 id="nestedlayout_verticalinhorizontal_calculatescorrectly">NestedLayout_VerticalInHorizontal_CalculatesCorrectly</h3>
+<pre><code class="language-csharp">public void NestedLayout_VerticalInHorizontal_CalculatesCorrectly()
+</code></pre>
+<h3 id="nestedlayout_withmarginsandpadding_calculatescorrectly">NestedLayout_WithMarginsAndPadding_CalculatesCorrectly</h3>
+<pre><code class="language-csharp">public void NestedLayout_WithMarginsAndPadding_CalculatesCorrectly()
+</code></pre>
+<h3 id="nestedlayout_threelevelsdeep_calculatescorrectly">NestedLayout_ThreeLevelsDeep_CalculatesCorrectly</h3>
+<pre><code class="language-csharp">public void NestedLayout_ThreeLevelsDeep_CalculatesCorrectly()
+</code></pre>
+<h3 id="layout_withzerosizedparent_handlesgracefully">Layout_WithZeroSizedParent_HandlesGracefully</h3>
+<pre><code class="language-csharp">public void Layout_WithZeroSizedParent_HandlesGracefully()
+</code></pre>
+<h3 id="layout_withnegativemargins_calculatescorrectly">Layout_WithNegativeMargins_CalculatesCorrectly</h3>
+<pre><code class="language-csharp">public void Layout_WithNegativeMargins_CalculatesCorrectly()
+</code></pre>
+<h3 id="layout_withexcessivemargins_clampstominimumsize">Layout_WithExcessiveMargins_ClampsToMinimumSize</h3>
+<pre><code class="language-csharp">public void Layout_WithExcessiveMargins_ClampsToMinimumSize()
+</code></pre>
+<h3 id="layout_mixedfixedandexpandingchildren_distributesspacecorrectly">Layout_MixedFixedAndExpandingChildren_DistributesSpaceCorrectly</h3>
+<pre><code class="language-csharp">public void Layout_MixedFixedAndExpandingChildren_DistributesSpaceCorrectly()
+</code></pre>

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    
+    
+    
+    
+    <title>STRUCT Color - MASS4</title>
+<meta name="description" content="Eclectic, remote and provoking software">
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://mass4.org/guinevere/api/struct-color/index.html">
+<link rel="alternate" type="application/rss+xml" href="/blog/index.xml" title="SuCoS Blog">
+
+<!-- Style and JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="msapplication-TileColor" content="#0d59ad">
+<meta name="theme-color" content="#ffffff">
+<link rel="manifest" href="/site.webmanifest" type="application/manifest+json">
+
+    <!-- Social link preview -->
+
+
+
+
+
+
+    
+
+    
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="STRUCT Color">
+<meta name="twitter:description" content="Eclectic, remote and provoking software">
+<meta name="twitter:image" content="https://sucos.brunomassa.com/favicon-32x32.png">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style-guinevere.css">
+    <script async src="/prism.js"></script>
+    <link rel="stylesheet" href="/prism.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-dark-subtle sticky-top text-center mb-5">
+        <nav class="container navbar navbar-expand-lg" style="overflow: visible;">
+            <a href="/" class="w-25 logo">
+                <img src="/guinevere-badge.svg" height="80px" width="80px" alt="guinevere badge"
+                    class="position-absolute top-0 start-0" style="" />
+            </a>
+            <span></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar"
+                aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navbar-expand-lg" id="topNavbar">
+                <ul class="container navbar-nav bd-navbar-nav">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/mega4">MEGA4</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/guinevere">Guinevere</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/gaya">Gaya</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/turian">Turian</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/mystery">Mystery</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/news">News</a>
+                    </li>
+                    
+                </ul>
+
+                <button type="button" class="btn btn-light"
+                    onclick='window.open("https://github.com/mass4/theme_prepend/-/releases", "_blank");'>Download</button>
+
+                <!-- Social Networks-->
+                <ul class="navbar-nav bd-navbar-nav">
+                    <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                        <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                        <hr class="d-lg-none my-2 text-white-50">
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a rel="me" class="nav-link" href="https://ko-fi.com/brmassa" id="link-ko-fi">
+                            <i class=" bi bi-heart-fill text-danger"></i>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a rel="me" class="nav-link" href="https://github.com/mass4" id="link-github">
+                            <i class=" bi bi-git"></i>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a rel="me" class="nav-link" href="https://fosstodon.org/@mass4" id="link-mastodon">
+                            <i class=" bi bi-mastodon"></i>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a rel="me" class="nav-link" href="https://matrix.to/#/#Mass4:matrix.org" id="link-matrix">
+                            <i class=" bi bi-hash"></i>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a rel="me" class="nav-link" href="https://discord.com/channels/1112051704733647058/1112051705316638835" id="link-discord">
+                            <i class=" bi bi-discord"></i>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Regular Content -->
+    <div class="container my-5">
+        <div class="col-12">
+            <ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-guinevere">Guinevere</a></li>
+<li><strong>Source File:</strong> Color.cs</li>
+</ul>
+<h2 id="fields">Fields</h2>
+<h3 id="empty-color-newdefaultsystem.drawing.color"><strong>Empty</strong> (<em>Color</em>) = <code>new(default(System.Drawing.Color))</code></h3>
+<h2 id="properties">Properties</h2>
+<h3 id="transparent"><strong>Transparent</strong></h3>
+<p>(<em>Color</em>): // -------------------------------------------------------------------
+//  static list of &quot;web&quot; colors...
+//</p>
+<h3 id="aliceblue"><strong>AliceBlue</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="antiquewhite"><strong>AntiqueWhite</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="aqua"><strong>Aqua</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="aquamarine"><strong>Aquamarine</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="azure"><strong>Azure</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="beige"><strong>Beige</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="bisque"><strong>Bisque</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="black"><strong>Black</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="blanchedalmond"><strong>BlanchedAlmond</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="blue"><strong>Blue</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="blueviolet"><strong>BlueViolet</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="brown"><strong>Brown</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="burlywood"><strong>BurlyWood</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="cadetblue"><strong>CadetBlue</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="chartreuse"><strong>Chartreuse</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="chocolate"><strong>Chocolate</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="coral"><strong>Coral</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="cornflowerblue"><strong>CornflowerBlue</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="cornsilk"><strong>Cornsilk</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="crimson"><strong>Crimson</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="cyan"><strong>Cyan</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="darkblue"><strong>DarkBlue</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="darkcyan"><strong>DarkCyan</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="darkgoldenrod"><strong>DarkGoldenrod</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="darkgray"><strong>DarkGray</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="darkgreen"><strong>DarkGreen</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="darkkhaki"><strong>DarkKhaki</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="darkmagenta"><strong>DarkMagenta</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="darkolivegreen"><strong>DarkOliveGreen</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="darkorange"><strong>DarkOrange</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="darkorchid"><strong>DarkOrchid</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="darkred"><strong>DarkRed</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="darksalmon"><strong>DarkSalmon</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="darkseagreen"><strong>DarkSeaGreen</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="darkslateblue"><strong>DarkSlateBlue</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="darkslategray"><strong>DarkSlateGray</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="darkturquoise"><strong>DarkTurquoise</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="darkviolet"><strong>DarkViolet</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="deeppink"><strong>DeepPink</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="deepskyblue"><strong>DeepSkyBlue</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="dimgray"><strong>DimGray</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="dodgerblue"><strong>DodgerBlue</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="firebrick"><strong>Firebrick</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="floralwhite"><strong>FloralWhite</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="forestgreen"><strong>ForestGreen</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="fuchsia"><strong>Fuchsia</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="gainsboro"><strong>Gainsboro</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="ghostwhite"><strong>GhostWhite</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="gold"><strong>Gold</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="goldenrod"><strong>Goldenrod</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="gray"><strong>Gray</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="green"><strong>Green</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="greenyellow"><strong>GreenYellow</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="honeydew"><strong>Honeydew</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="hotpink"><strong>HotPink</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="indianred"><strong>IndianRed</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="indigo"><strong>Indigo</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="ivory"><strong>Ivory</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="khaki"><strong>Khaki</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="lavender"><strong>Lavender</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="lavenderblush"><strong>LavenderBlush</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="lawngreen"><strong>LawnGreen</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="lemonchiffon"><strong>LemonChiffon</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="lightblue"><strong>LightBlue</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="lightcoral"><strong>LightCoral</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="lightcyan"><strong>LightCyan</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="lightgoldenrodyellow"><strong>LightGoldenrodYellow</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="lightgreen"><strong>LightGreen</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="lightgray"><strong>LightGray</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="lightpink"><strong>LightPink</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="lightsalmon"><strong>LightSalmon</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="lightseagreen"><strong>LightSeaGreen</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="lightskyblue"><strong>LightSkyBlue</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="lightslategray"><strong>LightSlateGray</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="lightsteelblue"><strong>LightSteelBlue</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="lightyellow"><strong>LightYellow</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="lime"><strong>Lime</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="limegreen"><strong>LimeGreen</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="linen"><strong>Linen</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="magenta"><strong>Magenta</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="maroon"><strong>Maroon</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="mediumaquamarine"><strong>MediumAquamarine</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="mediumblue"><strong>MediumBlue</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="mediumorchid"><strong>MediumOrchid</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="mediumpurple"><strong>MediumPurple</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="mediumseagreen"><strong>MediumSeaGreen</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="mediumslateblue"><strong>MediumSlateBlue</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="mediumspringgreen"><strong>MediumSpringGreen</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="mediumturquoise"><strong>MediumTurquoise</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="mediumvioletred"><strong>MediumVioletRed</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="midnightblue"><strong>MidnightBlue</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="mintcream"><strong>MintCream</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="mistyrose"><strong>MistyRose</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="moccasin"><strong>Moccasin</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="navajowhite"><strong>NavajoWhite</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="navy"><strong>Navy</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="oldlace"><strong>OldLace</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="olive"><strong>Olive</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="olivedrab"><strong>OliveDrab</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="orange"><strong>Orange</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="orangered"><strong>OrangeRed</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="orchid"><strong>Orchid</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="palegoldenrod"><strong>PaleGoldenrod</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="palegreen"><strong>PaleGreen</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="paleturquoise"><strong>PaleTurquoise</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="palevioletred"><strong>PaleVioletRed</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="papayawhip"><strong>PapayaWhip</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="peachpuff"><strong>PeachPuff</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="peru"><strong>Peru</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="pink"><strong>Pink</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="plum"><strong>Plum</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="powderblue"><strong>PowderBlue</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="purple"><strong>Purple</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="rebeccapurple"><strong>RebeccaPurple</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="red"><strong>Red</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="rosybrown"><strong>RosyBrown</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="royalblue"><strong>RoyalBlue</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="saddlebrown"><strong>SaddleBrown</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="salmon"><strong>Salmon</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="sandybrown"><strong>SandyBrown</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="seagreen"><strong>SeaGreen</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="seashell"><strong>SeaShell</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="sienna"><strong>Sienna</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="silver"><strong>Silver</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="skyblue"><strong>SkyBlue</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="slateblue"><strong>SlateBlue</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="slategray"><strong>SlateGray</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="snow"><strong>Snow</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="springgreen"><strong>SpringGreen</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="steelblue"><strong>SteelBlue</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="tan"><strong>Tan</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="teal"><strong>Teal</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="thistle"><strong>Thistle</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="tomato"><strong>Tomato</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="turquoise"><strong>Turquoise</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="violet"><strong>Violet</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="wheat"><strong>Wheat</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="white"><strong>White</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="whitesmoke"><strong>WhiteSmoke</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="yellow"><strong>Yellow</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="yellowgreen"><strong>YellowGreen</strong></h3>
+<p>(<em>Color</em>)</p>
+<h3 id="r"><strong>R</strong></h3>
+<p>(<em>byte</em>): //
+//  end &quot;web&quot; colors
+// -------------------------------------------------------------------</p>
+<h3 id="g"><strong>G</strong></h3>
+<p>(<em>byte</em>)</p>
+<h3 id="b"><strong>B</strong></h3>
+<p>(<em>byte</em>)</p>
+<h3 id="a"><strong>A</strong></h3>
+<p>(<em>byte</em>)</p>
+<h3 id="isknowncolor"><strong>IsKnownColor</strong></h3>
+<p>(<em>bool</em>)</p>
+<h3 id="isempty"><strong>IsEmpty</strong></h3>
+<p>(<em>bool</em>)</p>
+<h3 id="isnamedcolor"><strong>IsNamedColor</strong></h3>
+<p>(<em>bool</em>)</p>
+<h3 id="issystemcolor"><strong>IsSystemColor</strong></h3>
+<p>(<em>bool</em>)</p>
+<h3 id="name"><strong>Name</strong></h3>
+<p>(<em>string</em>)</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="lerp">Lerp</h3>
+<pre><code class="language-csharp">public static Color Lerp(Color start, Color end, float t)
+</code></pre>
+<p>Linearly interpolates between two colors.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>start</code> (<em>Color</em>): The starting color.</li>
+<li><code>end</code> (<em>Color</em>): The ending color.</li>
+<li><code>t</code> (<em>float</em>): Interpolation factor (0.0 = start, 1.0 = end).</li>
+</ul>
+<p><strong>Returns:</strong> <code>Color</code></p>
+<ul>
+<li>The interpolated color.</li>
+</ul>
+<h3 id="fromargb">FromArgb</h3>
+<pre><code class="language-csharp">public static Color FromArgb(int argb)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>argb</code> (<em>int</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>Color</code></p>
+<h3 id="fromargb-1">FromArgb</h3>
+<pre><code class="language-csharp">public static Color FromArgb(int alpha, int red, int green, int blue)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>alpha</code> (<em>int</em>)</li>
+<li><code>red</code> (<em>int</em>)</li>
+<li><code>green</code> (<em>int</em>)</li>
+<li><code>blue</code> (<em>int</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>Color</code></p>
+<h3 id="fromargb-2">FromArgb</h3>
+<pre><code class="language-csharp">public static Color FromArgb(int alpha, Color baseColor)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>alpha</code> (<em>int</em>)</li>
+<li><code>baseColor</code> (<em>Color</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>Color</code></p>
+<h3 id="fromargb-3">FromArgb</h3>
+<pre><code class="language-csharp">public static Color FromArgb(int red, int green, int blue)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>red</code> (<em>int</em>)</li>
+<li><code>green</code> (<em>int</em>)</li>
+<li><code>blue</code> (<em>int</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>Color</code></p>
+<h3 id="fromknowncolor">FromKnownColor</h3>
+<pre><code class="language-csharp">public static Color FromKnownColor(KnownColor color)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>color</code> (<em>KnownColor</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>Color</code></p>
+<h3 id="fromname">FromName</h3>
+<pre><code class="language-csharp">public static Color FromName(string name)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>name</code> (<em>string</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>Color</code></p>
+<h3 id="getbrightness">GetBrightness</h3>
+<pre><code class="language-csharp">public float GetBrightness()
+</code></pre>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="gethue">GetHue</h3>
+<pre><code class="language-csharp">public float GetHue()
+</code></pre>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="getsaturation">GetSaturation</h3>
+<pre><code class="language-csharp">public float GetSaturation()
+</code></pre>
+<p><strong>Returns:</strong> <code>float</code></p>
+<h3 id="toargb">ToArgb</h3>
+<pre><code class="language-csharp">public int ToArgb()
+</code></pre>
+<p><strong>Returns:</strong> <code>int</code></p>
+<h3 id="toknowncolor">ToKnownColor</h3>
+<pre><code class="language-csharp">public KnownColor ToKnownColor()
+</code></pre>
+<p><strong>Returns:</strong> <code>KnownColor</code></p>
+<h3 id="tostring">ToString</h3>
+<pre><code class="language-csharp">public override string ToString()
+</code></pre>
+<p><strong>Returns:</strong> <code>string</code></p>
+<h3 id="equals">Equals</h3>
+<pre><code class="language-csharp">public override bool Equals(object? obj)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>obj</code> (<em>object?</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>bool</code></p>
+<h3 id="equals-1">Equals</h3>
+<pre><code class="language-csharp">public bool Equals(Color other)
+</code></pre>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>other</code> (<em>Color</em>)</li>
+</ul>
+<p><strong>Returns:</strong> <code>bool</code></p>
+<h3 id="gethashcode">GetHashCode</h3>
+<pre><code class="language-csharp">public override int GetHashCode()
+</code></pre>
+<p><strong>Returns:</strong> <code>int</code></p>
+
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    
+    <footer class="text-center py-3 bg-dark-subtle">
+
+        <p><span>The MASS4 logos are copyright ®  2023-2025 Bruno Massa</span></p>
+
+        <p>
+            <span class="">Made with <a href="https://SuCoS.brunomassa.com"><img src="/SuCoS-logo.svg" height="16px" width="100px" alt="SuCoS badge" /></a>.</span>
+            <em></em>
+            Updated in 2025-07-05 10:49 / <i>v6.1.2.0</i>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', '');
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

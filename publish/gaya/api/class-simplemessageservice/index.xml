@@ -1,0 +1,14 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/gaya/api/namespace-gaya.services">Gaya.Services</a></li>
+<li><strong>Source File:</strong> SimpleMessageService.cs</li>
+</ul>
+<p>Simple implementation of a message service for publishing messages</p>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="publish">Publish</h3>
+<pre><code class="language-csharp">public void Publish(T message)
+</code></pre>
+<p>Publishes a message to subscribers</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>message</code> (<em>T</em>): The message to publish</li>
+</ul>

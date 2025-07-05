@@ -1,0 +1,11 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-sample_73_pangui_musicapp">Sample_73_PanGui_MusicApp</a></li>
+<li><strong>Source File:</strong> PadPlayer.cs</li>
+</ul>
+<h2 id="fields">Fields</h2>
+<h3 id="pads-string-a-bb-b-c-db-d-eb-e-f-gb-g-ab"><strong>Pads</strong> (<em>string[]</em>) = <code>[&quot;A&quot;, &quot;Bb&quot;, &quot;B&quot;, &quot;C&quot;, &quot;Db&quot;, &quot;D&quot;, &quot;Eb&quot;, &quot;E&quot;, &quot;F&quot;, &quot;Gb&quot;, &quot;G&quot;, &quot;Ab&quot;]</code></h3>
+<h3 id="selectedpad-int"><strong>SelectedPad</strong> (<em>int</em>)</h3>
+<h3 id="volume-float"><strong>Volume</strong> (<em>float</em>)</h3>
+<h3 id="brightness-float"><strong>Brightness</strong> (<em>float</em>)</h3>
+<h3 id="shimmer-float"><strong>Shimmer</strong> (<em>float</em>)</h3>
+<h3 id="effect-effect-new-name-reverb-type-midi"><strong>Effect</strong> (<em>Effect</em>) = <code>new() { Name = &quot;Reverb&quot;, Type = &quot;Midi&quot; }</code></h3>

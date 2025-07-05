@@ -1,0 +1,8 @@
+<ul>
+<li><strong>Namespace:</strong> <a href="/guinevere/api/namespace-sample_01">Sample_01</a></li>
+<li><strong>Source File:</strong> Shared.cs</li>
+</ul>
+<h2 id="public-methods">Public Methods</h2>
+<h3 id="draw">Draw</h3>
+<pre><code class="language-csharp">public void Draw()
+</code></pre>
