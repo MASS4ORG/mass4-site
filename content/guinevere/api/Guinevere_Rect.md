@@ -1,14 +1,17 @@
 ---
 Title: "Rect"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "Rect"
   namespace: "Guinevere"
-  type: "record"
+  symbol: "record"
+  source: "Rect.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** Rect.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [Rect.cs](https://github.com/brmassa/blob/main/Rect.cs)
 
 Represents a rectangle defined by its position (X, Y) and size (W, H). Provides properties and methods for working with rectangles, such as calculating various points, centers, and containment checks.
 

@@ -1,14 +1,17 @@
 ---
 Title: "ScrollClipOperation"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "ScrollClipOperation"
   namespace: "Guinevere"
-  type: "class"
+  symbol: "class"
+  source: "ScrollClipOperation.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** ScrollClipOperation.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [ScrollClipOperation.cs](https://github.com/brmassa/blob/main/ScrollClipOperation.cs)
 
 Represents a clipping operation specifically designed for scrollable containers. This operation clips content to the viewport bounds, ensuring that scrolled content outside the visible area is properly hidden.
 

@@ -1,13 +1,17 @@
 ---
 Title: "API"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
-  type: "index"
+  symbol: "index"
 ---
 
-This documentation contains 84 type(s) across 1 namespace(s).
+This documentation contains 72 type(s) across 5 namespace(s).
 
 ## Namespaces
 
-- [Guinevere](/guinevere/api/namespace-guinevere) (84 types)
+- [Guinevere](/guinevere/api/guinevere) (84 types)
+- [Guinevere.OpenGL.OpenTK](/guinevere/api/guinevere.opengl.opentk) (2 types)
+- [Guinevere.OpenGL.Raylib](/guinevere/api/guinevere.opengl.raylib) (2 types)
+- [Guinevere.OpenGL.SilkNET](/guinevere/api/guinevere.opengl.silknet) (2 types)
+- [Guinevere.Vulkan.SilkNET](/guinevere/api/guinevere.vulkan.silknet) (4 types)

@@ -1,14 +1,17 @@
 ---
 Title: "IWindowHandler"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "IWindowHandler"
   namespace: "Guinevere"
-  type: "interface"
+  symbol: "interface"
+  source: "IWindowHandler.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** IWindowHandler.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [IWindowHandler.cs](https://github.com/brmassa/blob/main/IWindowHandler.cs)
 
 Defines an interface for handling window-specific operations and management. Provides methods for controlling window appearance and behavior across different rendering backends.
 

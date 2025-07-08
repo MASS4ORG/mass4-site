@@ -1,14 +1,17 @@
 ---
 Title: "Time"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "Time"
   namespace: "Guinevere"
-  type: "class"
+  symbol: "class"
+  source: "Time.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** Time.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [Time.cs](https://github.com/brmassa/blob/main/Time.cs)
 
 Provides time measurement and frame rate calculation utilities for game loops.
 

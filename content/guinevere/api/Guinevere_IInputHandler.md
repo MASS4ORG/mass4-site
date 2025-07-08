@@ -1,14 +1,17 @@
 ---
 Title: "IInputHandler"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "IInputHandler"
   namespace: "Guinevere"
-  type: "interface"
+  symbol: "interface"
+  source: "IInputHandler.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** IInputHandler.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [IInputHandler.cs](https://github.com/brmassa/blob/main/IInputHandler.cs)
 
 Provides input handling functionalities including keyboard and mouse events.
 

@@ -1,14 +1,17 @@
 ---
 Title: "IDrawListEntry"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "IDrawListEntry"
   namespace: "Guinevere"
-  type: "interface"
+  symbol: "interface"
+  source: "IDrawListEntry.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** IDrawListEntry.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [IDrawListEntry.cs](https://github.com/brmassa/blob/main/IDrawListEntry.cs)
 
 Represents an entry in a drawing list, allowing customizable drawing actions to be performed on a given GUI layout node using an associated canvas.
 

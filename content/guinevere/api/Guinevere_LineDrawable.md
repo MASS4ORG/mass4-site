@@ -1,14 +1,17 @@
 ---
 Title: "LineDrawable"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "LineDrawable"
   namespace: "Guinevere"
-  type: "class"
+  symbol: "class"
+  source: "LayoutNode.Drawing.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** LayoutNode.Drawing.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [LayoutNode.Drawing.cs](https://github.com/brmassa/blob/main/LayoutNode.Drawing.cs)
 
 Custom drawable for lines
 

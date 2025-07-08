@@ -1,14 +1,17 @@
 ---
 Title: "Edge"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "Edge"
   namespace: "Guinevere"
-  type: "struct"
+  symbol: "struct"
+  source: "Edge.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** Edge.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [Edge.cs](https://github.com/brmassa/blob/main/Edge.cs)
 
 Represents a structure that defines an edge or border with measurements for each side: top, right, bottom, and left.
 

@@ -2,5 +2,5 @@ h1,
 h2,
 h3,
 h4 {
-    color: palegreen;
+    color: var(--gaya-color);
 }

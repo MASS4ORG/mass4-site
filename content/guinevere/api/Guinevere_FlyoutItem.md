@@ -1,14 +1,17 @@
 ---
 Title: "FlyoutItem"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "FlyoutItem"
   namespace: "Guinevere"
-  type: "class"
+  symbol: "class"
+  source: "FlyoutItem.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** FlyoutItem.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [FlyoutItem.cs](https://github.com/brmassa/blob/main/FlyoutItem.cs)
 
 Represents a flyout menu item
 

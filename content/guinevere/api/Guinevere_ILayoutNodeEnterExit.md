@@ -1,14 +1,17 @@
 ---
 Title: "ILayoutNodeEnterExit"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "ILayoutNodeEnterExit"
   namespace: "Guinevere"
-  type: "interface"
+  symbol: "interface"
+  source: "ILayoutNodeEnterExit.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** ILayoutNodeEnterExit.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [ILayoutNodeEnterExit.cs](https://github.com/brmassa/blob/main/ILayoutNodeEnterExit.cs)
 
 Provides methods to manage the entry and exit of layout node contexts within a UI rendering or layout system.
 

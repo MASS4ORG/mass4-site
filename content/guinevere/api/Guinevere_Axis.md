@@ -1,14 +1,17 @@
 ---
 Title: "Axis"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "Axis"
   namespace: "Guinevere"
-  type: "enum"
+  symbol: "enum"
+  source: "Axis.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** Axis.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [Axis.cs](https://github.com/brmassa/blob/main/Axis.cs)
 
 Represents the possible axes that can be used for layout direction or alignment.
 

@@ -1,14 +1,17 @@
 ---
 Title: "Angle"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "Angle"
   namespace: "Guinevere"
-  type: "struct"
+  symbol: "struct"
+  source: "Angle.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** Angle.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [Angle.cs](https://github.com/brmassa/blob/main/Angle.cs)
 
 Represents an angle defined in terms of radians, and provides methods for converting and performing operations with angles.
 

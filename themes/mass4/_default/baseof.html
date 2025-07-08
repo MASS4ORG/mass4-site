@@ -2,6 +2,9 @@
 <html lang="en" data-bs-theme="dark">
 
 <head>
+    {% render 'partials/baseof-head.html' -%}
+    {% render 'partials/baseof-head-twitter.html' -%}
+
     {% if page.Section == 'guinevere' or page.Section == 'gaya' or page.Section == 'turian' or page.Section == 'mystery' or page.Section == 'mega4' -%}
     {% assign theme_append =  page.Section -%}
     {% assign theme_prepend =  page.Section -%}
@@ -9,14 +12,7 @@
     {% assign theme_append = 'mass4' -%}
     {% assign theme_prepend = 'mass4' -%}
     {% endif -%}
-    {% render 'partials/baseof-head.html' -%}
-    {% render 'partials/baseof-head-twitter.html' -%}
-    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/{{ theme_append }}-style.css">
-    <script async src="/prism.js"></script>
-    <link rel="stylesheet" href="/prism.css"><link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>

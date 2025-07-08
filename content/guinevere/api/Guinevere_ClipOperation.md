@@ -1,14 +1,17 @@
 ---
 Title: "ClipOperation"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "ClipOperation"
   namespace: "Guinevere"
-  type: "class"
+  symbol: "class"
+  source: "ClipOperation.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** ClipOperation.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [ClipOperation.cs](https://github.com/brmassa/blob/main/ClipOperation.cs)
 
 Represents an operation that applies or restores clipping to the provided canvas. Allows specifying a shape to clip to or restoring the previous canvas state.
 

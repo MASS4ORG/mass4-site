@@ -1,14 +1,17 @@
 ---
 Title: "Easing"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "Easing"
   namespace: "Guinevere"
-  type: "class"
+  symbol: "class"
+  source: "Easing.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** Easing.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [Easing.cs](https://github.com/brmassa/blob/main/Easing.cs)
 
 Provides a collection of static methods to compute easing functions commonly used in animation and interpolation. Easing functions modify the progression of a value over time to achieve various motion effects such as acceleration, deceleration, and elastic behaviors.
 

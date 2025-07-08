@@ -1,14 +1,17 @@
 ---
 Title: "HoldArgs"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "HoldArgs"
   namespace: "Guinevere"
-  type: "struct"
+  symbol: "struct"
+  source: "HoldArgs.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** HoldArgs.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [HoldArgs.cs](https://github.com/brmassa/blob/main/HoldArgs.cs)
 
 Represents the necessary input information for handling a hold interaction. This structure contains data about the initial and current positions of the pointer during a hold gesture, including the difference between these positions.
 

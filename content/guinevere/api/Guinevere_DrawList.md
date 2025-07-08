@@ -1,14 +1,17 @@
 ---
 Title: "DrawList"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "DrawList"
   namespace: "Guinevere"
-  type: "class"
+  symbol: "class"
+  source: "DrawList.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** DrawList.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [DrawList.cs](https://github.com/brmassa/blob/main/DrawList.cs)
 
 Represents a list of drawable entries or operations which can be added, modified, or rendered to a canvas.
 

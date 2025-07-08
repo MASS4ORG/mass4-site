@@ -1,6 +1,7 @@
 # MASS4
 
-
+Main company site at https://MASS4.org.
+Using [SuCoS](https://sucos.brunomassa.com) static site generator.
 
 ## API updates
 

@@ -1,14 +1,17 @@
 ---
 Title: "AnimationFloat"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "AnimationFloat"
   namespace: "Guinevere"
-  type: "class"
+  symbol: "class"
+  source: "AnimationFloat.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** AnimationFloat.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [AnimationFloat.cs](https://github.com/brmassa/blob/main/AnimationFloat.cs)
 
 Represents an animated floating-point value that can smoothly transition between states using easing functions over time.
 

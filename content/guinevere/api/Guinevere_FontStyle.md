@@ -1,14 +1,17 @@
 ---
 Title: "FontStyle"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "FontStyle"
   namespace: "Guinevere"
-  type: "enum"
+  symbol: "enum"
+  source: "FontStyle.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** FontStyle.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [FontStyle.cs](https://github.com/brmassa/blob/main/FontStyle.cs)
 
 Specifies the style of a font.
 

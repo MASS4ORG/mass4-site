@@ -1,14 +1,17 @@
 ---
 Title: "Pass"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "Pass"
   namespace: "Guinevere"
-  type: "enum"
+  symbol: "enum"
+  source: "Pass.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** Pass.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [Pass.cs](https://github.com/brmassa/blob/main/Pass.cs)
 
 Represents the stages of a rendering process in the GUI framework. The rendering process consists of multiple distinct phases that are executed sequentially.
 

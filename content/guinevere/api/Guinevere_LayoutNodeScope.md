@@ -1,14 +1,17 @@
 ---
 Title: "LayoutNodeScope"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "LayoutNodeScope"
   namespace: "Guinevere"
-  type: "class"
+  symbol: "class"
+  source: "LayoutNodeScope.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** LayoutNodeScope.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [LayoutNodeScope.cs](https://github.com/brmassa/blob/main/LayoutNodeScope.cs)
 
 Represents a scope management class for layout nodes, which facilitates entering, exiting, and managing specific properties of a layout node in a 2D or UI rendering context.
 

@@ -1,14 +1,17 @@
 ---
 Title: "ScrollState"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "ScrollState"
   namespace: "Guinevere"
-  type: "class"
+  symbol: "class"
+  source: "ScrollState.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** ScrollState.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [ScrollState.cs](https://github.com/brmassa/blob/main/ScrollState.cs)
 
 Represents the state of a scrollable container, including scroll position, content dimensions, and scrollbar state.
 

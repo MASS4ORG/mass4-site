@@ -1,14 +1,17 @@
 ---
 Title: "ShapePos"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "ShapePos"
   namespace: "Guinevere"
-  type: "class"
+  symbol: "class"
+  source: "ShapePos.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** ShapePos.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [ShapePos.cs](https://github.com/brmassa/blob/main/ShapePos.cs)
 
 Represents a shape with positional and potentially rounded rectangle configurations. This class extends the functionality of the `Shape` class.
 

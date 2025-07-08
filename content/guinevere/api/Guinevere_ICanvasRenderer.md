@@ -1,14 +1,17 @@
 ---
 Title: "ICanvasRenderer"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "ICanvasRenderer"
   namespace: "Guinevere"
-  type: "interface"
+  symbol: "interface"
+  source: "ICanvasRenderer.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** ICanvasRenderer.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [ICanvasRenderer.cs](https://github.com/brmassa/blob/main/ICanvasRenderer.cs)
 
 Defines the interface for rendering graphics to a canvas. Provides methods for initializing, resizing, and rendering content onto the canvas surface.
 

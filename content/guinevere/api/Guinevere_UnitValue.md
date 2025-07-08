@@ -1,14 +1,17 @@
 ---
 Title: "UnitValue"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "UnitValue"
   namespace: "Guinevere"
-  type: "struct"
+  symbol: "struct"
+  source: "UnitValue.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** UnitValue.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [UnitValue.cs](https://github.com/brmassa/blob/main/UnitValue.cs)
 
 Represents a unit value with an associated unit type. Provides functionality to work with different types of units such as pixels, percentages, ratios, etc., and allows easy conversion and arithmetic operations between units.
 

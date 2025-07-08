@@ -1,14 +1,17 @@
 ---
 Title: "DeferShape"
 Type: api
-Created: "2025-07-05 15:10:56"
+Created: "2025-07-06 23:20:28"
 Params:
+  type: "DeferShape"
   namespace: "Guinevere"
-  type: "class"
+  symbol: "class"
+  source: "DeferShape.cs"
+  external_link: "github.com/brmassa/"
 ---
 
-- **Namespace:** [Guinevere](/guinevere/api/namespace-guinevere)
-- **Source File:** DeferShape.cs
+- **Namespace:** [Guinevere](/guinevere/api/guinevere)
+- **Source File:** [DeferShape.cs](https://github.com/brmassa/blob/main/DeferShape.cs)
 
 The `DeferShape` class extends the `Shape` class and serves as a specialized geometric shape that supports deferred rendering with customizable properties such as corner rounding and selective corner modification.
 

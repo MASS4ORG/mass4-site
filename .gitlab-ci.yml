@@ -1,0 +1,25 @@
+image: registry.gitlab.com/sucos/sucos:alpine
+
+variables:
+  GIT_SUBMODULE_STRATEGY: normal
+  GIT_SUBMODULE_UPDATE_FLAGS: --remote
+
+stages:
+  - build
+  - pages
+
+build:
+  stage: build
+  script:
+    - SuCoS --version
+    - SuCoS
+
+pages:
+  stage: pages
+  script:
+    - SuCoS
+  artifacts:
+    paths:
+      - public
+  # rules:
+  # - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
