@@ -2,7 +2,7 @@
 Title: MEGA4
 ---
 
-![](/mega4-badge.png)
+![mega4 badge](/mega4-badge.png)
 
 * [Guinevere](/guinevere) ([API](/guinevere/api))
 * [Gaya](/gaya) ([API](/gaya/api))
@@ -128,13 +128,6 @@ We believe great tools are built with their communities, not in isolation:
 - **Community Input**: Your feedback shapes these tools
 - **Early Access Programs**: Get involved before public release
 - **Brazilian HQ, Global Vision**: Built in São Paulo for developers worldwide
-
-### Get Involved
-
-- **Guinevere**: [Download Alpha](https://mass4org.com/mass4/guinevere/releases)
-- **Gaya**: [Request Beta Access](/gaya/beta)
-- **Turian**: [Join the Waiting List](/turian/notify)
-- **Mystery**: [Decode the Hints](/mystery/hints)
 
 ## The Road Ahead
 

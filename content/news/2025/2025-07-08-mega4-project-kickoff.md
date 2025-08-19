@@ -90,15 +90,6 @@ The clues are hidden in plain sight. The answer lies in the intersection of arti
 **First Hints**: When you least expect them
 **Revelation**: When the time is right
 
-## The Brazilian Flag Inspiration
-
-Our color scheme pays homage to Brazil's flag, representing our global vision:
-
-- **Blue (Guinevere)**: The sky of possibilities in UI development
-- **Black & White (Gaya)**: The clarity and precision of great code editing
-- **Yellow (Turian)**: The energy and creativity of game development
-- **Green (Mystery)**: The growth and future potential unknown
-
 ## Why MEGA4 Matters
 
 Each tool in the MEGA4 suite is designed to excel individually, but their true power emerges when used together:
@@ -126,13 +117,6 @@ We believe great tools are built with their communities, not in isolation:
 - **Early Access Programs**: Get involved before public release
 - **Brazilian HQ, Global Vision**: Built in São Paulo for developers worldwide
 
-### Get Involved
-
-- **Guinevere**: [Download Alpha](https://mass4org.com/mass4/guinevere/releases)
-- **Gaya**: [Request Beta Access](/gaya/beta)
-- **Turian**: [Join the Waiting List](/turian/notify)
-- **Mystery**: [Decode the Hints](/mystery/hints)
-
 ## The Road Ahead
 
 The next 18 months will see the gradual unveiling of the complete MEGA4 ecosystem:
@@ -151,19 +135,3 @@ MEGA4 represents more than just four new tools - it's a fundamental reimagining 
 The future of software development starts now. The question isn't whether you'll join us, but whether you'll be ready when the revolution arrives.
 
 Welcome to MEGA4. Welcome to the future.
-
----
-
-**About MASS4**: Founded in São Paulo, Brazil, MASS4 is dedicated to creating revolutionary development tools that empower developers worldwide. Our mission is simple: eliminate the friction between ideas and implementation.
-
-**Press Contact**: press@mass4.dev
-**Developer Relations**: devrel@mass4.dev
-**General Inquiries**: hello@mass4.dev
-
-Follow our journey:
-- 🌐 [MASS4 Website](https://mass4.dev)
-- 💬 [Discord Community](https://discord.gg/mass4)
-- 🐦 [Twitter Updates](https://twitter.com/mass4dev)
-- 📧 [Developer Newsletter](https://newsletter.mass4.dev)
-
-*The revolution will not be televised. It will be coded.*

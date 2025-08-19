@@ -2,6 +2,8 @@
 Title: Gaya
 ---
 
+![](/gaya-badge.png)
+
 **The ultimate text editor for developers**
 
 Gaya represents the pinnacle of text editing excellence. Built from the ground up with a focus on performance, precision, and customization, Gaya delivers an uncompromising editing experience that adapts to your workflow, not the other way around.
