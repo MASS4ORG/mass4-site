@@ -1,17 +1,17 @@
 ---
 Title: "DeferShape"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "DeferShape"
   namespace: "Guinevere"
   symbol: "class"
   source: "DeferShape.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [DeferShape.cs](https://github.com/brmassa/blob/main/DeferShape.cs)
+- **Source File:** [DeferShape.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/DeferShape.cs)
 
 The `DeferShape` class extends the `Shape` class and serves as a specialized geometric shape that supports deferred rendering with customizable properties such as corner rounding and selective corner modification.
 
@@ -73,4 +73,3 @@ Creates a rectangular shape filled with a specified solid color, with options fo
 **Returns:** `DeferShape`
 
 - A `DeferShape` representing the filled rectangle with the specified attributes.
-

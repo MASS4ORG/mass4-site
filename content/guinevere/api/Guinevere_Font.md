@@ -1,17 +1,17 @@
 ---
 Title: "Font"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "Font"
   namespace: "Guinevere"
   symbol: "class"
   source: "Font.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [Font.cs](https://github.com/brmassa/blob/main/Font.cs)
+- **Source File:** [Font.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Font.cs)
 
 Represents a font wrapper that provides an abstraction layer over SkiaSharp's SKFont, allowing users to work with fonts without directly depending on SkiaSharp.
 
@@ -133,4 +133,3 @@ Loads a font from the specified file path.
 **Returns:** `Font`
 
 - A Font object representing the loaded font.
-

@@ -1,17 +1,17 @@
 ---
 Title: "Angle"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "Angle"
   namespace: "Guinevere"
   symbol: "struct"
   source: "Angle.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [Angle.cs](https://github.com/brmassa/blob/main/Angle.cs)
+- **Source File:** [Angle.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Angle.cs)
 
 Represents an angle defined in terms of radians, and provides methods for converting and performing operations with angles.
 
@@ -91,4 +91,3 @@ Calculates the direction vector corresponding to the angle represented by this `
 **Returns:** `Vector2`
 
 - A `Vector2` representing the direction of the angle, where the X and Y components correspond to the cosine and sine of the angle in radians, respectively.
-

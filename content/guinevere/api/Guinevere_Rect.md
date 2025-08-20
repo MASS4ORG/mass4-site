@@ -1,17 +1,17 @@
 ---
 Title: "Rect"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "Rect"
   namespace: "Guinevere"
   symbol: "record"
   source: "Rect.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [Rect.cs](https://github.com/brmassa/blob/main/Rect.cs)
+- **Source File:** [Rect.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Rect.cs)
 
 Represents a rectangle defined by its position (X, Y) and size (W, H). Provides properties and methods for working with rectangles, such as calculating various points, centers, and containment checks.
 
@@ -114,5 +114,3 @@ Deconstructs the rectangle into its components: position (X, Y) and size (W, H).
 - `y` (*float*): The y-coordinate of the rectangle's top-left corner.
 - `w` (*float*): The width of the rectangle.
 - `h` (*float*): The height of the rectangle.
-
-

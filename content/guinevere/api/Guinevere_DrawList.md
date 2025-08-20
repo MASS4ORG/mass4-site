@@ -1,17 +1,17 @@
 ---
 Title: "DrawList"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "DrawList"
   namespace: "Guinevere"
   symbol: "class"
   source: "DrawList.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [DrawList.cs](https://github.com/brmassa/blob/main/DrawList.cs)
+- **Source File:** [DrawList.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/DrawList.cs)
 
 Represents a list of drawable entries or operations which can be added, modified, or rendered to a canvas.
 
@@ -109,5 +109,3 @@ Renders all drawable entries in the list onto the specified canvas.
 - `gui` (*Gui*): The GUI context used for rendering operations.
 - `node` (*LayoutNode*): The layout node containing structural and styling information.
 - `canvas` (*SKCanvas*): The canvas to render the drawable entries onto.
-
-

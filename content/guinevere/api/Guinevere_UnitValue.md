@@ -1,17 +1,17 @@
 ---
 Title: "UnitValue"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "UnitValue"
   namespace: "Guinevere"
   symbol: "struct"
   source: "UnitValue.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [UnitValue.cs](https://github.com/brmassa/blob/main/UnitValue.cs)
+- **Source File:** [UnitValue.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/UnitValue.cs)
 
 Represents a unit value with an associated unit type. Provides functionality to work with different types of units such as pixels, percentages, ratios, etc., and allows easy conversion and arithmetic operations between units.
 
@@ -107,4 +107,3 @@ Creates a unit value with an absolute pixel measurement.
 **Returns:** `UnitValue`
 
 - A new `UnitValue` with `Pixels` mode.
-

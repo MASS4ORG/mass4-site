@@ -1,14 +1,14 @@
 ---
 Title: "Guinevere"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "Guinevere"
   namespace: "Guinevere"
   symbol: "namespace"
 ---
 
-This namespace contains 62 type(s).
+This namespace contains 75 type(s).
 
 ## Types
 
@@ -34,7 +34,11 @@ This namespace contains 62 type(s).
 - 🄲 [FlyoutBuilder](./flyoutbuilder)
 - 🄲 [FlyoutItem](./flyoutitem)
 - 🄲 [FlyoutState](./flyoutstate)
+- 🄲 [FocusManager](./focusmanager)
+- 🄴 [FocusReason](./focusreason)
+- 🄲 [FocusableControl](./focusablecontrol)
 - 🄲 [Font](./font)
+- 🅁 [FontRun](./fontrun)
 - 🄴 [FontStyle](./fontstyle)
 - 🄲 [Gui](./gui)
 - 🅂 [HoldArgs](./holdargs)
@@ -44,6 +48,7 @@ This namespace contains 62 type(s).
 - 🄸 [IDrawable](./idrawable)
 - 🄸 [IInputHandler](./iinputhandler)
 - 🄸 [ILayoutNodeEnterExit](./ilayoutnodeenterexit)
+- 🄸 [ILayoutNodeScopeValue](./ilayoutnodescopevalue)
 - 🄸 [IWindowHandler](./iwindowhandler)
 - 🄲 [ImMath](./immath)
 - 🄲 [InputState](./inputstate)
@@ -51,10 +56,18 @@ This namespace contains 62 type(s).
 - 🄴 [Interactions](./interactions)
 - 🄴 [KeyboardKey](./keyboardkey)
 - 🄲 [LayoutNode](./layoutnode)
-- 🄲 [LayoutNodeDrawingExtensions](./layoutnodedrawingextensions)
 - 🄲 [LayoutNodeScope](./layoutnodescope)
+- 🄲 [LayoutNodeScopeCumulativeScrollOffset](./layoutnodescopecumulativescrolloffset)
+- 🄲 [LayoutNodeScopeIconFont](./layoutnodescopeiconfont)
+- 🄲 [LayoutNodeScopeIsClipped](./layoutnodescopeisclipped)
+- 🄲 [LayoutNodeScopeIsScrollContainer](./layoutnodescopeisscrollcontainer)
+- 🄲 [LayoutNodeScopeLocalScrollOffset](./layoutnodescopelocalscrolloffset)
+- 🄲 [LayoutNodeScopeScrollContainerId](./layoutnodescopescrollcontainerid)
+- 🄲 [LayoutNodeScopeTextColor](./layoutnodescopetextcolor)
+- 🄲 [LayoutNodeScopeTextFont](./layoutnodescopetextfont)
+- 🄲 [LayoutNodeScopeTextSize](./layoutnodescopetextsize)
+- 🄲 [LayoutNodeScopeZIndex](./layoutnodescopezindex)
 - 🅂 [LayoutStyle](./layoutstyle)
-- 🄲 [LineDrawable](./linedrawable)
 - 🄲 [MenuBarBuilder](./menubarbuilder)
 - 🄴 [MouseButton](./mousebutton)
 - 🄴 [Pass](./pass)

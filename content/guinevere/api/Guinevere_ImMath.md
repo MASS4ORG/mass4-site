@@ -1,17 +1,17 @@
 ---
 Title: "ImMath"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "ImMath"
   namespace: "Guinevere"
   symbol: "class"
   source: "ImMath.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [ImMath.cs](https://github.com/brmassa/blob/main/ImMath.cs)
+- **Source File:** [ImMath.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/ImMath.cs)
 
 Provides a collection of mathematical utility functions and constants optimized for performance.
 
@@ -123,4 +123,3 @@ Clamps the given value to the range [0, 1].
 **Returns:** `float`
 
 - The clamped value within the range of 0 to 1.
-

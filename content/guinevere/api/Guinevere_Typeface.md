@@ -1,17 +1,17 @@
 ---
 Title: "Typeface"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "Typeface"
   namespace: "Guinevere"
   symbol: "class"
   source: "Typeface.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [Typeface.cs](https://github.com/brmassa/blob/main/Typeface.cs)
+- **Source File:** [Typeface.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Typeface.cs)
 
 Represents a typeface wrapper that provides an abstraction layer over SkiaSharp's SKTypeface.
 
@@ -84,5 +84,3 @@ public void Dispose()
 ```
 
 Releases all resources used by the Typeface.
-
-

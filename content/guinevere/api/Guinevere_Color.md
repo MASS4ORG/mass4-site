@@ -1,20 +1,20 @@
 ---
 Title: "Color"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "Color"
   namespace: "Guinevere"
   symbol: "struct"
   source: "Color.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [Color.cs](https://github.com/brmassa/blob/main/Color.cs)
+- **Source File:** [Color.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Color.cs)
 ## Fields
 
-### **Empty** (*Color*) = `new(default(System.Drawing.Color))`
+### **Empty** (*Color*) = `new(default)`
 
 ## Properties
 
@@ -818,5 +818,3 @@ public override int GetHashCode()
 ```
 
 **Returns:** `int`
-
-

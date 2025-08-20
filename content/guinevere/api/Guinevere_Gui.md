@@ -1,18 +1,22 @@
 ---
 Title: "Gui"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "Gui"
   namespace: "Guinevere"
   symbol: "class"
-  source: "Gui.Scroll.cs, Gui.DrawShapes.cs, Gui.DrawText.cs, Gui.State.cs, Gui.Interaction.cs, Gui.cs, Gui.Animation.cs, Gui.LayoutNodeScopeValues.cs, Gui.LayoutNode.cs"
-  external_link: "github.com/brmassa/"
+  source: "Gui.Scroll.cs, Gui.DrawShapes.cs, Gui.DrawText.cs, Gui.State.cs, Gui.Focus.cs, Gui.Interaction.cs, Gui.cs, Gui.Animation.cs, Gui.LayoutNodeScopeValues.cs, Gui.LayoutNode.cs"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [Gui.Scroll.cs](https://github.com/brmassa/blob/main/Gui.Scroll.cs), [Gui.DrawShapes.cs](https://github.com/brmassa/blob/main/Gui.DrawShapes.cs), [Gui.DrawText.cs](https://github.com/brmassa/blob/main/Gui.DrawText.cs), [Gui.State.cs](https://github.com/brmassa/blob/main/Gui.State.cs), [Gui.Interaction.cs](https://github.com/brmassa/blob/main/Gui.Interaction.cs), [Gui.cs](https://github.com/brmassa/blob/main/Gui.cs), [Gui.Animation.cs](https://github.com/brmassa/blob/main/Gui.Animation.cs), [Gui.LayoutNodeScopeValues.cs](https://github.com/brmassa/blob/main/Gui.LayoutNodeScopeValues.cs), [Gui.LayoutNode.cs](https://github.com/brmassa/blob/main/Gui.LayoutNode.cs)
+- **Source File:** [Gui.Scroll.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Gui.Scroll.cs), [Gui.DrawShapes.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Gui.DrawShapes.cs), [Gui.DrawText.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Gui.DrawText.cs), [Gui.State.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Gui.State.cs), [Gui.Focus.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Gui.Focus.cs), [Gui.Interaction.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Gui.Interaction.cs), [Gui.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Gui.cs), [Gui.Animation.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Gui.Animation.cs), [Gui.LayoutNodeScopeValues.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Gui.LayoutNodeScopeValues.cs), [Gui.LayoutNode.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Gui.LayoutNode.cs)
 ## Properties
+
+### **Focus**
+
+(*FocusManager*) { get } = `new()`: Manages focus state and navigation for GUI controls.
 
 ### **Input**
 
@@ -423,7 +427,7 @@ Draws a filled triangle (alias for DrawTriangleFilled)
 ### DrawBackgroundRect
 
 ```csharp
-public Shape DrawBackgroundRect(Color? color = null, float radius = 0.0f, Corner corners = Corner.All, LayoutNode? node = null)
+public Shape DrawBackgroundRect(Color? color = null, float radius = 0.0f, Corner corners = Corner.All)
 ```
 
 Draws a filled rectangle
@@ -433,7 +437,6 @@ Draws a filled rectangle
 - `color` (*Color?*) (Default: `null`)
 - `radius` (*float*) (Default: `0.0f`)
 - `corners` (*Corner*) (Default: `Corner.All`)
-- `node` (*LayoutNode?*) (Default: `null`)
 
 **Returns:** `Shape`
 
@@ -488,7 +491,7 @@ Sets a clipping area for rendering content inside a specific layout node.
 ### DrawText
 
 ```csharp
-public LayoutNode DrawText(string text, float size = 0, Color? color = null, Font? font = null, float wrapWidth = 0, bool centerInRect = true, bool clip = false, string filePath = "", int lineNumber = 0)
+public LayoutNode DrawText(string text, float size = 0, Color? color = null, Font? font = null, float wrapWidth = 0, bool centerInRect = true, bool clip = false)
 ```
 
 Draws text as a layout node: in Pass1Build phase, creates a node sized to the text; in Pass2Render phase, draws the text in the node's rect. Returns the node for layout chaining.
@@ -502,8 +505,6 @@ Draws text as a layout node: in Pass1Build phase, creates a node sized to the te
 - `wrapWidth` (*float*) (Default: `0`)
 - `centerInRect` (*bool*) (Default: `true`)
 - `clip` (*bool*) (Default: `false`)
-- `filePath` (*string*) (Default: `""`)
-- `lineNumber` (*int*) (Default: `0`)
 
 **Returns:** `LayoutNode`
 
@@ -511,7 +512,7 @@ Draws text as a layout node: in Pass1Build phase, creates a node sized to the te
 ### DrawGlyph
 
 ```csharp
-public LayoutNode DrawGlyph(char iconCode, float size = 0, Color? color = null, Font? font = null, bool centerInRect = true, bool clip = false, string filePath = "", int lineNumber = 0)
+public LayoutNode DrawGlyph(char iconCode, float size = 0, Color? color = null, Font? font = null, bool centerInRect = true, bool clip = false)
 ```
 
 Draws a glyph (icon) as a layout node: in Pass1Build phase, creates a node sized to the glyph; in Pass2Render phase, draws the glyph in the node's rect. Returns the node for layout chaining.
@@ -524,8 +525,6 @@ Draws a glyph (icon) as a layout node: in Pass1Build phase, creates a node sized
 - `font` (*Font?*) (Default: `null`)
 - `centerInRect` (*bool*) (Default: `true`)
 - `clip` (*bool*) (Default: `false`)
-- `filePath` (*string*) (Default: `""`)
-- `lineNumber` (*int*) (Default: `0`)
 
 **Returns:** `LayoutNode`
 
@@ -591,6 +590,83 @@ Sets the value of type `float` associated with the specified identifier. If the 
 - `value` (*float*): The value to associate with the specified identifier.
 - `id` (*string*): The identifier associated with the value. By default, this is the name of the variable passed as `value`. (Default: `""`)
 
+
+### RegisterFocusable
+
+```csharp
+public void RegisterFocusable(bool canReceiveFocus = true, bool isInteractable = true, string? parentId = null)
+```
+
+Registers the current layout node as a focusable control.
+
+**Parameters:**
+
+- `canReceiveFocus` (*bool*): Whether this control can receive keyboard focus (Default: `true`)
+- `isInteractable` (*bool*): Whether this control responds to mouse interactions (Default: `true`)
+- `parentId` (*string?*): Optional parent ID for cascaded focus. If null, uses the parent layout node's ID (Default: `null`)
+
+
+### HasFocus
+
+```csharp
+public bool HasFocus()
+```
+
+Checks if the current layout node has focus.
+
+**Returns:** `bool`
+
+- True if the current node has focus
+
+### HasFocusWithin
+
+```csharp
+public bool HasFocusWithin()
+```
+
+Checks if the current layout node or any of its descendants has focus.
+
+**Returns:** `bool`
+
+- True if the current node or its descendants have focus
+
+### RequestFocus
+
+```csharp
+public void RequestFocus(FocusReason reason = FocusReason.Programmatic)
+```
+
+Requests focus for the current layout node.
+
+**Parameters:**
+
+- `reason` (*FocusReason*): The reason for the focus request (Default: `FocusReason.Programmatic`)
+
+
+### ClearFocus
+
+```csharp
+public void ClearFocus()
+```
+
+Clears focus from all controls.
+
+
+### HandleFocusInteraction
+
+```csharp
+public bool HandleFocusInteraction(InteractableElement interactable)
+```
+
+Handles focus-related interactions for the current interactable element. Should be called when a control wants to handle mouse clicks for focus.
+
+**Parameters:**
+
+- `interactable` (*InteractableElement*): The interactable element to check for clicks
+
+**Returns:** `bool`
+
+- True if the control was clicked and should receive focus
 
 ### GetInteractable
 
@@ -774,117 +850,12 @@ Sets the icon font for the current node and its children using the Font wrapper.
 public void SetZIndex(int index, LayoutNodeScope? scope = null)
 ```
 
-Sets the icon font for the current node and its children using the Font wrapper. The font is automatically restored when exiting the node scope.
+Sets the Z-index for the current node and its children. The Z-index is automatically restored when exiting the node scope.
 
 **Parameters:**
 
 - `index` (*int*)
 - `scope` (*LayoutNodeScope?*) (Default: `null`)
-
-
-### GetEffectiveTextColor
-
-```csharp
-public Color GetEffectiveTextColor(LayoutNodeScope? scope = null)
-```
-
-Gets the effective text color for the current scope, inheriting from parent scopes if not set.
-
-**Parameters:**
-
-- `scope` (*LayoutNodeScope?*) (Default: `null`)
-
-**Returns:** `Color`
-
-
-### GetEffectiveTextSize
-
-```csharp
-public float GetEffectiveTextSize(LayoutNodeScope? scope = null)
-```
-
-Gets the effective text size for the current scope, inheriting from parent scopes if not set.
-
-**Parameters:**
-
-- `scope` (*LayoutNodeScope?*) (Default: `null`)
-
-**Returns:** `float`
-
-
-### GetEffectiveTextFont
-
-```csharp
-public Font GetEffectiveTextFont(LayoutNodeScope? scope = null)
-```
-
-Gets the effective text font for the current scope, inheriting from parent scopes if not set.
-
-**Parameters:**
-
-- `scope` (*LayoutNodeScope?*) (Default: `null`)
-
-**Returns:** `Font`
-
-
-### GetEffectiveIconFont
-
-```csharp
-public Font GetEffectiveIconFont(LayoutNodeScope? scope = null)
-```
-
-Gets the effective icon font for the current scope, inheriting from parent scopes if not set.
-
-**Parameters:**
-
-- `scope` (*LayoutNodeScope?*) (Default: `null`)
-
-**Returns:** `Font`
-
-
-### GetEffectiveZIndex
-
-```csharp
-public int GetEffectiveZIndex(LayoutNodeScope? scope = null)
-```
-
-Gets the effective icon font for the current scope, inheriting from parent scopes if not set.
-
-**Parameters:**
-
-- `scope` (*LayoutNodeScope?*) (Default: `null`)
-
-**Returns:** `int`
-
-
-### GetEffectiveScrollContainerId
-
-```csharp
-public string? GetEffectiveScrollContainerId(LayoutNodeScope? scope = null)
-```
-
-Gets the effective scroll container ID for the current scope, inheriting from parent scopes if not set.
-
-**Parameters:**
-
-- `scope` (*LayoutNodeScope?*) (Default: `null`)
-
-**Returns:** `string?`
-
-
-### GetEffectiveIsClipped
-
-```csharp
-public bool GetEffectiveIsClipped(LayoutNodeScope? scope = null)
-```
-
-Gets the effective clipping state for the current scope, inheriting from parent scopes if not set.
-
-**Parameters:**
-
-- `scope` (*LayoutNodeScope?*) (Default: `null`)
-
-**Returns:** `bool`
 
 
 ### SetScrollContainer
@@ -899,21 +870,6 @@ Sets the scroll container ID for the current scope, marking it as a scrollable c
 
 - `containerId` (*string*)
 - `scope` (*LayoutNodeScope?*) (Default: `null`)
-
-
-### GetEffectiveCumulativeScrollOffset
-
-```csharp
-public Vector2 GetEffectiveCumulativeScrollOffset(LayoutNodeScope? scope = null)
-```
-
-Gets the effective cumulative scroll offset for the current scope, inheriting from parent scopes.
-
-**Parameters:**
-
-- `scope` (*LayoutNodeScope?*) (Default: `null`)
-
-**Returns:** `Vector2`
 
 
 ### SetCumulativeScrollOffset
@@ -944,21 +900,6 @@ Marks the current scope as a scrollable container.
 - `scope` (*LayoutNodeScope?*) (Default: `null`)
 
 
-### GetEffectiveIsScrollContainer
-
-```csharp
-public bool GetEffectiveIsScrollContainer(LayoutNodeScope? scope = null)
-```
-
-Gets whether the current scope is a scrollable container.
-
-**Parameters:**
-
-- `scope` (*LayoutNodeScope?*) (Default: `null`)
-
-**Returns:** `bool`
-
-
 ### SetLocalScrollOffset
 
 ```csharp
@@ -971,21 +912,6 @@ Sets the local scroll offset for the current scope.
 
 - `offset` (*Vector2*)
 - `scope` (*LayoutNodeScope?*) (Default: `null`)
-
-
-### GetEffectiveLocalScrollOffset
-
-```csharp
-public Vector2 GetEffectiveLocalScrollOffset(LayoutNodeScope? scope = null)
-```
-
-Gets the effective local scroll offset for the current scope.
-
-**Parameters:**
-
-- `scope` (*LayoutNodeScope?*) (Default: `null`)
-
-**Returns:** `Vector2`
 
 
 ### SetClipped
@@ -1005,7 +931,7 @@ Sets the clipping state for the current scope.
 ### NodeId
 
 ```csharp
-public static string NodeId(string filePath, int lineNumber, int extra = 0)
+public string NodeId(string filePath, int lineNumber, int extra = 0, LayoutNode? parentNode = null)
 ```
 
 Generates a unique node identifier based on the provided file path, line number, and optional extra parameter.
@@ -1015,6 +941,7 @@ Generates a unique node identifier based on the provided file path, line number,
 - `filePath` (*string*): The source file path where the node is being defined.
 - `lineNumber` (*int*): The line number in the source file where the node is being defined.
 - `extra` (*int*): An optional integer to append additional uniqueness to the identifier. Defaults to 0. (Default: `0`)
+- `parentNode` (*LayoutNode?*) (Default: `null`)
 
 **Returns:** `string`
 
@@ -1074,5 +1001,3 @@ Creates a node with a specified size
 - `lineNumber` (*int*) (Default: `0`)
 
 **Returns:** `LayoutNode`
-
-

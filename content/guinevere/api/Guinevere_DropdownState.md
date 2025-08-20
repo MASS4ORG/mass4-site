@@ -1,17 +1,17 @@
 ---
 Title: "DropdownState"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "DropdownState"
   namespace: "Guinevere"
   symbol: "class"
   source: "Dropdown.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [Dropdown.cs](https://github.com/brmassa/blob/main/Dropdown.cs)
+- **Source File:** [Dropdown.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Dropdown.cs)
 ## Properties
 
 ### **IsOpen**
@@ -25,5 +25,3 @@ Params:
 ### **HoveredIndex**
 
 (*int*) { get; set } = `-1`
-
-

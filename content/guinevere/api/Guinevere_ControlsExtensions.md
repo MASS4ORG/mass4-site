@@ -1,46 +1,26 @@
 ---
 Title: "ControlsExtensions"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "ControlsExtensions"
   namespace: "Guinevere"
   symbol: "class"
   source: "Checkbox.cs, Popup.cs, Toggle.cs, Tabs.cs, Flyout.cs, ControlsExtensions.cs, TextInput.cs, Dropdown.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [Checkbox.cs](https://github.com/brmassa/blob/main/Checkbox.cs), [Popup.cs](https://github.com/brmassa/blob/main/Popup.cs), [Toggle.cs](https://github.com/brmassa/blob/main/Toggle.cs), [Tabs.cs](https://github.com/brmassa/blob/main/Tabs.cs), [Flyout.cs](https://github.com/brmassa/blob/main/Flyout.cs), [ControlsExtensions.cs](https://github.com/brmassa/blob/main/ControlsExtensions.cs), [TextInput.cs](https://github.com/brmassa/blob/main/TextInput.cs), [Dropdown.cs](https://github.com/brmassa/blob/main/Dropdown.cs)
+- **Source File:** [Checkbox.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Checkbox.cs), [Popup.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Popup.cs), [Toggle.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Toggle.cs), [Tabs.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Tabs.cs), [Flyout.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Flyout.cs), [ControlsExtensions.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/ControlsExtensions.cs), [TextInput.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/TextInput.cs), [Dropdown.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Dropdown.cs)
 ## Public Methods
 
 ### Checkbox
 
 ```csharp
-public static LayoutNode Checkbox(Gui gui, float size = 20, Color? backgroundColor = null, Color? checkColor = null, Color? borderColor = null, float spacing = 8)
+public static void Checkbox(Gui gui, bool isChecked, string label = "", float size = 20, Color? backgroundColor = null, Color? checkColor = null, Color? borderColor = null, Color? labelColor = null, float fontSize = 14, float spacing = 8)
 ```
 
-Creates a checkbox layout node that can contain custom content
-
-**Parameters:**
-
-- `gui` (*Gui*)
-- `size` (*float*) (Default: `20`)
-- `backgroundColor` (*Color?*) (Default: `null`)
-- `checkColor` (*Color?*) (Default: `null`)
-- `borderColor` (*Color?*) (Default: `null`)
-- `spacing` (*float*) (Default: `8`)
-
-**Returns:** `LayoutNode`
-
-
-### CheckboxWithLabel
-
-```csharp
-public static bool CheckboxWithLabel(Gui gui, bool isChecked, string label = "", float size = 20, Color? backgroundColor = null, Color? checkColor = null, Color? borderColor = null, Color? labelColor = null, float fontSize = 14, float spacing = 8)
-```
-
-Creates a checkbox with label (legacy method)
+Creates a checkbox that can be toggled on/off with internal state management
 
 **Parameters:**
 
@@ -54,39 +34,6 @@ Creates a checkbox with label (legacy method)
 - `labelColor` (*Color?*) (Default: `null`)
 - `fontSize` (*float*) (Default: `14`)
 - `spacing` (*float*) (Default: `8`)
-
-**Returns:** `bool`
-
-
-### IsChecked
-
-```csharp
-public static bool IsChecked(LayoutNode node, bool currentState)
-```
-
-Extension method to check if a checkbox node is checked based on state
-
-**Parameters:**
-
-- `node` (*LayoutNode*)
-- `currentState` (*bool*)
-
-**Returns:** `bool`
-
-
-### RenderCheckmark
-
-```csharp
-public static void RenderCheckmark(LayoutNode node, bool isChecked, Color? checkColor = null)
-```
-
-Extension method to render a checkmark on a checkbox node
-
-**Parameters:**
-
-- `node` (*LayoutNode*)
-- `isChecked` (*bool*)
-- `checkColor` (*Color?*) (Default: `null`)
 
 
 ### Popup
@@ -214,30 +161,10 @@ Clears all popup states (useful for cleanup)
 ### Toggle
 
 ```csharp
-public static LayoutNode Toggle(Gui gui, float width = 50, float height = 24, Color? onColor = null, Color? offColor = null, Color? thumbColor = null)
+public static void Toggle(Gui gui, bool isOn, string label = "", float width = 50, float height = 24, Color? onColor = null, Color? offColor = null, Color? thumbColor = null, Color? labelColor = null, float fontSize = 14, float spacing = 8)
 ```
 
-Creates a toggle layout node that can contain custom content
-
-**Parameters:**
-
-- `gui` (*Gui*)
-- `width` (*float*) (Default: `50`)
-- `height` (*float*) (Default: `24`)
-- `onColor` (*Color?*) (Default: `null`)
-- `offColor` (*Color?*) (Default: `null`)
-- `thumbColor` (*Color?*) (Default: `null`)
-
-**Returns:** `LayoutNode`
-
-
-### ToggleWithLabel
-
-```csharp
-public static bool ToggleWithLabel(Gui gui, bool isOn, string label = "", float width = 50, float height = 24, Color? onColor = null, Color? offColor = null, Color? thumbColor = null, Color? labelColor = null, float fontSize = 14, float spacing = 8)
-```
-
-Creates a toggle with label (legacy method)
+Creates a toggle switch that can be turned on/off with internal state management
 
 **Parameters:**
 
@@ -252,41 +179,6 @@ Creates a toggle with label (legacy method)
 - `labelColor` (*Color?*) (Default: `null`)
 - `fontSize` (*float*) (Default: `14`)
 - `spacing` (*float*) (Default: `8`)
-
-**Returns:** `bool`
-
-
-### IsToggled
-
-```csharp
-public static bool IsToggled(LayoutNode node, bool currentState)
-```
-
-Extension method to check if a toggle node is toggled based on state
-
-**Parameters:**
-
-- `node` (*LayoutNode*)
-- `currentState` (*bool*)
-
-**Returns:** `bool`
-
-
-### RenderToggleOn
-
-```csharp
-public static void RenderToggleOn(LayoutNode node, bool isOn, Color? onColor = null, Color? offColor = null, Color? thumbColor = null)
-```
-
-Extension method to render a toggle in the on state
-
-**Parameters:**
-
-- `node` (*LayoutNode*)
-- `isOn` (*bool*)
-- `onColor` (*Color?*) (Default: `null`)
-- `offColor` (*Color?*) (Default: `null`)
-- `thumbColor` (*Color?*) (Default: `null`)
 
 
 ### Tabs
@@ -461,14 +353,15 @@ Creates a menu bar with flyout menus
 ### Button
 
 ```csharp
-public static LayoutNode Button(Gui gui, float width = 0, float height = 0, Color? backgroundColor = null, Color? borderColor = null, Color? hoverColor = null, Color? pressedColor = null, Color? pressedBorderColor = null, float radius = 4)
+public static bool Button(Gui gui, Text text, float width = 0, float height = 0, Color? backgroundColor = null, Color? borderColor = null, Color? hoverColor = null, Color? pressedColor = null, Color? pressedBorderColor = null, Color? color = null, float? fontSize = null, float radius = 4)
 ```
 
-Creates a button layout node that can contain custom content
+Creates a button that returns the clicked state without modifying the input
 
 **Parameters:**
 
 - `gui` (*Gui*)
+- `text` (*Text*)
 - `width` (*float*) (Default: `0`)
 - `height` (*float*) (Default: `0`)
 - `backgroundColor` (*Color?*) (Default: `null`)
@@ -476,9 +369,35 @@ Creates a button layout node that can contain custom content
 - `hoverColor` (*Color?*) (Default: `null`)
 - `pressedColor` (*Color?*) (Default: `null`)
 - `pressedBorderColor` (*Color?*) (Default: `null`)
+- `color` (*Color?*) (Default: `null`)
+- `fontSize` (*float?*) (Default: `null`)
 - `radius` (*float*) (Default: `4`)
 
-**Returns:** `LayoutNode`
+**Returns:** `bool`
+
+
+### IconButton
+
+```csharp
+public static void IconButton(Gui gui, char? icon, bool clicked, float size = 32, Color? backgroundColor = null, Color? borderColor = null, Color? hoverColor = null, Color? pressedColor = null, Color? pressedBorderColor = null, Color? color = null, float? fontSize = null, float radius = 4)
+```
+
+Creates an icon button that can be clicked with internal state management
+
+**Parameters:**
+
+- `gui` (*Gui*)
+- `icon` (*char?*)
+- `clicked` (*bool*)
+- `size` (*float*) (Default: `32`)
+- `backgroundColor` (*Color?*) (Default: `null`)
+- `borderColor` (*Color?*) (Default: `null`)
+- `hoverColor` (*Color?*) (Default: `null`)
+- `pressedColor` (*Color?*) (Default: `null`)
+- `pressedBorderColor` (*Color?*) (Default: `null`)
+- `color` (*Color?*) (Default: `null`)
+- `fontSize` (*float?*) (Default: `null`)
+- `radius` (*float*) (Default: `4`)
 
 
 ### TextInput
@@ -648,5 +567,3 @@ Clears all dropdown states (useful for cleanup)
 **Parameters:**
 
 - `gui` (*Gui*)
-
-

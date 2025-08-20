@@ -1,17 +1,17 @@
 ---
 Title: "LayoutNode"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "LayoutNode"
   namespace: "Guinevere"
   symbol: "class"
   source: "LayoutNode.Interaction.cs, LayoutNode.Calculation.cs, LayoutNode.Commands.cs, LayoutNode.Traversal.cs, LayoutNode.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [LayoutNode.Interaction.cs](https://github.com/brmassa/blob/main/LayoutNode.Interaction.cs), [LayoutNode.Calculation.cs](https://github.com/brmassa/blob/main/LayoutNode.Calculation.cs), [LayoutNode.Commands.cs](https://github.com/brmassa/blob/main/LayoutNode.Commands.cs), [LayoutNode.Traversal.cs](https://github.com/brmassa/blob/main/LayoutNode.Traversal.cs), [LayoutNode.cs](https://github.com/brmassa/blob/main/LayoutNode.cs)
+- **Source File:** [LayoutNode.Interaction.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/LayoutNode.Interaction.cs), [LayoutNode.Calculation.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/LayoutNode.Calculation.cs), [LayoutNode.Commands.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/LayoutNode.Commands.cs), [LayoutNode.Traversal.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/LayoutNode.Traversal.cs), [LayoutNode.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/LayoutNode.cs)
 ## Fields
 
 ### **ChildNodes** (*List<LayoutNode>*) = `new()`: Represents the collection of child nodes directly associated with this `LayoutNode`.
@@ -27,10 +27,6 @@ Params:
 ### **LastChild**
 
 (*LayoutNode*): The last of it`s children
-
-### **Gui**
-
-(*Gui*) { get }: Represents the graphical user interface context associated with this instance.
 
 ### **Id**
 
@@ -71,18 +67,6 @@ Params:
 
 ## Public Methods
 
-### GetInteractable
-
-```csharp
-public InteractableElement GetInteractable()
-```
-
-Retrieves the interactable element associated with the current layout node. The returned interactable element can be used to handle user interactions such as hover and hold events.
-
-**Returns:** `InteractableElement`
-
-- An instance of `InteractableElement` representing the interactable properties of the layout node.
-
 ### OnClick
 
 ```csharp
@@ -106,50 +90,6 @@ Handles a hover interaction on the current layout node.
 **Returns:** `bool`
 
 - True if the hover interaction is successful; otherwise, false.
-
-### IsClicked
-
-```csharp
-public bool IsClicked(MouseButton button = MouseButton.Left)
-```
-
-Determines if the layout node was clicked during the current frame.
-
-**Parameters:**
-
-- `button` (*MouseButton*): The mouse button to check for click interaction. (Default: `MouseButton.Left`)
-
-**Returns:** `bool`
-
-- True if the node was clicked; otherwise, false.
-
-### IsHovered
-
-```csharp
-public bool IsHovered()
-```
-
-Determines if the mouse cursor is currently hovering over the layout node.
-
-**Returns:** `bool`
-
-- True if the node is being hovered; otherwise, false.
-
-### IsHeld
-
-```csharp
-public bool IsHeld(MouseButton button = MouseButton.Left)
-```
-
-Determines if the layout node is currently being held down.
-
-**Parameters:**
-
-- `button` (*MouseButton*): The mouse button to check for hold interaction. (Default: `MouseButton.Left`)
-
-**Returns:** `bool`
-
-- True if the node is being held; otherwise, false.
 
 ### CalculateLayout
 
@@ -599,6 +539,18 @@ Configures the layout node to set both its width and height to the specified val
 
 - The current instance of `LayoutNode`, enabling method chaining.
 
+### GetInteractable
+
+```csharp
+public InteractableElement GetInteractable()
+```
+
+Retrieves the interactable element associated with the current layout node. The returned interactable element can be used to handle user interactions such as hover and hold events.
+
+**Returns:** `InteractableElement`
+
+- An instance of `InteractableElement` representing the interactable properties of the layout node.
+
 ### AddChild
 
 ```csharp
@@ -785,4 +737,3 @@ Converts the current `LayoutNode` to its associated `LayoutNodeScope` instance.
 **Returns:** `LayoutNodeScope`
 
 - The `LayoutNodeScope` instance associated with this `LayoutNode`.
-

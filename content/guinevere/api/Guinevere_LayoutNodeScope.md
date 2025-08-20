@@ -1,17 +1,17 @@
 ---
 Title: "LayoutNodeScope"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "LayoutNodeScope"
   namespace: "Guinevere"
   symbol: "class"
   source: "LayoutNodeScope.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [LayoutNodeScope.cs](https://github.com/brmassa/blob/main/LayoutNodeScope.cs)
+- **Source File:** [LayoutNodeScope.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/LayoutNodeScope.cs)
 
 Represents a scope management class for layout nodes, which facilitates entering, exiting, and managing specific properties of a layout node in a 2D or UI rendering context.
 
@@ -20,46 +20,6 @@ Represents a scope management class for layout nodes, which facilitates entering
 ### **Node**
 
 (*LayoutNode*) { get } = `node`: Provides access to the current layout node within a specific scope. The property represents the layout node that is managed during the lifetime of the associated `LayoutNodeScope` instance.
-
-### **TextColor**
-
-(*Color?*) { get; set }: Gets or sets the text color for the current layout node within the scope. The value is used for rendering text and can be inherited from parent scopes if not explicitly set.
-
-### **TextSize**
-
-(*float?*) { get; set }: Gets or sets the size of the text for rendering within the current layout node. This property applies to the node and its children, inheriting the value from parent nodes if it is not explicitly specified in the current scope.
-
-### **TextFont**
-
-(*Font?*) { get; set }: Gets or sets the font used for rendering text within the current layout node. This property affects the node and its children, inheriting the value from parent nodes if it is not explicitly defined in the current scope.
-
-### **IconFont**
-
-(*Font?*) { get; set }: Gets or sets the font used for rendering icons in the current layout node. This property applies to the node and its children, and the value is inherited from parent nodes if not explicitly set.
-
-### **ZIndex**
-
-(*int?*) { get; set }: Gets or sets the Z-index of the layout node, which determines its rendering order in relation to sibling nodes. Nodes with higher Z-index values will be rendered in front of nodes with lower Z-index values.
-
-### **ScrollContainerId**
-
-(*string?*) { get; set }: Gets or sets the node ID of the scrollable container that affects this node. This is used to cascade scroll transforms to child nodes.
-
-### **IsClipped**
-
-(*bool?*) { get; set }: Gets or sets whether this node should be clipped to its parent container bounds. This cascades to child nodes unless explicitly overridden.
-
-### **CumulativeScrollOffset**
-
-(*Vector2?*) { get; set }: Gets or sets the cumulative scroll offset applied to this node and its children. This represents the total scroll offset from all scrollable parent containers.
-
-### **IsScrollContainer**
-
-(*bool?*) { get; set }: Gets or sets whether this node is a scrollable container. If true, this node can contribute its own scroll offset to child nodes.
-
-### **LocalScrollOffset**
-
-(*Vector2?*) { get; set }: Gets or sets the local scroll offset for this node (if it's a scroll container). This is the scroll offset that this specific node contributes.
 
 
 ## Public Methods
@@ -114,3 +74,29 @@ Sets the Z-index value for the layout node, determining its stacking order.
 
 - Returns the current `LayoutNodeScope` instance for method chaining.
 
+### Set
+
+```csharp
+public LayoutNodeScope Set(T record)
+```
+
+Stores a record of the specified generic type within the current layout node scope.
+
+**Parameters:**
+
+- `record` (*T*): The instance of the record to store. It replaces any existing record of the same type in this scope.
+
+**Returns:** `LayoutNodeScope`
+
+
+### Get
+
+```csharp
+public TValue Get()
+```
+
+Retrieves a cascaded value of a specified type from the current scope or any of its parent scopes.
+
+**Returns:** `TValue`
+
+- The instance of the requested value if found, starting from the current scope and moving up the parent hierarchy. Returns the default value of if no value is found.

@@ -1,17 +1,17 @@
 ---
 Title: "IInputHandler"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "IInputHandler"
   namespace: "Guinevere"
   symbol: "interface"
   source: "IInputHandler.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [IInputHandler.cs](https://github.com/brmassa/blob/main/IInputHandler.cs)
+- **Source File:** [IInputHandler.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/IInputHandler.cs)
 
 Provides input handling functionalities including keyboard and mouse events.
 
@@ -171,5 +171,3 @@ Sets the clipboard text to the specified value.
 **Parameters:**
 
 - `text` (*string*): The text to set in the clipboard.
-
-

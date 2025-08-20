@@ -1,17 +1,17 @@
 ---
 Title: "TabsState"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "TabsState"
   namespace: "Guinevere"
   symbol: "class"
   source: "TabsState.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [TabsState.cs](https://github.com/brmassa/blob/main/TabsState.cs)
+- **Source File:** [TabsState.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/TabsState.cs)
 ## Properties
 
 ### **ActiveTabIndex**
@@ -25,5 +25,3 @@ Params:
 ### **TabBarHeight**
 
 (*float*) { get; set } = `32`
-
-

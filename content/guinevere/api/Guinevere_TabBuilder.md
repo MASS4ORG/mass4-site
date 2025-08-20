@@ -1,17 +1,17 @@
 ---
 Title: "TabBuilder"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "TabBuilder"
   namespace: "Guinevere"
   symbol: "class"
   source: "TabBuilder.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [TabBuilder.cs](https://github.com/brmassa/blob/main/TabBuilder.cs)
+- **Source File:** [TabBuilder.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/TabBuilder.cs)
 
 Helper class for building tabs
 
@@ -87,4 +87,3 @@ Adds a new tab that is closable to the current tab list.
 **Returns:** `TabBuilder`
 
 - A TabBuilder instance with the closable tab added, allowing for further configuration.
-

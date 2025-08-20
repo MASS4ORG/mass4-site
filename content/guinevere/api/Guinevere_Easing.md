@@ -1,17 +1,17 @@
 ---
 Title: "Easing"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "Easing"
   namespace: "Guinevere"
   symbol: "class"
   source: "Easing.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [Easing.cs](https://github.com/brmassa/blob/main/Easing.cs)
+- **Source File:** [Easing.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Easing.cs)
 
 Provides a collection of static methods to compute easing functions commonly used in animation and interpolation. Easing functions modify the progression of a value over time to achieve various motion effects such as acceleration, deceleration, and elastic behaviors.
 
@@ -543,5 +543,3 @@ Spring function with configurable elasticity. Returns values that can exceed the
 - `angularFrequency` (*float*): Controls speed of oscillation (default = 20) (Default: `20.0f`)
 
 **Returns:** `float`
-
-

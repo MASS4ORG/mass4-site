@@ -1,17 +1,17 @@
 ---
 Title: "LayoutStyle"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "LayoutStyle"
   namespace: "Guinevere"
   symbol: "struct"
   source: "LayoutStyle.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [LayoutStyle.cs](https://github.com/brmassa/blob/main/LayoutStyle.cs)
+- **Source File:** [LayoutStyle.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/LayoutStyle.cs)
 
 Contains all layout styling properties for a LayoutNode. This includes spacing, alignment, sizing, and layout direction.
 
@@ -143,4 +143,3 @@ Gets the cross-axis alignment content value for the current direction
 **Returns:** `float`
 
 - The appropriate cross-axis alignment value
-

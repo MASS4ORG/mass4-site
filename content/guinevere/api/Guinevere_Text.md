@@ -1,17 +1,17 @@
 ---
 Title: "Text"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "Text"
   namespace: "Guinevere"
   symbol: "class"
   source: "Text.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [Text.cs](https://github.com/brmassa/blob/main/Text.cs)
+- **Source File:** [Text.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Text.cs)
 
 Represents a drawable text element that can be rendered onto a canvas. Instances of this class encapsulate text rendering properties such as the text content, position, font, and paint settings.
 
@@ -49,5 +49,3 @@ Renders the specified text onto the provided canvas using the given parameters. 
 - `gui` (*Gui*): The GUI context used for rendering the text.
 - `node` (*LayoutNode*): The layout node that the text is associated with.
 - `canvas` (*SKCanvas*): The canvas onto which the text will be drawn.
-
-

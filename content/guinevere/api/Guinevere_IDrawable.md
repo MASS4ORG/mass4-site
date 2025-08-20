@@ -1,17 +1,17 @@
 ---
 Title: "IDrawable"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "IDrawable"
   namespace: "Guinevere"
   symbol: "interface"
   source: "IDrawable.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [IDrawable.cs](https://github.com/brmassa/blob/main/IDrawable.cs)
+- **Source File:** [IDrawable.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/IDrawable.cs)
 
 Represents a drawable object that can be rendered onto a canvas.
 
@@ -37,5 +37,3 @@ Renders the drawable element onto the specified canvas according to the provided
 - `gui` (*Gui*): The GUI instance providing rendering context and state.
 - `node` (*LayoutNode*): The layout node containing positional and styling data for rendering.
 - `canvas` (*SKCanvas*): The canvas on which the drawable element will be rendered.
-
-

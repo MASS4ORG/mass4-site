@@ -1,17 +1,17 @@
 ---
 Title: "InputState"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "InputState"
   namespace: "Guinevere"
   symbol: "class"
   source: "TextInput.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [TextInput.cs](https://github.com/brmassa/blob/main/TextInput.cs)
+- **Source File:** [TextInput.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/TextInput.cs)
 ## Fields
 
 ### **Text** (*string*) = `""`
@@ -19,4 +19,3 @@ Params:
 ### **IsFocused** (*bool*)
 ### **BlinkTimer** (*float*)
 ### **ShowCursor** (*bool*) = `true`
-

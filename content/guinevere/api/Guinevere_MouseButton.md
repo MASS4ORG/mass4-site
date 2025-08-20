@@ -1,17 +1,17 @@
 ---
 Title: "MouseButton"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "MouseButton"
   namespace: "Guinevere"
   symbol: "enum"
   source: "MouseButton.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [MouseButton.cs](https://github.com/brmassa/blob/main/MouseButton.cs)
+- **Source File:** [MouseButton.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/MouseButton.cs)
 
 Represents the various buttons on a mouse device.
 
@@ -27,4 +27,3 @@ Original from OpenTK
 - **Extra** = `4`
 - **Forward** = `5`
 - **Back** = `6`
-

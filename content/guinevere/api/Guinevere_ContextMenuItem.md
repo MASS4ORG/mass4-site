@@ -1,17 +1,17 @@
 ---
 Title: "ContextMenuItem"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "ContextMenuItem"
   namespace: "Guinevere"
   symbol: "class"
   source: "ContextMenuItem.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [ContextMenuItem.cs](https://github.com/brmassa/blob/main/ContextMenuItem.cs)
+- **Source File:** [ContextMenuItem.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/ContextMenuItem.cs)
 
 Represents a context menu item
 
@@ -32,5 +32,3 @@ Represents a context menu item
 ### **IsSeparator**
 
 (*bool*) { get; set }: Gets or sets a value indicating whether this `ContextMenuItem` represents a separator. A separator is a visual divider within a context menu typically used to group items.
-
-

@@ -1,17 +1,17 @@
 ---
 Title: "Time"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "Time"
   namespace: "Guinevere"
   symbol: "class"
   source: "Time.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [Time.cs](https://github.com/brmassa/blob/main/Time.cs)
+- **Source File:** [Time.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Time.cs)
 
 Provides time measurement and frame rate calculation utilities for game loops.
 
@@ -19,19 +19,11 @@ Provides time measurement and frame rate calculation utilities for game loops.
 
 ### **DeltaTime**
 
-(*float*) { get; set }: Gets the time in milliseconds that elapsed since the last frame update. This value is affected by `TimeScale`.
-
-### **UnscaledElapsed**
-
-(*float*) { get; set }: Gets the total time in seconds elapsed since the application's start. This is the real (unscaled) time and unaffected by `TimeScale`.
+(*float*) { get; set }: Gets the time in seconds that elapsed since the last frame update.
 
 ### **Elapsed**
 
-(*float*) { get; set }: Gets the total scaled time in seconds since the Time instance was created. This value is affected by `TimeScale`.
-
-### **TimeScale**
-
-(*float*) { get; set } = `1f`: Gets or sets the scale at which time progresses. 1.0 is normal speed, 0.5 is half speed, 2.0 is double speed.
+(*float*) { get; set }: Gets the total time in seconds since the Time instance was created.
 
 ### **Frames**
 
@@ -51,9 +43,11 @@ Provides time measurement and frame rate calculation utilities for game loops.
 ### Update
 
 ```csharp
-public void Update()
+public void Update(double deltaTime)
 ```
 
 Updates the time measurements. Called once per frame.
 
+**Parameters:**
 
+- `deltaTime` (*double*)

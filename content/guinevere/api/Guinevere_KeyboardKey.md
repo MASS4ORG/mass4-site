@@ -1,17 +1,17 @@
 ---
 Title: "KeyboardKey"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "KeyboardKey"
   namespace: "Guinevere"
   symbol: "enum"
   source: "KeyboardKey.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [KeyboardKey.cs](https://github.com/brmassa/blob/main/KeyboardKey.cs)
+- **Source File:** [KeyboardKey.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/KeyboardKey.cs)
 
 Keyboard key codes.
 
@@ -140,4 +140,3 @@ Original from OpenTK The key codes are based on the USB usage page 0x07 (USB key
 - **RightSuper** = `347`
 - **Menu** = `348`
 - **LastKey** = `Menu`
-

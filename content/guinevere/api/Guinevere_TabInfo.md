@@ -1,17 +1,17 @@
 ---
 Title: "TabInfo"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "TabInfo"
   namespace: "Guinevere"
   symbol: "class"
   source: "TabInfo.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [TabInfo.cs](https://github.com/brmassa/blob/main/TabInfo.cs)
+- **Source File:** [TabInfo.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/TabInfo.cs)
 ## Properties
 
 ### **Title**
@@ -37,5 +37,3 @@ Params:
 ### **TextColor**
 
 (*Color?*) { get; set }
-
-

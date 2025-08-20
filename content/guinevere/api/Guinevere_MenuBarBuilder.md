@@ -1,17 +1,17 @@
 ---
 Title: "MenuBarBuilder"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "MenuBarBuilder"
   namespace: "Guinevere"
   symbol: "class"
   source: "MenuBarBuilder.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [MenuBarBuilder.cs](https://github.com/brmassa/blob/main/MenuBarBuilder.cs)
+- **Source File:** [MenuBarBuilder.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/MenuBarBuilder.cs)
 
 Builder for creating menu bars
 
@@ -31,5 +31,3 @@ Adds a menu to the menu bar
 - `buildMenu` (*Action<FlyoutBuilder>*)
 
 **Returns:** `MenuBarBuilder`
-
-

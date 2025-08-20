@@ -1,17 +1,17 @@
 ---
 Title: "ContextMenuBuilder"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "ContextMenuBuilder"
   namespace: "Guinevere"
   symbol: "class"
   source: "ContextMenuBuilder.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [ContextMenuBuilder.cs](https://github.com/brmassa/blob/main/ContextMenuBuilder.cs)
+- **Source File:** [ContextMenuBuilder.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/ContextMenuBuilder.cs)
 
 Helper class for building context menus
 
@@ -46,4 +46,3 @@ Adds a separator to the context menu.
 **Returns:** `ContextMenuBuilder`
 
 - The current `ContextMenuBuilder` instance with the added separator.
-

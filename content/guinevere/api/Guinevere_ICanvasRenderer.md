@@ -1,17 +1,17 @@
 ---
 Title: "ICanvasRenderer"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "ICanvasRenderer"
   namespace: "Guinevere"
   symbol: "interface"
   source: "ICanvasRenderer.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [ICanvasRenderer.cs](https://github.com/brmassa/blob/main/ICanvasRenderer.cs)
+- **Source File:** [ICanvasRenderer.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/ICanvasRenderer.cs)
 
 Defines the interface for rendering graphics to a canvas. Provides methods for initializing, resizing, and rendering content onto the canvas surface.
 
@@ -56,5 +56,3 @@ Renders the graphical content to the canvas using the provided draw action.
 **Parameters:**
 
 - `draw` (*Action<SKCanvas>*): The action that defines the drawing logic on the canvas.
-
-

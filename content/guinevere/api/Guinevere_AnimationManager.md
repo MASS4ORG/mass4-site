@@ -1,17 +1,17 @@
 ---
 Title: "AnimationManager"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "AnimationManager"
   namespace: "Guinevere"
   symbol: "class"
   source: "AnimationManager.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [AnimationManager.cs](https://github.com/brmassa/blob/main/AnimationManager.cs)
+- **Source File:** [AnimationManager.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/AnimationManager.cs)
 
 Manages animation instances and provides automatic ID generation for boolean animations based on caller location to enable seamless immediate-mode GUI animation usage.
 
@@ -55,5 +55,3 @@ public void Clear()
 ```
 
 Clears all animation instances. This should typically be called when resetting the GUI state or when cleaning up.
-
-

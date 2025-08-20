@@ -1,17 +1,17 @@
 ---
 Title: "BoolAnimationState"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "BoolAnimationState"
   namespace: "Guinevere"
   symbol: "class"
   source: "AnimationManager.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [AnimationManager.cs](https://github.com/brmassa/blob/main/AnimationManager.cs)
+- **Source File:** [AnimationManager.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/AnimationManager.cs)
 
 Represents the state of a boolean animation including its direction and timing.
 
@@ -32,5 +32,3 @@ Represents the state of a boolean animation including its direction and timing.
 ### **EasingFunction**
 
 (*Func<float, float>*) { get; set }
-
-

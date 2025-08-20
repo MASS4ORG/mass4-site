@@ -1,17 +1,17 @@
 ---
 Title: "InteractableElement"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "InteractableElement"
   namespace: "Guinevere"
   symbol: "struct"
   source: "InteractableElement.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [InteractableElement.cs](https://github.com/brmassa/blob/main/InteractableElement.cs)
+- **Source File:** [InteractableElement.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/InteractableElement.cs)
 
 Represents an interactive UI element within the graphical user interface. This structure encapsulates information necessary to enable interactivity for a specific visual region or shape, including rectangle or custom-defined shapes, and associates it with a graphical user interface context to handle various user interactions.
 
@@ -92,4 +92,3 @@ Determines if the specified mouse button was clicked while the interactive eleme
 **Returns:** `bool`
 
 - True if the specified mouse button was clicked and the interactive element is hovered; otherwise, false.
-

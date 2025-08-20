@@ -781,3 +781,7 @@ A simple and powerful animation system for animating any arbitrary value over ti
 #### Platform layers
 
 As development progresses towards beta and release, we will continually be adding more platform layers to Guinevere, and further build out our tooling for this process.
+
+---
+
+*Guinevere is part of the [MEGA4 Initiative](/mega4) by [MASS4](/) - four revolutionary tools for modern development.*

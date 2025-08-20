@@ -1,17 +1,17 @@
 ---
 Title: "Edge"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "Edge"
   namespace: "Guinevere"
   symbol: "struct"
   source: "Edge.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [Edge.cs](https://github.com/brmassa/blob/main/Edge.cs)
+- **Source File:** [Edge.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Edge.cs)
 
 Represents a structure that defines an edge or border with measurements for each side: top, right, bottom, and left.
 
@@ -48,5 +48,3 @@ Represents a structure that defines an edge or border with measurements for each
 ### **BottomRight**
 
 (*Vector2*): Gets a `Vector2` representing the combination of the bottom and right edge measurements.
-
-

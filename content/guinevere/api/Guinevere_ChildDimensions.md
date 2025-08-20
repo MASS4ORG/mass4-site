@@ -1,17 +1,17 @@
 ---
 Title: "ChildDimensions"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "ChildDimensions"
   namespace: "Guinevere"
   symbol: "struct"
   source: "LayoutNode.Calculation.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [LayoutNode.Calculation.cs](https://github.com/brmassa/blob/main/LayoutNode.Calculation.cs)
+- **Source File:** [LayoutNode.Calculation.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/LayoutNode.Calculation.cs)
 ## Properties
 
 ### **Width**
@@ -21,5 +21,3 @@ Params:
 ### **Height**
 
 (*float*) { get; set }
-
-

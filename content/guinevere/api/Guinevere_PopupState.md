@@ -1,17 +1,17 @@
 ---
 Title: "PopupState"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "PopupState"
   namespace: "Guinevere"
   symbol: "class"
   source: "Popup.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [Popup.cs](https://github.com/brmassa/blob/main/Popup.cs)
+- **Source File:** [Popup.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Popup.cs)
 ## Properties
 
 ### **IsOpen**
@@ -29,5 +29,3 @@ Params:
 ### **CloseOnEscape**
 
 (*bool*) { get; set } = `true`
-
-

@@ -1,17 +1,17 @@
 ---
 Title: "DrawableEntry"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "DrawableEntry"
   namespace: "Guinevere"
   symbol: "class"
   source: "DrawableEntry.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [DrawableEntry.cs](https://github.com/brmassa/blob/main/DrawableEntry.cs)
+- **Source File:** [DrawableEntry.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/DrawableEntry.cs)
 ## Public Methods
 
 ### Execute
@@ -25,5 +25,3 @@ public void Execute(Gui gui, LayoutNode node, SKCanvas canvas)
 - `gui` (*Gui*)
 - `node` (*LayoutNode*)
 - `canvas` (*SKCanvas*)
-
-

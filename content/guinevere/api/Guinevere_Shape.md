@@ -1,17 +1,17 @@
 ---
 Title: "Shape"
 Type: api
-Created: "2025-07-06 23:20:28"
+Created: "2025-08-19 15:05:41"
 Params:
   type: "Shape"
   namespace: "Guinevere"
   symbol: "class"
   source: "Shape.Commands.cs, Shape.Paint.cs, Shape.cs"
-  external_link: "github.com/brmassa/"
+  external_link: "https://github.com/MASS4ORG/Guinevere"
 ---
 
 - **Namespace:** [Guinevere](/guinevere/api/guinevere)
-- **Source File:** [Shape.Commands.cs](https://github.com/brmassa/blob/main/Shape.Commands.cs), [Shape.Paint.cs](https://github.com/brmassa/blob/main/Shape.Paint.cs), [Shape.cs](https://github.com/brmassa/blob/main/Shape.cs)
+- **Source File:** [Shape.Commands.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Shape.Commands.cs), [Shape.Paint.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Shape.Paint.cs), [Shape.cs](https://github.com/MASS4ORG/Guinevere/blob/main/Guinevere/Shape.cs)
 
 Represents a base abstract class for creating and manipulating 2D geometric shapes with customizable rendering behaviors, transformations, and visual effects.
 
@@ -499,4 +499,3 @@ Creates a rectangular shape with specified dimensions and corner radius.
 **Returns:** `Shape`
 
 - A new `Shape` representing the rounded rectangle.
-
