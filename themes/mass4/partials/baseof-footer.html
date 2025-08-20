@@ -11,35 +11,38 @@
             <div class="col-6 col-lg-2 mb-3">
                 <h5>About</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="/mega4">MEGA4</a></li>
+                    <li class="mb-2"><a class="nav-link" href="/mega4">MEGA4</a></li>
                 </ul>
             </div>
 
             <div class="col-6 col-lg-2 mb-3">
-                <h5>MEGA4 Projects</h5>
+                <h5>Projects</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="/guinevere">Guinevere</a></li>
-                    <li class="mb-2"><a href="/gaya">Gaya</a></li>
-                    <li class="mb-2"><a href="/turian">Turian</a></li>
-                    <li class="mb-2"><a href="/mystery">Mystery</a></li>
+                    <li class="mb-2"><a class="nav-link" href="/guinevere">Guinevere</a></li>
+                    <li class="mb-2"><a class="nav-link" href="/gaya">Gaya</a></li>
+                    <li class="mb-2"><a class="nav-link" href="/turian">Turian</a></li>
+                    <li class="mb-2"><a class="nav-link" href="/mystery">Mystery</a></li>
                 </ul>
             </div>
 
             <div class="col-6 col-lg-2 mb-3">
                 <h5>API</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="/guinevere/api">Guinevere</a></li>
+                    <li class="mb-2"><a class="nav-link" href="/guinevere/api">Guinevere</a></li>
                 </ul>
             </div>
 
             <div class="col-6 col-lg-2 mb-3">
                 <h5>Community</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="https://www.youtube.com/@MASS4ORG">YouTube</a></li>
-                    <li class="mb-2"><a href="https://github.com/mass4org">GitHub</a></li>
-                    <li class="mb-2"><a href="https://matrix.to/#/#Mass4:matrix.org">Matrix</a></li>
-                    <li class="mb-2"><a href="https://discord.com/channels/1112051704733647058/1112051705316638835">Discord</a></li>
-                    <li class="mb-2"><a href="https://fosstodon.org/@mass4">Mastodon</a></li>
+                    {% assign socialNetworks = site.Params.SocialNetworks | where: 'footer', true %}
+                    {% for socialNetwork in socialNetworks %}
+                    <li class="mb-2">
+                        <a rel="me" class="nav-link" href="{{ socialNetwork.url }}" id="link-{{ socialNetwork.id }}">
+                            <i class=" bi {{ socialNetwork.icon_class }}"></i> {{ socialNetwork.name }}
+                        </a>
+                    </li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
