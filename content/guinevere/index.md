@@ -18,7 +18,6 @@ Guinevere operates with zero dependencies, maintains minimal size, and offers ex
 
 ### Design Pillars
 
-<div class="container">
 <div class="row">
 
 :::col
@@ -98,7 +97,6 @@ Since Guinevere's sole responsibility is converting input into a series of basic
 :::
 
 </div>
-</div>
 
 ## Demonstrations
 
@@ -113,7 +111,6 @@ Since Guinevere's sole responsibility is converting input into a series of basic
 >
 > Also note that the UI code itself is independent of the Win32 platform layer and will be identical when targeting other C# platforms.
 
-<div class="container">
 <div class="row">
 
 :::col
@@ -149,7 +146,7 @@ public class Program
 </div>
 <div class="row">
 
-:::col
+:::col-6
 ## Hello, Triangle
 
 ```cs
@@ -186,7 +183,6 @@ public class Program
 :::
 
 </div>
-</div>
 
 ## AirBnB slider demonstration
 
@@ -202,6 +198,9 @@ We're fully aware that this is an unfair comparison. HTML wasn't designed to exc
 
 Note that the Guinevere code for this will likely change slightly once the input controls feature is introduced, as you would probably want to be able to interact with the widget using more than just a pointer device (for example, with keyboard navigation, etc).
 
+<div class="row">
+
+:::col-7
 ```cs
 private void DrawAirBnBMonthSlider(ref int month)
     {
@@ -269,8 +268,13 @@ private void DrawAirBnBMonthSlider(ref int month)
         }
     }
 ```
+:::
 
+:::col
 ![](Screencast_20250820_203828.avif)
+:::
+
+</div>
 
 ## Capabilities
 
@@ -279,7 +283,6 @@ private void DrawAirBnBMonthSlider(ref int month)
 We believe we've created one of the most powerful, flexible and expressive layout systems available,
 and certainly the most capable IMGUI layout system we've encountered.
 
-<div class="container">
 <div class="row">
 
 :::col
@@ -487,13 +490,11 @@ Covering all the features of Guinevere's layout system would require significant
 :::
 
 </div>
-</div>
 
 ## Shapes
 
 User interfaces are composed of various shapes, so having the ability to easily define, draw and use complex shapes is crucial.
 
-<div class="container">
 <div class="row">
 
 ### Signed distance field based shapes
@@ -587,7 +588,6 @@ Another limitation is that using the signed distance field as a way of rendering
 
 Ultimately, all Guinevere really does is produce a list of graphics commands. So, naturally, it should excel at this. Guinevere's drawing is extremely fast and efficient, without sacrificing ease of use, expressive power or user control.
 
-<div class="container">
 <div class="row">
 
 #### Graphics Drawing and Manipulation
@@ -644,7 +644,6 @@ foreach (Command command in commands)
 
 Guinevere's input handling is designed to make it easy to handle input exactly in the way most useful to solve a given problem, providing users with an array of options at different levels of abstraction: raw input handling, interactables, and controls.
 
-<div class="container">
 <div class="row">
 
 #### Raw input handling
