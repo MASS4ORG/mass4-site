@@ -37,10 +37,10 @@ Params:
       url: https://youtube.com/@MASS4ORG
       icon_class: bi-youtube
       footer: true
-    - id: github
-      name: GitHub
-      url: https://github.com/MASS4ORG
-      icon_class: bi-git
+    - id: gitlab
+      name: GitLab
+      url: https://gitlab.com/mass4org/mega4
+      icon_class: bi-gitlab
       footer: true
     - id: mastodon
       name: Mastodon

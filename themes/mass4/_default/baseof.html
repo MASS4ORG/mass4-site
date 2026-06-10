@@ -1,32 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+{% if page.Section == 'guinevere' or page.Section == 'gaya' or page.Section == 'turian' or page.Section == 'mystery' or page.Section == 'mega4' -%}
+{% assign section = page.Section -%}
+{% else -%}
+{% assign section = 'mass4' -%}
+{% endif -%}
+<html lang="en" data-section="{{ section }}">
 
 <head>
     {% render 'partials/baseof-head.html' -%}
     {% render 'partials/baseof-head-twitter.html' -%}
-
-    {% if page.Section == 'guinevere' or page.Section == 'gaya' or page.Section == 'turian' or page.Section == 'mystery' or page.Section == 'mega4' -%}
-    {% assign theme_append =  page.Section -%}
-    {% assign theme_prepend =  page.Section -%}
-    {% else -%}
-    {% assign theme_append = 'mass4' -%}
-    {% assign theme_prepend = 'mass4' -%}
-    {% endif -%}
-    <link rel="stylesheet" href="/{{ theme_append }}-style.css">
 </head>
 
 <body>
     {% render 'partials/baseof-header.html' -%}
 
-    <!-- Regular Content -->
-    <div class="container-xl my-5">
+    <main>
         {{ page.Content }}
-    </div>
+    </main>
 
-    <!-- Footer -->
     {% render 'partials/baseof-footer.html' %}
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/app.js" defer></script>
 </body>
 
 </html>

@@ -1,37 +1,79 @@
 ---
 Title: MEGA4
+Description: One initiative, four interconnected projects built simultaneously and in the open — a GUI library, a text editor, a game engine, and a game.
 ---
 
-![mega4 badge](/mega4-badge.png)
+<section class="project-hero">
+  <div class="wrap">
+    <img src="/mega4-badge.png" alt="MEGA4 badge">
+    <span class="eyebrow">The initiative</span>
+    <h1>MEGA4</h1>
+    <p class="lede" style="margin-inline:auto">Four projects, built at the same time and in public. Each one is the foundation for the next.</p>
+  </div>
+</section>
 
-> A single, ambitious mission: develop four deeply interconnected projects **simultaneously, transparently, and collaboratively.**
+<div class="wrap section">
+<div class="prose narrow">
 
-## The Four Pillars of MEGA4
+Most software is built behind closed doors and revealed only when it's polished.
+MEGA4 takes the opposite approach: four codependent projects, developed in the open,
+where the rough edges and dead ends are visible alongside the progress.
 
-1.  **🔵Guinevere**: The high-performance, GPU-native GUI system. *The foundation.*
-2.  **🟢Gaya**: The lightning-fast, game-like text editor built on Guinevere. *The tool.*
-3.  **🟡Turian**: The 100% C#, Vulkan-ready game engine using both. *The engine.*
-4.  **🔴MYSTERY**: The community-defined game that tests them all. *The goal.*
+## The four projects
 
-## Developed as One
+<div class="pillars">
+<a class="pillar g" href="/guinevere">
+<span class="role">Foundation · GUI</span>
+<h3>Guinevere</h3>
+<p>A GPU-native, immediate-mode UI toolkit — planned as a Zig fork of DVUI. Everything else draws its interface with it.</p>
+<span class="more">Learn more →</span>
+</a>
+<a class="pillar ga" href="/gaya">
+<span class="role">Tool · Editor</span>
+<h3>Gaya</h3>
+<p>A small, fast text editor and plugin platform built on Guinevere — the host that Turian Studio plugs into.</p>
+<span class="more">Learn more →</span>
+</a>
+<a class="pillar t" href="/turian">
+<span class="role">Engine · 3D</span>
+<h3>Turian</h3>
+<p>A component-based 3D game engine and editor in pure Zig, with its own site at turian.mass4.org.</p>
+<span class="more">Learn more →</span>
+</a>
+<a class="pillar m" href="/mystery">
+<span class="role">Goal · Game</span>
+<h3>Mystery</h3>
+<p>A community-shaped game that exercises the whole stack end to end.</p>
+<span class="more">Learn more →</span>
+</a>
+</div>
 
-Unlike traditional development, these projects are not built in isolation. They are codependent, evolving together in real-time:
-*   **Guinevere** is the primary tool used to write code for **Gaya** and **Turian**.
-*   **Gaya** provides the platform both code editor and **Turian** game engine.
-*   **MYSTERY** is the ultimate testbed, stress-testing every component.
+## How they depend on each other
 
-## Common Traits
+- **Guinevere** renders the interfaces for Gaya and the Turian editor.
+- **Gaya** is the platform; the Turian editor is designed to run inside it as a plugin.
+- **Turian** is the engine that **Mystery** is built with.
+- **Mystery** is the real-world workload that stress-tests everything below it.
 
-*   **Radical Transparency:** Every line of code, every asset, every design decision is public.
-*   **Blazing Performance:** A core obsession with speed and efficiency, from GUI to GPU.
-*   **Modern C# Showcase:** Built entirely with modern .NET, showcasing its capabilities for high-performance applications.
-*   **Live & Unfiltered:** Follow every step of the journey, from breakthrough to bug, on our [YouTube Channel](https://www.youtube.com/@MASS4ORG).
+Building them together keeps each one honest: a GUI toolkit is only as good as the
+editor built on it, and an engine is only as good as the game it has to ship.
 
-## Witness the Process
+## What changed: C# to Zig
 
-This is more than a project; it's an experiment and a documentary. We are building the plane while flying it, and you have a front-row seat.
+MEGA4 began as a C#/.NET stack. We've since moved the whole thing to **Zig** — a
+single, lower-level toolchain with no garbage collector and no runtime, which suits a
+GUI library, an editor, and a game engine far better. Some pages still describe the
+direction rather than a finished product; that's deliberate.
 
-**The goal isn't just to create technology, but to showcase the messy, brilliant process of creating it.**
+## Principles
+
+- **Open by default.** Code, assets, and design decisions are public from the start.
+- **One language.** The entire stack is Zig, top to bottom.
+- **No overselling.** We describe what exists and what's planned, and keep the two clearly separate.
 
 ---
-**Follow the build: [https://www.youtube.com/@MASS4ORG](https://www.youtube.com/@MASS4ORG)**
+
+*Follow progress on [GitLab](https://gitlab.com/mass4org/mega4) or in the [news](/news).*
+
+</div>
+</div>

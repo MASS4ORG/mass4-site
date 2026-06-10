@@ -1,14 +1,17 @@
-<article class="bg-dark p-3">
-    <h1 class="fw-bolder text-capitalize">
-    {{- page.Title }}
-    </h1>
+<div class="wrap section">
+    <article class="prose narrow">
+        <p><a href="/news">← News</a></p>
+        <h1>{{ page.Title }}</h1>
+        <div class="meta" style="font-family:var(--font-mono);font-size:.85rem;color:var(--faint);margin-bottom:2em">
+            {{ page.Date | date: "%B %-d, %Y" }}
+        </div>
 
-    <ul class="nav">
-        {% for tag in page.TagsReference %}
-        <li class="nav-item"><a class="nav-link" href="{{ tag.Permalink }}">#{{ tag.Title }}</a></li>
-        {% endfor %}
-    </ul>
+        {{ page.ContentPreRendered }}
 
-    {{ page.ContentPreRendered }}
-
-</article>
+        {% if page.TagsReference.size > 0 %}
+        <p style="margin-top:2.5em">
+            {% for tag in page.TagsReference %}<a class="tag" href="{{ tag.Permalink }}" style="margin-right:6px">#{{ tag.Title }}</a>{% endfor %}
+        </p>
+        {% endif %}
+    </article>
+</div>
