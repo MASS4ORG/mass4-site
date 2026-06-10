@@ -5,8 +5,8 @@ Description: A component-based 3D game engine and editor built entirely in Zig. 
 
 <section class="project-hero">
   <div class="wrap">
-    <img src="/turian-badge.png" alt="Turian badge">
-    <span class="eyebrow">Engine · 3D</span>
+    <img src="/turian-logo-1.svg" alt="Turian logo">
+    <div class="eyebrow">Engine · 3D</div>
     <h1>Turian</h1>
     <p class="lede" style="margin-inline:auto">A component-based 3D game engine and editor, built entirely in Zig. It has its own dedicated site and documentation.</p>
     <div class="hero-cta" style="justify-content:center">

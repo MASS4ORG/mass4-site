@@ -33,10 +33,6 @@ Each project has a different focus, but they share an approach:
 *   **Deeply interconnected:** Guinevere draws Gaya and Turian; Turian runs the editor inside Gaya; Mystery tests everything.
 *   **One stack:** a single toolchain, top to bottom.
 
-> **Update:** since this post, the entire stack moved from C#/.NET to **Zig**. The
-> goals are the same; the foundation is lower-level and a better fit for a GUI
-> library, an editor, and a game engine.
-
 ## Follow along
 
 Development happens in the open on [GitLab](https://gitlab.com/mass4org/mega4), with

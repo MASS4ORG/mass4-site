@@ -5,8 +5,8 @@ Description: A community-shaped game built on the Turian engine — the end-to-e
 
 <section class="project-hero">
   <div class="wrap">
-    <img src="/mystery-badge.png" alt="Mystery badge">
-    <span class="eyebrow">Goal · Game</span>
+    <img src="/mystery-logo-1.svg" alt="Mystery logo">
+    <div class="eyebrow">Goal · Game</div>
     <h1>Mystery</h1>
     <p class="lede" style="margin-inline:auto">A game built on the stack we're making — and shaped, in the open, with the people following along.</p>
   </div>

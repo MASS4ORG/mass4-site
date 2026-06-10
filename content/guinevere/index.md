@@ -5,8 +5,8 @@ Description: A GPU-native, immediate-mode GUI toolkit in Zig — planned as a fo
 
 <section class="project-hero">
   <div class="wrap">
-    <img src="/guinevere-badge.png" alt="Guinevere badge">
-    <span class="eyebrow">Foundation · GUI</span>
+    <img src="/guinevere-logo-1.svg" alt="Guinevere logo">
+    <div class="eyebrow">Foundation · GUI</div>
     <h1>Guinevere</h1>
     <p class="lede" style="margin-inline:auto">A GPU-native, immediate-mode UI toolkit — the layer that draws every interface in the MEGA4 stack.</p>
     <div class="hero-cta" style="justify-content:center">

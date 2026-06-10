@@ -5,8 +5,8 @@ Description: A lightweight, GPU-accelerated text editor and plugin platform in Z
 
 <section class="project-hero">
   <div class="wrap">
-    <img src="/gaya-badge.png" alt="Gaya badge">
-    <span class="eyebrow">Tool · Editor</span>
+    <img src="/gaya-logo-1.svg" alt="Gaya logo">
+    <div class="eyebrow">Tool · Editor</div>
     <h1>Gaya</h1>
     <p class="lede" style="margin-inline:auto">A small, fast text editor and plugin platform built on Guinevere — and the foundation Turian Studio runs on.</p>
     <div class="hero-cta" style="justify-content:center">

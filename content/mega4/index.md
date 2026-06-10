@@ -5,8 +5,8 @@ Description: One initiative, four interconnected projects built simultaneously a
 
 <section class="project-hero">
   <div class="wrap">
-    <img src="/mega4-badge.png" alt="MEGA4 badge">
-    <span class="eyebrow">The initiative</span>
+    <img src="/mega4-logo-1.svg" alt="MEGA4 logo">
+    <div class="eyebrow">The initiative</div>
     <h1>MEGA4</h1>
     <p class="lede" style="margin-inline:auto">Four projects, built at the same time and in public. Each one is the foundation for the next.</p>
   </div>
@@ -24,25 +24,25 @@ where the rough edges and dead ends are visible alongside the progress.
 <div class="pillars">
 <a class="pillar g" href="/guinevere">
 <span class="role">Foundation · GUI</span>
-<h3>Guinevere</h3>
+<h3><img src="/guinevere-logo-1.svg" alt="Guinevere logo"> Guinevere</h3>
 <p>A GPU-native, immediate-mode UI toolkit — planned as a Zig fork of DVUI. Everything else draws its interface with it.</p>
 <span class="more">Learn more →</span>
 </a>
 <a class="pillar ga" href="/gaya">
 <span class="role">Tool · Editor</span>
-<h3>Gaya</h3>
+<h3><img src="/gaya-logo-1.svg" alt="Gaya logo"> Gaya</h3>
 <p>A small, fast text editor and plugin platform built on Guinevere — the host that Turian Studio plugs into.</p>
 <span class="more">Learn more →</span>
 </a>
 <a class="pillar t" href="/turian">
 <span class="role">Engine · 3D</span>
-<h3>Turian</h3>
+<h3><img src="/turian-logo-1.svg" alt="Turian logo"> Turian</h3>
 <p>A component-based 3D game engine and editor in pure Zig, with its own site at turian.mass4.org.</p>
 <span class="more">Learn more →</span>
 </a>
 <a class="pillar m" href="/mystery">
 <span class="role">Goal · Game</span>
-<h3>Mystery</h3>
+<h3><img src="/mystery-logo-1.svg" alt="Mystery logo"> Mystery</h3>
 <p>A community-shaped game that exercises the whole stack end to end.</p>
 <span class="more">Learn more →</span>
 </a>
