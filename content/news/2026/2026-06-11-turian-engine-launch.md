@@ -1,6 +1,6 @@
 ---
 title: "Turian is live — a 3D game engine built entirely in Zig"
-date: 2026-06-12
+date: 2026-06-11
 summary: "Turian now has a home on the web. A component-based 3D engine and editor with no GC, no scripting bridge, and no per-seat licensing — built in Zig."
 tags: ["announcement", "turian", "zig", "engine", "mega4"]
 ---
