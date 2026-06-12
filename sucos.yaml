@@ -3,9 +3,9 @@ BaseURL: https://mass4.org
 Description: Eclectic, remote and provoking software
 
 Theme: mass4
-GoogleAnalytics:
 
 Params:
+  GoogleAnalyticsId: "G-4KBFS34F73"
   Logo: /favicon-32x32.png
   Author:
     Name: "Bruno Massa"
