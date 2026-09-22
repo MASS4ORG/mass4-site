@@ -10,7 +10,7 @@ Description: A GPU-native, immediate-mode GUI toolkit in Zig — planned as a fo
     <h1>Guinevere</h1>
     <p class="lede" style="margin-inline:auto">A GPU-native, immediate-mode UI toolkit — the layer that draws every interface in the MEGA4 stack.</p>
     <div class="hero-cta" style="justify-content:center">
-      <a class="btn btn-primary" href="https://gitlab.com/mass4org/mega4">Source</a>
+      <a class="btn btn-primary" href="https://github.com/MASS4ORG/Guinevere">Source</a>
       <a class="btn btn-ghost" href="https://github.com/david-vanderson/dvui">DVUI (upstream)</a>
     </div>
   </div>

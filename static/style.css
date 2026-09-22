@@ -683,7 +683,7 @@ img {
     box-shadow: var(--shadow);
 }
 
-/* ---------- News ---------- */
+/* ---------- Blog ---------- */
 .posts {
     display: grid;
     gap: 18px;

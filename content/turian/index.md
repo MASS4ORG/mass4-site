@@ -46,8 +46,8 @@ providing the interface layer underneath. The first real project built with it i
 
 The full story lives on the dedicated site:
 
-- **Website & docs:** [turian.mass4.org](https://turian.mass4.org)
-- **Source:** [gitlab.com/mass4org/mega4/turian](https://gitlab.com/mass4org/mega4/turian)
+- **Website & docs:** [turian.mass4.org](https://turian.MASS4.org)
+- **Source:** [github.com/mass4org/mega4/turian](https://github.com/MASS4ORG/turian)
 
 </div>
 </div>

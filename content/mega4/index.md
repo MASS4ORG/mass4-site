@@ -73,7 +73,7 @@ direction rather than a finished product; that's deliberate.
 
 ---
 
-*Follow progress on [GitLab](https://gitlab.com/mass4org/mega4) or in the [news](/news).*
+*Follow progress on [GitLab](https://gitlab.com/mass4org/mega4) or in the [blog](/blog).*
 
 </div>
 </div>

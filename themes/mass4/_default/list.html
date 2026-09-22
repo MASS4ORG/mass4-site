@@ -1,1 +1,13 @@
 {{ page.ContentPreRendered }}
+<div class="wrap" style="padding-bottom:64px">
+    <div class="posts">
+        {% assign sortedPages = page.RegularPages | sort: 'Date' | reverse %}
+        {% for pageList in sortedPages %}
+        <a class="post-card" href="{{ pageList.RelPermalink }}">
+            <div class="meta">{{ pageList.Date | date: "%Y-%m-%d" }}</div>
+            <h3>{{ pageList.Title }}</h3>
+            {% if pageList.Params.summary %}<p>{{ pageList.Params.summary }}</p>{% endif %}
+        </a>
+        {% endfor %}
+    </div>
+</div>

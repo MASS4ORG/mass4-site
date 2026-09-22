@@ -1,7 +1,7 @@
 <section class="hero hero-center">
     <div class="wrap">
         <span class="eyebrow">Devlog</span>
-        <h1>News &amp; <span class="gradient-text">updates</span></h1>
+        <h1>Blog &amp; <span class="gradient-text">updates</span></h1>
         <p class="lede">Release notes and progress reports from the MEGA4 initiative.</p>
     </div>
 </section>
@@ -10,8 +10,8 @@
     <div class="posts">
         {% assign sortedPages = page.RegularPages | sort: 'Date' | reverse %}
         {% for pageList in sortedPages %}
-        <a class="post-card" href="{{ pageList.Permalink }}">
-            <div class="meta">{{ pageList.Date | date: "%B %-d, %Y" }}</div>
+        <a class="post-card" href="{{ pageList.RelPermalink }}">
+            <div class="meta">{{ pageList.Date | date: "%Y-%m-%d" }}</div>
             <h3>{{ pageList.Title }}</h3>
             {% if pageList.Params.summary %}<p>{{ pageList.Params.summary }}</p>{% endif %}
         </a>

@@ -20,8 +20,8 @@ Params:
       label: Turian
     - url: /mystery
       label: Mystery
-    - url: /news
-      label: News
+    - url: /blog
+      label: Blog
 
   SocialNetworks:
     - id: ko-fi
@@ -37,10 +37,10 @@ Params:
       url: https://youtube.com/@MASS4ORG
       icon_class: bi-youtube
       footer: true
-    - id: gitlab
-      name: GitLab
-      url: https://gitlab.com/mass4org/mega4
-      icon_class: bi-gitlab
+    - id: github
+      name: GitHub
+      url: https://github.com/mass4org
+      icon_class: bi-githab
       footer: true
     - id: mastodon
       name: Mastodon

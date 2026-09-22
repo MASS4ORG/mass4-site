@@ -10,7 +10,7 @@ Description: A lightweight, GPU-accelerated text editor and plugin platform in Z
     <h1>Gaya</h1>
     <p class="lede" style="margin-inline:auto">A small, fast text editor and plugin platform built on Guinevere — and the foundation Turian Studio runs on.</p>
     <div class="hero-cta" style="justify-content:center">
-      <a class="btn btn-primary" href="https://gitlab.com/mass4org/mega4">Source</a>
+      <a class="btn btn-primary" href="https://github.com/MASS4ORG">Source</a>
     </div>
   </div>
 </section>

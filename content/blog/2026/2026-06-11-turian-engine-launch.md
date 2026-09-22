@@ -31,7 +31,7 @@ Milestones ship usable leaps, not feature dumps:
 | **Rich Content** | animation, prefabs, particles, LOD |
 | **Production Ready** | a credible alternative for professional studios |
 
-The live [milestone tracker](https://gitlab.com/mass4org/mega4/turian/-/milestones) shows exactly where things stand.
+The live [milestone tracker](https://github.com/MASS4ORG/turian/) shows exactly where things stand.
 
 ## Where it fits in MEGA4
 

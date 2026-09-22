@@ -35,7 +35,7 @@ Each project has a different focus, but they share an approach:
 
 ## Follow along
 
-Development happens in the open on [GitLab](https://gitlab.com/mass4org/mega4), with
+Development happens in the open on [GitHub](https://github.com/mass4org/mega4), with
 videos on our [YouTube channel](https://www.youtube.com/@MASS4ORG). Expect stumbles,
 rewrites, and mistakes — sharing the journey is part of the point.
 

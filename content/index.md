@@ -10,7 +10,7 @@ Title: MASS4
     <p class="lede">MASS4 is a one-person indie studio making the tools and games it wants to see in the world. Everything ships open-source, built in public from first commit to release.</p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="/mega4">Current work: MEGA4</a>
-      <a class="btn btn-ghost" href="https://gitlab.com/mass4org/mega4">View on GitLab</a>
+      <a class="btn btn-ghost" href="https://github.com/MASS4ORG">View on GitHub</a>
     </div>
   </div>
 </section>
@@ -48,8 +48,8 @@ Title: MASS4
       <h2>Follow along</h2>
       <p>The repository, the missteps, the progress — all public. If that sounds interesting, come watch.</p>
       <div class="btn-row">
-        <a class="btn btn-primary" href="https://gitlab.com/mass4org/mega4">GitLab repository</a>
-        <a class="btn btn-ghost" href="/news">Read the news</a>
+        <a class="btn btn-primary" href="https://GitHub.com/MASS4ORG">GitHub repository</a>
+        <a class="btn btn-ghost" href="/blog">Read the blog</a>
       </div>
     </div>
   </div>

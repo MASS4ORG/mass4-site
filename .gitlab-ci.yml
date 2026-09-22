@@ -1,4 +1,4 @@
-image: registry.gitlab.com/sucos/sucos:alpine
+image: registry.github.com/MASS4ORG/fanstatic:alpine
 
 variables:
   GIT_SUBMODULE_STRATEGY: normal
