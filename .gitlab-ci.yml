@@ -1,4 +1,4 @@
-image: registry.github.com/MASS4ORG/fanstatic:alpine
+image: ghcr.io/mass4org/fanstatic:alpine
 
 variables:
   GIT_SUBMODULE_STRATEGY: normal
