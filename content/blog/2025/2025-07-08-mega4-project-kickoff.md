@@ -11,7 +11,7 @@ socialmedia: |
   https://mass4.org/blog/mega4-initiative-kickoff/
 ---
 
-We're starting something deliberately ambitious: **MEGA4**, four interconnected
+We're starting something that will take a while: **MEGA4**, four interconnected
 projects built at the same time and in the open.
 
 ## What is MEGA4?

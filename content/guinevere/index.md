@@ -6,16 +6,23 @@ Title: Guinevere
 
 <div class="project-intro">
 <img class="project-mark" src="/guinevere-logo-1.svg" alt="Guinevere logo" width="96" height="96">
-<p>A cross-platform, GPU-accelerated immediate mode UI framework for C# with an uncompromising focus on performance, simplicity and expressive capabilities.</p>
+<p>A cross-platform, GPU-accelerated immediate mode UI framework for C#, focused on performance, simplicity and expressive capabilities.</p>
 </div>
 
-### There's a challenge in the software development world
+### The problem Guinevere is aimed at
 
-Contemporary applications - containing little more than a handful of images, buttons and text elements - rest precariously on massive technology stacks consisting of millions of lines of code. The development landscape suffers from overcomplicated, sluggish and error-prone software that creates frustration for both users and developers.
+A great many applications are little more than a handful of images, buttons and text elements, resting on
+large frameworks that bring their own layers, conventions and long upgrade history. That is a reasonable
+trade for a lot of software. It is a poor fit for tools, games and utilities, where a small, direct layer
+between the code and the pixels is easier to reason about.
 
-Guinevere represents our solution to address this challenge, by dramatically simplifying the complexity of the technology stack needed to build excellent, modern applications.
+Guinevere is our answer to that. It keeps the abstractions that pay for themselves and drops the ones that
+don't: shapes and font processing come from Skia, input and rendering come from the platform integration,
+and everything in between is a layer you can read.
 
-Guinevere operates with zero dependencies, maintains minimal size, and offers exceptional portability. It provides an intuitive and straightforward development experience, while enabling the creation of sophisticated user interfaces featuring complex layouts, shapes, effects and animations, all operating at thousands of frames per second with minimal memory consumption.
+It carries no dependencies of its own beyond those two, is small enough to read end to end, and ports by
+writing a platform layer. The result is a framework that can express real interfaces — nested layouts,
+shapes, effects and animations — while staying measurable in both time and memory.
 
 ### Design Pillars
 
@@ -28,9 +35,10 @@ Shapes and Font processing is done by Skia, while input handling rendering is do
 :::
 
 :::col
-#### Intuitive and enjoyable to use
+#### Ordinary C# is enough
 
-Guinevere enables you to address real challenges with every line of code. There's no requirement to master extensive frameworks or wrestle with tedious and restrictive boilerplate; Basic C# knowledge is all that's needed.
+Guinevere aims to be usable without first learning a framework. There is no build step, no markup, and no
+separate styling document to keep in sync; basic C# takes you the whole way there.
 :::
 
 :::col
@@ -46,19 +54,23 @@ Guinevere prioritizes immediate-mode functionality, complemented by an optional 
 :::col
 #### Evolving
 
-Guinevere is designed to evolve with your needs. Whether you're building a simple application or a complex system, Guinevere provides the flexibility and power you need to create the best possible user experience.
+Guinevere is young and still changing shape. The parts that proved useful have been kept and hardened; the
+parts that turned out to be weight are being removed or rewritten.
 :::
 
 :::col
 #### Straightforward
 
-Guinevere is optimized for clarity. Everything is designed to be as simple and direct as possible; we have been ruthless in eliminating code and complexity that isn't absolutely essential.
+Guinevere is optimized for clarity. Everything is designed to be as simple and direct as possible; anything
+that wasn't load-bearing got deleted.
 :::
 
 :::col
-#### High-performance
+#### Measured, not assumed
 
-When you eliminate the complexity that tangles modern processors, they can truly perform! Guinevere processes and renders most interfaces in fractions of a millisecond.
+Performance claims come from a real benchmark suite. Current representative trees resolve at roughly 48–49
+nanoseconds per node with zero steady-state allocations — see
+[Reworking Guinevere's Layout Engine](/blog/reworking-guinevere-s-layout-engine).
 :::
 
 </div>
@@ -67,19 +79,22 @@ When you eliminate the complexity that tangles modern processors, they can truly
 :::col
 #### Layout-enabled
 
-Guinevere features an exceptionally powerful and expressive layout system, delivering all the capabilities you'd expect from a premium modern UI solution, and more.
+The layout system is the part of Guinevere we've pushed hardest, and in our experience the most capable
+immediate-mode one we've worked with. We haven't found a public benchmark that compares the alternatives
+head to head, so treat that as an opinion until someone writes one.
 :::
 
 :::col
 #### Single-frame stability
 
-Taking the straightforward approach is also the correct approach. Idiomatic Guinevere code doesn't flicker or require multiple frames to stabilize; it delivers accurate and stable results in the first frame.
+Idiomatic Guinevere code doesn't flicker or require multiple frames to stabilize; it delivers accurate and
+stable results in the first frame.
 :::
 
 :::col
 #### Test-friendly
 
-The input-output relationship in Guinevere is exceptionally clear and simple, with every system exposed and fully controllable through code, making it straightforward to simulate any scenario for testing purposes.
+The input-output relationship in Guinevere is clear and simple, with every system exposed and fully controllable through code, making it straightforward to simulate any scenario for testing purposes.
 :::
 
 </div>
@@ -94,7 +109,7 @@ Programmers are first-class citizens in Guinevere; every feature is fully access
 :::col
 #### Platform-agnostic
 
-Since Guinevere's sole responsibility is converting input into a series of basic rendering commands, it integrates seamlessly into any environment and rendering pipeline.
+Since Guinevere's sole responsibility is converting input into a series of basic rendering commands, it integrates into any environment and rendering pipeline willing to host it.
 :::
 
 </div>
@@ -102,7 +117,7 @@ Since Guinevere's sole responsibility is converting input into a series of basic
 ## Demonstrations
 
 >
-> We're about to showcase Guinevere - in its current state!
+> This is Guinevere as it currently stands.
 >
 > Guinevere is actively under development and this website currently displays only a subset of capabilities. Many core features like the retained-mode layer and input controls are still in early development stages and aren't presented here. It should be understood that everything shown here is subject to change.
 >
@@ -117,9 +132,12 @@ Since Guinevere's sole responsibility is converting input into a series of basic
 
 Where better to begin than with "hello world"?
 
-These examples demonstrate how minimal the requirements are to get a basic Guinevere application running, and then to render something simple on screen. They contain the complete user application codebase; no additional code is necessary to create a window and draw a UI until the window closes.
+These examples show how little is required to get a basic Guinevere application running: the complete
+user application, with nothing else needed to open a window and draw until it's closed.
 
-As you can observe, it's remarkably simple to draw primitives such as rectangles, triangles and text. Guinevere provides multiple layers of API granularity, with no tools - however advanced! - hidden from the user. From basic shapes to complex layouts, Guinevere allows you to work at precisely the level of complexity you need.
+Drawing primitives like rectangles, triangles and text takes about as much code as it looks like it should.
+Guinevere offers several layers of API granularity, and nothing is hidden from you, however advanced. From
+basic shapes up to full layouts, you work at whatever level of complexity the problem actually needs.
 :::
 
 :::col
@@ -183,19 +201,27 @@ public class Program
 
 </div>
 
-## AirBnB slider demonstration
+## A harder widget: a month slider
 
-Next, let's examine how straightforward it is to create even highly complex UI widgets. This is a recreation of AirBnb's circular month slider as of February 2024, which you can (or could) find here (click on 'When', then select 'Months'). If it's no longer available when you're reading this, it resembled the demonstration shown here.
+Next, something harder than a button: a circular month slider, recreated from AirBnB's date picker as it
+was in February 2024 — open the booking page, pick 'When', then choose 'Months'. If it's no longer available
+when you're reading this, the demonstration below is a faithful reconstruction of what it did.
 
-To be frank, we had considerable difficulty understanding the exact mechanics of how AirBnb constructed that slider using HTML, CSS and JavaScript, as it proved extremely complex. We abandoned our analysis after discovering numerous dozens (if not hundreds) of layered and interconnected HTML elements and SVG paths apparently managed by substantial amounts of JavaScript.
+It's a useful test case precisely because the original is not straightforward. Reconstructing it from HTML,
+CSS and JavaScript meant untangling dozens of layered elements and SVG paths driven by a fair amount of
+script. The version below is a single node, a few shapes and about thirty lines of C#.
 
-While the previous demonstration contains numerous small implementation details that illustrate how many things that are complex in HTML and CSS are straightforward in Guinevere, this example really drives the point home. Creating this in HTML and CSS would be extremely challenging - and clearly was extremely challenging for some developers working at AirBnb.
+Two things are worth saying plainly. First, this is not a fair contest: HTML and CSS were not designed for
+this kind of interaction, and Guinevere is not a replacement for them. Most interfaces are a better fit for
+HTML and CSS, and you should use them there. Second, the original is a well-engineered piece of work that
+has shipped to a lot of people — it does show some jitter under load, and it degrades when a scroll view
+shares its container. Those are observations, not a verdict.
 
-The fact that they succeeded in creating this at all is remarkably impressive! However, despite their excellent efforts, it still contains several bugs. For instance, numerous jittering artifacts and the fact that it completely fails when a scroll view appears in its containing box.
+What the example does show is that a widget which is genuinely awkward in a document-oriented system can be
+written directly, in one place, against geometry the drawing code already understands.
 
-We're fully aware that this is an unfair comparison. HTML wasn't designed to excel at this type of functionality. It, like most other UI systems, is a highly structured and abstracted approach to creating interfaces, forcing developers to work far removed from what actually appears on screen. However, that's precisely the point - HTML and CSS simply aren't adequate, and have forced millions of UI designers and developers into the constraint of only accomplishing the limited types of things that are easily achievable in their working environment.
-
-Note that the Guinevere code for this will likely change slightly once the input controls feature is introduced, as you would probably want to be able to interact with the widget using more than just a pointer device (for example, with keyboard navigation, etc).
+Note that the Guinevere code for this will likely change once the input controls feature is introduced, since
+you'd want to reach the widget with more than a pointer — keyboard navigation, for instance.
 
 <div class="row">
 
@@ -279,8 +305,8 @@ private void DrawAirBnBMonthSlider(ref int month)
 
 ### Layout System
 
-We believe we've created one of the most powerful, flexible and expressive layout systems available,
-and certainly the most capable IMGUI layout system we've encountered.
+We believe we've built one of the more capable immediate-mode layout systems around, though we'd rather
+show you the numbers than ask you to take our word for it.
 
 <div class="row">
 
@@ -293,9 +319,15 @@ Guinevere's layout system serves as a tool for you to utilize wherever and howev
 :::col
 #### Thousands of nodes processed in milliseconds
 
-Guinevere's layout system is extraordinarily fast, resolving thousands of layout nodes in fractions of a millisecond. And we haven't even focused on optimization yet! We've simply avoided pessimization.
+Guinevere's layout system resolves thousands of nodes in a fraction of a millisecond. The number comes from a
+benchmark suite, not from intuition: representative fixed, wrapped, constrained-expand, percentage, ratio and
+fit-content trees now perform layout with zero steady-state allocations, and deep chains of a thousand-plus
+nodes scale linearly at roughly 48–49 nanoseconds per node. See
+[Reworking Guinevere's Layout Engine](/blog/reworking-guinevere-s-layout-engine) for the full breakdown,
+including where the allocations used to come from and what it took to remove them.
 
-The layout engine went through a dedicated hardening pass, measured with a real benchmark suite rather than guesswork: representative fixed, wrapped, constrained-expand, percentage, ratio and fit-content trees now perform layout with zero steady-state allocations, and deep chains of a thousand-plus nodes scale linearly at roughly 48-49 nanoseconds per node. See [Reworking Guinevere's Layout Engine](/blog/reworking-guinevere-s-layout-engine) for the full breakdown, including where the allocations used to come from and what it took to remove them.
+Those figures are specific to this machine and these fixtures. They're a floor to measure against, not a
+headline.
 :::
 
 </div>
@@ -354,7 +386,7 @@ gui.Node().SetNewParent(otherNode);
 :::col
 #### Sophisticated layout blending
 
-Layout nodes can exist in a blended state between multiple different possible configurations. This makes transitions between different computed or derived values very straightforward to create, and is extremely useful for animations. Certain concepts, such as animating from fit content to a constrained expand, are extremely difficult or even impossible to express in, for example, HTML and CSS.
+Layout nodes can exist in a blended state between multiple different possible configurations. This makes transitions between different computed or derived values very straightforward to create, and is particularly useful for animations. Certain concepts, such as animating from fit content to a constrained expand, have no direct equivalent in HTML and CSS.
 
 ```cs
 gui.Node().Width(
@@ -498,7 +530,8 @@ User interfaces are composed of various shapes, so having the ability to easily 
 
 ### Signed distance field based shapes
 
-Guinevere features a capable Shapes API based on composing signed distance fields. It delivers excellent performance, has a minimal memory footprint per shape, and, like vectors, it is analytical, meaning it scales perfectly to any resolution.
+Guinevere's Shapes API is built on composed signed distance fields. It's fast, a shape is small in memory,
+and like vectors it's analytical, so it scales to any resolution.
 
 </div>
 <div class="row">
@@ -533,18 +566,6 @@ bool isDragging = interactable.OnHold(out HoldArgs args);
 This will affect everything, including text. This is, for example, how you would ensure content in a rounded rectangle doesn't visually overflow:
 ```cs
 gui.SetClipShape(position, shape);
-``
-:::
-
-:::col
-#### Shapes can also be used as input elements
-
-Interactable elements are most commonly defined by a simple rectangle, but you can also define them as a shape, and then use the shape as the interactable area.
-
-```cs
-var interactable = gui.GetInteractable(position, shape);
-bool isHovering = interactable.OnHover();
-bool isDragging = interactable.OnHold(out HoldArgs args);
 ```
 :::
 
@@ -554,7 +575,8 @@ bool isDragging = interactable.OnHold(out HoldArgs args);
 :::col
 #### Drawn with unlimited effects
 
-Shapes can be drawn with various effects, such as gradients, textures and shadows. All effects are easily animatable, and gradients look excellent without the banding artifacts that are common in other systems.
+Shapes can be drawn with various effects, such as gradients, textures and shadows. All effects are animatable,
+and gradients don't band the way they do in some other systems.
 
 Also note that all the effects will actually be drawn on top of each other in the specified order, all in a single draw call. In fact, all shapes in a given z-index are included in the same single draw call that draws the rest of the geometry.
 ```cs
@@ -585,7 +607,8 @@ Another limitation is that using the signed distance field as a way of rendering
 
 ## Graphics
 
-Ultimately, all Guinevere really does is produce a list of graphics commands. So, naturally, it should excel at this. Guinevere's drawing is extremely fast and efficient, without sacrificing ease of use, expressive power or user control.
+Ultimately, all Guinevere really does is produce a list of graphics commands. So, naturally, that's where we
+spent the optimization effort. The drawing API is fast without giving up ease of use or control.
 
 <div class="row">
 
@@ -616,9 +639,11 @@ gui.DrawList.Vertices;
 
 #### Integrating it into your own pipeline
 
-Guinevere's sole responsibility is converting input into a set of optimized GPU buffers and simple rendering commands, to be injected anywhere in any arbitrary rendering pipeline. As such, Guinevere integrates seamlessly into any potential environment.
+Guinevere's sole responsibility is converting input into a set of optimized GPU buffers and simple rendering
+commands, to be handed to whatever rendering pipeline you already have.
 
-The graphics commands themselves are very simple and efficient, the vertex structure is straightforward, and all you really need to implement the rendering specification is one shader file which, as of the time of writing, is less than 1000 lines of code, making Guinevere very easy to introduce into any potential rendering pipeline.
+The command list itself is deliberately plain, and the vertex structure is small. To implement the rendering
+side you need one shader, currently under a thousand lines, and the frame-processing call:
 
 ```cs
 using System;
@@ -683,7 +708,10 @@ Since Guinevere fully supports z-indices, all input elements (whether interactab
 
 #### Controllable, testable and low-latency input
 
-Guinevere does not read input by itself, but is fed input events from the platform integration. This approach also makes it extremely easy to simulate input for testing or other purposes. Great effort has been invested in ensuring that input latency (the time between a user pressing a key and pixels changing on the screen) is as close to instant as possible on all platforms.
+Guinevere does not read input by itself, but is fed input events from the platform integration. This approach
+also makes it easy to simulate input for testing or other purposes. Input latency — the time between a key
+press and pixels changing on screen — is kept as short as we can manage on each platform, though we haven't
+published a cross-platform measurement, so treat that as a goal rather than a figure.
 
 ## Excalibur: a ready-to-use control set
 
@@ -760,8 +788,9 @@ gui.FileDialog(files);
 
 </div>
 
-This is the same control set Turian Studio and Gaya are built on, so what you get is battle-tested by real
-application shells, not a demo widget kit.
+This is the same control set Turian Studio and Gaya are built on, so the controls get exercised by two real
+application shells rather than only by a demo widget kit. That said, both shells are early, and we wouldn't
+describe the set as battle-tested yet.
 
 ## Styling
 
@@ -839,7 +868,7 @@ using (gui.Node().Enter())
 
 When a layout node is exited, it takes a second state snapshot, such that when you re-enter a layout node, the state will be reset to what it was when you left it.
 
-One of the remarkable features this gives us, as a sort of side-effect, is the ability to go back and revisit, modify and add to previously created UI elements. One such example is the popup in the audio app demo: the popup layout node is created, then passed back out of the method to be filled out by the code that called the GetPopup function.
+One of the more useful things this gives us, as a sort of side-effect, is the ability to go back and revisit, modify and add to previously created UI elements. One such example is the popup in the audio app demo: the popup layout node is created, then passed back out of the method to be filled out by the code that called the GetPopup function.
 
 There is no need to resort to solutions such as splitting functions up into tedious begin and end calls with complicated ways of passing state between them, and no need to clutter your code with push and pop calls. (Though, of course, if you want to, you still can.)
 
@@ -907,7 +936,7 @@ It should be trivial to apply render effects such as blurring everything behind 
 
 #### Vector Graphics API
 
-SDF shapes are amazing for many things, but for some shapes, generating meshes from vector definitions is a more appropriate solution. Guinevere will include a comprehensive vector graphics API for loading and generating vector shapes, including support for loading .svg files and the like.
+SDF shapes suit a lot of cases well, but for others generating meshes from vector definitions is the more appropriate solution. Guinevere will include a vector graphics API for loading and generating vector shapes, including support for loading .svg files and the like.
 
 #### Animations
 

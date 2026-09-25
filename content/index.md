@@ -6,8 +6,8 @@ Title: MASS4
   <div class="wrap">
     <img src="/mass4-logo-transparent.svg" alt="MASS4" class="hero-logo">
     <div class="eyebrow">Eclectic · Remote · Provoking</div>
-    <h1>Software built because<br><span class="gradient-text">it should exist.</span></h1>
-    <p class="lede">MASS4 is a one-person indie studio making the tools and games it wants to see in the world. Everything ships open-source, built in public from first commit to release.</p>
+    <h1>Translating<br><span class="gradient-text">thoughts to software.</span></h1>
+    <p class="lede">MASS4 is a one-person indie studio. Most of the work is public from the first commit, and the parts that aren't are named as such.</p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="/mega4">Current work: MEGA4</a>
       <a class="btn btn-ghost" href="https://github.com/MASS4ORG">View on GitHub</a>
@@ -21,11 +21,11 @@ Title: MASS4
       <div class="value reveal">
         <span class="value-icon">◈</span>
         <h4>Open by default</h4>
-        <p>Code, assets, and decisions are public from the first commit — not at some future launch.</p>
+        <p>Most of the code is public from the first commit. Gaya and Turian are still in progress and are not public yet.</p>
       </div>
       <div class="value reveal">
         <span class="value-icon">◈</span>
-        <h4>Language master</h4>
+        <h4>Language to communicate</h4>
         <p>Expertise in both Zig with its lower-level toolchain and the latest C#/.NET.</p>
       </div>
       <div class="value reveal">
@@ -35,8 +35,8 @@ Title: MASS4
       </div>
       <div class="value reveal">
         <span class="value-icon">◈</span>
-        <h4>Long bets</h4>
-        <p>Our softwares and tools are a multi-year commitment, not a weekend project.</p>
+        <h4>Built to be rebuilt</h4>
+        <p>Plenty of this has been abandoned or rewritten halfway through. What survives does so because it earned it.</p>
       </div>
     </div>
   </div>
@@ -46,9 +46,9 @@ Title: MASS4
   <div class="wrap">
     <div class="callout reveal">
       <h2>Follow along</h2>
-      <p>The repository, the missteps, the progress — all public. If that sounds interesting, come watch.</p>
+      <p>Commits, rewrites and benchmarks are published as they happen. The repository is the most current version of this site; everything here follows it.</p>
       <div class="btn-row">
-        <a class="btn btn-primary" href="https://GitHub.com/MASS4ORG">GitHub repository</a>
+        <a class="btn btn-primary" href="https://github.com/MASS4ORG">GitHub repository</a>
         <a class="btn btn-ghost" href="/blog">Read the blog</a>
       </div>
     </div>

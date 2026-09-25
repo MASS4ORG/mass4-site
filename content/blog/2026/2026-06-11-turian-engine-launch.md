@@ -1,10 +1,10 @@
 ---
 title: "Turian is live — a 3D game engine built entirely in Zig"
 date: 2026-06-11
-summary: "Turian now has a home on the web. A component-based 3D engine and editor with no GC, no scripting bridge, and no per-seat licensing — built in Zig."
+summary: "Turian now has a home on the web. A component-based 3D engine and editor, one language from engine to game logic — and an honest look at what works today."
 tags: ["announcement", "turian", "zig", "engine", "mega4"]
 socialmedia: |
-  Turian now has a home: turian.mass4.org. A component-based 3D engine and editor built entirely in Zig — no GC, no scripting bridge, no per-seat licensing.
+  Turian now has a home: turian.mass4.org. A component-based 3D engine and editor with one language across engine, editor, game logic and build toolchain.
 
   #Turian #ziglang #gamedev #gameengine
 
@@ -13,11 +13,12 @@ socialmedia: |
 
 Turian now has its own home: **[turian.mass4.org](https://turian.mass4.org)**.
 
-It's a component-based 3D game engine and editor built entirely in [Zig](https://ziglang.org/) — one language for the engine, the editor, your game logic, and the build toolchain. No C# VM, no scripting bridge, no garbage collector, no revenue share, no per-seat fee.
+It's a component-based 3D game engine and editor built entirely in [Zig](https://ziglang.org/) — one language for the engine, the editor, your game logic, and the build toolchain, with no garbage collector and no revenue share.
 
 ## What's working today
 
-Turian is early — roughly Godot 3 parity — but it's genuinely usable:
+Turian is early. It covers a useful subset of the basics — import, scenes, components, build — and is not
+comparable to a mature engine yet:
 
 - **Turian Studio** — a visual editor with a scene hierarchy, inspector, asset browser, and a GPU-accelerated 3D viewport via SDL3 (Vulkan, Metal, or D3D12 depending on platform).
 - **Components are just structs** — add `pub const is_component = true;` to any Zig struct and it shows up in *Add Component* with its public fields editable in the inspector. The engine parses real Zig source directly, not regexes or annotations.
@@ -35,7 +36,7 @@ Milestones ship usable leaps, not feature dumps:
 | **AAA Workflows** | Play Mode, gizmos, undo/redo everywhere, drag-and-drop |
 | **Real 3D** | glTF material import, mip-mapped textures, KTX2, multi-light shadows, color management |
 | **Rich Content** | animation, prefabs, particles, LOD |
-| **Production Ready** | a credible alternative for professional studios |
+| **Production Ready** | a stable, documented release with an upgrade path |
 
 The live [milestone tracker](https://github.com/MASS4ORG/turian/) shows exactly where things stand.
 

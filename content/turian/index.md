@@ -5,12 +5,12 @@ Description: A component-based 3D game engine and editor for modern .NET. Part o
 
 <div class="project-intro">
 <img class="project-mark" src="/turian-logo-1.svg" alt="Turian logo" width="96" height="96">
-<p><strong>Turian</strong> is a next-generation game engine built with a clear vision: power and accessibility, entirely in modern C#.</p>
+<p><strong>Turian</strong> is a component-based 3D game engine and editor, written entirely in modern C#.</p>
 </div>
 
 ## Built on Modern Foundations
 
-- **Vulkan 1.3**: High-performance rendering via Silk.NET, with a physically based material system following standard metal-roughness workflows.
+- **Vulkan 1.3**: Rendering via Silk.NET, with a physically based material system following standard metal-roughness workflows.
 - **100% C#**: A node-component scene graph, cross-platform on Windows and Linux (Wayland).
 - **Studio**: A full editor — scene tree, inspector, asset browser and live viewport — currently built with Avalonia, in the process of being rebuilt on Guinevere as a Gaya plugin.
 

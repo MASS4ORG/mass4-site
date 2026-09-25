@@ -1,6 +1,6 @@
 ---
 Title: MEGA4
-Description: One initiative, four interconnected projects built simultaneously and in the open — a GUI library, a text editor, a game engine, and a game.
+Description: One initiative, four interdependent projects worked on in the open — a GUI toolkit, an editor workbench, a game engine, and a game.
 ---
 
 <section class="project-hero">
@@ -8,16 +8,16 @@ Description: One initiative, four interconnected projects built simultaneously a
     <img src="/mega4-logo-1.svg" alt="MEGA4 logo">
     <div class="eyebrow">The initiative</div>
     <h1>MEGA4</h1>
-    <p class="lede" style="margin-inline:auto">Four projects, built at the same time and in public. Each one is the foundation for the next.</p>
+    <p class="lede" style="margin-inline:auto">Four interdependent projects, worked on in the open. Each one is the foundation for the next.</p>
   </div>
 </section>
 
 <div class="wrap section">
 <div class="prose narrow">
 
-Most software is built behind closed doors and revealed only when it's polished.
-MEGA4 takes the opposite approach: four codependent projects, developed in the open,
-where the rough edges and dead ends are visible alongside the progress.
+Most software gets finished before anyone sees it. MEGA4 publishes the middle: four
+codependent projects where the dead ends, the rewrites and the rough edges are visible
+alongside whatever happens to be working.
 
 ## The four projects
 
@@ -43,7 +43,7 @@ where the rough edges and dead ends are visible alongside the progress.
 <a class="pillar m" href="/mystery">
 <span class="role">Goal · Game</span>
 <h3><img src="/mystery-logo-1.svg" alt="Mystery logo"> Mystery</h3>
-<p>A community-shaped game that exercises the whole stack end to end.</p>
+<p>The game that will exercise the whole stack end to end.</p>
 <span class="more">Learn more →</span>
 </a>
 </div>
@@ -56,22 +56,22 @@ where the rough edges and dead ends are visible alongside the progress.
 - **Mystery** is the real-world workload that stress-tests everything below it.
 
 Building them together keeps each one honest: a GUI toolkit is only as good as the
-editor built on it, and an engine is only as good as the game it has to ship.
+editor built on it, and an engine is only as good as the game it has to run.
 
 ## What changed: C#, a Zig detour, and back to C#
 
 MEGA4 began as a C#/.NET stack. In mid-2026 we paused it for a six-month deep dive
 into **Zig**, rebuilding the engine and toolchain from the ground up as TurianZ. It
-grew into one of the more feature-rich Zig engines around — but along the way we kept
-using modern .NET for every other side project, and eventually the conclusion was
-inescapable: more of the code we enjoyed writing was C#. The whole stack is back home
-in C#, with the best ideas from the Zig experiment carried over. TurianZ remains
-preserved as a legacy repository for anyone who wants to fork or continue it. The full
-story is in [the 180° turn](/blog/the-180-turn-why-turian-is-coming-home-to-c).
+grew into a substantial Zig engine — but along the way we kept using modern .NET for
+every other side project, and the conclusion arrived on its own: more of the code we
+enjoyed writing was C#. The stack is back in C#, with the useful ideas from the Zig
+experiment carried over. TurianZ stays preserved as a legacy repository for anyone who
+wants to fork or continue it. The full story is in
+[the 180° turn](/blog/the-180-turn-why-turian-is-coming-home-to-c).
 
 ## Principles
 
-- **Open by default.** Code, assets, and design decisions are public from the start.
+- **Open by default.** Where a project is public, it is public from the first commit.
 - **One language.** The entire stack is C#/.NET, top to bottom.
 - **No overselling.** We describe what exists and what's planned, and keep the two clearly separate.
 
