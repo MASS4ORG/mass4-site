@@ -1,55 +1,30 @@
 ---
 Title: Gaya
-Description: A lightweight, GPU-accelerated text editor and plugin platform in Zig, built on Guinevere — the host that Turian Studio will plug into.
+Description: A plugin-driven desktop workbench built on Guinevere — the host Turian Studio is becoming a plugin for.
 ---
 
-<section class="project-hero">
-  <div class="wrap">
-    <img src="/gaya-logo-1.svg" alt="Gaya logo">
-    <div class="eyebrow">Tool · Editor</div>
-    <h1>Gaya</h1>
-    <p class="lede" style="margin-inline:auto">A small, fast text editor and plugin platform built on Guinevere — and the foundation Turian Studio runs on.</p>
-    <div class="hero-cta" style="justify-content:center">
-      <a class="btn btn-primary" href="https://github.com/MASS4ORG">Source</a>
-    </div>
-  </div>
-</section>
+![](/gaya-badge.png)
 
-<div class="wrap section">
-<div class="prose narrow">
+**Gaya** is a plugin-driven desktop workbench built on the [Guinevere GUI system](/guinevere). The shell itself knows nothing about what it's editing: panels, commands, menus, key bindings and chrome all arrive from plugins, so the same host can be a game studio, a code editor, or something else entirely, depending on what's loaded.
 
-> **Early and experimental.** Gaya is minimal right now. The goal below is the
-> direction; today it's a starting point, not a daily driver.
+## Not Just a Text Editor
 
-Gaya is a text editor built like a real-time application: the interface is drawn by
-the GPU through [Guinevere](/guinevere), and redraws are cheap. The aim is an editor
-that feels immediate, stays out of the way, and is small enough to understand.
+Earlier plans framed Gaya as a standalone text editor. In practice it turned out to be more useful as infrastructure: a small, well-tested application shell that other tools plug into, rather than another editor competing for attention.
 
-## More than an editor: a platform
+- **GPU-Accelerated Rendering**: Every pixel is drawn through Guinevere, on your graphics card
+- **Plugin Architecture**: `MASS4.Gaya.Sdk` defines the plugin contract; `MASS4.Gaya.Host` is the shell — plugin activation, workbench, docking, layout persistence
+- **Host, Not Product**: The shell carries no built-in opinion about what it edits
 
-The more important role Gaya plays in MEGA4 is as a **generic host**. Rather than ship
-the Turian engine editor as a separate desktop app, the plan is to build **Turian
-Studio as a Gaya plugin**. Gaya provides the window, the document model, the layout,
-and the extension API; Turian Studio adds the scene tree, inspector, and viewport on
-top.
+## Powering Turian Studio
 
-That keeps one well-tested application shell instead of several, and it means the
-editor and the text tooling improve together.
+Gaya's first real plugin is **Turian Studio**: the scene tree, inspector, asset browser and viewport for the [Turian](/turian) engine, running as a plugin instead of a standalone application. That conversion is in progress — Turian's existing editor remains the daily driver until the Gaya-hosted version reaches parity.
 
-## What we're aiming for
+## Early and Not Yet Public
 
-- **GPU-accelerated rendering** via Guinevere, with low input latency.
-- **A small core** with a clear plugin API, so tools like Turian Studio are add-ons.
-- **Fast startup and editing** on large files.
+> Gaya currently lives inside the Turian repository and isn't released as a separate, public project yet.
 
-## Where it fits
-
-Gaya sits in the middle of the stack: built on [Guinevere](/guinevere), and the host
-for the [Turian](/turian) editor. It's open source under a permissive license.
+Gaya is versioned independently of Turian and doesn't depend on it in either direction — that boundary is enforced in the codebase itself.
 
 ---
 
 *Gaya is part of the [MEGA4 initiative](/mega4) by [MASS4](/).*
-
-</div>
-</div>

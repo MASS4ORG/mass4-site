@@ -1,53 +1,30 @@
 ---
 Title: Turian
-Description: A component-based 3D game engine and editor built entirely in Zig. Part of the MEGA4 initiative.
+Description: A component-based 3D game engine and editor for modern .NET. Part of the MEGA4 initiative.
 ---
 
-<section class="project-hero">
-  <div class="wrap">
-    <img src="/turian-logo-1.svg" alt="Turian logo">
-    <div class="eyebrow">Engine · 3D</div>
-    <h1>Turian</h1>
-    <p class="lede" style="margin-inline:auto">A component-based 3D game engine and editor, built entirely in Zig. It has its own dedicated site and documentation.</p>
-    <div class="hero-cta" style="justify-content:center">
-      <a class="btn btn-primary" href="https://turian.mass4.org">Visit turian.mass4.org</a>
-      <a class="btn btn-ghost" href="https://gitlab.com/mass4org/mega4/turian">Source</a>
-    </div>
-  </div>
-</section>
+![Turian logo](/turian-badge.png)
 
-<div class="wrap section">
-<div class="prose narrow">
+**Turian** is a next-generation game engine built with a clear vision: power and accessibility, entirely in modern C#.
 
-Turian gives you a Unity-style editor workflow — a scene hierarchy, an inspector, an
-asset browser, and a live 3D viewport — without a garbage collector or a scripting
-bridge. The engine, the editor, your game logic, and the build tooling are all Zig.
+## Built on Modern Foundations
 
-## What works today
+- **Vulkan 1.3**: High-performance rendering via Silk.NET, with a physically based material system following standard metal-roughness workflows.
+- **100% C#**: A node-component scene graph, cross-platform on Windows and Linux (Wayland).
+- **Studio**: A full editor — scene tree, inspector, asset browser and live viewport — currently built with Avalonia, in the process of being rebuilt on Guinevere as a Gaya plugin.
 
-- A visual editor (Turian Studio) with scene tree, inspector, and asset browser.
-- A GPU viewport via SDL3 (Vulkan / Metal / D3D12).
-- Components defined as plain Zig structs, discovered from your project's `assets/`.
-- An asset pipeline for OBJ, glTF/GLB, PNG, and JPG.
-- A headless CLI that builds a self-contained game executable.
+## Powered by Guinevere and Gaya
 
-It's early — roughly Godot-3-level capability — and under active development. The
-[dedicated site](https://turian.mass4.org) has the honest, up-to-date status, the
-docs, and the download.
+Turian is integrated with the ecosystem it was designed for:
+* **Guinevere GUI**: Provides the fast, GPU-accelerated interface system the new Studio renders through.
+* **Gaya Editor**: The engine's editor is being converted from a standalone Avalonia application into a plugin for the [Gaya](/gaya) workbench, so the engine, the editor, and future tools share one host instead of several.
 
-## Where it fits in MEGA4
+## The First Project: MYSTERY
 
-Turian sits at the top of the stack. Its editor is planned to become a **plugin for
-[Gaya](/gaya)** rather than a standalone application, with [Guinevere](/guinevere)
-providing the interface layer underneath. The first real project built with it is
-[Mystery](/mystery).
+Turian is currently being developed to power the upcoming game, [**MYSTERY**](/mystery).
 
-## Learn more
+*Turian is early and not yet publicly released. Source code and documentation are coming as the engine and its editor mature.*
 
-The full story lives on the dedicated site:
+---
 
-- **Website & docs:** [turian.mass4.org](https://turian.MASS4.org)
-- **Source:** [github.com/mass4org/mega4/turian](https://github.com/MASS4ORG/turian)
-
-</div>
-</div>
+*Turian is part of the [MEGA4 initiative](/mega4) by [MASS4](/).*

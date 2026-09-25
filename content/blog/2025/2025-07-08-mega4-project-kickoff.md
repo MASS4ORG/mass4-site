@@ -3,6 +3,12 @@ title: "MEGA4 Initiative Kickoff"
 Date: 2025-07-08
 summary: "Four interconnected projects — a GUI library, a text editor, a game engine, and a game — developed in public, from the ground up."
 tags: ["announcement", "mega4", "open-source", "guinevere", "gaya", "turian", "mystery"]
+socialmedia: |
+  Announcing MEGA4: four interconnected projects — Guinevere, Gaya, Turian, and Mystery — built at the same time, in the open, from the ground up.
+
+  #MASS4 #MEGA4 #opensource #gamedev
+
+  https://mass4.org/blog/mega4-initiative-kickoff/
 ---
 
 We're starting something deliberately ambitious: **MEGA4**, four interconnected

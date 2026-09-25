@@ -25,19 +25,19 @@ where the rough edges and dead ends are visible alongside the progress.
 <a class="pillar g" href="/guinevere">
 <span class="role">Foundation · GUI</span>
 <h3><img src="/guinevere-logo-1.svg" alt="Guinevere logo"> Guinevere</h3>
-<p>A GPU-native, immediate-mode UI toolkit — planned as a Zig fork of DVUI. Everything else draws its interface with it.</p>
+<p>A GPU-accelerated, immediate-mode UI toolkit for C#, built on SkiaSharp. Everything else draws its interface with it.</p>
 <span class="more">Learn more →</span>
 </a>
 <a class="pillar ga" href="/gaya">
-<span class="role">Tool · Editor</span>
+<span class="role">Tool · Workbench</span>
 <h3><img src="/gaya-logo-1.svg" alt="Gaya logo"> Gaya</h3>
-<p>A small, fast text editor and plugin platform built on Guinevere — the host that Turian Studio plugs into.</p>
+<p>A plugin-driven desktop workbench built on Guinevere — the host that Turian Studio is becoming a plugin for.</p>
 <span class="more">Learn more →</span>
 </a>
 <a class="pillar t" href="/turian">
 <span class="role">Engine · 3D</span>
 <h3><img src="/turian-logo-1.svg" alt="Turian logo"> Turian</h3>
-<p>A component-based 3D game engine and editor in pure Zig, with its own site at turian.mass4.org.</p>
+<p>A component-based 3D game engine and editor, entirely in modern C#.</p>
 <span class="more">Learn more →</span>
 </a>
 <a class="pillar m" href="/mystery">
@@ -58,22 +58,26 @@ where the rough edges and dead ends are visible alongside the progress.
 Building them together keeps each one honest: a GUI toolkit is only as good as the
 editor built on it, and an engine is only as good as the game it has to ship.
 
-## What changed: C# to Zig
+## What changed: C#, a Zig detour, and back to C#
 
-MEGA4 began as a C#/.NET stack. We've since moved the whole thing to **Zig** — a
-single, lower-level toolchain with no garbage collector and no runtime, which suits a
-GUI library, an editor, and a game engine far better. Some pages still describe the
-direction rather than a finished product; that's deliberate.
+MEGA4 began as a C#/.NET stack. In mid-2026 we paused it for a six-month deep dive
+into **Zig**, rebuilding the engine and toolchain from the ground up as TurianZ. It
+grew into one of the more feature-rich Zig engines around — but along the way we kept
+using modern .NET for every other side project, and eventually the conclusion was
+inescapable: more of the code we enjoyed writing was C#. The whole stack is back home
+in C#, with the best ideas from the Zig experiment carried over. TurianZ remains
+preserved as a legacy repository for anyone who wants to fork or continue it. The full
+story is in [the 180° turn](/blog/the-180-turn-why-turian-is-coming-home-to-c).
 
 ## Principles
 
 - **Open by default.** Code, assets, and design decisions are public from the start.
-- **One language.** The entire stack is Zig, top to bottom.
+- **One language.** The entire stack is C#/.NET, top to bottom.
 - **No overselling.** We describe what exists and what's planned, and keep the two clearly separate.
 
 ---
 
-*Follow progress on [GitLab](https://gitlab.com/mass4org/mega4) or in the [blog](/blog).*
+*Follow progress on [GitHub](https://github.com/MASS4ORG) or in the [blog](/blog).*
 
 </div>
 </div>

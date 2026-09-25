@@ -1,11 +1,17 @@
 ---
 title: "Reworking Guinevere's Layout Engine"
 date: 2026-09-25
-summary: ""
+summary: "Composable UnitValue sizing, zero-allocation layout, and linear deep-tree scaling — what it took to make Guinevere's layout engine both more expressive and faster."
 tags:
   - guinevere
   - dotnet
   - csharp
+socialmedia: |
+  Guinevere's layout engine got a rework: composable UnitValue sizing (blend pixels, percentages, ratios, expand and fit-content in one value), zero steady-state allocations, and linear deep-tree scaling.
+
+  #Guinevere #dotnet #csharp #gamedev
+
+  https://mass4.org/blog/reworking-guinevere-s-layout-engine/
 ---
 
 Guinevere's layout engine began with a familiar immediate-mode design: build a mutable node tree, measure content,
@@ -14,7 +20,7 @@ constraints, wrapping, and absolute positioning. The feature set was useful, but
 mutually exclusive modes. Moving smoothly from a fixed width to a percentage width, for example, required switching
 between properties rather than interpolating one coherent value.
 
-Issue #14 gave us an opportunity to revisit that design with measurements rather than assumptions. The work was
+[Issue #121](https://github.com/MASS4ORG/Guinevere/issues/121) gave us an opportunity to revisit that design with measurements rather than assumptions. The work was
 inspired in part by PanGui's published [layout rework and benchmarks](https://www.pangui.io/blog/05-layout-rework-and-benchmarks/),
 which describes composable layout properties and emphasizes measuring actual layout computation independently from
 tree construction. We adopted the useful parts of that methodology while keeping Guinevere's own API and immediate-mode
@@ -82,11 +88,21 @@ layout changes invalidate ancestors automatically; direct writes through the pub
 
 The benchmark example now contains every workload described in the PanGui article, including the 101,111-node nested
 fit tree and 100,001-node wide tree. The suite is guidance rather than a cross-machine leaderboard: runtime version,
-hardware, and exact semantics still matter. Unsupported behavior is kept visible in the output. In particular,
-Guinevere does not yet accept composable expressions as min/max constraints, so that fixture reports itself as
-unsupported instead of timing an approximation.
+hardware, and exact semantics still matter. Fixtures validate their results, so a fast wrong answer fails the run
+instead of being timed.
+
+The last unsupported PanGui workload was a pixel size constrained by an `Expand` minimum. Min/max constraints now
+accept the same `UnitValue` expressions as sizes, so a bound can mix pixels, percentages, ratios, fit and expansion,
+and be interpolated. That exposed an old approximation: expanding children were clamped after space was shared out,
+so a clamped child's surplus or deficit overflowed the line. The engine now solves for the share instead. Each child
+is measured once into a clamped linear function of that share, and a few Newton steps over those cached coefficients
+find the exact fill without measuring the child again. Lines where nothing expands skip the solver.
+
+That precision has a price only where the result changed. Expanding children with bounds cost 7–18% more than the
+old clamp, which produced overflowing layouts. The formerly unsupported fixture runs at about 50 nanoseconds per
+node. Unconstrained layouts are equal or faster, because optional bounds sit behind a presence mask and resolving an
+expression no longer measures content it does not use.
 
 This rework reinforced a useful engineering lesson. The proposed large storage rewrite was not necessary to reach
 zero-allocation layout or linear representative scaling. Benchmarks pointed to smaller, clearer changes with lower API
-risk. Guinevere gained a more expressive sizing model, substantially faster layout, reusable performance fixtures,
-and concrete evidence for the next compatibility improvements.
+risk. Guinevere gained a more expressive sizing model, substantially faster layout, and reusable performance fixtures.
