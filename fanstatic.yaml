@@ -40,7 +40,7 @@ Params:
     - id: github
       name: GitHub
       url: https://github.com/mass4org
-      icon_class: bi-githab
+      icon_class: bi-git
       footer: true
     - id: mastodon
       name: Mastodon

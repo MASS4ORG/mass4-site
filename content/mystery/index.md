@@ -1,33 +1,22 @@
 ---
 Title: Mystery
-Description: The fourth pillar of the MEGA4 ecosystem. Something revolutionary is coming that will change how you think about development forever.
+Description: A game built with Turian that will drive the development of the MEGA4 toolchain.
 ---
 
-![](/mystery-badge.png)
+<div class="project-intro">
+<img class="project-mark" src="/mystery-logo-1.svg" alt="Mystery logo" width="96" height="96">
+<p><strong>Mystery</strong> is a game built with <a href="/turian">Turian</a>. The game is decided, but I am not ready to announce what it is yet.</p>
+</div>
 
-Guinevere + Gaya + Turian = ∞
-**MYSTERY** is a radical experiment in game development. This isn't just our game—it's **yours**.
+## Building the game to build the tools
 
-## A Game Decided By You
+Mystery will put Turian to work on a real game. As development reveals what the engine, editor, and supporting tools need, I will improve them and use those changes in the game. This is how I plan to drive the MEGA4 toolchain: build with it, find the rough edges, and fix them.
 
-We are handing over the creative keys:
-*   **You Decide the Genre**: Fantasy RPG, Sci-Fi Sim, Horror Adventure? You vote.
-*   **You Decide the Scope**: A short narrative experience or a vast open world? You choose.
-*   **Co-Created by MASS4**: We are the facilitators, but the community are the architects.
+The game will also give [Gaya](/gaya) and [Guinevere](/guinevere) practical demands to meet as the editor and interface take shape. Features will grow from the needs of the project rather than from a checklist made in isolation.
 
-## 100% Transparency
+## Small games, shared in full
 
-In an unprecedented move, every single asset will be open for everyone:
-*   **Full Source Code**: Every line of C#, from engine to gameplay.
-*   **All Art Assets**: Every texture, model, and animation.
-*   **Complete Design Docs**: Every story beat, character sketch, and level layout.
-
-## Built on Open Foundations
-
-MYSTERY will be the ultimate test for our open technologies:
-*   **Turian Engine**: Pushing the limits of our 100% C#, Vulkan 1.3 engine.
-*   **Gaya & Guinevere GUI**: Developed live as we build the game within Turian Studio, running as a Gaya plugin.
-*   **Modern C#**: A showcase for the latest .NET features and performance.
+Alongside Mystery, I plan to create a bunch of small game projects that exercise individual parts of Turian. I will share their complete source code with the public so others can see how the tools work in actual games and build on those examples.
 
 ```
 01001101 01000101 01000111 01000001  // MEGA
@@ -35,7 +24,5 @@ MYSTERY will be the ultimate test for our open technologies:
 ???????? ???????? ???????? ????????  // ????
 01001001 01001110 01000110 ????????  // INF?
 ```
-
----
 
 *Mystery is part of the [MEGA4 initiative](/mega4) by [MASS4](/).*

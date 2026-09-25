@@ -2,11 +2,12 @@
 Title: Guinevere
 ---
 
-![](/guinevere-badge.png)
-
 ## Introduction
 
-A cross-platform, GPU-accelerated immediate mode UI framework for C# with an uncompromising focus on performance, simplicity and expressive capabilities
+<div class="project-intro">
+<img class="project-mark" src="/guinevere-logo-1.svg" alt="Guinevere logo" width="96" height="96">
+<p>A cross-platform, GPU-accelerated immediate mode UI framework for C# with an uncompromising focus on performance, simplicity and expressive capabilities.</p>
+</div>
 
 ### There's a challenge in the software development world
 

@@ -3,9 +3,10 @@ Title: Turian
 Description: A component-based 3D game engine and editor for modern .NET. Part of the MEGA4 initiative.
 ---
 
-![Turian logo](/turian-badge.png)
-
-**Turian** is a next-generation game engine built with a clear vision: power and accessibility, entirely in modern C#.
+<div class="project-intro">
+<img class="project-mark" src="/turian-logo-1.svg" alt="Turian logo" width="96" height="96">
+<p><strong>Turian</strong> is a next-generation game engine built with a clear vision: power and accessibility, entirely in modern C#.</p>
+</div>
 
 ## Built on Modern Foundations
 
