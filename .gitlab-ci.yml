@@ -11,15 +11,15 @@ stages:
 build:
   stage: build
   script:
-    - SuCoS --version
-    - SuCoS
+    - fanstatic --version
+    - fanstatic
 
 pages:
   stage: pages
   script:
-    - SuCoS
+    - fanstatic
   artifacts:
     paths:
       - public
-  # rules:
-  # - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
