@@ -1,5 +1,5 @@
 {{ page.ContentPreRendered }}
-<div class="wrap" style="padding-bottom:64px">
+<div class="wrap">
     <div class="posts">
         {% assign sortedPages = page.RegularPages | sort: 'Date' | reverse %}
         {% for pageList in sortedPages %}

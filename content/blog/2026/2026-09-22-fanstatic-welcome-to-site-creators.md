@@ -1,17 +1,18 @@
 ---
 title: "Fanstatic: Welcome to Site Creators"
 date: 2026-09-22
-summary: "Fanstatic — formerly SuCoS — is now first-class MASS4 tooling, and every MASS4 site is migrating to it, starting with this one."
 tags:
   - announcement
   - fanstatic
   - dotnet
-socialmedia: |
-  Fanstatic (formerly SuCoS) is now first-class MASS4 tooling — the same tier as Guinevere, Gaya, and Turian. This site is the first MASS4 site to migrate, with the rest following.
-
-  #MASS4 #Fanstatic #dotnet #SSG
-
-  https://mass4.org/blog/fanstatic-welcome-to-site-creators/
+Params:
+  summary: "Fanstatic — formerly SuCoS — is now first-class MASS4 tooling, and every MASS4 site is migrating to it, starting with this one."
+  socialmedia: |
+    Fanstatic (formerly SuCoS) is now first-class MASS4 tooling — the same tier as Guinevere, Gaya, and Turian. This site is the first MASS4 site to migrate, with the rest following.
+  
+    #MASS4 #Fanstatic #dotnet #SSG
+  
+    https://mass4.org/blog/fanstatic-welcome-to-site-creators/
 ---
 
 This site you're reading just moved to a new static site generator, and it's worth explaining why: **SuCoS** is no longer just a tool MASS4 happens to use. As of this week, it's a first-class citizen of the MASS4 ecosystem — the same tier as Guinevere, Gaya, and Turian — and every MASS4 site is migrating to it, starting with this one.

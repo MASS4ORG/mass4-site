@@ -1,23 +1,16 @@
 ---
 Title: MEGA4
 Description: One initiative, four interdependent projects worked on in the open — a GUI toolkit, an editor workbench, a game engine, and a game.
+Params:
+  The: The Initiative
+  Logo: '/mega4-logo-1.svg'
 ---
 
-<section class="project-hero">
-  <div class="wrap">
-    <img src="/mega4-logo-1.svg" alt="MEGA4 logo">
-    <div class="eyebrow">The initiative</div>
-    <h1>MEGA4</h1>
-    <p class="lede" style="margin-inline:auto">Four interdependent projects, worked on in the open. Each one is the foundation for the next.</p>
-  </div>
-</section>
+{{< project-hero >}}
 
-<div class="wrap section">
-<div class="prose narrow">
+<article>
 
-Most software gets finished before anyone sees it. MEGA4 publishes the middle: four
-codependent projects where the dead ends, the rewrites and the rough edges are visible
-alongside whatever happens to be working.
+Most software gets finished before anyone sees it. MEGA4 publishes the middle: four codependent projects where the dead ends, the rewrites and the rough edges are visible alongside whatever happens to be working.
 
 ## The four projects
 
@@ -55,18 +48,11 @@ alongside whatever happens to be working.
 - **Turian** is the engine that **Mystery** is built with.
 - **Mystery** is the real-world workload that stress-tests everything below it.
 
-Building them together keeps each one honest: a GUI toolkit is only as good as the
-editor built on it, and an engine is only as good as the game it has to run.
+Building them together keeps each one honest: a GUI toolkit is only as good as the editor built on it, and an engine is only as good as the game it has to run.
 
 ## What changed: C#, a Zig detour, and back to C#
 
-MEGA4 began as a C#/.NET stack. In mid-2026 we paused it for a six-month deep dive
-into **Zig**, rebuilding the engine and toolchain from the ground up as TurianZ. It
-grew into a substantial Zig engine — but along the way we kept using modern .NET for
-every other side project, and the conclusion arrived on its own: more of the code we
-enjoyed writing was C#. The stack is back in C#, with the useful ideas from the Zig
-experiment carried over. TurianZ stays preserved as a legacy repository for anyone who
-wants to fork or continue it. The full story is in
+MEGA4 began as a C#/.NET stack. In mid-2026 we paused it for a six-month deep dive into **Zig**, rebuilding the engine and toolchain from the ground up as TurianZ. It grew into a substantial Zig engine — but along the way we kept using modern .NET for every other side project, and the conclusion arrived on its own: more of the code we enjoyed writing was C#. The stack is back in C#, with the useful ideas from the Zig experiment carried over. TurianZ stays preserved as a legacy repository for anyone who wants to fork or continue it. The full story is in
 [the 180° turn](/blog/the-180-turn-why-turian-is-coming-home-to-c).
 
 ## Principles
@@ -79,5 +65,4 @@ wants to fork or continue it. The full story is in
 
 *Follow progress on [GitHub](https://github.com/MASS4ORG) or in the [blog](/blog).*
 
-</div>
-</div>
+</article>

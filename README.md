@@ -5,4 +5,4 @@ Using [fanstatic](https://sucos.brunomassa.com) static site generator (formerly 
 
 ## API updates
 
-fanstatic api -p ../Guinevere -o content/guinevere/api -e https://github.com/MASS4ORG/Guinevere
+fanstatic api -p ../../../../dev/Guinevere -o content/guinevere/api -e https://github.com/MASS4ORG/Guinevere

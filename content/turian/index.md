@@ -1,12 +1,12 @@
 ---
 Title: Turian
-Description: A component-based 3D game engine and editor for modern .NET. Part of the MEGA4 initiative.
+Description: A component-based 3D game engine and editor, written entirely in modern C#.
+Params:
+  The: The Engine
+  Logo: '/turian-logo-1.svg'
 ---
 
-<div class="project-intro">
-<img class="project-mark" src="/turian-logo-1.svg" alt="Turian logo" width="96" height="96">
-<p><strong>Turian</strong> is a component-based 3D game engine and editor, written entirely in modern C#.</p>
-</div>
+{{< project-hero >}}
 
 ## Built on Modern Foundations
 
@@ -20,11 +20,7 @@ Turian is integrated with the ecosystem it was designed for:
 * **Guinevere GUI**: Provides the fast, GPU-accelerated interface system the new Studio renders through.
 * **Gaya Editor**: The engine's editor is being converted from a standalone Avalonia application into a plugin for the [Gaya](/gaya) workbench, so the engine, the editor, and future tools share one host instead of several.
 
-## The First Project: MYSTERY
-
-Turian is currently being developed to power the upcoming game, [**MYSTERY**](/mystery).
-
-*Turian is early and not yet publicly released. Source code and documentation are coming as the engine and its editor mature.*
+<a class="btn btn-primary" href="https://turian.mass4.org">Visit Turian site</a>
 
 ---
 

@@ -1,17 +1,18 @@
 ---
 title: "Reworking Guinevere's Layout Engine"
 date: 2026-09-25
-summary: "Composable UnitValue sizing, zero-allocation layout, and linear deep-tree scaling — what it took to make Guinevere's layout engine both more expressive and faster."
 tags:
   - guinevere
   - dotnet
   - csharp
-socialmedia: |
-  Guinevere's layout engine got a rework: composable UnitValue sizing (blend pixels, percentages, ratios, expand and fit-content in one value), zero steady-state allocations, and linear deep-tree scaling.
-
-  #Guinevere #dotnet #csharp #gamedev
-
-  https://mass4.org/blog/reworking-guinevere-s-layout-engine/
+Params:
+  summary: "Composable UnitValue sizing, zero-allocation layout, and linear deep-tree scaling — what it took to make Guinevere's layout engine both more expressive and faster."
+  socialmedia: |
+    Guinevere's layout engine got a rework: composable UnitValue sizing (blend pixels, percentages, ratios, expand and fit-content in one value), zero steady-state allocations, and linear deep-tree scaling.
+  
+    #Guinevere #dotnet #csharp #gamedev
+  
+    https://mass4.org/blog/reworking-guinevere-s-layout-engine/
 ---
 
 Guinevere's layout engine began with a familiar immediate-mode design: build a mutable node tree, measure content, and place every node during a two-pass frame. It supported fixed pixels, percentages, content sizing, expansion, constraints, wrapping, and absolute positioning. The feature set was useful, but its representation had grown around mutually exclusive modes. Moving smoothly from a fixed width to a percentage width, for example, required switching between properties rather than interpolating one coherent value.

@@ -1,12 +1,12 @@
 ---
 Title: Gaya
 Description: A plugin-driven desktop workbench built on Guinevere — the host Turian Studio is becoming a plugin for.
+Params:
+  The: The Platform
+  Logo: '/gaya-logo-1.svg'
 ---
 
-<div class="project-intro">
-<img class="project-mark" src="/gaya-logo-1.svg" alt="Gaya logo" width="96" height="96">
-<p><strong>Gaya</strong> is a plugin-driven desktop workbench built on the <a href="/guinevere">Guinevere GUI system</a>. The shell itself knows nothing about what it's editing: panels, commands, menus, key bindings and chrome all arrive from plugins, so the same host can be a game studio, a code editor, or something else entirely, depending on what's loaded.</p>
-</div>
+{{< project-hero >}}
 
 ## Not Just a Text Editor
 
@@ -19,6 +19,8 @@ Earlier plans framed Gaya as a standalone text editor. In practice it turned out
 ## Powering Turian Studio
 
 Gaya's first real plugin is **Turian Studio**: the scene tree, inspector, asset browser and viewport for the [Turian](/turian) engine, running as a plugin instead of a standalone application. That conversion is in progress — Turian's existing editor remains the daily driver until the Gaya-hosted version reaches parity.
+
+{{< image-compare image1="Guinevere-theme-1.webp" description1="" image2="Guinevere-theme-2.webp" description2="" >}}
 
 ## Early and Not Yet Public
 

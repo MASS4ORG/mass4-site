@@ -1,14 +1,15 @@
 ---
 title: "Turian is live — a 3D game engine built entirely in Zig"
 date: 2026-06-11
-summary: "Turian now has a home on the web. A component-based 3D engine and editor, one language from engine to game logic — and an honest look at what works today."
 tags: ["announcement", "turian", "zig", "engine", "mega4"]
-socialmedia: |
-  Turian now has a home: turian.mass4.org. A component-based 3D engine and editor with one language across engine, editor, game logic and build toolchain.
-
-  #Turian #ziglang #gamedev #gameengine
-
-  https://turian.mass4.org
+Params:
+  summary: "Turian now has a home on the web. A component-based 3D engine and editor, one language from engine to game logic — and an honest look at what works today."
+  socialmedia: |
+    Turian now has a home: turian.mass4.org. A component-based 3D engine and editor with one language across engine, editor, game logic and build toolchain.
+  
+    #Turian #ziglang #gamedev #gameengine
+  
+    https://turian.mass4.org
 ---
 
 Turian now has its own home: **[turian.mass4.org](https://turian.mass4.org)**.

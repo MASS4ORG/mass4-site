@@ -1,4 +1,4 @@
-// MASS4 site — nav, scroll reveal, eye-candy
+// MASS4 site — nav, scroll reveal
 (function () {
   var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var hasHover = window.matchMedia('(hover:hover)').matches;

@@ -1,146 +1,216 @@
 ---
 Title: Guinevere
+Description: Build GPU-accelerated C# interfaces with immediate-mode layout, composable shapes and Excalibur controls across platforms.
+Params:
+  The: The UI
+  Logo: '/guinevere-logo-1.svg'
 ---
 
-## Introduction
+{{< project-hero >}}
 
-<div class="project-intro">
-<img class="project-mark" src="/guinevere-logo-1.svg" alt="Guinevere logo" width="96" height="96">
-<p>A cross-platform, GPU-accelerated immediate mode UI framework for C#, focused on performance, simplicity and expressive capabilities.</p>
-</div>
+## C# interfaces, from drawing commands to application panels
 
-### The problem Guinevere is aimed at
+Guinevere is the UI framework behind MASS4's Turian Studio and Gaya application shells. It brings layout,
+drawing and input together in C#, with Excalibur supplying the controls those applications need: menus,
+text fields, tabs, dialogs and dockable panels.
 
-A great many applications are little more than a handful of images, buttons and text elements, resting on
-large frameworks that bring their own layers, conventions and long upgrade history. That is a reasonable
-trade for a lot of software. It is a poor fit for tools, games and utilities, where a small, direct layer
-between the code and the pixels is easier to reason about.
+The core uses an immediate-mode workflow: your code describes the interface for the current frame. You can
+place a shape at explicit coordinates, ask the layout engine for a rectangle, or assemble a screen from
+ready-made controls. These approaches can share the same interface.
 
-Guinevere is our answer to that. It keeps the abstractions that pay for themselves and drops the ones that
-don't: shapes and font processing come from Skia, input and rendering come from the platform integration,
-and everything in between is a layer you can read.
+Guinevere is still evolving. The examples below cover the drawing and layout APIs, followed by the control
+library, styling system and planned work. They also identify the limitations that matter when choosing how
+to build a screen.
 
-It carries no dependencies of its own beyond those two, is small enough to read end to end, and ports by
-writing a platform layer. The result is a framework that can express real interfaces — nested layouts,
-shapes, effects and animations — while staying measurable in both time and memory.
+## Packages: assemble the toolkit your application needs
 
-### Design Pillars
+The published packages target **.NET 10**. Start with the core and one rendering integration; add controls,
+themes, SVG icons, automation or generated forms as your application needs them.
 
-<div class="row">
+```powershell
+dotnet add package MASS4.Guinevere
+dotnet add package MASS4.Guinevere.Vulkan.SilkNET
+```
 
-:::col
-#### Leverage existing technologies
+Use these packages with the [window and greeting example](#a-window-and-a-greeting) below. Source and further
+examples are available in the [Guinevere repository](https://github.com/MASS4ORG/Guinevere).
 
-Shapes and Font processing is done by Skia, while input handling rendering is done by the integration (OpenGL/Vulkan thru Raylib, OpenTK or SilkNET).
+<div class="grid">
+
+:::cel-4
+### **Core**: layout, drawing and input
+
+[`MASS4.Guinevere`](https://www.nuget.org/packages/MASS4.Guinevere/) supplies the immediate-mode engine, GPU-accelerated drawing through SkiaSharp, layout and input. Use it to build custom interfaces or as the foundation for the packages below.
 :::
 
-:::col
-#### Ordinary C# is enough
+:::cel-4
+### **Excalibur**
 
-Guinevere aims to be usable without first learning a framework. There is no build step, no markup, and no
-separate styling document to keep in sync; basic C# takes you the whole way there.
+**application controls**
+```powershell
+dotnet add package MASS4.Guinevere.Excalibur
+```
+adds buttons, inputs, menus, trees, tabs, dialogs and docking. Compose application panels with existing controls and keep custom drawing available where a screen needs it. See the [control examples](#excalibur-a-ready-to-use-control-set).
 :::
 
-:::col
-#### Immediate and retained modes
+:::cel-4
+### **Autoformers**
 
-Guinevere prioritizes immediate-mode functionality, complemented by an optional retained-mode layer that ultimately resolves to immediate-mode calls, delivering the advantages of both approaches.
+**objects into editors**
+
+```powershell
+dotnet add package MASS4.Autoformers.Excalibur
+```
+renders Autoformers models as labelled fields, collections and nested objects using Excalibur controls. It suits settings panels and inspectors, with scoped drawer registries for custom editors and inherited control tokens for styling.
 :::
 
-</div>
-<div class="row">
+:::cel-4
+### Styling
 
+**reloadable themes**
 
-:::col
-#### Evolving
-
-Guinevere is young and still changing shape. The parts that proved useful have been kept and hardened; the
-parts that turned out to be weight are being removed or rewritten.
+```powershell
+dotnet add package MASS4.Guinevere.Styling
+```
+adds runtime `.pss` stylesheets with selectors, nesting, inheritance and layered tokens. Share a theme across controls, override it for a subtree, and reload files while keeping the last valid sheet if an edit contains an error.
 :::
 
-:::col
-#### Straightforward
+:::cel-4
+### SVG
 
-Guinevere is optimized for clarity. Everything is designed to be as simple and direct as possible; anything
-that wasn't load-bearing got deleted.
+**reusable vector icons**
+
+```powershell
+dotnet add package MASS4.Guinevere.Svg
+```
+decodes SVG through Svg.Skia into reusable vector pictures. Load an icon once, draw it at different sizes with `gui.Icon`, or use SVG sources in stylesheet icon themes.
 :::
 
-:::col
-#### Measured, not assumed
+:::cel-4
+### Scripting
 
-Performance claims come from a real benchmark suite. Current representative trees resolve at roughly 48–49
-nanoseconds per node with zero steady-state allocations — see
-[Reworking Guinevere's Layout Engine](/blog/reworking-guinevere-s-layout-engine).
+**repeat an interaction**
+```powershell
+dotnet add package MASS4.Guinevere.Svg
+```
+injects pointer and keyboard input from code or JSON scripts into a real frame loop. Reproduce a drag, exercise a menu, save a frame image or check an expected result in headless tests and CI.
 :::
 
-</div>
-<div class="row">
+:::cel-12
+### Choose a rendering integration
 
-:::col
-#### Layout-enabled
+Connect Guinevere to the graphics API and windowing library used by your application:
 
-The layout system is the part of Guinevere we've pushed hardest, and in our experience the most capable
-immediate-mode one we've worked with. We haven't found a public benchmark that compares the alternatives
-head to head, so treat that as an opinion until someone writes one.
-:::
+| Package | Graphics API | Host library |
+| --- | --- | --- |
+| [`MASS4.Guinevere.OpenGL.SilkNET`](https://www.nuget.org/packages/MASS4.Guinevere.OpenGL.SilkNET/) | OpenGL | Silk.NET |
+| [`MASS4.Guinevere.Vulkan.SilkNET`](https://www.nuget.org/packages/MASS4.Guinevere.Vulkan.SilkNET/) | Vulkan | Silk.NET |
+| [`MASS4.Guinevere.OpenGL.OpenTK`](https://www.nuget.org/packages/MASS4.Guinevere.OpenGL.OpenTK/) | OpenGL | OpenTK |
+| [`MASS4.Guinevere.OpenGL.Raylib`](https://www.nuget.org/packages/MASS4.Guinevere.OpenGL.Raylib/) | OpenGL | Raylib-cs |
 
-:::col
-#### Single-frame stability
-
-Idiomatic Guinevere code doesn't flicker or require multiple frames to stabilize; it delivers accurate and
-stable results in the first frame.
-:::
-
-:::col
-#### Test-friendly
-
-The input-output relationship in Guinevere is clear and simple, with every system exposed and fully controllable through code, making it straightforward to simulate any scenario for testing purposes.
-:::
-
-</div>
-<div class="row">
-
-:::col
-#### Developer-focused
-
-Programmers are first-class citizens in Guinevere; every feature is fully accessible and controllable through code. No auxiliary resources, stylesheets or markup documents are required.
-:::
-
-:::col
-#### Platform-agnostic
-
-Since Guinevere's sole responsibility is converting input into a series of basic rendering commands, it integrates into any environment and rendering pipeline willing to host it.
+The integration supplies the platform services; application code uses Guinevere's layout, drawing and input APIs.
 :::
 
 </div>
 
-## Demonstrations
+## How the framework fits together
 
->
-> This is Guinevere as it currently stands.
->
-> Guinevere is actively under development and this website currently displays only a subset of capabilities. Many core features like the retained-mode layer and input controls are still in early development stages and aren't presented here. It should be understood that everything shown here is subject to change.
->
-> All these examples are implemented in 100% C#, using our SilkNET, OpenTK and Raylib-cs platform integrations. They utilize an API that's idiomatic to C# and designed to feel natural in the C# environment.
->
-> The UI code itself is independent of the platform layer: the same code runs unmodified whether it's windowed through Vulkan.SilkNET, OpenGL.SilkNET, OpenGL.OpenTK or OpenGL.Raylib.
+<div class="grid">
 
-<div class="row">
+:::cel-4
+#### Skia and platform integrations
 
-:::col
-## Hello, world
-
-Where better to begin than with "hello world"?
-
-These examples show how little is required to get a basic Guinevere application running: the complete
-user application, with nothing else needed to open a window and draw until it's closed.
-
-Drawing primitives like rectangles, triangles and text takes about as much code as it looks like it should.
-Guinevere offers several layers of API granularity, and nothing is hidden from you, however advanced. From
-basic shapes up to full layouts, you work at whatever level of complexity the problem actually needs.
+Skia handles shapes and font processing. Platform integrations supply input and rendering through OpenGL
+or Vulkan, using Raylib, OpenTK or SilkNET.
 :::
 
-:::col
+:::cel-4
+#### Start with C#
+
+The core API needs no markup or separate UI build step. Describe the interface in C#; add runtime
+stylesheets when shared styling becomes useful.
+:::
+
+:::cel-4
+#### Immediate-mode foundation
+
+An optional retained-mode layer is in development. It resolves to immediate-mode calls so both workflows
+can participate in the same UI.
+:::
+
+:::cel-4
+#### An evolving API
+
+Guinevere is young. Application work feeds back into its design, and APIs may change as implementations
+are refined or replaced.
+:::
+
+:::cel-4
+#### Inspectable implementation
+
+The core keeps its abstractions small, making it practical to follow how a layout property becomes data
+and how that data reaches the renderer.
+:::
+
+:::cel-4
+#### Layout benchmarks
+
+Representative layout trees run at roughly 48–49 nanoseconds per node with zero steady-state allocations.
+The [layout engine write-up](/blog/reworking-guinevere-s-layout-engine) explains the fixtures and results.
+:::
+
+:::cel-4
+#### Layout when you need it
+
+Use nested layouts, constraints and blended sizes for structured screens. Explicit geometry remains
+available for drawing that needs its own coordinate calculations.
+:::
+
+:::cel-4
+#### Stable from the first frame
+
+Idiomatic layout code resolves in a single frame, without extra frames to settle element positions
+or sizes.
+:::
+
+:::cel-4
+#### Simulated input
+
+Input enters through the platform integration. Tests can supply events and control the systems directly
+to reproduce a particular interaction.
+:::
+
+:::cel-4
+#### Code access throughout
+
+Layout, drawing, input and styling are accessible through code. Controls can be composed with the same
+primitives used to build custom widgets.
+:::
+
+:::cel-8
+#### Bring a rendering host
+
+Guinevere produces rendering commands for a host to execute. Porting it means supplying a platform layer
+that connects input and rendering to the target environment.
+:::
+
+</div>
+
+## Drawing examples
+
+These C# examples use the SilkNET, OpenTK and Raylib-cs integrations. They illustrate the current API;
+Guinevere remains under active development, and the examples cover only part of the framework.
+
+<div class="grid">
+
+:::cel-4
+### A window and a greeting
+
+Create a `Gui`, give it a window, and draw inside the frame callback. This example fills the screen and
+adds text.
+:::
+
+:::cel-8
 ```cs
 using Guinevere.Vulkan.SilkNET;
 public class Program
@@ -161,11 +231,10 @@ public class Program
 :::
 
 </div>
-<div class="row">
 
-:::col-6
-## Hello, Triangle
+<div class="grid">
 
+:::cel-8
 ```cs
 using Guinevere.OpenGL.Raylib;
 public class Program
@@ -195,37 +264,34 @@ public class Program
 ```
 :::
 
-:::col
-![](Screencast_20250820_194657.avif)
+:::cel-4
+### An animated triangle inside a layout
+
+The next example combines a layout node with explicit vertex positions. The node supplies a center point;
+the drawing code calculates the triangle around it and updates it using elapsed time.
+
+![Animated triangle and greeting rendered with Guinevere](hello-triangle.avif)
 :::
 
 </div>
 
-## A harder widget: a month slider
+<div class="grid">
 
-Next, something harder than a button: a circular month slider, recreated from AirBnB's date picker as it
-was in February 2024 — open the booking page, pick 'When', then choose 'Months'. If it's no longer available
-when you're reading this, the demonstration below is a faithful reconstruction of what it did.
+:::cel-4
+### A circular month selector
 
-It's a useful test case precisely because the original is not straightforward. Reconstructing it from HTML,
-CSS and JavaScript meant untangling dozens of layered elements and SVG paths driven by a fair amount of
-script. The version below is a single node, a few shapes and about thirty lines of C#.
+This widget recreates the circular month selector from Airbnb's February 2024 date picker. It demonstrates
+how geometry, pointer interaction and layered effects work together within a single layout node.
 
-Two things are worth saying plainly. First, this is not a fair contest: HTML and CSS were not designed for
-this kind of interaction, and Guinevere is not a replacement for them. Most interfaces are a better fit for
-HTML and CSS, and you should use them there. Second, the original is a well-engineered piece of work that
-has shipped to a lot of people — it does show some jitter under load, and it degrades when a scroll view
-shares its container. Those are observations, not a verdict.
+The selected month determines the arc length and handle position. Holding the handle converts the pointer's
+angle into a month value; gradients and shadows provide the visual treatment. The example handles pointer
+interaction. Keyboard navigation would need additional input handling, and the implementation may change
+as the input controls API develops.
 
-What the example does show is that a widget which is genuinely awkward in a document-oriented system can be
-written directly, in one place, against geometry the drawing code already understands.
+![Circular month selector with a draggable handle](airbnb.avif)
+:::
 
-Note that the Guinevere code for this will likely change once the input controls feature is introduced, since
-you'd want to reach the widget with more than a pointer — keyboard navigation, for instance.
-
-<div class="row">
-
-:::col-7
+:::cel-8
 ```cs
 private void DrawAirBnBMonthSlider(ref int month)
     {
@@ -295,60 +361,41 @@ private void DrawAirBnBMonthSlider(ref int month)
 ```
 :::
 
-:::col
-![](Screencast_20250820_203828.avif)
-:::
-
 </div>
 
-## Capabilities
+## Layout: rectangles your drawing code can use
 
-### Layout System
+Layout computes geometry independently of drawing and input. Use its rectangles to position content, mix
+in manual calculations, or draw without creating layout nodes at all.
 
-We believe we've built one of the more capable immediate-mode layout systems around, though we'd rather
-show you the numbers than ask you to take our word for it.
+<div class="grid">
 
-<div class="row">
+:::cel-6
+### Measured layout cost
 
-:::col
-#### Apply layout functionality selectively
+The benchmark suite covers fixed, wrapped, constrained-expand, percentage, ratio and fit-content trees.
+These fixtures resolve with zero steady-state allocations. Deep chains of more than a thousand nodes scale
+linearly at roughly 48–49 nanoseconds per node, allowing thousands of nodes to resolve within a fraction
+of a millisecond on the benchmark machine.
 
-Guinevere's layout system serves as a tool for you to utilize wherever and however you choose, not a constraint you're forced to work within. Layout functionality is decoupled from all other features. Ultimately, the layout system simply provides you with rectangles to use for other purposes. This makes it trivial to combine layout with "manual" calculations, using layout only for interface portions where it actually benefits you. Or if you prefer, you can bypass it entirely, without losing access to any of Guinevere's other capabilities.
+These are fixture-specific measurements, not a timing guarantee for every application. Read
+[Reworking Guinevere's Layout Engine](/blog/reworking-guinevere-s-layout-engine) for the test conditions
+and the changes that removed allocations.
 :::
 
-:::col
-#### Thousands of nodes processed in milliseconds
+:::cel-6
+### Share and modify nodes within a frame
 
-Guinevere's layout system resolves thousands of nodes in a fraction of a millisecond. The number comes from a
-benchmark suite, not from intuition: representative fixed, wrapped, constrained-expand, percentage, ratio and
-fit-content trees now perform layout with zero steady-state allocations, and deep chains of a thousand-plus
-nodes scale linearly at roughly 48–49 nanoseconds per node. See
-[Reworking Guinevere's Layout Engine](/blog/reworking-guinevere-s-layout-engine) for the full breakdown,
-including where the allocations used to come from and what it took to remove them.
-
-Those figures are specific to this machine and these fixtures. They're a floor to measure against, not a
-headline.
+A layout node can be passed to another function and modified during the current frame. That function can
+add children, change properties, move the node or remove it. This supports modular UI construction while
+keeping the layout immediate mode.
 :::
 
-</div>
-<div class="row">
+:::cel-6
+### Combine sizing rules
 
-#### Retained-style mutability
-
-Work with immediate-mode layout data using retained-style patterns
-
-One useful advantage of many retained mode systems is having a hierarchical data model of the UI that can be manipulated. One section of code can affect interface parts created by another section, adding to it, styling it, removing it, and so on.
-
-Guinevere's layout system features a similar capability, despite being purely immediate mode. Within any given frame, layout nodes can be referenced and passed around, and are fully mutable. They can be modified, moved, added or removed at will, enabling the types of modular usage patterns typically found only in retained mode systems.
-
-</div>
-<div class="row">
-
-:::col
-
-#### Robust size primitives
-
-Guinevere provides a simple set of size primitives that can be specified for width and height and - crucially - can also be used as minimum and maximum constraints. This makes it easy to specify layouts that are very challenging in, for example, HTML and CSS.
+Width, height, minimums and maximums use the same size primitives. Sizes can follow content, available space,
+another axis, a percentage or a fixed pixel value. Contributions can also be combined and interpolated.
 
 ```cs
 UnitValue.FitContent(percentageOfContent) // 1 by default
@@ -362,11 +409,10 @@ UnitValue.Percentage(0.7f) + UnitValue.FitContent(0.1f)
 ```
 :::
 
-:::col
+:::cel-6
+### Refer to another node's geometry
 
-#### Position and size elements relative to any other element
-
-In Guinevere, you're not restricted to a fixed set of options like relative, absolute or fixed. You can position any element relative to any other element...
+Position and size can depend on another node. Reparenting lets you change where a node belongs in the tree.
 
 ```cs
 gui.Node()
@@ -380,13 +426,11 @@ gui.Node().SetNewParent(otherNode);
 ```
 :::
 
-</div>
-<div class="row">
+:::cel-6
+### Blend between layout configurations
 
-:::col
-#### Sophisticated layout blending
-
-Layout nodes can exist in a blended state between multiple different possible configurations. This makes transitions between different computed or derived values very straightforward to create, and is particularly useful for animations. Certain concepts, such as animating from fit content to a constrained expand, have no direct equivalent in HTML and CSS.
+Interpolating size values lets a transition follow changing layout rules, including a transition from
+content-based sizing to expansion within constraints.
 
 ```cs
 gui.Node().Width(
@@ -395,21 +439,24 @@ gui.Node().Width(
 ```
 :::
 
-:::col
-#### Alignment
+:::cel-6
+### Alignment is a numeric value
 
-In Guinevere, alignment is not based on left, center, right, etc., but rather is simply a float where 0 is "left", 1 is "right" and 0.5 is "center". You can even align < 0 and > 1.
+Alignment uses a float: `0` starts at the left or top, `0.5` centers, and `1` reaches the right or bottom.
+Values outside that range are allowed, and the value can change over time.
+
+```cs
 float align = cos(time) * 0.5f + 0.5f;
 gui.Node().AlignContent(x: align, y: align);
+```
 :::
 
-</div>
-<div class="row">
+:::cel-12
+### Inspect the layout data
 
-:::col
-#### It's "pure data"
+`LayoutNode` is a struct pointing to layout data. Its rectangle properties expose the bounds relevant to
+drawing, spacing and content.
 
-The LayoutNode struct simply contains a pointer to the layout data, which you can access and modify at will, but we've made the most common layout data easily accessible.
 ```cs
 LayoutNode node = gui.Node();
 DrawRect(node.Rect, col);        // With padding
@@ -419,7 +466,8 @@ DrawRect(node.ContentRect, col); // Bounds of the content
 DrawRect(node.Parent.Rect, col); // Parent rect
 ```
 
-You can easily traverse the entire layout tree:
+Child nodes are available for traversal:
+
 ```cs
 int i = 0;
 LayoutNode someNode = gui.CurrentNode;
@@ -430,7 +478,8 @@ foreach (LayoutNode node in someNode.ChildNodes)
 }
 ```
 
-All of the layout specification methods such as `.MaxWidth()`, `.AlignContent()`, `.Gap()`, etc., are in fact just extremely small, inlinable functions updating a tiny amount of data. For example, setting the max width of a layout node to 100 pixels is just:
+Fluent calls such as `.MaxWidth()`, `.AlignContent()` and `.Gap()` update the underlying data through small,
+inlinable methods. Setting a 100-pixel maximum width corresponds to these property changes:
 
 ```cs
 // Specify that we're using pixels
@@ -442,16 +491,20 @@ node.Properties.PropertyFlags |= PropertyFlags.MaxWidth;
 ```
 :::
 
-:::col
-#### Adaptable
+:::cel-6
+### Choose how to construct a subtree
 
-Choose the method of using nodes that best suits your requirements. You can assign nodes to variables, use the fluent API, or use the using statement.
+Keep a node in a variable when several functions need it, chain fluent calls for a short declaration,
+or enter a scope while adding children.
+
+```cs
 var node = gui.Node();
 node.Position(100, 100);
 node.Size(200, 200);
 SomeOtherFunction(node);
+```
 
-You can enter and exit nodes with the using statement.
+A `using` block closes the node scope automatically:
 
 ```cs
 using (gui.Node().Size(200, 200).Enter())
@@ -460,7 +513,7 @@ using (gui.Node().Size(200, 200).Enter())
 }
 ```
 
-This is essentially equivalent to:
+The explicit scope form is equivalent:
 
 ```cs
 LayoutNodeScope scope = gui.Node().Size(200, 200).Enter();
@@ -469,14 +522,11 @@ scope.Exit();
 ```
 :::
 
-</div>
-<div class="row">
+:::cel-6
+### Use node scopes with drawing and input
 
-:::col
-#### Convenient shortcuts for working with other Guinevere systems
-
-The layout system itself is very isolated from the rest of the codebase, but because of how frequently it's used, we've created some shortcuts to make it easier to work with other Guinevere systems through the layout nodes. Note that none of the following features are part of the layout system itself, but are rather just convenient shortcuts.
-Entering nodes helps you manage state
+Node helpers connect layout geometry to other Guinevere systems. Entering a node also scopes drawing state,
+so changes made inside it are restored on exit:
 
 ```cs
 gui.SetZIndex(1);
@@ -489,7 +539,7 @@ using (gui.Node().Enter())
 // Font size is back to 13, and z-index is back to 1.
 ```
 
-Shortcuts to the interactable system
+Interaction helpers use the node's rectangle as the target area:
 
 ```cs
 LayoutNode node = gui.CurrentNode;
@@ -504,52 +554,37 @@ if (gui.GetInteractable(node.Rect).OnHover())
 :::
 
 </div>
-<div class="row">
 
-:::col
-#### And much more
+Other layout features include tables, wrapping, pivots, margins, padding, self and content offsets, and
+flow direction. Examples for these features are planned.
 
-Covering all the features of Guinevere's layout system would require significant space, but here are a few we look forward to demonstrating in the future:
+![Guinevere demo](Guinevere-demo.avif)
 
-- Tables
-- Wrapping of flowing elements
-- Pivoting
-- Margins and Paddings
-- Self Offset
-- Content Offset
-- Flow direction
-:::
+## Shapes: geometry for drawing, hit testing and clipping
 
-</div>
+Guinevere represents shapes with composed signed distance fields (SDFs). Their analytical representation
+keeps shape data compact and allows drawing at different resolutions.
 
-## Shapes
+<div class="grid">
 
-User interfaces are composed of various shapes, so having the ability to easily define, draw and use complex shapes is crucial.
+:::cel-4
+### Define geometry separately from position
 
-<div class="row">
+A shape definition can be reused at multiple positions. Here, the circle's radius belongs to the shape,
+while its screen position is supplied separately.
 
-### Signed distance field based shapes
-
-Guinevere's Shapes API is built on composed signed distance fields. It's fast, a shape is small in memory,
-and like vectors it's analytical, so it scales to any resolution.
-
-</div>
-<div class="row">
-
-:::col
-#### Define a shape
-
-Note that a shape is not bound to a specific position - it's just a shape. It can be drawn in any position, used and reused as many times as you need.
 ```cs
 Vector2 position = gui.ScreenRect.Center;
 Shape shape = Shape.Circle(300);
 ```
 :::
 
-:::col
-### Shapes can also be used as input elements
+:::cel-4
+### Use the shape as an interaction area
 
-Interactable elements are most commonly defined by a simple rectangle, but you can also define them as a shape, and then use the shape as the interactable area.
+Hit testing can follow the shape instead of a rectangular boundary. The resulting interactable exposes
+hover and hold information.
+
 ```cs
 var interactable = gui.GetInteractable(position, shape);
 bool isHovering = interactable.OnHover();
@@ -557,28 +592,24 @@ bool isDragging = interactable.OnHold(out HoldArgs args);
 ```
 :::
 
-</div>
-<div class="row">
+:::cel-4
+### Clip content to a shape
 
-:::col
-#### Use shapes as clipping masks
+Shape clipping applies to subsequent content, including text. It can keep child content inside a rounded
+container or another custom boundary.
 
-This will affect everything, including text. This is, for example, how you would ensure content in a rounded rectangle doesn't visually overflow:
 ```cs
 gui.SetClipShape(position, shape);
 ```
 :::
 
-</div>
-<div class="row">
+:::cel-6
+### Stack visual effects
 
-:::col
-#### Drawn with unlimited effects
+Gradients, textures and shadows are applied in declaration order. Effects are animatable, and gradients
+are rendered without banding. Shapes at a given z-index share the draw call with the other geometry at
+that z-index, including their stacked effects.
 
-Shapes can be drawn with various effects, such as gradients, textures and shadows. All effects are animatable,
-and gradients don't band the way they do in some other systems.
-
-Also note that all the effects will actually be drawn on top of each other in the specified order, all in a single draw call. In fact, all shapes in a given z-index are included in the same single draw call that draws the rest of the geometry.
 ```cs
 gui.DrawShape(position, shape)
     .SolidColor(Color.HSVLerp(a, b, tHover))
@@ -591,30 +622,36 @@ gui.DrawShape(position, shape)
 ```
 :::
 
-#### Advantages and limitations, SVG and future plans
+:::cel-6
+### Budget for SDF complexity and overdraw
 
-Signed distance shapes have many benefits, but there are also some limitations to this approach:
+Simple SDF shapes have a rendering cost comparable to a texture. Composing many shapes and adding effects
+increases the work per fragment. An offset shadow may evaluate the shape again for every fragment, so each
+additional shadow can multiply that cost.
 
-First, GPU rendering performance scales poorly with complexity. It performs as well as rendering a texture for relatively simple shapes, but combining many shapes together can quickly become a performance issue when you're also stacking multiple effects on it, as some effects such as shadows (which include an offset) will re-compute the SDF shape once per shadow, per fragment, effectively multiplying the render cost of the shape.
+Rendering also covers the shape's bounding box. A thin shape spanning a large box can spend most of its
+work on pixels outside the visible shape. The optional [SVG package](https://www.nuget.org/packages/MASS4.Guinevere.Svg/) already provides vector
+icons through Svg.Skia. A general vector mesh API remains separate planned work.
 
-It also scales poorly with very thin shapes whose bounding boxes cover a large area, since SDF drawing is bounding box based. Such shapes that cover a very small proportion of their total bounding box will have a lot of potentially expensive overdraw, as the cost of evaluating every pixel in the bounding box is the same whether it is in the shape or not. This is why we also intend to introduce a vector-based graphics API for loading and generating such shapes easily. This API would of course include .svg support.
-
-Another limitation is that using the signed distance field as a way of rendering shadows often leads to undesirable sharp edges in the shadows for certain shapes or combinations of shapes, due to the way the math works out. It is possible to improve the shadows, but only by sampling the SDF function to a cost-prohibitive degree. This is something we may be able to improve in the future, though; we have some ideas...
+Some SDF combinations produce sharp edges in shadows. More sampling can improve the result at a substantial
+cost; further shadow improvements remain an area of investigation.
+:::
 
 </div>
-<div class="row">
 
+## Rendering: from primitives to GPU buffers
 
-## Graphics
+The drawing API builds a command list for the platform renderer. It exposes both common drawing operations
+and the buffers used to represent them.
 
-Ultimately, all Guinevere really does is produce a list of graphics commands. So, naturally, that's where we
-spent the optimization effort. The drawing API is fast without giving up ease of use or control.
+<div class="grid">
 
-<div class="row">
+:::cel-6
+### Set drawing state or edit geometry
 
-#### Graphics Drawing and Manipulation
-
-Often, in UI libraries, it is very difficult and tedious to simply draw a basic rectangle to the screen. We've done our best to ensure Guinevere never gets in your way when you just want to put pixels on the screen:
+Set transforms, blending, textures and z-index before issuing drawing commands. For custom geometry,
+access quads, vertices and indices directly. Scoped state restoration is covered
+[below](#drawing-state-and-node-scopes).
 
 ```cs
 // Specify how graphics should be drawn.
@@ -636,14 +673,14 @@ quad.SetRect(rect);
 gui.DrawList.Indices;
 gui.DrawList.Vertices;
 ```
+:::
 
-#### Integrating it into your own pipeline
+:::cel-6
+### Connect your rendering pipeline
 
-Guinevere's sole responsibility is converting input into a set of optimized GPU buffers and simple rendering
-commands, to be handed to whatever rendering pipeline you already have.
-
-The command list itself is deliberately plain, and the vertex structure is small. To implement the rendering
-side you need one shader, currently under a thousand lines, and the frame-processing call:
+A host processes the frame, receives optimized GPU buffers and rendering commands, and submits them to its
+pipeline. The rendering integration uses a small vertex structure and one shader, currently under a
+thousand lines.
 
 ```cs
 using System;
@@ -660,19 +697,22 @@ foreach (Command command in commands)
     // Issue command to rendering pipeline
 }
 ```
+:::
 
 </div>
-<div class="row">
 
-## Input
+## Input: events, interaction areas and controls
 
-Guinevere's input handling is designed to make it easy to handle input exactly in the way most useful to solve a given problem, providing users with an array of options at different levels of abstraction: raw input handling, interactables, and controls.
+Input is available at three levels. Read device state for direct handling, define an interactable for
+hit testing and gestures, or use a control that manages a richer interaction.
 
-<div class="row">
+<div class="grid">
 
-#### Raw input handling
+:::cel-6
+### Read device state
 
-Raw input handling is exactly that: it's asking direct questions about the current input state: where are the cursors, which keys are currently down, what is the axis value of a joystick, and so on.
+Raw input exposes cursor positions, held keys, joystick axes and key transitions. For example, an action
+can run when Space is pressed:
 
 ```cs
 // Do something if the user presses space
@@ -681,10 +721,13 @@ if (gui.Input.OnKeyDown(Key.Space))
     DoSomething();
 }
 ```
+:::
 
-#### Interactables
+:::cel-6
+### Attach interaction to geometry
 
-Interactables are elements that can be interacted with: they can have shapes, and provide a more comprehensive and easy way of handling common device-agnostic input operations, such as clicking things, dragging things, respecting z-indices and draw ordering (IE, being capable of blocking each other's input), and so on.
+Interactables handle clicks and drags with device-independent operations. Their hit areas can be rectangles
+or shapes, and input ordering follows z-index and draw order so overlapping elements can block one another.
 
 ```cs
 // Make a clickable circle in the center of the screen
@@ -694,36 +737,45 @@ if (e.OnClick())
     DoSomething();
 }
 ```
+:::
+
+:::cel-4
+### Use controls for richer interactions
+
+Controls add focus, navigation and stateful editing. A text field, for example, needs caret and selection
+state as well as pointer handling. Excalibur supplies ready-to-use controls for these tasks, including
+keyboard and joystick navigation support.
+:::
+
+:::cel-4
+### Decide which events reach another element
+
+Input elements can consume an event or let it propagate. An element can also receive events regardless
+of whether another element has already consumed them. Priority follows the interface's z-order.
+:::
+
+:::cel-4
+### Supply events through the platform layer
+
+Guinevere receives input events from its host integration. The optional
+[`MASS4.Guinevere.Scripting`](https://www.nuget.org/packages/MASS4.Guinevere.Scripting/) package uses those
+entry points to replay interactions from code or JSON, capture frames and check expected results without
+opening a window. Reducing the delay from an event to a visible update is a platform integration goal;
+no cross-platform latency measurements have been published.
+:::
 
 </div>
-<div class="row">
-
-#### Controls
-
-Controls are fully developed "input elements": they can have focus, support very stateful interactions (such as being a text field with one or more inner cursors and selections), they can provide contextual/spatial navigation with keyboard or joysticks, and so on. A whole ready-to-use set of them ships in the Excalibur package — see [Excalibur](#excalibur-a-ready-to-use-control-set) below.
-
-#### Clear event propagation
-
-Since Guinevere fully supports z-indices, all input elements (whether interactables or controls) have a clear order of priority. Additionally, event propagation can be controlled very precisely: each input element can decide which events to "consume" or pass on, and elements can even decide whether to respect propagation or not in order to receive events regardless of their propagation state.
-
-#### Controllable, testable and low-latency input
-
-Guinevere does not read input by itself, but is fed input events from the platform integration. This approach
-also makes it easy to simulate input for testing or other purposes. Input latency — the time between a key
-press and pixels changing on screen — is kept as short as we can manage on each platform, though we haven't
-published a cross-platform measurement, so treat that as a goal rather than a figure.
 
 ## Excalibur: a ready-to-use control set
 
-Building every button and dropdown out of raw layout, shapes and interactables is the point when you want full
-control, but most apps just need a solid, consistent set of controls that already work. That's what
-[`MASS4.Guinevere.Excalibur`](https://github.com/MASS4ORG/Guinevere) provides: a batteries-included control library
-that drops into an existing Guinevere app as a single package reference, with no setup. Every control is just an
-extension method on `Gui`.
+[`MASS4.Guinevere.Excalibur`](https://github.com/MASS4ORG/Guinevere) packages the controls used in Turian Studio
+and Gaya. Add the package to an existing Guinevere application and call its extension methods on `Gui`.
 
 ```powershell
 dotnet add package MASS4.Guinevere.Excalibur
 ```
+
+Buttons, inputs and tabs follow the same C# workflow:
 
 ```cs
 if (gui.Button("Run")) { /* clicked */ }
@@ -738,10 +790,10 @@ gui.Tabs(ref _activeTab, tabs =>
 });
 ```
 
-<div class="row">
+<div class="grid">
 
-:::col
-#### What's in the box
+:::cel-4
+### Available controls
 
 - **Actions**: `Button`, `IconButton`, `ImageButton`
 - **Selection**: `Checkbox`, `Toggle`, `RadioButton`, `RadioGroup`, `Dropdown`
@@ -752,10 +804,10 @@ gui.Tabs(ref _activeTab, tabs =>
 - **Layout tools**: `Splitter`, `DockSpace`, `DockLayout`
 :::
 
-:::col
-#### Menus, docking and file dialogs, not just buttons
+:::cel-8
+### Assemble application menus and panels
 
-Excalibur goes well past form widgets. A full menu bar with submenus and checkable items:
+Menu declarations can include submenus, shortcuts and checkable items:
 
 ```cs
 gui.MenuBar(menus =>
@@ -768,7 +820,7 @@ gui.MenuBar(menus =>
 });
 ```
 
-Persistent split/tab/float docking, the kind an editor or IDE needs:
+Docking supports persistent split, tab and floating layouts for editor-style workspaces:
 
 ```cs
 var layout = new DockLayout
@@ -778,7 +830,8 @@ var layout = new DockLayout
 gui.DockSpace(layout, panelInfo: id => new DockPanelInfo("Files"), renderPanel: (id, g) => g.DrawText(id));
 ```
 
-And an async, virtualised file dialog that won't stall the frame loop on large or remote directories:
+The asynchronous, virtualised file dialog keeps directory loading out of the frame loop, including for
+large or remote directories:
 
 ```cs
 files.Open(new FileDialogRequest { Mode = FileDialogMode.OpenFile, Title = "Open scene" });
@@ -788,14 +841,20 @@ gui.FileDialog(files);
 
 </div>
 
-This is the same control set Turian Studio and Gaya are built on, so the controls get exercised by two real
-application shells rather than only by a demo widget kit. That said, both shells are early, and we wouldn't
-describe the set as battle-tested yet.
+Turian Studio and Gaya exercise these controls in application shells. Both applications are still early
+in development, so that usage does not yet establish long-term production reliability.
 
 ## Styling
 
-Beyond one-off `Set*` calls, Guinevere has a runtime stylesheet system with nested selectors, `>` child selectors,
-custom modifiers, variables, `@const`, and `#inherit(...)`, loaded from files and reloaded non-destructively:
+The optional [`MASS4.Guinevere.Styling`](https://www.nuget.org/packages/MASS4.Guinevere.Styling/) package
+provides runtime stylesheets with nested selectors, `>` child selectors, custom modifiers, layered tokens,
+`@const` and `#inherit(...)`. It also supports value expressions, fonts, icon themes and visual properties
+such as gradients, borders and shadows. Reloading a file keeps the last valid sheet if parsing fails.
+
+<div class="grid">
+
+:::cel-6
+### Runtime stylesheets
 
 ```cs
 var styles = StyleSheetSource.FromFile("theme.pss");
@@ -812,10 +871,16 @@ checkbox {
 }
 ```
 
-Styles also accept PanGui's scalar syntax alongside the CSS-like form above. Transition annotations parse for
-source compatibility; animated interpolation, expressions, shape/effect declarations and the advanced macro
-families are still on the roadmap. Color palettes are independent, inheritable values, so a subtree can override
-just what it needs:
+The `.pss` format follows PanGui's stylesheet syntax for source compatibility. Value expressions include
+arithmetic, `calc()`, `min`/`max`/`clamp` and color functions. Transition annotations and advanced shape, effect
+and macro constructs can be parsed without being applied; animated stylesheet interpolation remains planned.
+:::
+
+:::cel-6
+### Local palettes
+
+Color palettes are independent, inheritable values. A subtree can override individual control values
+without replacing the surrounding palette:
 
 ```cs
 using (gui.Node().Enter())
@@ -828,14 +893,21 @@ using (gui.Node().Enter())
     gui.Button("Locally styled");
 }
 ```
+:::
 
-## Straightforward state management
+</div>
 
-The IMGUI pattern overall greatly reduces the amount of UI-related state you need to manage, as the UI code is typically directly tied to the data it represents. Guinevere further simplifies managing the small amount of state that remains - things like the current color, transform matrix, blend mode, text font, etc.
+## Drawing state and node scopes
 
-#### State snapshots
+Drawing state includes color, transforms, blending and fonts. Guinevere's delta-based snapshot system
+records changes so a caller can restore an earlier configuration with low overhead.
 
-This is achieved with a highly-optimized, low-overhead, delta-based state snapshot system. At any time, a state snapshot can be requested, and then later used to restore the state back to what it was at the time of the snapshot.
+<div class="grid">
+
+:::cel-6
+### Save and restore explicitly
+
+Take a snapshot before changing state, then restore it after drawing:
 
 ```cs
 gui.SetZIndex(1);
@@ -846,10 +918,13 @@ gui.SetFontSize(40);
 // UI code here draws with a large font and goes on top
 gui.State.SetState(state); // Restore state snapshot
 ```
+:::
 
-#### Working with layout nodes
+:::cel-6
+### Let a node scope restore state
 
-Taking a snapshot is very cheap and fast: so cheap and fast that when you enter a layout node, it always takes a state snapshot, such that it can restore the prior state when it later exits.
+Entering a layout node takes a snapshot automatically. Exiting it restores the previous state, including
+when scopes are nested.
 
 ```cs
 gui.SetZIndex(1);
@@ -863,16 +938,15 @@ using (gui.Node().Enter())
 // Font size is back to 13, and z-index is back to 1.
 // This works at any level of scope nesting.
 ```
+:::
 
-#### "Navigate" to anywhere in the layout from anywhere else
+:::cel-12
+### Re-enter a node with its previous state
 
-When a layout node is exited, it takes a second state snapshot, such that when you re-enter a layout node, the state will be reset to what it was when you left it.
+Exiting a node records a second snapshot. Re-entering that node restores the state it had on exit, allowing
+another function to add content with the same font, transform and z-index.
 
-One of the more useful things this gives us, as a sort of side-effect, is the ability to go back and revisit, modify and add to previously created UI elements. One such example is the popup in the audio app demo: the popup layout node is created, then passed back out of the method to be filled out by the code that called the GetPopup function.
-
-There is no need to resort to solutions such as splitting functions up into tedious begin and end calls with complicated ways of passing state between them, and no need to clutter your code with push and pop calls. (Though, of course, if you want to, you still can.)
-
-#### Popup example
+For example, one function can prepare a popup container and return a scope for its caller to fill:
 
 ```cs
 LayoutNodeScope GetPopup()
@@ -897,7 +971,7 @@ LayoutNodeScope GetPopup()
 }
 ```
 
-#### Use case, somewhere else:
+The caller can then add content or adjust the container's layout:
 
 ```cs
 LayoutNodeScope popup = GetPopup();
@@ -914,49 +988,67 @@ using (popup.Enter())
     popup.Width(700); // Modify the originally declared popup
 }
 ```
+:::
 
+</div>
 
-And much more
+## Planned work
 
-Guinevere has many features that we haven't discussed yet, many of which are still in development.
+The following areas are still in development. They describe intended capabilities beyond the examples above.
 
-#### Styling expressions
+<div class="grid">
 
-The stylesheet system (see [Styling](#styling) above) already handles selectors, variables and non-destructive
-reloads; animated interpolation, expressions, and shape/effect declarations within stylesheets are still on the
-roadmap.
+:::cel-4
+### More stylesheet behavior
 
-#### Retained workflow
+Extend the existing selectors, tokens and value expressions with animated interpolation and application
+of deferred shape, effect and macro declarations. See [Styling](#styling) for the current capabilities.
+:::
 
-Declare and bind a hierarchy of styled UI nodes, or load them from specification files. Retained nodes ultimately resolve to immediate mode calls and as such fully interoperate with pure immediate mode code.
+:::cel-4
+### A retained workflow
 
-#### Render Effects
+Build and bind styled node hierarchies, including hierarchies loaded from specification files. Retained
+nodes will resolve to immediate-mode calls and interoperate with immediate-mode UI code.
+:::
 
-It should be trivial to apply render effects such as blurring everything behind a popup, or adding a frosted glass filter, or bloom, or anything else like it. This will be a pre-built library of out-of-the-box supported effects, as well as a method of easily adding your own without needing to modify the platform layer too much.
+:::cel-4
+### Reusable render effects
 
-#### Vector Graphics API
+Provide effects such as background blur, frosted glass and bloom, with extension points for custom effects
+that require minimal platform-layer changes.
+:::
 
-SDF shapes suit a lot of cases well, but for others generating meshes from vector definitions is the more appropriate solution. Guinevere will include a vector graphics API for loading and generating vector shapes, including support for loading .svg files and the like.
+:::cel-4
+### General vector geometry
 
-#### Animations
+SVG icon loading is available through `MASS4.Guinevere.Svg`. A broader API for generating vector geometry
+and meshes remains planned.
+:::
 
-A simple and powerful animation system for animating any arbitrary value over time using a variety of behaviours, transitions and easing functions.
+:::cel-4
+### Broader animation support
 
-#### Platform layers
+Value animation already includes `AnimationFloat`, `AnimateBool01()` and easing helpers. Animated
+stylesheet interpolation remains future work; parsing a transition annotation does not animate it.
+:::
 
-As development progresses towards beta and release, we will continually be adding more platform layers to Guinevere, and further build out our tooling for this process.
+:::cel-4
+### Additional platform integrations
+
+Expand the platform layers and the tools used to build them as Guinevere moves toward beta and release.
+:::
+
+</div>
 
 ## Source & License
 
-Guinevere is open source and available today:
+The source and packages are available now:
 
 - **Source**: [github.com/MASS4ORG/Guinevere](https://github.com/MASS4ORG/Guinevere)
-- **NuGet**: [`MASS4.Guinevere`](https://www.nuget.org/packages/MASS4.Guinevere/), with a separate `MASS4.Guinevere.Excalibur` package for ready-to-use controls (buttons, inputs, menus, dialogs, docking, and more)
+- **NuGet**: start with [`MASS4.Guinevere`](https://www.nuget.org/packages/MASS4.Guinevere/) and choose additions from the [package overview](#packages-assemble-the-toolkit-your-application-needs)
 - **License**: MIT
 
 ---
 
-*Guinevere is part of the [MEGA4 initiative](/mega4) by [MASS4](/).*
-
-</div>
-</div>
+*Developed by [MASS4](/) as part of the [MEGA4 initiative](/mega4).*

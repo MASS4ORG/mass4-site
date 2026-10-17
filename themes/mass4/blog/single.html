@@ -1,17 +1,14 @@
-<div class="wrap section">
-    <article class="prose narrow">
-        <p><a href="/blog">← Blog</a></p>
-        <h1>{{ page.Title }}</h1>
-        <div class="meta" style="font-family:var(--font-mono);font-size:.85rem;color:var(--faint);margin-bottom:2em">
-            {{ page.Date | date: "%B %-d, %Y" }}
-        </div>
+<article>
+    <h1>{{ page.Title }}</h1>
+    <div class="meta" style="font-family:var(--font-mono);font-size:.85rem;color:var(--faint);margin-bottom:2em">
+        {{ page.Date | date: "%Y-%m-%d" }}
+    </div>
 
-        {{ page.ContentPreRendered }}
+    {{ page.ContentPreRendered }}
 
-        {% if page.TagsReference.size > 0 %}
-        <p style="margin-top:2.5em">
-            {% for tag in page.TagsReference %}<a class="tag" href="{{ tag.Permalink }}" style="margin-right:6px">#{{ tag.Title }}</a>{% endfor %}
-        </p>
-        {% endif %}
-    </article>
-</div>
+    {% if page.TagsReference.size > 0 %}
+    <p  style="margin-top:2.5em">
+        {% for tag in page.TagsReference %}<a class="tag" href="{{ tag.Permalink }}" style="margin-right:6px">#{{ tag.Title }}</a>{% endfor %}
+    </p>
+    {% endif %}
+</article>

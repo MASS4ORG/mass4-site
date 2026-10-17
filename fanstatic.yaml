@@ -10,17 +10,17 @@ Params:
   Author:
     Name: "Bruno Massa"
   MainMenu:
-    - url: /mega4
+    - url: /mega4/
       label: MEGA4
-    - url: /guinevere
+    - url: /guinevere/
       label: Guinevere
-    - url: /gaya
+    - url: /gaya/
       label: Gaya
-    - url: /turian
+    - url: /turian/
       label: Turian
-    - url: /mystery
+    - url: /mystery/
       label: Mystery
-    - url: /blog
+    - url: /blog/
       label: Blog
 
   SocialNetworks:
