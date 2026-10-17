@@ -1,13 +1,18 @@
 {{ page.ContentPreRendered }}
-<div class="wrap">
-    <div class="posts">
-        {% assign sortedPages = page.RegularPages | sort: 'Date' | reverse %}
-        {% for pageList in sortedPages %}
-        <a class="post-card" href="{{ pageList.RelPermalink }}">
-            <div class="meta">{{ pageList.Date | date: "%Y-%m-%d" }}</div>
-            <h3>{{ pageList.Title }}</h3>
-            {% if pageList.Params.summary %}<p>{{ pageList.Params.summary }}</p>{% endif %}
-        </a>
-        {% endfor %}
-    </div>
+
+<div class="posts">
+    {% assign sortedPages = page.RegularPagesByDate | reverse %}
+    {% assign pager = sortedPages | paginate: 10 %}
+
+    {% for pageList in pager.PageItems %}
+    <a class="post-card" href="{{ pageList.RelPermalink }}">
+        <div class="meta">{{ pageList.Date | date: "%Y-%m-%d" }}</div>
+        <h3>{{ pageList.Title }}</h3>
+        {% if pageList.Params.summary %}<p>{{ pageList.Params.summary }}</p>{% endif %}
+    </a>
+    {% endfor %}
+</div>
+
+<div>
+    {% render "partials/pagination.html", pager: pager %}
 </div>

@@ -50,11 +50,6 @@ Most software gets finished before anyone sees it. MEGA4 publishes the middle: f
 
 Building them together keeps each one honest: a GUI toolkit is only as good as the editor built on it, and an engine is only as good as the game it has to run.
 
-## What changed: C#, a Zig detour, and back to C#
-
-MEGA4 began as a C#/.NET stack. In mid-2026 we paused it for a six-month deep dive into **Zig**, rebuilding the engine and toolchain from the ground up as TurianZ. It grew into a substantial Zig engine — but along the way we kept using modern .NET for every other side project, and the conclusion arrived on its own: more of the code we enjoyed writing was C#. The stack is back in C#, with the useful ideas from the Zig experiment carried over. TurianZ stays preserved as a legacy repository for anyone who wants to fork or continue it. The full story is in
-[the 180° turn](/blog/the-180-turn-why-turian-is-coming-home-to-c).
-
 ## Principles
 
 - **Open by default.** Where a project is public, it is public from the first commit.

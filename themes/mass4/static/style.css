@@ -19,17 +19,17 @@
     --accent-soft: color-mix(in srgb, var(--accent) 16%, transparent);
 
     /* Surfaces */
-    --bg: #0b0d12;
-    --bg-soft: #0f1219;
-    --surface: #141823;
-    --surface-2: #1a1f2c;
-    --border: rgba(255, 255, 255, 0.08);
-    --border-2: rgba(255, 255, 255, 0.14);
+    --bg: #1a1a1a;
+    --bg-soft: #383838;
+    --surface: #232323;
+    --surface-2: #2b2b2b;
+    --border: #3a3a3a;
+    --border-2: #dcdcdc;
 
     /* Text */
-    --text: #e8eaf0;
-    --muted: #9aa3b5;
-    --faint: #6b7488;
+    --text: #999999;
+    --text-dim: #7b7b7b;
+    --text-faint: #4e4e4e;
 
     --radius: 16px;
     --radius-sm: 10px;
@@ -62,6 +62,25 @@
 [data-section="mass4"] {
     --accent: var(--mass4);
     --accent-b: var(--mass4-b);
+}
+
+/* ---------- Light theme ---------- */
+[data-theme="light"] {
+    --bg: #e5e5e5;
+    --bg-soft: #e0e0e0;
+    --surface: #f7f7f7;
+    --surface-2: #efefef;
+    --border: #cfcfcf;
+    --border-2: rgba(0, 0, 0, 0.16);
+    --text: #242424;
+    --text-dim: #5f5f5f;
+    --text-faint: #8f8f8f;
+    --shadow: 0 20px 60px -28px rgba(0, 0, 0, 0.28);
+}
+/* Keep code blocks dark so syntax highlighting stays legible on a light page */
+[data-theme="light"] pre {
+    background: #1b1d24 !important;
+    border-color: #2a2d38;
 }
 
 * {
@@ -109,7 +128,7 @@ a {
     transition: color 0.15s ease;
 }
 a:hover {
-    color: color-mix(in srgb, var(--accent) 75%, white);
+    color: color-mix(in srgb, var(--accent) 75%, var(--text));
 }
 
 h1,
@@ -193,7 +212,7 @@ img {
 }
 .btn-ghost {
     border-color: var(--border-2);
-    background: rgba(255, 255, 255, 0.03);
+    background: color-mix(in srgb, var(--text) 3%, transparent);
     color: var(--text);
 }
 .btn-ghost:hover {
@@ -251,9 +270,10 @@ img {
     display: flex;
     align-items: center;
     gap: 2px;
+    margin-left: auto;
 }
 .nav-menu a {
-    color: var(--muted);
+    color: var(--text-dim);
     font-size: 0.93rem;
     font-weight: 500;
     padding: 0.5em 0.75em;
@@ -261,7 +281,7 @@ img {
 }
 .nav-menu a:hover {
     color: var(--text);
-    background: rgba(255, 255, 255, 0.05);
+    background: color-mix(in srgb, var(--text) 5%, transparent);
 }
 .nav-social {
     display: flex;
@@ -272,7 +292,7 @@ img {
     border-left: 1px solid var(--border);
 }
 .nav-social a {
-    color: var(--muted);
+    color: var(--text-dim);
     font-size: 1.05rem;
     padding: 0.35em 0.45em;
     border-radius: 8px;
@@ -280,7 +300,35 @@ img {
 }
 .nav-social a:hover {
     color: var(--accent);
-    background: rgba(255, 255, 255, 0.05);
+    background: color-mix(in srgb, var(--text) 5%, transparent);
+}
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: var(--text-dim);
+    font-size: 1.15rem;
+    line-height: 1;
+    cursor: pointer;
+    transition:
+        color 0.15s ease,
+        background 0.15s ease,
+        border-color 0.15s ease;
+}
+.theme-toggle:hover {
+    color: var(--text);
+    background: color-mix(in srgb, var(--text) 5%, transparent);
 }
 .nav-toggle {
     display: none;
@@ -311,7 +359,7 @@ img {
 }
 .hero .lede {
     font-size: clamp(1.05rem, 2vw, 1.28rem);
-    color: var(--muted);
+    color: var(--text-dim);
     max-width: 62ch;
 }
 .hero-cta {
@@ -349,7 +397,7 @@ img {
     text-align: center;
 }
 .section-head p {
-    color: var(--muted);
+    color: var(--text-dim);
     font-size: 1.05rem;
 }
 
@@ -367,8 +415,8 @@ img {
     border-radius: var(--radius);
     background: linear-gradient(
         180deg,
-        rgba(255, 255, 255, 0.04),
-        rgba(255, 255, 255, 0.01)
+        color-mix(in srgb, var(--text) 4%, transparent),
+        color-mix(in srgb, var(--text) 1%, transparent)
     );
     border: 1px solid var(--border);
     overflow: hidden;
@@ -417,7 +465,7 @@ img {
     font-size: 1.4rem;
 }
 .pillar p {
-    color: var(--muted);
+    color: var(--text-dim);
     margin: 0;
     font-size: 0.97rem;
 }
@@ -443,7 +491,7 @@ img {
     padding: 0.25em 0.7em;
     border-radius: 999px;
     border: 1px solid var(--border-2);
-    color: var(--muted);
+    color: var(--text-dim);
 }
 .tag.accent {
     color: var(--accent);
@@ -494,7 +542,7 @@ img {
     letter-spacing: -0.01em;
 }
 .value p {
-    color: var(--muted);
+    color: var(--text-dim);
     margin: 0;
     font-size: 0.92rem;
 }
@@ -520,7 +568,7 @@ img {
     margin-bottom: 8px;
 }
 .fact p {
-    color: var(--muted);
+    color: var(--text-dim);
     margin: 0;
     font-size: 0.95rem;
 }
@@ -550,7 +598,7 @@ article {
     }
     ul,
     ol {
-        color: var(--muted);
+        color: var(--text-dim);
         padding-left: 1.3em;
     }
     li {
@@ -563,10 +611,10 @@ article {
     code {
         font-family: var(--font-mono);
         font-size: 0.88em;
-        background: rgba(255, 255, 255, 0.07);
+        background: color-mix(in srgb, var(--text) 7%, transparent);
         padding: 0.15em 0.42em;
         border-radius: 6px;
-        color: color-mix(in srgb, var(--accent) 60%, #fff);
+        color: color-mix(in srgb, var(--accent) 60%, var(--text));
     }
     pre {
         background: var(--surface) !important;
@@ -590,7 +638,7 @@ article {
         border-left: 3px solid var(--accent);
         background: var(--accent-soft);
         border-radius: 0 10px 10px 0;
-        color: var(--muted);
+        color: var(--text-dim);
     }
     blockquote p {
         margin: 0.3em 0;
@@ -641,13 +689,13 @@ article {
         color: var(--text);
     }
     td {
-        color: var(--muted);
+        color: var(--text-dim);
     }
 
     .meta {
         font-family: var(--font-mono);
         font-size: 0.78rem;
-        color: var(--faint);
+        color: var(--text-faint);
         margin-bottom: 8px;
     }
 }
@@ -682,7 +730,7 @@ article {
     overflow-wrap: anywhere;
     padding: 24px;
     border-radius: var(--radius);
-    background: rgba(255, 255, 255, 0.02);
+    background: color-mix(in srgb, var(--text) 2%, transparent);
     border: 1px solid var(--border);
 
     > :first-child,
@@ -739,7 +787,7 @@ article {
     .meta {
         font-family: var(--font-mono);
         font-size: 0.78rem;
-        color: var(--faint);
+        color: var(--text-faint);
         margin-bottom: 8px;
     }
     h3 {
@@ -747,7 +795,7 @@ article {
         margin-bottom: 0.3em;
     }
     p {
-        color: var(--muted);
+        color: var(--text-dim);
         margin: 0;
     }
 }
@@ -764,7 +812,7 @@ article {
         margin-bottom: 0.3em;
     }
     p {
-        color: var(--muted);
+        color: var(--text-dim);
         max-width: 52ch;
         margin: 0 auto 1.4em;
     }
@@ -780,7 +828,7 @@ article {
 .footer {
     border-top: 1px solid var(--border);
     padding: 56px 0 36px;
-    color: var(--muted);
+    color: var(--text-dim);
     margin-top: 40px;
 }
 .footer-grid {
@@ -793,12 +841,12 @@ article {
     font-size: 0.78rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: var(--faint);
+    color: var(--text-faint);
     margin-bottom: 14px;
 }
 .footer a {
     display: block;
-    color: var(--muted);
+    color: var(--text-dim);
     font-size: 0.94rem;
     padding: 4px 0;
 }
@@ -834,7 +882,7 @@ article {
     border-top: 1px solid var(--border);
     padding-top: 22px;
     font-size: 0.82rem;
-    color: var(--faint);
+    color: var(--text-faint);
 }
 .footer-bottom a {
     display: inline;
@@ -962,7 +1010,7 @@ article {
 .pagination .page-item.disabled .page-link {
     border-color: var(--border);
     background: var(--bg-soft);
-    color: var(--faint);
+    color: var(--text-faint);
     cursor: not-allowed;
     pointer-events: none;
 }

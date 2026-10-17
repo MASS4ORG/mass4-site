@@ -7,6 +7,19 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+    (function () {
+        try {
+            var t = localStorage.getItem('theme');
+            if (t !== 'light' && t !== 'dark') {
+                t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+            }
+            document.documentElement.dataset.theme = t;
+        } catch (e) {
+            document.documentElement.dataset.theme = 'dark';
+        }
+    })();
+</script>
 <link rel="canonical" href="{{ site.BaseURL }}{{ page.Permalink }}">
 <link rel="alternate" type="application/rss+xml" href="/blog/index.xml" title="MASS4 blog">
 

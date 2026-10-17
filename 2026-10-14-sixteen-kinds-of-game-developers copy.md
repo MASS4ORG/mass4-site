@@ -1,33 +1,39 @@
 ---
-draft: true
-title: "16 Kinds of Gamedevs DRAFT"
+title: "16 Kinds of Gamedevs"
 date: 2026-10-14
 draft: true
+summary: "Game design has a shared vocabulary for what players feel. Tool makers have none for who builds the game. Here are sixteen kinds of game developers in four houses, the one question each asks of a tool, what makes them leave, and a matrix of what they need."
 tags:
   - gamedev
   - tools
   - game-engines
-Params:
-  summary: "Game design has a shared vocabulary for what players feel. Tool makers have none for who builds the game. Here are sixteen kinds of game developers in four houses, the one question each asks of a tool, what makes them leave, and a matrix of what they need."
-  socialmedia: |
-    Game design has a vocabulary for what players feel. We have none for who makes the game. Sixteen kinds of game developers in four houses, each defined by the one question they ask of a tool.
-  
-    #gamedev #gamedesign #dotnet
+socialmedia: |
+  Game design has a vocabulary for what players feel. We have none for who makes the game. Sixteen kinds of game developers in four houses, each defined by the one question they ask of a tool.
+
+  #gamedev #gamedesign #dotnet
 ---
 
-Game designers have a shared language for what players feel. "Challenge", "Fantasy" and "Discovery" let a team argue about a design in one word. There is no such language for the other side of the screen: the people who make the game and the tools they need. Every engine, editor and pipeline is designed for someone, and most of the time that someone is the author's mental picture of themselves.
+# 16 Kinds of Gamedevs
 
-This is an attempt at that missing vocabulary. It describes **sixteen kinds of game developers**, grouped into four houses of four. It is meant to be borrowed: to argue about a roadmap, to check a team for gaps, to explain why two sensible people want opposite things from the same tool.
+Game designers have a shared language for what players feel. Say "Challenge", "Fantasy" or "Discovery" in a design review and the whole room knows exactly what you mean; one word carries a whole argument. It is a genuinely good vocabulary, and we owe it a lot.
+
+Now try the same trick for the other side of the screen. What do you call the person who builds the game? "Engine user"? "Tech artist"? "Management"? There is no vocabulary there — just vibes and stereotypes. Yet every engine, editor and pipeline is designed for *someone*, and most of the time that someone is a mental picture the tool's author has of themselves.
+
+This is an attempt at the missing half. It describes **sixteen kinds of game developers**, grouped into four houses of four. It is meant to be borrowed: to argue about a roadmap, to check a team for gaps, or to explain why two sensible, experienced people want opposite things from the same tool.
+
+*[Figure — hero sketch: a screen seen from behind, a player silhouette on one side and a developer silhouette on the other, the same game glowing between them.]*
 
 ## Ground rules
 
-1. **A kind is a hat, not a person.** A solo developer wears three or four. Most studios contain all four houses.
-2. **Each kind is defined by one question** they ask first of any tool. If the answer is no, they leave, however good the rest is.
-3. **Kinds are not skill levels.** A Purist and an Apprentice may have the same experience; they want different things.
-4. **A kind says nothing about demographics or taste in games.** It describes how someone relates to the tool.
-5. **Kinds can be in tension.** That is a finding, not a flaw (see the table of tensions below).
+1. **A kind is a hat, not a person.** A solo developer wears three or four of them, sometimes within the same afternoon. Most studios contain all four houses.
+2. **Each kind is defined by one question** they ask first of any tool. If the answer is no, they leave — however good everything else is.
+3. **Kinds are not skill levels.** A Purist and an Apprentice can both have a decade of experience; they simply want different things.
+4. **A kind says nothing about age, country, or taste in games.** It only describes how a person relates to their tools.
+5. **Kinds can be in tension.** That is a finding, not a flaw — see the tug-of-war table near the end.
 
 ## The four houses
+
+Think of them as four buildings on the same street. Everyone visits the others eventually; everyone has one they call home.
 
 | House | They are the people who | Success looks like |
 |---|---|---|
@@ -36,7 +42,11 @@ This is an attempt at that missing vocabulary. It describes **sixteen kinds of g
 | **Builders** | make the pipelines, platforms and ecosystems | Output that is repeatable, extensible and shippable everywhere |
 | **Stewards** | choose, teach, sustain and extend | A tool and a community that last |
 
+*[Figure — sketch: the four houses as a little street — a garage workshop (Makers), an atelier (Crafters), a factory with conveyor belts (Builders), a schoolhouse with a garden (Stewards). Loose, hand-drawn, uncolored.]*
+
 ## The sixteen kinds
+
+The quick version. Every kind gets a fuller portrait below.
 
 | House | Kind | Nick | The question they ask first | What makes them leave |
 |---|---|---|---|---|
@@ -57,13 +67,21 @@ This is an attempt at that missing vocabulary. It describes **sixteen kinds of g
 | Stewards | **Teacher** | TEA | "Can thirty students install it and finish a game by Friday?" | An install that needs an account or a credit card |
 | Stewards | **Curator** | CUR | "Can players extend the game without breaking it?" | No supported way to ship a mod |
 
-Every kind below lists what matters most to them: **critical** capabilities, the ones whose absence makes them leave, and **important** ones, which they weigh but can work around.
+Every portrait below lists what matters most: **critical** capabilities, whose absence makes that kind leave, and **important** ones they weigh but can work around.
+
+*[Figure — sketches: one small doodle per kind, like marginalia from a notebook. Suggested poses below in each portrait. Keep them two-minute-loose: pen lines, one accent color.]*
 
 ## Makers
 
+The people the whole industry is secretly about: they ship games. Alone or in tiny teams, they live or die by whether a tool gets them from idea to finished thing.
+
 ### Apprentice
 
-*Learns by finishing.* Often young, working from tutorials, possibly not reading English well, with strong ambition. Wants to make something that "looks professional" and show it to friends. Tells everyone their engine is the best, with no technical basis for saying so, which is exactly why they are worth serving: they are the first mention of a tool.
+*[Sketch: a kid at a cluttered desk at night, tutorial glowing in one window, launching a tiny pixel game like it is a rocket.]*
+
+*Learns by finishing.* Watch an Apprentice work and you will see the whole philosophy: the tutorial is open in one window, the engine in another, and the goal is not to master rendering — it is to have something, *anything*, exported and running before bedtime, something they can push at a friend and say "I made this." Often young, working from tutorials, quite possibly not reading English well, and carrying more ambition than infrastructure. They want the result to look professional, and they will tell everyone that their engine is the best, on no evidence whatsoever.
+
+That last part is not a bug. The Apprentice is the first mention of a tool most people will ever hear — evangelism with no budget, earned in a single evening.
 
 | | |
 |---|---|
@@ -75,7 +93,9 @@ Every kind below lists what matters most to them: **critical** capabilities, the
 
 ### Sprinter
 
-*Builds to a deadline.* A game-jam participant with 48 hours, or an experimenter testing a one-day idea. Setup time is their enemy. They grab existing assets, they need the web or a one-click build to share the result, and they never read the manual past the first page.
+*[Sketch: an alarm clock at 48:00, three coffee cups, hands blurring over a keyboard, a jam theme scribbled on a napkin.]*
+
+*Builds to a deadline.* The Sprinter's relationship with your tool lasts exactly forty-eight hours, and that is all the time it will ever get to make an impression. A game-jam participant or a one-day experimenter, they treat setup time as the enemy it is. They grab whatever assets they can find, they need the web or a one-click build to show the result to anyone, and they have never read a manual past the first page — not because they can't, but because the clock is running.
 
 | | |
 |---|---|
@@ -87,7 +107,9 @@ Every kind below lists what matters most to them: **critical** capabilities, the
 
 ### Purist
 
-*Treats the engine as a library.* Comes from MonoGame, LÖVE or a similar code-first background. Lives in a terminal and an IDE, dislikes click-and-play tools, writes publicly about engines and is the most likely to review yours, for better or worse.
+*[Sketch: a dark terminal and a minimalist IDE, with the engine sitting humbly on a shelf as just another book in a library.]*
+
+*Treats the engine as a library.* The Purist comes from MonoGame, LÖVE, or whatever code-first world raised them. They live in a terminal and an IDE, are allergic to click-and-play tools, and write publicly about engines — which means they are the most likely person to review yours, for better or for worse. Ask them how to run the thing headless and if the honest answer is a shrug, they are gone before you finish the sentence. And they will mention it. They mention everything.
 
 | | |
 |---|---|
@@ -99,7 +121,9 @@ Every kind below lists what matters most to them: **critical** capabilities, the
 
 ### Generalist
 
-*A bit artist, a bit coder, in a team of three to eight.* Has a defined role but crosses into others. Spends the project in long iterate-and-tweak cycles and cares about translations and balance. Moves a team of friends from "a hobby" to "a studio".
+*[Sketch: one person juggling a paintbrush, code brackets, and a spreadsheet — and somehow catching all three.]*
+
+*A bit artist, a bit coder, in a team of three to eight.* The Generalist has a defined role and cheerfully ignores its borders several times a day. They spend the project in long iterate-and-tweak cycles where every second of recompile time is paid for out of their flow, and they care about translations and balance because their players care. This is the person who moves a group of friends from "a hobby" to "a studio" — usually without anyone announcing it.
 
 | | |
 |---|---|
@@ -111,9 +135,13 @@ Every kind below lists what matters most to them: **critical** capabilities, the
 
 ## Crafters
 
+The content people. If the Makers ask "can I finish?", the Crafters ask "can I make the thing that goes *inside*?" — and the answer determines whether the game has anything in it worth playing.
+
 ### Alchemist
 
-*Works at the border of art and code.* A technical artist: shaders, effects, import pipelines. Their scripts break builds when wrong, so they want stable import paths and live reload of everything. The likeliest to build an internal editor tool.
+*[Sketch: half-artist, half-wizard stirring a bubbling cauldron of shaders, with a live preview hovering over the pot.]*
+
+*Works at the border of art and code.* The technical artist: shaders, effects, import pipelines. The Alchemist speaks both languages with an accent, and when their scripts are wrong they break the build for everyone — which is why they want stable import paths and live reload of everything. They are also the likeliest person on any team to quietly build an internal editor tool that the whole studio ends up depending on.
 
 | | |
 |---|---|
@@ -125,7 +153,9 @@ Every kind below lists what matters most to them: **critical** capabilities, the
 
 ### Worldbuilder
 
-*Assembles scenes from large libraries.* An environment or level artist who never opens a terminal and judges a tool entirely by the editor and the undo button. One lost scene costs the studio's trust for good.
+*[Sketch: someone arranging tiny mountains, trees and houses in a diorama, one hand hovering protectively over an enormous undo button.]*
+
+*Assembles scenes from large libraries.* The environment or level artist never opens a terminal, and judges your tool by exactly two things: the undo button, and whether the scene is still there when they come back. Both are non-negotiable. The Worldbuilder's trust is a one-time offer — a single lost scene costs the studio's confidence in the tool for good, no matter what fixed it afterwards.
 
 | | |
 |---|---|
@@ -137,7 +167,9 @@ Every kind below lists what matters most to them: **critical** capabilities, the
 
 ### Economist
 
-*Designs systems, economies and balance.* Can script a little and refuses to be a programmer. In a project that mixes code with designer-driven data, the Economist is the designer-driven half, and the hybrid breaks when their work becomes a silo that programmers cannot read.
+*[Sketch: a designer tuning an enormous contraption of gears and sliders from a stepladder, spreadsheet in hand, no programmer in sight.]*
+
+*Designs systems, economies and balance.* The Economist can script a little and is proudly, loudly not a programmer. In any project that mixes code with designer-driven data, the Economist is the designer-driven half — and the hybrid breaks the day their work becomes a silo the programmers cannot read. "Can I change the numbers without asking a programmer?" is not laziness. It is a question about iteration speed and about who actually owns the game.
 
 | | |
 |---|---|
@@ -149,7 +181,9 @@ Every kind below lists what matters most to them: **critical** capabilities, the
 
 ### Storyteller
 
-*Writes branching content.* A narrative designer: dialogue trees, quests, barks, lore. Works in tools built for writing, and needs them to meet the game halfway. Cares about who can read the story files afterwards.
+*[Sketch: a writer at a desk, the dialogue branching out behind them into a growing paper tree.]*
+
+*Writes branching content.* Dialogue trees, quests, barks, lore — the Storyteller writes the parts players actually remember. They work in tools built for writing, and they need those tools to meet the game halfway. And they care about something quietly farsighted: who can read the story files five years from now, when everyone who knew the pipeline has moved on.
 
 | | |
 |---|---|
@@ -161,9 +195,13 @@ Every kind below lists what matters most to them: **critical** capabilities, the
 
 ## Builders
 
+Nobody in this house ships the first game. They make sure it ships the second time, in a dozen languages, on every platform, without anyone's weekend. Where Builders thrive, teams stop reinventing pipelines; where they don't, every release is a lottery.
+
 ### Mechanic
 
-*Owns the build and its health.* Judges a tool by whether it builds headless, in a container, deterministically, and whether two builds can be diffed. Lives in YAML and Linux. Blocks or blesses a studio's adoption, and the Director listens to them.
+*[Sketch: a control room with no editor in sight — two identical builds on side-by-side screens being compared under a magnifying glass.]*
+
+*Owns the build and its health.* The Mechanic asks one unforgiving question: can it build twice, headless, in a container, and produce the same bits? They live in YAML and Linux, they have never opened your editor and are a little bit proud of that, and their blessing or veto determines whether a studio adopts your tool at all. The Director — whoever that is this year — listens to them.
 
 | | |
 |---|---|
@@ -175,7 +213,9 @@ Every kind below lists what matters most to them: **critical** capabilities, the
 
 ### Polyglot
 
-*Ships the game in a dozen languages.* A localization and content operations lead. Not a programmer; works in spreadsheets, with contractors and with certification checklists. Cheap to serve and hugely visible to players.
+*[Sketch: a desk with a wall of little language flags behind it, twelve versions of the same spreadsheet, and a certification checklist covered in stamps.]*
+
+*Ships the game in a dozen languages.* The localization and content-operations lead is not a programmer; they work in spreadsheets, with contractors, and with certification checklists the size of small novels. Cheap to serve, chronically underserved, and hugely visible to players — a missing accent in a subtitle gets screenshotted more reliably than any feature you ship.
 
 | | |
 |---|---|
@@ -187,7 +227,9 @@ Every kind below lists what matters most to them: **critical** capabilities, the
 
 ### Toolsmith
 
-*Builds tools, not games.* A pixel editor, a modelling tool, a dialogue editor, shipped as standalone applications. Historically repurposes a game engine as an application platform. The kind that turns an engine into an ecosystem.
+*[Sketch: matryoshka dolls — a game engine, and inside it a smaller tool, and inside that another one.]*
+
+*Builds tools, not games.* A pixel editor, a modelling tool, a dialogue editor, shipped as standalone applications. The Toolsmith looks at a game engine and sees an application platform — a thing to be repurposed, not obeyed. They are demanding, allergic to reading your source code as a substitute for documentation, and absolutely worth it: they are the kind that turns an engine into an ecosystem.
 
 | | |
 |---|---|
@@ -199,7 +241,9 @@ Every kind below lists what matters most to them: **critical** capabilities, the
 
 ### Merchant
 
-*Sells or shares the ecosystem.* Models, packs, templates, plugins, starter kits. Their product is the package, and where Merchants thrive, ecosystems form. Their presence predicts whether a store can exist at all.
+*[Sketch: a market stall piled with little boxes — model packs, plugins, starter kits — a hand-painted OPEN sign above.]*
+
+*Sells or shares the ecosystem.* Models, packs, templates, plugins, starter kits: the Merchant's product is the package. Where Merchants thrive, ecosystems form around a tool; where they can't make a living, no store can exist at all. Every breaking change you ship is, from their side of the table, a rent increase.
 
 | | |
 |---|---|
@@ -211,9 +255,13 @@ Every kind below lists what matters most to them: **critical** capabilities, the
 
 ## Stewards
 
+The Stewards rarely make content themselves. They decide what everyone else will use, teach it, and keep it alive — and their judgment extends years past the current release.
+
 ### Director
 
-*Chooses tools for a team.* The technical director of a mid-sized studio: one decision-maker whose staff will use what they choose. Hires from the usual pools. Will not bet forty jobs on a tool that makes their team's experience worthless.
+*[Sketch: one figure at the head of a table, the whole team reflected in their glasses; a single reference game title resting on the table like an exhibit.]*
+
+*Chooses tools for a team.* The technical director of a mid-sized studio: one decision-maker, whose staff will live inside whatever they choose. They hire from the usual pools and will not bet forty jobs on a tool that makes their team's hard-won experience worthless. Marketing does not move them; a commercial game credited to your tool does. One reference title outweighs your entire documentation site.
 
 | | |
 |---|---|
@@ -225,7 +273,9 @@ Every kind below lists what matters most to them: **critical** capabilities, the
 
 ### Conductor
 
-*Coordinates many teams.* The platform lead of a large studio. Thinks in independent module delivery, versioning, build times and patch sizes. Never opens the editor; reads benchmarks and reference customers.
+*[Sketch: an orchestra conductor on a podium, each section of the orchestra a different team's build pipeline, no instrument in the conductor's hands.]*
+
+*Coordinates many teams.* The platform lead of a large studio thinks in independent module delivery, versioning, build times and patch sizes. The Conductor never opens the editor — the editor is somebody else's problem — and reads benchmarks and reference customers the way other people read reviews. If they contact you, they found you themselves, and that is worth more than any sales call.
 
 | | |
 |---|---|
@@ -237,7 +287,9 @@ Every kind below lists what matters most to them: **critical** capabilities, the
 
 ### Teacher
 
-*Puts a tool in front of thirty beginners.* A school or university instructor, or a bootcamp lead. Needs it to work on locked-down, modest machines, in a classroom, in a term. Their students are the Apprentices of the next decade.
+*[Sketch: a classroom seen from the back — thirty glowing modest monitors, one patient figure at the whiteboard.]*
+
+*Puts a tool in front of thirty beginners.* A school or university instructor, or a bootcamp lead, the Teacher needs your tool to work on locked-down, modest machines, in a room where the network is always down, across a term of stable behavior. Their students are the Apprentices of the next decade — and the Directors of the decade after that. An install that demands an account or a credit card has just failed a room full of people at once.
 
 | | |
 |---|---|
@@ -249,7 +301,9 @@ Every kind below lists what matters most to them: **critical** capabilities, the
 
 ### Curator
 
-*Keeps a community making things.* The maintainer of a game's mod community, or a game designed to be extended. Cares about what players can add, what they can break, and who owns what they make.
+*[Sketch: a gardener tending a community garden where the plants are player-made mods, one carefully staked and labeled.]*
+
+*Keeps a community making things.* The maintainer of a game's mod scene — or of a game designed to be extended — the Curator cares about what players can add, what they can break, and who owns what they make. A mod community is a garden, not a landfill: it needs a supported way in, a stable API to grow against, and clear rules about what belongs to whom.
 
 | | |
 |---|---|
@@ -282,15 +336,18 @@ Need levels: **●** critical, **◐** important, **○** nice to have, a blank 
 
 Reading the matrix:
 
-- **The editor is the most common critical need: seven kinds.** Documentation, code workflow and packaging follow with six each.
-- **Documentation is critical to the people who start and to the people who extend:** Apprentice, Sprinter, Economist, Toolsmith, Teacher and Curator.
-- **Packaging is critical to six kinds in three different houses:** Polyglot, Mechanic, Merchant, Director, Conductor and Curator. Few of them ship the first game, and all of them depend on how it is delivered.
-- **Four kinds mark automation as critical and none of them marks the editor critical:** Purist, Mechanic, Director and Conductor. A tool that cannot be driven headless loses all four.
-- **Visual logic is critical to only three kinds** (Apprentice, Economist, Storyteller). If those are your audience, it is a pillar, not an extra.
+- **The editor is the most common critical need: seven kinds.** Documentation, code workflow, packaging and platforms follow with six each.
+- **Documentation is critical to the people who start and to the people who extend:** Apprentice, Sprinter, Economist, Toolsmith, Teacher and Curator. Nobody in the middle of that range — the people already comfortable — needs it as badly.
+- **Packaging is critical to six kinds across three different houses:** Polyglot, Mechanic, Merchant, Director, Conductor and Curator. Few of them ship the first game, and all of them depend on how it is delivered.
+- **Four kinds mark automation as critical, and none of them marks the editor critical:** Purist, Mechanic, Director and Conductor. A tool that cannot be driven headless loses all four in one stroke.
+- **Visual logic is critical to only three kinds** (Apprentice, Economist, Storyteller). If those are your audience, it is a pillar, not an extra; if they are not, it is expensive furniture.
+- **The hungriest kinds are the ones who touch the tool least.** Director and Conductor each list seven critical needs — more than anyone who opens the editor daily. The people deciding for forty others want to know the whole machine works, not the part they'd personally use.
+
+*[Figure — chart: a horizontal bar chart of critical-need counts per capability: Editor 7, Packaging 6, Code 6, Assets 6, Docs 6, Platforms 6, Data and L10n 5, Automation 4, Testing 4, Extensibility 4, 3D 4, Visual logic 3, Licensing 3, 2D 2. Optionally a second, smaller chart: critical needs per kind, with DIR and CON tied at 7 at the top.]*
 
 ## Who brings whom
 
-A kind can use a tool, choose it, block or bless it, pay for it, or multiply it, that is, bring others or extend it. The roles differ, and a tool that serves only users has no growth.
+A kind can use a tool, choose it, block or bless it, pay for it, or multiply it — bring others in or extend it. The roles differ, and a tool that serves only its daily users has no growth story.
 
 | Role | What it means | Kinds |
 |---|---|---|
@@ -300,9 +357,13 @@ A kind can use a tool, choose it, block or bless it, pay for it, or multiply it,
 | **Buyer** | Decides for others, rarely opens the tool | Director, Conductor |
 | **Multiplier** | Brings others in, or extends the tool | Apprentice, Alchemist, Toolsmith, Merchant, Teacher, Curator |
 
-Two observations. The Buyers decide on reference titles and benchmarks, not on features, so features alone never convert them. The Multipliers are mostly the people who need the most help to start, so ignoring the early kinds starves the later ones.
+Two observations worth losing sleep over. The Buyers decide on reference titles and benchmarks, never on features — so a roadmap of features alone will not convert them, ever. And the Multipliers are mostly the people who need the most help getting started: ignore the Apprentice and the Teacher today, and you starve your own future.
+
+*[Figure — sketch/diagram: a circular flow. Multipliers (Apprentice, Teacher, Merchant...) push new people toward the Choosers and Users; the Gatekeeper's thumbs-up lets the Buyer sign; happy output feeds back into the Multipliers. Hand-drawn arrows, slightly crooked on purpose.]*
 
 ## Where they pull against each other
+
+Hat combinations are where a team gets interesting. Hat conflicts are where it gets expensive. These are the four-way tug-of-wars worth naming in a meeting:
 
 | Tension | The pull | What usually resolves it |
 |---|---|---|
@@ -313,9 +374,11 @@ Two observations. The Buyers decide on reference titles and benchmarks, not on f
 | Director vs Sprinter | Process and CI against zero setup | Defaults that work with no configuration, and switches that add discipline |
 | Conductor vs everyone | Per-team independence against a simple project | Modules that are optional, not mandatory |
 
+*[Figure — sketch: a tug-of-war rope between paired doodles of the two kinds, with the resolution drawn as a small handshake or a bridge over the middle of the rope. Pick two or three tensions, not all six.]*
+
 ## Hats in real teams
 
-Nobody is one kind. Typical combinations:
+Nobody is one kind. Real teams are mixtures, and the mixture tells you what the team can and cannot do:
 
 | Situation | Kinds in the room |
 |---|---|
@@ -328,12 +391,32 @@ Nobody is one kind. Typical combinations:
 | Tool or middleware company | Toolsmith, Merchant, Mechanic |
 | Game with a modding scene | Curator, Merchant, Purist |
 
+*[Figure — sketch: a group photo per row, or one big cartoon crowd with speech bubbles naming each hat. The jam team should look caffeinated; the large studio should look like the conductor's orchestra again.]*
+
 ## Using it
 
-A five-minute exercise with a team or a roadmap:
+A five-minute exercise for a team or a roadmap. It works best out loud, with the matrix printed on one page:
 
-1. **Place your team.** Mark each person's main and second kind. Gaps in a house are risks: a team with no Builder will discover it at the first release.
-2. **Place your backlog.** For each open item, write the kind it serves. An item that serves none is either housekeeping or a mistake.
-3. **Count.** The distribution of open work per kind is the cheapest balance check there is. If one house gets all of it, that is a decision, and should be made on purpose.
-4. **Pick a signal per kind.** Each entry above names one observable that tells you whether you are winning them. If you cannot measure it, you cannot claim to serve them.
-5. **Re-check when reality disagrees.** The kinds are vocabulary for discussion, not data.
+1. **Place your team.** Mark each person's main and second kind. Gaps in a house are risks wearing disguise: a team with no Builder finds out precisely at the first release.
+2. **Place your backlog.** For each open item, write the kind it serves. An item that serves no kind is either housekeeping or a mistake — both are fine, but they should say so out loud.
+3. **Count.** The distribution of open work per kind is the cheapest balance check there is. If one house gets all of it, that may well be the right call — but it should be a decision, not an accident.
+4. **Pick a signal per kind.** Every portrait above names one observable that tells you whether you are winning that kind. If you cannot measure it, you cannot claim to serve it.
+5. **Re-check when reality disagrees.** The kinds are vocabulary for discussion, not data. The moment the two diverge, trust reality and update the vocabulary.
+
+If the taxonomy earns its keep, borrow it, bend it, and argue with it. A vocabulary is only shared once someone disagrees with it in writing.
+Done — the livelier draft is in the canvas. What changed and what stayed:
+
+**Kept intact:** all structure and data — the frontmatter (parked as a YAML block at the top), both big tables, the need matrix, tensions, team combos, and every Critical/Important list. The taxonomy itself wasn't touched.
+
+**Where the life went in:**
+- **Intro** — opened with the "say it in a design review" beat before pivoting to the missing half.
+- **Portraits** — each kind now has a small scene instead of only a tagline: the Apprentice's bedtime-export, the Mechanic's unopened editor, the Worldbuilder's one-time trust offer, the Curator's garden-not-landfill. The wit stays dry and professional — no memes, no exclamation marks.
+- **House intros** — a line of framing before each ("Nobody in this house ships the first game…").
+- **New observation** in the matrix section: Director and Conductor, the two kinds who touch the tool least, have the longest critical lists (7 each). That's a genuinely interesting finding hiding in your own data.
+- **Closing line** — the piece previously ended abruptly at step 5; it now lands on "a vocabulary is only shared once someone disagrees with it in writing."
+
+**Image plan:** every figure spot is marked with a searchable `*[Figure — …]*` note containing art direction — 16 doodle briefs (one per kind: the cauldron Alchemist, the matryoshka Toolsmith, the tug-of-war rope…), the four-houses street, plus two charts:
+1. A horizontal bar chart of critical-need counts per capability (data listed in the note, ready to draw), optionally paired with the per-kind chart where DIR/CON top out at 7.
+2. The "who brings whom" loop sketch.
+
+The figure notes are invisible-safe — just delete them (or search for `[Figure`) as you drop in the real art. Want me to push the voice further in any section, or tone any of it back down?

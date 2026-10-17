@@ -21,6 +21,29 @@
     });
   }
 
+  // --- Theme toggle ---
+  var themeBtn = document.getElementById('themeToggle');
+  function currentTheme() {
+    return document.documentElement.dataset.theme === 'light' ? 'light' : 'dark';
+  }
+  function applyTheme(theme) {
+    document.documentElement.dataset.theme = theme;
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', theme === 'light' ? '#f7f7f9' : '#0b0d12');
+    if (themeBtn) {
+      themeBtn.setAttribute('aria-pressed', theme === 'light' ? 'true' : 'false');
+      themeBtn.setAttribute('aria-label', theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
+    }
+  }
+  if (themeBtn) {
+    applyTheme(currentTheme());
+    themeBtn.addEventListener('click', function () {
+      var next = currentTheme() === 'light' ? 'dark' : 'light';
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      applyTheme(next);
+    });
+  }
+
   // --- Scroll reveal (.reveal elements) ---
   var els = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && els.length) {

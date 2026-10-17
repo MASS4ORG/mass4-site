@@ -10,7 +10,7 @@
 
 <div class="posts">
     {% assign sortedPages = page.RegularPagesByDate | reverse %}
-    {% assign pager = sortedPages | paginate: 2 %}
+    {% assign pager = sortedPages | paginate: 10 %}
 
     {% for pageList in pager.PageItems %}
     <a class="post-card" href="{{ pageList.RelPermalink }}">
