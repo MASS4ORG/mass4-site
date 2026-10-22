@@ -1,14 +1,14 @@
 {%- if page.Section == 'guinevere' or page.Section == 'gaya' or page.Section == 'turian' or page.Section == 'mystery' or page.Section == 'mega4' -%}
-{% assign badge = page.Section -%}
+{% assign product = page.Section -%}
 {% else -%}
-{% assign badge = 'mass4' -%}
+{% assign product = 'mass4' -%}
 {% endif -%}
 
 <nav class="nav" id="nav">
     <div class="wrap">
         <a href="/" class="brand">
-            <img src="/{{ badge }}-logo-1.svg" alt="MASS4" width="30" height="30">
-            <span>MASS4</span>
+            <img src="/{{ product }}-badge.svg" alt="MASS4">
+            <img src="/{{ product }}-logo-transparent.svg" alt="{{ product }}"">
         </a>
 
         <div class="nav-menu" id="navMenu">

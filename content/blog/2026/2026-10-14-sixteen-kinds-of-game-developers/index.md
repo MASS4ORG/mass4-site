@@ -1,422 +1,327 @@
 ---
-title: "16 Kinds of Gamedevs"
-date: 2026-10-14
+title: "256 Gamedev Profiles"
+date: 2026-10-15T09:00:00-03:00
 tags:
   - gamedev
   - tools
   - game-engines
-draft: true
 Params:
-  summary: "Game design has a shared vocabulary for what players feel. Tool makers have none for who builds the game. Here are sixteen kinds of game developers in four houses, the one question each asks of a tool, what makes them leave, and a matrix of what they need."
+  summary: "Game design has a shared vocabulary for what players feel. Tool makers have none for who builds the game. 256 profiles of game developers in four layers, one question per layer, and the four-letter profile you get by answering them."
   socialmedia: |
-    Game design has a vocabulary for what players feel. We have none for who makes the game. Sixteen kinds of game developers in four houses, each defined by the one question they ask of a tool.
-  
+    Game design has a vocabulary for what players feel. We have none for who builds the game. 256 gamedev profiles in four layers, one of four answers.
+
     #gamedev #gamedesign #dotnet
 ---
 
-Game designers have a shared language for what players feel. Say "Challenge", "Fantasy" or "Discovery" in a design review and the whole room knows exactly what you mean; one word carries a whole argument. It is a genuinely good vocabulary, and we owe it a lot.
+Game designers spend real effort sorting players. Bartle types, the eight kinds of fun, whole conferences about what someone feels on the other side of the screen. And for the people who build the screen? "Indie". "Programmer". "Management". That is not vocabulary, that is vibes.
 
-Now try the same trick for the other side of the screen. What do you call the person who builds the game? "Engine user"? "Tech artist"? "Management"? There is no vocabulary there — just vibes and stereotypes. Yet every engine, editor and pipeline is designed for *someone*, and most of the time that someone is a mental picture the tool's author has of themselves.
+Yet every game, engine and mod is designed for *someone*, and most of the time that someone is a mental picture the tool's author has of themselves. Here is the missing half, as an actual vocabulary. 
 
-This is an attempt at the missing half. It describes **sixteen kinds of game developers**, grouped into four houses of four. It is meant to be borrowed: to argue about a roadmap, to check a team for gaps, or to explain why two sensible, experienced people want opposite things from the same tool.
+**Four layers**, each asking one question. Each question has **four answers**. Answer all four and you have a profile: the four letters that describe what you are, today, as a maker. Four to the fourth power (4^4): 256 possible profiles, and every one of them might be somebody you have met.
 
-*[Figure — hero sketch: a screen seen from behind, a player silhouette on one side and a developer silhouette on the other, the same game glowing between them.]*
+## Ground Rules
 
-## Ground rules
+1. **A profile is a state, not a trait.** The four letters describe the style you sit in today, not your soul. Change projects and a letter changes with you.
+2. **One home per layer.** You are *capable* of all four styles in every layer, but your style is the one you do before thinking. It's your reflex, not your résumé.
+3. **Layers are independent.** Any finish-line style combines with any material style. That is the whole point.
+4. **No skill levels, no demographics.** Newbies and veterans, at every age, in every country, can have any of the styles.
+5. **Tension is normal.** Between people on a team, and between your own styles over time.
 
-1. **A kind is a hat, not a person.** A solo developer wears three or four of them, sometimes within the same afternoon. Most studios contain all four houses.
-2. **Each kind is defined by one question** they ask first of any tool. If the answer is no, they leave — however good everything else is.
-3. **Kinds are not skill levels.** A Purist and an Apprentice can both have a decade of experience; they simply want different things.
-4. **A kind says nothing about age, country, or taste in games.** It only describes how a person relates to their tools.
-5. **Kinds can be in tension.** That is a finding, not a flaw — see the tug-of-war table near the end.
+## The Four Layers
 
-## The four houses
+Each layer reflects one aspect of the game making process and one fundamental question that drives your style.
 
-Think of them as four buildings on the same street. Everyone visits the others eventually; everyone has one they call home.
-
-| House | They are the people who | Success looks like |
+| Layer | The question | The four answers |
 |---|---|---|
-| **Makers** | ship games, alone or in small teams | A finished game |
-| **Crafters** | make the content: art, worlds, systems, story | Content that is right and survives the pipeline |
-| **Builders** | make the pipelines, platforms and ecosystems | Output that is repeatable, extensible and shippable everywhere |
-| **Stewards** | choose, teach, sustain and extend | A tool and a community that last |
+| **The Finish Line** | What does "_done_" mean to you? | Closer · Iterator · Prototyper · Alchemist |
+| **The Material** | Where does content come from? | Purist · Worldbuilder · Shopper · Hermit |
+| **The Toolbox** | What do you do with the means of production? | Toolsmith · Architect · Integrator · Curator |
+| **The Circle** | How does your influence reach tool choice? | Journeyman · Conductor · Director · Influencer |
 
-![The 4 Houses](0-Houses.jpg)
+## The Finish Line
 
-## The sixteen kinds
+The first question is the oldest one in the room: what does it mean for this to be finished? Four answers, four philosophies about what is the end goal. Two axes here: it not only reveals the posture towards the deadline (does the work ever finish?) but also the perceived novelty of the work (is ordinary good enough?).
 
-The quick version. Every kind gets a fuller portrait below.
+![Finish Line](layer-1-Finish-Line.avif)
 
-| House | Kind | Nick | The question they ask first | What makes them leave |
-|---|---|---|---|---|
-| Makers | **Apprentice** | APR | "Can I finish something?" | A first session that ends without a running game |
-| Makers | **Sprinter** | SPR | "Can I ship it by Sunday?" | Setup before the first pixel |
-| Makers | **Purist** | PUR | "Can I drive all of it from my terminal and my own editor?" | A forced editor or forced project structure |
-| Makers | **Generalist** | GEN | "Can my small team change things without stepping on each other?" | Per-seat licensing and online activation |
-| Crafters | **Alchemist** | ALC | "Can I see my change right now?" | Opaque imports that fail silently |
-| Crafters | **Worldbuilder** | WLD | "Will it ever lose my scene?" | Fixing editor bugs by editing config files |
-| Crafters | **Economist** | ECO | "Can I change the numbers without asking a programmer?" | "Ask a programmer" for a balance change |
-| Crafters | **Storyteller** | STO | "Can I write branching content and test it without code?" | Narrative locked inside code or a tool no one else can read |
-| Builders | **Mechanic** | MEC | "Can I build it twice, headless, and get the same result?" | Builds that need an editor, or are nondeterministic |
-| Builders | **Polyglot** | POL | "Can I ship another language without a programmer?" | Every string change needing a developer |
-| Builders | **Toolsmith** | TOL | "Is the editor itself an API?" | "Just fork the editor" as the answer |
-| Builders | **Merchant** | MER | "Will my package still work next version?" | Breaking changes every release |
-| Stewards | **Director** | DIR | "Are my new hires productive in week one, and who has shipped with this?" | Wasting the team's existing muscle memory |
-| Stewards | **Conductor** | CON | "Can ten teams deliver independently, and can I measure it?" | Anything unmeasurable |
-| Stewards | **Teacher** | TEA | "Can thirty students install it and finish a game by Friday?" | An install that needs an account or a credit card |
-| Stewards | **Curator** | CUR | "Can players extend the game without breaking it?" | No supported way to ship a mod |
+### **C**loser
 
-Every portrait below lists what matters most: **critical** capabilities, whose absence makes that kind leave, and **important** ones they weigh but can work around.
+*Make it real.*
 
-*[Figure — sketches: one small doodle per kind, like marginalia from a notebook. Suggested poses below in each portrait. Keep them two-minute-loose: pen lines, one accent color.]*
+![Closer](style-01-Closer.avif)
 
-## Makers
+The Closer works backward from the moment the work needs to be done. A deadline is both a starting signal and a point on the horizon: it shapes the plan, helps set priorities, and keeps effort moving toward a result. Closers know when to polish, when to simplify, and when to stop exploring and make the thing work. Their signature isn’t speed for its own sake; it’s turning intention into something people can use. Not reading the manual is not illiteracy, it is triage.
 
-The people the whole industry is secretly about: they ship games. Alone or in tiny teams, they live or die by whether a tool gets them from idea to finished thing.
+{.pillar .love}
+**Loves:** one-click export, web builds, ready-made assets, examples to edit.
 
-### Apprentice
+{.pillar .hate}
+**Hates:** setup before the first pixel, manuals longer than the game, deep configuration.
 
-![Apprentice](01-Apprentice.jpg)
+### **I**terator
 
-*Learns by finishing.* Watch an Apprentice work and you will see the whole philosophy: the tutorial is open in one window, the engine in another, and the goal is not to master rendering — it is to have something, *anything*, exported and running before bedtime, something they can push at a friend and say "I made this." Often young, working from tutorials, quite possibly not reading English well, and carrying more ambition than infrastructure. They want the result to look professional, and they will tell everyone that their engine is the best, on no evidence whatsoever.
+*Ready when it's ready.*
 
-That last part is not a bug. The Apprentice is the first mention of a tool most people will ever hear — evangelism with no budget, earned in a single evening.
+![Iterator](style-02-Iterator.avif)
 
-| | |
-|---|---|
-| **Needs** | A one-click path from a new project to an exported game; templates; visual logic for the parts they cannot code; documentation in their own language |
-| **Does not need** | Console support, profilers, networking |
-| **Critical** | Editor, Visual logic, 2D, Docs |
-| **Important** | Assets |
-| **Sign you serve them** | The share of new projects that export successfully in the first session |
+Every build is a step toward version two of the same game. The Iterator has a definition of "enough", a spec, a metric, a feeling of balance, and never quite reaches it. Screen shake, easing curves, the exact frame where the hit lands. Feature creep is not an accident here, it is an honest philosophy. The game is an eternal _open_ beta. 
 
-### Sprinter
+{.pillar .love}
+**Loves:** fast iteration loops, play-in-editor, data tables, versioning that forgives.
 
-![Sprinter](02-Sprinter.jpg)
+{.pillar .hate}
+**Hates:** hard freezes, "just ship it", one-shot deadlines.
 
-*Builds to a deadline.* The Sprinter's relationship with your tool lasts exactly forty-eight hours, and that is all the time it will ever get to make an impression. A game-jam participant or a one-day experimenter, they treat setup time as the enemy it is. They grab whatever assets they can find, they need the web or a one-click build to show the result to anyone, and they have never read a manual past the first page — not because they can't, but because the clock is running.
+### **P**rototyper
 
-| | |
-|---|---|
-| **Needs** | Install to running scene in minutes; a web or single-file export; ready-made assets and templates; examples they can edit |
-| **Does not need** | Long-term version stability, localization, CI |
-| **Critical** | Editor, Assets, Docs, Platforms |
-| **Important** | Packaging, Code, Visual logic, 2D, 3D, Licensing |
-| **Sign you serve them** | The share of jam entries built with the tool that were finished and uploaded |
+*1000 projects and counting.*
 
-### Purist
+![Prototyper](style-03-Prototyper.avif)
 
-![Purist](03-Purist.jpg)
+The Prototyper's library is a thousand small finished things that did exactly their job, which was to exist. Some will even be proudly accepted by Steam or a mobile store. It doesn't matter if it was a kid pushing ninety-percent step-by-step-match3-tutorial or a twenty-year veteran building a small experiments between projects: the prototype *is* the deliverable.
 
-*Treats the engine as a library.* The Purist comes from MonoGame, LÖVE, or whatever code-first world raised them. They live in a terminal and an IDE, are allergic to click-and-play tools, and write publicly about engines — which means they are the most likely person to review yours, for better or for worse. Ask them how to run the thing headless and if the honest answer is a shrug, they are gone before you finish the sentence. And they will mention it. They mention everything.
+{.pillar .love}
+**Loves:** templates, visual scripting, edit-ready examples, the one-session win.
 
-| | |
-|---|---|
-| **Needs** | The complete workflow headless; a real project in their own IDE; text formats that diff cleanly; test harnesses with CI exit codes; a first-class path for 2D |
-| **Does not need** | A walled-garden asset manager |
-| **Critical** | Automation, Code, 2D, Testing, Licensing |
-| **Important** | Packaging, Extensibility, Docs, Platforms |
-| **Sign you serve them** | The share of their projects where the editor is never opened |
+{.pillar .hate}
+**Hates:** boilerplate, mandatory accounts, being told to read before doing.
 
-### Generalist
+### **A**lchemist
 
-![Generalist](04-Generalist.jpg)
+*Done is when it's magic.*
 
-*A bit artist, a bit coder, in a team of three to eight.* The Generalist has a defined role and cheerfully ignores its borders several times a day. They spend the project in long iterate-and-tweak cycles where every second of recompile time is paid for out of their flow, and they care about translations and balance because their players care. This is the person who moves a group of friends from "a hobby" to "a studio" — usually without anyone announcing it.
+![Alchemist](style-04-Alchemist.avif)
 
-| | |
-|---|---|
-| **Needs** | Fast recompile and play-mode turnaround; data tables for tuning; modular projects so code and art split cleanly; re-import without restart |
-| **Does not need** | Enterprise tiers |
-| **Critical** | Data and L10n, Platforms |
-| **Important** | Editor, Automation, Packaging, Code, Assets, 2D, 3D, Testing, Extensibility, Licensing, Docs |
-| **Sign you serve them** | The number of projects with more than one contributor |
+The visionary who breaks with the status quo, innovates, and transcends, creating gold. The project shouldn’t impress people by being flawless, but by being pure magic. Guided by a long-term vision, they refuse to release anything derivative or off-the-shelf just for the sake of releasing it. Their magnum opus is an eternal _closed_ beta, and when it’s finally released, it will be a once-in-a-lifetime event.
 
-## Crafters
+{.pillar .love}
+**Loves:** animation curves, shaders, timelines.
 
-The content people. If the Makers ask "can I finish?", the Crafters ask "can I make the thing that goes *inside*?" — and the answer determines whether the game has anything in it worth playing.
+{.pillar .hate}
+**Hates:** defaults, ship-the-checklist thinking.
 
-### Alchemist
+## The Material
 
-![Alchemist](05-Alchemist.jpg)
+The second question is about provenance: when something needs to exist in the game, where does it come from? Each style in this layer represents a different answer regarding the source.
 
-*Works at the border of art and code.* The technical artist: shaders, effects, import pipelines. The Alchemist speaks both languages with an accent, and when their scripts are wrong they break the build for everyone — which is why they want stable import paths and live reload of everything. They are also the likeliest person on any team to quietly build an internal editor tool that the whole studio ends up depending on.
+![Material](layer-2-Material.avif)
 
-| | |
-|---|---|
-| **Needs** | Standard interchange formats; live preview; an editor extension API open to users; a profiling view for draw calls |
-| **Does not need** | Hand-holding |
-| **Critical** | Editor, Assets, 3D, Extensibility |
-| **Important** | Code, Docs |
-| **Sign you serve them** | Plugins and editor extensions written by people outside the core team |
+### **P**urist
 
-### Worldbuilder
+*It originates here.*
 
-![Worldbuilder](06-Worldbuilder.jpg)
+![Purist](style-05-Purist.avif)
 
-*Assembles scenes from large libraries.* The environment or level artist never opens a terminal, and judges your tool by exactly two things: the undo button, and whether the scene is still there when they come back. Both are non-negotiable. The Worldbuilder's trust is a one-time offer — a single lost scene costs the studio's confidence in the tool for good, no matter what fixed it afterwards.
+Whether the material is code or paint, the Purist starts from zero and authors every piece. They need ownership of every line, every sprite, every word. When handed someone else's work, the reflex is to open it up and understand it before trusting a single byte of it.
 
-| | |
-|---|---|
-| **Needs** | A stable editor with undo that never corrupts a scene; search and tags over huge asset libraries; instancing; fast preview |
-| **Does not need** | Command-line access |
-| **Critical** | Editor, Assets, 3D |
-| **Important** | Docs |
-| **Sign you serve them** | Crash-free session rate among people who never open a code file |
+{.pillar .love}
+**Loves:** procedural generation, open source.
 
-### Economist
+{.pillar .hate}
+**Hates:** asset packs, click-and-make tools, opaque libraries.
 
-![Economist](07-Economist.jpg)
+### **W**orldbuilder
 
-*Designs systems, economies and balance.* The Economist can script a little and is proudly, loudly not a programmer. In any project that mixes code with designer-driven data, the Economist is the designer-driven half — and the hybrid breaks the day their work becomes a silo the programmers cannot read. "Can I change the numbers without asking a programmer?" is not laziness. It is a question about iteration speed and about who actually owns the game.
+*Composition of symphonies.*
 
-| | |
-|---|---|
-| **Needs** | Typed data tables with spreadsheet round-trip; visual logic that compiles to readable code; a live tweaking loop in play mode; examples written for non-programmers |
-| **Does not need** | A scripting language of their own |
-| **Critical** | Visual logic, Data and L10n, Docs |
-| **Important** | Editor, 3D, Platforms |
-| **Sign you serve them** | The share of shipped gameplay behavior authored as data or graphs rather than hand-written code |
+![Worldbuilder](style-06-Worldbuilder.avif)
 
-### Storyteller
+The Worldbuilder builds from parts: kitbashing, libraries, repurposing, arranging. No individual asset, library or feature has value: the composition is the true authorship. The undo button is sacred, the experimentation is a promise, and the only unforgivable crime is losing either. One corrupted scene costs the tool their trust forever, no matter what was fixed afterwards.
 
-![Storyteller](08-Storyteller.jpg)
+{.pillar .love}
+**Loves:** big libraries, lots of options, search, non-destructive operations, undo/redo.
 
-*Writes branching content.* Dialogue trees, quests, barks, lore — the Storyteller writes the parts players actually remember. They work in tools built for writing, and they need those tools to meet the game halfway. And they care about something quietly farsighted: who can read the story files five years from now, when everyone who knew the pipeline has moved on.
+{.pillar .hate}
+**Hates:** disorganization, tasks that cannot be repeated, limited options.
 
-| | |
-|---|---|
-| **Needs** | A dialogue and branching format that writers can edit and programmers can test; import from existing narrative tools; string tables with context; playtesting of branches without a full build |
-| **Does not need** | Rendering features |
-| **Critical** | Editor, Visual logic, Data and L10n |
-| **Important** | Extensibility, Docs |
-| **Sign you serve them** | The share of dialogue changes made without a programmer |
+### **S**hopper
 
-## Builders
+*Acquire it.*
 
-Nobody in this house ships the first game. They make sure it ships the second time, in a dozen languages, on every platform, without anyone's weekend. Where Builders thrive, teams stop reinventing pipelines; where they don't, every release is a lottery.
+![Shopper](style-07-Shopper.avif)
 
-### Mechanic
+The Shopper's metric is time-to-pretty and cost-benefit at the maximum. Their reflex when a problem appears is a question: has anyone already solved this? The cart has forty toon shaders in it and room for one more, because the forty-first might be the right one for this particular job. This is not a lack of skill; buying well is the skill, and it is the fastest one in the layer.
 
-![Mechanic](09-Mechanic.jpg)
+{.pillar .love}
+**Loves:** asset stores, marketplaces, templates.
 
-*Owns the build and its health.* The Mechanic asks one unforgiving question: can it build twice, headless, in a container, and produce the same bits? They live in YAML and Linux, they have never opened your editor and are a little bit proud of that, and their blessing or veto determines whether a studio adopts your tool at all. The Director — whoever that is this year — listens to them.
+{.pillar .hate}
+**Hates:** IKEA DIY assembly, blank canvas, ugly default assets.
 
-| | |
-|---|---|
-| **Needs** | Headless everything; machine-readable test reports; checksummed, reproducible packaging; fast cold builds; stable asset IDs |
-| **Does not need** | A graphical interface |
-| **Critical** | Automation, Packaging, Code, Testing, Platforms |
-| **Important** | Assets, 3D, Extensibility, Licensing, Docs |
-| **Sign you serve them** | The number of distinct organizations running the tool's CLI in CI |
+### **H**ermit
 
-### Polyglot
+*Content enters through side doors.*
 
-![Polyglot](10-Polyglot.jpg)
+![Hermit](style-08-Hermit.avif)
 
-*Ships the game in a dozen languages.* The localization and content-operations lead is not a programmer; they work in spreadsheets, with contractors, and with certification checklists the size of small novels. Cheap to serve, chronically underserved, and hugely visible to players — a missing accent in a subtitle gets screenshotted more reliably than any feature you ship.
+Read a game's credits. Half of those people never open the engine: writers, translators, producers, ops, community, business. Their authoring tools are Word, Excel, translation suites, Jira, dialogue editors, PowerPoint. Their work still has to enter the game in some shape or form, and the Hermit is the style of that workflow: separate from the core loop, by function or by choice, connected by import and export. A studio's Hermits are also its best customers for a well-built Toolsmith.
 
-| | |
-|---|---|
-| **Needs** | String tables with context comments; pseudo-localization preview; non-destructive round-trip with translators' XLIFF and CSV tools; per-language content bundles |
-| **Does not need** | Source-code access |
-| **Critical** | Packaging, Data and L10n, Platforms |
-| **Important** | Assets, Docs |
-| **Sign you serve them** | Games shipped in more than one language where translation never required a programmer |
+{.pillar .love}
+**Loves:** round-trip formats (CSV, XLIFF), import/export, programmer-free.
 
-### Toolsmith
+{.pillar .hate}
+**Hates:** re-entering data by hand, engine jargons, programmer-dependency.
 
-![Toolsmith](01-Toolsmith.jpg)
+## The Toolbox
 
-*Builds tools, not games.* A pixel editor, a modelling tool, a dialogue editor, shipped as standalone applications. The Toolsmith looks at a game engine and sees an application platform — a thing to be repurposed, not obeyed. They are demanding, allergic to reading your source code as a substitute for documentation, and absolutely worth it: they are the kind that turns an engine into an ecosystem.
+The third question is about the durable machinery: the tools, community and organization that outlive any single project. Content in the game is ephemeral; this layer is what the studio keeps.
 
-| | |
-|---|---|
-| **Needs** | A documented, versioned plugin and host architecture; reusable docking, panels and editor controls; examples instead of source-reading; packaging for their own tool |
-| **Does not need** | Game-specific features |
-| **Critical** | Editor, Code, Extensibility, Docs |
-| **Important** | Automation, Packaging, Assets, Testing, Licensing |
-| **Sign you serve them** | The number of non-game applications shipped on the platform |
+![Toolbox](layer-3-Toolbox.avif)
 
-### Merchant
+### **T**oolsmith
 
-![Merchant](12-Merchant.jpg)
+*Builds tools as products.*
 
-*Sells or shares the ecosystem.* Models, packs, templates, plugins, starter kits: the Merchant's product is the package. Where Merchants thrive, ecosystems form around a tool; where they can't make a living, no store can exist at all. Every breaking change you ship is, from their side of the table, a rent increase.
+![Toolsmith](style-09-Toolsmith.avif)
 
-| | |
-|---|---|
-| **Needs** | Clean manifests, versions and dependency ranges; the same ease for plugins as for assets; formats that survive engine versions; clear terms on what buyers may do |
-| **Does not need** | A walled garden |
-| **Critical** | Packaging, Assets, Extensibility |
-| **Important** | Editor, 2D, 3D, Licensing, Docs, Platforms |
-| **Sign you serve them** | The number of third-party packages published and how often they are downloaded |
+Because of his phobia of repetitive tasks, the Toolsmith prefers building a specialized tool to be reused... eventually. And even a tool that helps to create a tool. It doesn't matter if takes to build the tool than solving the actual problem. "What if I face the same problem one day?". Economy of scale; pay now, gain forever. Sometimes the obsession becomes the goal itself: people whose life *is* their plugin business, and they are the sign of a healthy ecosystem.
 
-## Stewards
+{.pillar .love}
+**Loves:** plugin architecture, real documentation.
 
-The Stewards rarely make content themselves. They decide what everyone else will use, teach it, and keep it alive — and their judgment extends years past the current release.
+{.pillar .hate}
+**Hates:** lack of APIs/extensibility, manual work, breaking changes with no contract.
 
-### Director
+### **A**rchitect
 
-![Director](13-Director.jpg)
+*Designs the machinery.*
 
-*Chooses tools for a team.* The technical director of a mid-sized studio: one decision-maker, whose staff will live inside whatever they choose. They hire from the usual pools and will not bet forty jobs on a tool that makes their team's hard-won experience worthless. Marketing does not move them; a commercial game credited to your tool does. One reference title outweighs your entire documentation site.
+![Architect](style-10-Architect.avif)
 
-| | |
-|---|---|
-| **Needs** | A workflow that existing hires recognize; CI discipline; modular projects that teams own independently; standard interchange in and out; build times as a published number |
-| **Does not need** | Marketing |
-| **Critical** | Automation, Packaging, Code, Assets, 3D, Testing, Platforms |
-| **Important** | Editor, Visual logic, Data and L10n, Extensibility, Licensing, Docs |
-| **Sign you serve them** | A commercial game credited as made with the tool. One reference title outweighs all documentation |
+The Architect ties everything together. Their unwavering goal is to build, from start to finish, a process that works in day-to-day operations. They don’t worry about the details of each task, only the inputs and outputs. Structure comes before content, automation before comfort, and reproducibility before features.
 
-### Conductor
+{.pillar .love}
+**Loves:** headless everything, reproducible, APIs, elegant structure.
 
-![Conductor](14-Conductor.jpg)
+{.pillar .hate}
+**Hates:** works-on-my-machine, black magic, manual steps in someone's head.
 
-*Coordinates many teams.* The platform lead of a large studio thinks in independent module delivery, versioning, build times and patch sizes. The Conductor never opens the editor — the editor is somebody else's problem — and reads benchmarks and reference customers the way other people read reviews. If they contact you, they found you themselves, and that is worth more than any sales call.
+### **I**ntegrator
 
-| | |
-|---|---|
-| **Needs** | Per-team build and delivery; deterministic output; content patching without re-shipping the binary; published benchmarks |
-| **Does not need** | Full content-creation tools |
-| **Critical** | Automation, Packaging, Code, Assets, 3D, Testing, Platforms |
-| **Important** | Extensibility |
-| **Sign you serve them** | Inbound inquiries that cite packaging and patching. If it happens, it is pull, not push |
+*Makes things interoperate.*
 
-### Teacher
+![Integrator](style-11-Integrator.avif)
 
-![Teacher](15-Teacher.jpg)
+Glue as a profession. The QA lead stitching a test harness out of found parts, the ops person making third-party tools talk to in-house ones, the studio that runs on GitHub plus Atlassian plus Unity plus "that one script". When nothing else works the Integrator reaches for pen and paper, and it works. This is duct tape by *function*, not desperation: integration is the job, and the solutions come from inside and out, which is fine.
 
-*Puts a tool in front of thirty beginners.* A school or university instructor, or a bootcamp lead, the Teacher needs your tool to work on locked-down, modest machines, in a room where the network is always down, across a term of stable behavior. Their students are the Apprentices of the next decade — and the Directors of the decade after that. An install that demands an account or a credit card has just failed a room full of people at once.
+{.pillar .love}
+**Loves:** open formats, APIs, adapters, scripts.
 
-| | |
-|---|---|
-| **Needs** | A free, offline-friendly install; curriculum-ready examples; stable behavior across a term; clear classroom licensing; works on low-spec and shared machines |
-| **Does not need** | Cutting-edge rendering |
-| **Critical** | Editor, Licensing, Docs |
-| **Important** | Code, Visual logic, 2D, Platforms |
-| **Sign you serve them** | The number of courses built around the tool |
+{.pillar .hate}
+**Hates:** closed ecosystems, one-way doors.
 
-### Curator
+### **C**urator
 
-![Curator](16-Curator.jpg)
+*Stewards what lasts.*
 
-*Keeps a community making things.* The maintainer of a game's mod scene — or of a game designed to be extended — the Curator cares about what players can add, what they can break, and who owns what they make. A mod community is a garden, not a landfill: it needs a supported way in, a stable API to grow against, and clear rules about what belongs to whom.
+![Curator](style-12-Curator.avif)
 
-| | |
-|---|---|
-| **Needs** | A supported way to load data and code mods; a stable mod API; mod packaging and dependency resolution; clear rights over what players make |
-| **Does not need** | Editor features for the original developers |
-| **Critical** | Packaging, Code, Data and L10n, Extensibility, Licensing, Docs |
-| **Important** | Automation, Assets, Testing, Platforms |
-| **Sign you serve them** | The number of mods shipped by people outside the original team |
+Community, wiki, docs, mods, and the unglamorous art of deprecation and moving on. The Curator treats community as permanent infrastructure: a garden, not a landfill. The job is not to create, but to maintain, to care. A dedicated librarian that keeps record of whats and whys. The longest time horizon in the building sits in this chair.
 
-## Overview: what each kind needs
+{.pillar .love}
+**Loves:** stability, supported extension paths, clear rights, documentation that outlives authors.
 
-Need levels: **●** critical, **◐** important, **○** nice to have, a blank means not relevant. Rows describe what a tool provides, in any engine.
+{.pillar .hate}
+**Hates:** breaking changes, abandoned ecosystems, content dumped where nobody tends it.
 
-{.big-table}
-| | APR | SPR | PUR | GEN | ALC | WLD | ECO | STO | MEC | POL | TOL | MER | DIR | CON | TEA | CUR |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| **Editor** | ● | ● | ○ | ◐ | ● | ● | ◐ | ● | | ○ | ● | ◐ | ◐ | | ● | ○ |
-| **Automation** | | ○ | ● | ◐ | ○ | | | | ● | ○ | ◐ | ○ | ● | ● | ○ | ◐ |
-| **Packaging** | | ◐ | ◐ | ◐ | ○ | ○ | ○ | ○ | ● | ● | ◐ | ● | ● | ● | ○ | ● |
-| **Code** | ○ | ◐ | ● | ◐ | ◐ | | ○ | | ● | | ● | ○ | ● | ● | ◐ | ● |
-| **Visual logic** | ● | ◐ | | ○ | | | ● | ● | | | ○ | ○ | ◐ | ○ | ◐ | |
-| **Data and L10n** | ○ | | ○ | ● | | | ● | ● | ○ | ● | | ○ | ◐ | ○ | ○ | ● |
-| **Assets** | ◐ | ● | ○ | ◐ | ● | ● | ○ | ○ | ◐ | ◐ | ◐ | ● | ● | ● | ○ | ◐ |
-| **2D** | ● | ◐ | ● | ◐ | ○ | ○ | ○ | ○ | | ○ | ○ | ◐ | ○ | | ◐ | ○ |
-| **3D** | | ◐ | ○ | ◐ | ● | ● | ◐ | ○ | ◐ | ○ | ○ | ◐ | ● | ● | ○ | ○ |
-| **Testing** | | | ● | ◐ | ○ | | ○ | ○ | ● | | ◐ | ○ | ● | ● | ○ | ◐ |
-| **Extensibility** | ○ | ○ | ◐ | ◐ | ● | ○ | ○ | ◐ | ◐ | ○ | ● | ● | ◐ | ◐ | ○ | ● |
-| **Licensing** | ○ | ◐ | ● | ◐ | ○ | | | | ◐ | | ◐ | ◐ | ◐ | ○ | ● | ● |
-| **Docs** | ● | ● | ◐ | ◐ | ◐ | ◐ | ● | ◐ | ◐ | ◐ | ● | ◐ | ◐ | ○ | ● | ● |
-| **Platforms** | ○ | ● | ◐ | ● | ○ | ○ | ◐ | ○ | ● | ● | ○ | ◐ | ● | ● | ◐ | ◐ |
+## The Circle
 
-Reading the matrix:
+The last question is about gravity: how does your influence reach the tools a team uses? Some have the pen (or the wallet) to decide, some do not. Some use and live the tools and processes every day, others know them by presentations.
 
-- **The editor is the most common critical need: seven kinds.** Documentation, code workflow, packaging and platforms follow with six each.
-- **Documentation is critical to the people who start and to the people who extend:** Apprentice, Sprinter, Economist, Toolsmith, Teacher and Curator. Nobody in the middle of that range — the people already comfortable — needs it as badly.
-- **Packaging is critical to six kinds across three different houses:** Polyglot, Mechanic, Merchant, Director, Conductor and Curator. Few of them ship the first game, and all of them depend on how it is delivered.
-- **Four kinds mark automation as critical, and none of them marks the editor critical:** Purist, Mechanic, Director and Conductor. A tool that cannot be driven headless loses all four in one stroke.
-- **Visual logic is critical to only three kinds** (Apprentice, Economist, Storyteller). If those are your audience, it is a pillar, not an extra; if they are not, it is expensive furniture.
-- **The hungriest kinds are the ones who touch the tool least.** Director and Conductor each list seven critical needs — more than anyone who opens the editor daily. The people deciding for forty others want to know the whole machine works, not the part they'd personally use.
+![Circle](layer-4-Circle.avif)
 
-*[Figure — chart: a horizontal bar chart of critical-need counts per capability: Editor 7, Packaging 6, Code 6, Assets 6, Docs 6, Platforms 6, Data and L10n 5, Automation 4, Testing 4, Extensibility 4, 3D 4, Visual logic 3, Licensing 3, 2D 2. Optionally a second, smaller chart: critical needs per kind, with DIR and CON tied at 7 at the top.]*
+### **J**ourneyman
 
-## Who brings whom
+*User that does not decide.*
 
-A kind can use a tool, choose it, block or bless it, pay for it, or multiply it — bring others in or extend it. The roles differ, and a tool that serves only its daily users has no growth story.
+![Journeyman](style-13-Journeyman.avif)
 
-| Role | What it means | Kinds |
-|---|---|---|
-| **User** | Works in the tool every day | Worldbuilder, Economist, Storyteller, Polyglot |
-| **Chooser** | Picks the tool for their own work | Purist, Generalist, Sprinter |
-| **Gatekeeper** | Blocks or blesses adoption by a team | Mechanic |
-| **Buyer** | Decides for others, rarely opens the tool | Director, Conductor |
-| **Multiplier** | Brings others in, or extends the tool | Apprentice, Alchemist, Toolsmith, Merchant, Teacher, Curator |
+The adoption floor. The Journeyman uses the tools provided, complains, but ships anyway. They know their tools and processes inside out, and know quite well what hurts. But opinions here come from narrow experience: they do not have the luxury of testing multiple options. They don't know that they don't know.
 
-Two observations worth losing sleep over. The Buyers decide on reference titles and benchmarks, never on features — so a roadmap of features alone will not convert them, ever. And the Multipliers are mostly the people who need the most help getting started: ignore the Apprentice and the Teacher today, and you starve your own future.
+{.pillar .love}
+**Loves:** sane defaults, familiar conventions, things that work.
 
-*[Figure — sketch/diagram: a circular flow. Multipliers (Apprentice, Teacher, Merchant...) push new people toward the Choosers and Users; the Gatekeeper's thumbs-up lets the Buyer sign; happy output feeds back into the Multipliers. Hand-drawn arrows, slightly crooked on purpose.]*
+{.pillar .hate}
+**Hates:** novelty for its own sake, breaking familiarity.
 
-## Where they pull against each other
+### **C**onductor
 
-Hat combinations are where a team gets interesting. Hat conflicts are where it gets expensive. These are the four-way tug-of-wars worth naming in a meeting:
+*User that decides.*
 
-| Tension | The pull | What usually resolves it |
-|---|---|---|
-| Apprentice vs Purist | One-click flow against everything in text files | Same project format underneath, two ways in |
-| Worldbuilder vs Mechanic | The editor is the product against the editor must never be required | The editor writes the same files the CLI reads |
-| Economist vs Purist | Data and graphs against code | Graphs that compile to readable code; data that is typed |
-| Merchant vs Curator | Breaking changes for progress against stable APIs for others | A written compatibility contract per release |
-| Director vs Sprinter | Process and CI against zero setup | Defaults that work with no configuration, and switches that add discipline |
-| Conductor vs everyone | Per-team independence against a simple project | Modules that are optional, not mandatory |
+![Conductor](style-14-Conductor.avif)
 
-*[Figure — sketch: a tug-of-war rope between paired doodles of the two kinds, with the resolution drawn as a small handshake or a bridge over the middle of the rope. Pick two or three tensions, not all six.]*
+Conductor's daily life is now multi-team, with a working knowledge of every tool and even every ecosystem. A bit of everything. They can perform any task as a fallback Journeyman. The Conductor decides and then lives inside the decision. Patch sizes, build times, versioning, delivery: if it can be measured, it can be conducted.
 
-## Hats in real teams
+{.pillar .love}
+**Loves:** productivity, proven benchmarks, unified toolset, support.
 
-Nobody is one kind. Real teams are mixtures, and the mixture tells you what the team can and cannot do:
+{.pillar .hate}
+**Hates:** big-bang integrations, multiple tools for the same tasks.
 
-| Situation | Kinds in the room |
-|---|---|
-| Solo developer | Purist, Alchemist, Economist, Polyglot (outsourced) |
-| Game jam team of four | Sprinter, Apprentice, Alchemist, Storyteller |
-| Classroom | Teacher, many Apprentices |
-| Indie studio of six | Generalist, Worldbuilder, Economist, Storyteller, Mechanic |
-| Mid-sized studio | Director, Mechanic, Alchemist, Worldbuilder, Economist, Polyglot |
-| Large studio | Conductor, Director, many of the rest |
-| Tool or middleware company | Toolsmith, Merchant, Mechanic |
-| Game with a modding scene | Curator, Merchant, Purist |
+### **D**irector
 
-*[Figure — sketch: a group photo per row, or one big cartoon crowd with speech bubbles naming each hat. The jam team should look caffeinated; the large studio should look like the conductor's orchestra again.]*
+*Not a user that decides.*
 
-## Using it
+![Director](style-15-Director.avif)
 
-A five-minute exercise for a team or a roadmap. It works best out loud, with the matrix printed on one page:
+The Director's week is demos, reference calls and benchmarks, not the forge. The real asset is the team's muscle memory, and what the next three hires already know decides the choice before any feature list does. Pragmatic, thinks that tools are means to the end and they have no passion for option A over B
 
-1. **Place your team.** Mark each person's main and second kind. Gaps in a house are risks wearing disguise: a team with no Builder finds out precisely at the first release.
-2. **Place your backlog.** For each open item, write the kind it serves. An item that serves no kind is either housekeeping or a mistake — both are fine, but they should say so out loud.
-3. **Count.** The distribution of open work per kind is the cheapest balance check there is. If one house gets all of it, that may well be the right call — but it should be a decision, not an accident.
-4. **Pick a signal per kind.** Every portrait above names one observable that tells you whether you are winning that kind. If you cannot measure it, you cannot claim to serve it.
-5. **Re-check when reality disagrees.** The kinds are vocabulary for discussion, not data. The moment the two diverge, trust reality and update the vocabulary.
+{.pillar .love}
+**Loves:** proven workflows, interchangeable hires, benchmarks from reliable sources, price.
 
-If the taxonomy earns its keep, borrow it, bend it, and argue with it. A vocabulary is only shared once someone disagrees with it in writing.
-Done — the livelier draft is in the canvas. What changed and what stayed:
+{.pillar .hate}
+**Hates:** migrations, marketing, roadmaps without receipts.
 
-**Kept intact:** all structure and data — the frontmatter (parked as a YAML block at the top), both big tables, the need matrix, tensions, team combos, and every Critical/Important list. The taxonomy itself wasn't touched.
+### **I**nfluencer
 
-**Where the life went in:**
-- **Intro** — opened with the "say it in a design review" beat before pivoting to the missing half.
-- **Portraits** — each kind now has a small scene instead of only a tagline: the Apprentice's bedtime-export, the Mechanic's unopened editor, the Worldbuilder's one-time trust offer, the Curator's garden-not-landfill. The wit stays dry and professional — no memes, no exclamation marks.
-- **House intros** — a line of framing before each ("Nobody in this house ships the first game…").
-- **New observation** in the matrix section: Director and Conductor, the two kinds who touch the tool least, have the longest critical lists (7 each). That's a genuinely interesting finding hiding in your own data.
-- **Closing line** — the piece previously ended abruptly at step 5; it now lands on "a vocabulary is only shared once someone disagrees with it in writing."
+*Not a user that does not decide.*
 
-**Image plan:** every figure spot is marked with a searchable `*[Figure — …]*` note containing art direction — 16 doodle briefs (one per kind: the cauldron Alchemist, the matryoshka Toolsmith, the tug-of-war rope…), the four-houses street, plus two charts:
-1. A horizontal bar chart of critical-need counts per capability (data listed in the note, ready to draw), optionally paired with the per-kind chart where DIR/CON top out at 7.
-2. The "who brings whom" loop sketch.
+![Influencer](style-16-Influencer.avif)
 
-The figure notes are invisible-safe — just delete them (or search for `[Figure`) as you drop in the real art. Want me to push the voice further in any section, or tone any of it back down?
+Teachers, reviewers, forum elders. The Influencers are familiar with the tools they talk about, but in the way a General handled a gun: enough to be credible, not for the required usage in a battlefield. Many vendors also preach what they actually do not _use_ every day. No "dog-fooding".
+
+{.pillar .love}
+**Loves:** demos, clear licensing, comparable versions, feature lists, documentation.
+
+{.pillar .hate}
+**Hates:** NDAs over everything, price walls at the door.
+
+## The Four-Letters Personality Test
+
+Yes, this looks like a personality test, and it carries the same scientific warranty: _none_. It is a vocabulary for arguments you were already having. And vocabulary is only shared once someone disagrees with it in writing.
+
+An **I**terator who builds everything from scratch (**P**urist), turns tools into products (**T**oolsmith), and ships with what's given (**J**ourneyman) is an **I·P·T·J**. Some builds are common enough to have faces. Profiles below are public-work guesses, possibly wrong.
+
+| Profile | Build | Example | You have met them as |
+|---|---|---|---|
+| [A](#alchemist)·[P](#purist)·[A](#architect)·[D](#director) | The Solo Legend | Lucas Pope | the auteur: from scratch, self-automated, decides everything, ships masterpieces slowly |
+| [A](#alchemist)·[W](#worldbuilder)·[C](#curator)·[I](#influencer) | The Community Gardener | Nexus Mods | makes beautiful things from parts, and tends the garden where others share theirs |
+| [A](#alchemist)·[W](#worldbuilder)·[T](#toolsmith)·[C](#conductor) | The Film Maker | Hideo Kojima | decides the art and tech stack and still touches every asset daily |
+| [C](#closer)·[H](#hermit)·[A](#architect)·[D](#director) | The Executive | EA | decides from decks and boards; the floor is visible through a window |
+| [C](#closer)·[H](#hermit)·[I](#integrator)·[J](#journeyman) | The Duct-Tape Department | Obsidian | integration by trade, deadline by default: ops, QA and IT in one person |
+| [C](#closer)·[P](#purist)·[A](#architect)·[J](#journeyman) | The Headless Zealot | Terry Cavanagh | ships fast, from scratch, takes tool advice from no one |
+| [C](#closer)·[P](#purist)·[T](#toolsmith)·[C](#conductor) | The Studio Starter | All studios from ex-employees of AAA | founds a studio by choosing the stack and building its first tools |
+| [C](#closer)·[P](#purist)·[T](#toolsmith)·[I](#influencer) | The Asset Merchant | Synty | ships assets on a market rhythm and evangelizes them personally |
+| [C](#closer)·[S](#shopper)·[I](#integrator)·[J](#journeyman) | The Jam Monster | Ludum Dare Winners | buys the whole game in a weekend, glues it, uploads Sunday night |
+| [I](#iterator)·[H](#hermit)·[I](#integrator)·[J](#journeyman) | The Spreadsheet Queen | Cliff Harris | balances the entire game from CSV files via three converters nobody else understands |
+| [I](#iterator)·[P](#purist)·[T](#toolsmith)·[I](#influencer) | The Toolbox Intellectual | Casey Muratori | writes deep tool essays and builds tools to prove the points |
+| [I](#iterator)·[P](#purist)·[T](#toolsmith)·[J](#journeyman) | The Indefensible Perfectionist | Dwarf Fortress | from scratch, custom tools as they are needed, and still not ready; ever |
+| [I](#iterator)·[S](#shopper)·[C](#curator)·[I](#influencer) | The Engine Wars Analyst | Digital Foundry | benchmarks and compares offerings professionally; never builds a game |
+| [I](#iterator)·[W](#worldbuilder)·[C](#curator)·[J](#journeyman) | The Company Journeyman | The "dream-job" of many | composes with what the company provides, tends what is shared, ships quietly forever |
+| [P](#prototyper)·[S](#shopper)·[C](#curator)·[J](#journeyman) | The Forever Student | Humble Bundle | buys courses and assets, curates a library of experiments, finishes nothing, happily |
+| [P](#prototyper)·[W](#worldbuilder)·[I](#integrator)·[J](#journeyman) | The Modder | Garry Newman | a game is a toybox: take apart, recombine, share, repeat |
+
+## Using
+
+![4×4×4×4 styles](4-4-4-4-styles.avif)
+
+Five minutes, out loud, ideally with someone who will disagree with you.
+
+1. **Find your four.** First instinct per question. If you hesitate between two styles in one layer, remember what the work at hand requires of you.
+2. **Build your team's grid.** Mark everyone's home styles. The empty quadrants are next year's problems, visible today. You might even build the team's profile.
+3. **Trust reality.** This is vocabulary for a discussion, not data. When the two disagree, reality wins and the vocabulary gets updated.
+4. **Re-read your profile when your job changes.** The letters that flip are the honest changelog of your career.
+
+Tension between styles is normal, even *within the person themselves*. Different styles value attributes (time, novelty) differently. Use it as a system of checks and balances, not as a tug-of-war. A `Closer` and an `Iterator` arguing about a release date is not a fight to win, it is a scope to freeze. If you make tools, the veto rule survives every edit: one layer's dealbreaker is the whole profile's dealbreaker. And the style you keep switching between within a layer is the changelog of your year.
+
+If the taxonomy earns its keep: borrow it, bend it, argue with it.

@@ -3,7 +3,7 @@ Title: Guinevere
 Description: Build GPU-accelerated C# interfaces with immediate-mode layout, composable shapes and Excalibur controls across platforms.
 Params:
   The: The UI
-  Logo: '/guinevere-logo-1.svg'
+  Logo: '/guinevere-badge.svg'
 ---
 
 {{< project-hero >}}

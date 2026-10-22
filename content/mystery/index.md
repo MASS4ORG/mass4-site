@@ -3,7 +3,7 @@ Title: Mystery
 Description: A game built with Turian that will drive the development of the MEGA4 toolchain.
 Params:
   The: The Game
-  Logo: '/mystery-logo-1.svg'
+  Logo: '/mystery-badge.svg'
 ---
 
 {{< project-hero >}}

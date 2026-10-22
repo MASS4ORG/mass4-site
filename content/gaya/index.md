@@ -3,7 +3,7 @@ Title: Gaya
 Description: A plugin-driven desktop workbench built on Guinevere — the host Turian Studio is becoming a plugin for.
 Params:
   The: The Platform
-  Logo: '/gaya-logo-1.svg'
+  Logo: '/gaya-badge.svg'
 ---
 
 {{< project-hero >}}

@@ -3,7 +3,7 @@ Title: MEGA4
 Description: One initiative, four interdependent projects worked on in the open — a GUI toolkit, an editor workbench, a game engine, and a game.
 Params:
   The: The Initiative
-  Logo: '/mega4-logo-1.svg'
+  Logo: '/mega4-badge.svg'
 ---
 
 {{< project-hero >}}
@@ -17,25 +17,25 @@ Most software gets finished before anyone sees it. MEGA4 publishes the middle: f
 <div class="pillars">
 <a class="pillar g" href="/guinevere">
 <span class="role">Foundation · GUI</span>
-<h3><img src="/guinevere-logo-1.svg" alt="Guinevere logo"> Guinevere</h3>
+<h3><img src="/guinevere-badge.svg" alt="Guinevere logo"> Guinevere</h3>
 <p>A GPU-accelerated, immediate-mode UI toolkit for C#, built on SkiaSharp. Everything else draws its interface with it.</p>
 <span class="more">Learn more →</span>
 </a>
 <a class="pillar ga" href="/gaya">
 <span class="role">Tool · Workbench</span>
-<h3><img src="/gaya-logo-1.svg" alt="Gaya logo"> Gaya</h3>
+<h3><img src="/gaya-badge.svg" alt="Gaya logo"> Gaya</h3>
 <p>A plugin-driven desktop workbench built on Guinevere — the host that Turian Studio is becoming a plugin for.</p>
 <span class="more">Learn more →</span>
 </a>
 <a class="pillar t" href="/turian">
 <span class="role">Engine · 3D</span>
-<h3><img src="/turian-logo-1.svg" alt="Turian logo"> Turian</h3>
+<h3><img src="/turian-badge.svg" alt="Turian logo"> Turian</h3>
 <p>A component-based 3D game engine and editor, entirely in modern C#.</p>
 <span class="more">Learn more →</span>
 </a>
 <a class="pillar m" href="/mystery">
 <span class="role">Goal · Game</span>
-<h3><img src="/mystery-logo-1.svg" alt="Mystery logo"> Mystery</h3>
+<h3><img src="/mystery-badge.svg" alt="Mystery logo"> Mystery</h3>
 <p>The game that will exercise the whole stack end to end.</p>
 <span class="more">Learn more →</span>
 </a>

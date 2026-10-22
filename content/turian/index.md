@@ -3,7 +3,7 @@ Title: Turian
 Description: A component-based 3D game engine and editor, written entirely in modern C#.
 Params:
   The: The Engine
-  Logo: '/turian-logo-1.svg'
+  Logo: '/turian-badge.svg'
 ---
 
 {{< project-hero >}}
